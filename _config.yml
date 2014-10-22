@@ -1,0 +1,10 @@
+# Main configuration
+url: http://documentation.basekit.com
+title: BaseKit Documentation
+description: Official documentation for building websites on the BaseKit platform
+
+# Blog options
+permalink: /blog/:categories/:title/
+
+# Repo data
+repository: https://github.com/basekit/documentation.basekit.com
