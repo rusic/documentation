@@ -18,7 +18,7 @@ gulp.task('css', function() {
 			prefix: "_",
 			extname: ".scss"
 		}))
-		.pipe(gulp.dest('css'));
+		.pipe(gulp.dest('_sass'));
 
 });
 
@@ -28,7 +28,7 @@ gulp.task('fonts', function() {
 	return gulp.src(bower())
 
 		.pipe(fontfilter)
-		.pipe(gulp.dest('_fonts'));
+		.pipe(gulp.dest('fonts'));
 
 });
 
