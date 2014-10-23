@@ -6,4 +6,12 @@ repository: https://github.com/basekit/documentation.basekit.com
 
 # Jekyll options
 permalink: /blog/:categories/:title/
-exclude: [LICENSE, README.md]
+exclude: [
+  LICENSE,
+  README.md,
+  bower_components,
+  bower.json,
+  gulpfile.js,
+  node_modules,
+  package.json
+]
