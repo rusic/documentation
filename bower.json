@@ -1,0 +1,23 @@
+{
+  "name": "documentation.basekit.com",
+  "version": "0.0.1",
+  "homepage": "http://documentation.basekit.com",
+  "authors": [
+    "David Darnes <david.darnes@basekit.com>"
+  ],
+  "description": "Official documentation for building websites on the BaseKit platform",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.2",
+    "fontawesome": "~4.2.0"
+  }
+}

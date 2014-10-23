@@ -1,0 +1,26 @@
+{
+  "name": "documentation.basekit.com",
+  "version": "0.0.1",
+  "description": "Official documentation for building websites on the BaseKit platform",
+  "main": "index.html",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "gulp": "^3.8.9",
+    "gulp-rename": "^1.2.0",
+    "main-bower-files": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basekit/documentation.basekit.com.git"
+  },
+  "author": "David Darnes <david.darnes@basekit.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basekit/documentation.basekit.com/issues"
+  },
+  "homepage": "http://documentation.basekit.com"
+}
