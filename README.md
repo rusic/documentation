@@ -8,16 +8,16 @@ Setup
 
 Installing via the command line (as of 24-10-14):
 
-- ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-- ```brew install npm```
-- ```cd dcoumentation.basekit.com```
-- ```npm install```
-- ```bower install```
-- ```gulp assets```
+1. ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+2. ```brew install npm```
+3. ```cd dcoumentation.basekit.com```
+4. ```npm install```
+5. ```bower install```
+6. ```gulp assets```
   * ```gulp fonts```
   * ```gulp css```
-- ```brew install jekyll```
-- ```jekyll serve --watch```
+7. ```brew install jekyll```
+8. ```jekyll serve --watch```
 
 License
 -------
