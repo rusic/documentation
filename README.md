@@ -18,6 +18,7 @@ Installing via the command line (as of 24-10-14):
   * ```gulp css```
 7. ```brew install jekyll```
 8. ```jekyll serve --watch```
+9. (http://localhost:4000)[http://localhost:4000]
 
 License
 -------
