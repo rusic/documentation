@@ -10,7 +10,7 @@ Installing via the command line (as of 24-10-14):
 
 1. ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 2. ```brew install npm```
-3. ```cd dcoumentation.basekit.com```
+3. ```cd documentation.basekit.com```
 4. ```npm install```
 5. ```bower install```
 6. ```gulp assets```
