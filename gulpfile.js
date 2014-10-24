@@ -6,7 +6,8 @@ var filter = require('gulp-filter');
 
 // Asset filter variables
 var cssfilter = filter('*.css')
-var fontfilter = filter(['*', '!*.css'])
+var scssfilter = filter('*.scss')
+var fontfilter = filter(['*', '!*.css', '!*.scss'])
 
 // CSS components task
 gulp.task('css', function() {
@@ -22,6 +23,20 @@ gulp.task('css', function() {
 
 });
 
+// SCSS components task
+gulp.task('scss', function() {
+
+	return gulp.src(bower())
+
+		.pipe(scssfilter)
+		.pipe(rename({
+			prefix: "_"
+		}))
+		.pipe(gulp.dest('_sass'));
+
+});
+
+
 // Font components task
 gulp.task('fonts', function() {
 
@@ -33,4 +48,4 @@ gulp.task('fonts', function() {
 });
 
 // All assets task
-gulp.task('assets', ['fonts', 'css'])
+gulp.task('assets', ['fonts', 'css', 'scss'])
