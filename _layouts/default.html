@@ -4,7 +4,21 @@
 
 	{% include header.html %}
 
-	{{ content }}
+	<div class="container">
+
+		<div class="span-4">
+
+			{% include aside.html %}
+
+		</div>
+
+		<div class="span-8">
+
+			{{ content }}
+
+		</div>
+
+	</div>
 
 	{% include footer.html %}
 
