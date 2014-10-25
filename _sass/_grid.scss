@@ -1,101 +1,155 @@
-
-// Mixins, not worth having its own file.
-// Border box
-// Should probably use auto-prefix on this.
-@mixin box-sizing($type) {
-  -webkit-box-sizing: $type;
-     -moz-box-sizing: $type;
-          box-sizing: $type;
+/*!
+ * Name: Flynn
+ * Author: David Darnes
+ * Author url: http://david.darn.es
+ * Tools: Made in Coda, Codekit & Less
+ * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
+ *
+ * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ * &
+ * Twitter Bootstrap http://twitter.github.com/bootstrap/
+ */
+/*
+@column: 60px; // The column width
+@gutter: 20px; // The gutter width
+*/
+.container {
+  max-width: 1600px;
 }
-
-// Start the grid.
-// Optional hard reset
-* {
-margin: 0;
-padding: 0;
-@include box-sizing(border-box);
+.span-1 {
+  width: 7%;
 }
-
-// clearfix
-.frame {
-    margin: 0 auto;
-    max-width: $frame-width;
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+.span-2 {
+  width: 15.33%;
 }
-
-// Attribute selector
-// Also I've removed :last-of-type
-[class*='bit-'] {
-    float: left;
-    padding: $bit-padding;
+.span-3 {
+  width: 23.66%;
 }
-
-// Create grid widths (1-12)
-@for $i from $start through $end {
-    .bit-#{$i} {
-        width: $full / $i;
-    }
+.span-4 {
+  width: 31.99%;
 }
-
-// Common widths
-// Please use the media queries below to respond these widths
-// Feel free to pull request new widths
-.bit-25 { width: $full - 75; }
-.bit-40 { width: $full - 60; }
-.bit-60 { width: $full - 40; }
-.bit-75 { width: $full - 25; }
-
-
-// Responsiveness
-// Feel free to use your own responsive widths and styles for the grid
-// These are mostly for example use only.
-// -------------------------------------------------------------------
-
-// Mobile
-@media (max-width: $small) {
-    @for $i from $start through $end {
-        .bit-#{$i} {
-            width: $full
-        }
-    }
+.span-5 {
+  width: 40.32%;
 }
-
-// Portrait Tablet
-@media (min-width: $small) and (max-width: $medium) {
-    .bit-4,
-    .bit-6,
-    .bit-8,
-    .bit-10,
-    .bit-12 {
-        width: $half;
-    }
-
-    .bit-1,
-    .bit-2,
-    .bit-3,
-    .bit-5,
-    .bit-7,
-    .bit-9,
-    .bit-11 {
-        width: $full;
-    }
+.span-6 {
+  width: 48.65%;
 }
-
-// Landscape Tablet
-@media (min-width: $medium) and (max-width: $large) {
-    .bit-2,
-    .bit-7 {
-        width: $full;
-    }
-
-    .bit-4,
-    .bit-8,
-    .bit-10,
-    .bit-12 {
-        width: $half;
-    }
+.span-7 {
+  width: 56.98%;
+}
+.span-8 {
+  width: 65.31%;
+}
+.span-9 {
+  width: 73.64%;
+}
+.span-10 {
+  width: 81.97%;
+}
+.span-11 {
+  width: 90.3%;
+}
+.span-12,
+.container {
+  width: 98.63%;
+}
+[class*="span-"].shift-1 {
+  margin-left: 9.66%;
+}
+[class*="span-"].shift-2 {
+  margin-left: 17.99%;
+}
+[class*="span-"].shift-3 {
+  margin-left: 26.32%;
+}
+[class*="span-"].shift-4 {
+  margin-left: 34.65%;
+}
+[class*="span-"].shift-5 {
+  margin-left: 42.98%;
+}
+[class*="span-"].shift-6 {
+  margin-left: 51.31%;
+}
+[class*="span-"].shift-7 {
+  margin-left: 59.64%;
+}
+[class*="span-"].shift-8 {
+  margin-left: 67.97%;
+}
+[class*="span-"].shift-9 {
+  margin-left: 76.3%;
+}
+[class*="span-"].shift-10 {
+  margin-left: 84.63%;
+}
+[class*="span-"].shift-11 {
+  margin-left: 92.96%;
+}
+[class*="span-"] {
+  margin-left: 1.33%;
+  float: left;
+  max-width: 100%;
+}
+.container {
+  clear: both;
+  float: none;
+  margin: 0 auto;
+}
+.row {
+  margin-left: -1.33%;
+  clear: both;
+  zoom: 1;
+}
+.row:after,
+.row:before {
+  display: table;
+  line-height: 0;
+  content: "";
+  clear: both;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class*="span-"],
+.container,
+.row {
+  zoom: 1;
+}
+img {
+  width: auto \9;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* @import "breakpoints.less"; // Breakpoints for varying browser sizes, comment this out when using a fluid grid */
+@media (max-width: 767px) {
+  [class*="span-"] {
+    margin-left: 0;
+    width: 100%;
+  }
+  [class*="span-"][class*="shift-"] {
+    margin-left: 0;
+  }
+  .row {
+    margin: 0 1.33%;
+  }
+  .row .row {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+  }
 }
