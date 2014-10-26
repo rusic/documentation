@@ -8,6 +8,7 @@ var filter = require('gulp-filter');
 var cssfilter = filter('*.css')
 var scssfilter = filter('*.scss')
 var fontfilter = filter(['*', '!*.css', '!*.scss'])
+var jsfilter = filter('*.js')
 
 // CSS components task
 gulp.task('css', function() {
@@ -36,8 +37,7 @@ gulp.task('scss', function() {
 
 });
 
-
-// Font components task
+// Fonts components task
 gulp.task('fonts', function() {
 
 	return gulp.src(bower())
@@ -47,5 +47,15 @@ gulp.task('fonts', function() {
 
 });
 
+// JavaScript components task
+gulp.task('js', function() {
+
+	return gulp.src(bower())
+
+		.pipe(jsfilter)
+		.pipe(gulp.dest('js'));
+
+});
+
 // All assets task
-gulp.task('assets', ['fonts', 'css', 'scss'])
+gulp.task('assets', ['css', 'scss', 'fonts', 'js'])
