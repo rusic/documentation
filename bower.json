@@ -19,6 +19,7 @@
   "dependencies": {
     "normalize-css": "~3.0.2",
     "fontawesome": "~4.2.0",
-    "flynn": "git@github.com:daviddarnes/flynn.git"
+    "flynn": "git@github.com:daviddarnes/flynn.git",
+    "html5shiv": "~3.7.2"
   }
 }
