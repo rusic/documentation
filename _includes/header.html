@@ -1,16 +1,19 @@
-<header>
+<header class="header header--primary">
 	<div class="container">
-		<div class="logo span-4">
-			<p>Logo</p>
-		</div>
-		<div class="navigation span-8">
-			<nav class="nav-primary">
-				<a href="#">Item</a>
-				<a href="#">Item</a>
-				<a href="#">Item</a>
-				<a href="#">Item</a>
-				<a href="#">Item</a>
-			</nav>
+		<div class="row">
+
+			<div class="logo span-4">
+
+				<p>Logo</p>
+
+			</div>
+
+			<div class="span-8">
+
+				{% include navigation.html %}
+
+			</div>
+
 		</div>
 	</div>
 </header>

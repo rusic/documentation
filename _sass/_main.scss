@@ -2,3 +2,46 @@
 @import "normalize";
 @import "font-awesome";
 @import "grid";
+
+// Variables
+$dark-header: #222;
+$light-border: #f4f4f4;
+$dark-text: #555;
+$light-links: #fff;
+$light-text: #aaa;
+
+// Body
+body {
+	color: $dark-text;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+// Header
+.header--primary {
+	background: $dark-header;
+	color: $light-text;
+}
+
+// Aside
+.aside {
+	border-right: 1px solid $light-border;
+}
+
+// Navigation
+.nav--primary {
+	text-align: right;
+	a {
+		color: $light-links;
+	}
+}
+
+.nav--secondary {
+	.nav-list {
+		padding: 0;
+		margin: 0;
+	}
+	.nav-list--child {
+		padding-left: 20px;
+	}
+}
