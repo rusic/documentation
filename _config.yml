@@ -5,7 +5,7 @@ description: Official documentation for building websites on the BaseKit platfor
 repository: https://github.com/basekit/documentation.basekit.com
 
 # Jekyll options
-permalink: /blog/:categories/:title/
+permalink: pretty
 exclude: [
   LICENSE,
   README.md,
