@@ -1,7 +1,9 @@
-<nav class="nav  nav--primary">
-	<a href="#">Item</a>
-	<a href="#">Item</a>
-	<a href="#">Item</a>
-	<a href="#">Item</a>
-	<a href="#">Item</a>
+<nav class="nav  nav--header">
+
+	{% for item in site.data.navigation.navheader %}
+
+		<a href="{{ item.url }}">{{ item.title }}</a>
+
+	{% endfor %}
+
 </nav>

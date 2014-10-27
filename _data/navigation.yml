@@ -1,10 +1,10 @@
-navprimary:
+navheader:
 - title: Home
   url: /
 - title: Blog
   url: /blog/
 
-navsecondary:
+navaside:
 - title: Getting Started
   url: /getting-started/
 - title: Templating
@@ -14,3 +14,9 @@ navsecondary:
     url: /templating/twig/
   - title: File Structure
     url: /templating/file-structure/
+
+navfooter:
+- title: Terms
+  url: /terms/
+- title: GitHub
+  url: http://github.com/basekit

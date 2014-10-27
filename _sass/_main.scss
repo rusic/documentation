@@ -18,9 +18,13 @@ body {
 }
 
 // Header
-.header--primary {
+.header--primary,
+.footer--primary {
 	background: $dark-header;
 	color: $light-text;
+	a {
+		color: $light-links;
+	}
 }
 
 // Aside
@@ -29,14 +33,11 @@ body {
 }
 
 // Navigation
-.nav--primary {
+.nav--header {
 	text-align: right;
-	a {
-		color: $light-links;
-	}
 }
 
-.nav--secondary {
+.nav--aside {
 	.nav-list {
 		padding: 0;
 		margin: 0;

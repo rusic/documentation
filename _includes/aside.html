@@ -1,14 +1,14 @@
-<aside class="aside  aside--primary">
+<aside class="aside">
 
 	<h3>Navigation</h3>
 
-	<nav class="nav  nav--secondary">
+	<nav class="nav  nav--aside">
 
-		<ul class="nav-list  nav-list--parent">
+		<ul class="nav-list">
 
-			{% for item in site.data.navigation.navsecondary %}
+			{% for item in site.data.navigation.navaside %}
 
-			<li>
+			<li class="nav-item  nav-item--parent">
 
 				<a href="{{ item.url }}">{{ item.title }}</a>
 

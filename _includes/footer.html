@@ -1,3 +1,25 @@
 <footer class="footer  footer--primary">
 
+	<div class="container">
+
+		<div class="row">
+
+			<div class="span-12">
+
+				<nav class="nav  nav--footer">
+
+					{% for item in site.data.navigation.navheader %}
+
+						<a href="{{ item.url }}">{{ item.title }}</a>
+
+					{% endfor %}
+
+				</nav>
+
+			</div>
+
+		</div>
+
+	</div>
+
 </footer>
