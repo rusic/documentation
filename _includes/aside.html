@@ -1,18 +1,41 @@
 <aside class="aside  aside--primary">
+
+	<h3>Navigation</h3>
+
 	<nav class="nav  nav--secondary">
+
 		<ul class="nav-list  nav-list--parent">
-			<li>Getting Started</li>
-			<ul class="nav-list  nav-list--child">
-				<li>Getting Started</li>
-				<li>Getting Started</li>
-				<li>Getting Started</li>
-			</ul>
-			<li>Getting Started</li>
-			<ul class="nav-list  nav-list--child">
-				<li>Getting Started</li>
-				<li>Getting Started</li>
-				<li>Getting Started</li>
-			</ul>
+
+			{% for item in site.data.navigation.navsecondary %}
+
+			<li>
+
+				<a href="{{ item.url }}">{{ item.title }}</a>
+
+			</li>
+
+				{% if item.subnav %}
+
+					<ul class="nav-list  nav-list--child">
+
+					{% for subitem in item.subnav %}
+
+						<li>
+
+							<a href="{{ subitem.url }}">{{ subitem.title }}</a>
+
+						</li>
+
+					{% endfor %}
+
+					</ul>
+
+				{% endif %}
+
+			{% endfor %}
+
 		</ul>
+
 	</nav>
+
 </aside>
