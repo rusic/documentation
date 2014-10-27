@@ -1,0 +1,16 @@
+navprimary:
+- title: Home
+  url: /
+- title: Blog
+  url: /blog/
+
+navsecondary:
+- title: Getting Started
+  url: /getting-started/
+- title: Templating
+  url: /templating/
+  subnav:
+  - title: Twig
+    url: /templating/twig/
+  - title: File Structure
+    url: /templating/file-structure/
