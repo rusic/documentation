@@ -9,6 +9,7 @@ $light-border: #f4f4f4;
 $dark-text: #555;
 $light-links: #fff;
 $light-text: #aaa;
+$dark-links: #777;
 
 // Body
 body {
@@ -27,14 +28,26 @@ body {
 	}
 }
 
+// Main
+.main--primary {
+}
+
 // Aside
-.aside {
+.aside--primary {
 	border-right: 1px solid $light-border;
+	padding: 20px 0;
+	h3 {
+		margin-top: 0;
+	}
 }
 
 // Navigation
 .nav--header {
 	text-align: right;
+}
+
+.toggle-button {
+	display: none;
 }
 
 .nav--aside {
@@ -46,4 +59,37 @@ body {
 	.nav-list--child {
 		padding-left: 20px;
 	}
+}
+
+// Footer
+.nav--footer {
+	display: inline;
+}
+
+
+// Links
+a {
+	color: $dark-links;
+	&.current {
+		color: darken($dark-links, 20%);
+	}
+}
+
+// Mobile
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	// Navigation toggle
+	.toggle-button {
+		display: inherit;
+	}
+
+	.nav[data-state=closed] {
+		display: none;
+	}
+	.nav[data-state=open] {
+		display: inherit;
+	}
+
 }
