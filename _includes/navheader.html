@@ -1,9 +1,13 @@
 <nav class="nav  nav--header">
 
+	<p>
+
 	{% for item in site.data.navigation.navheader %}
 
 		<a href="{{ item.url }}">{{ item.title }}</a>
 
 	{% endfor %}
+
+	</p>
 
 </nav>
