@@ -1,41 +1,7 @@
-<aside class="aside">
+<aside class="aside  aside--primary">
 
 	<h3>Navigation</h3>
 
-	<nav class="nav  nav--aside">
-
-		<ul class="nav-list">
-
-			{% for item in site.data.navigation.navaside %}
-
-			<li class="nav-item  nav-item--parent">
-
-				<a href="{{ item.url }}">{{ item.title }}</a>
-
-			</li>
-
-				{% if item.subnav %}
-
-					<ul class="nav-list  nav-list--child">
-
-					{% for subitem in item.subnav %}
-
-						<li>
-
-							<a href="{{ subitem.url }}">{{ subitem.title }}</a>
-
-						</li>
-
-					{% endfor %}
-
-					</ul>
-
-				{% endif %}
-
-			{% endfor %}
-
-		</ul>
-
-	</nav>
+	{% include navaside.html %}
 
 </aside>
