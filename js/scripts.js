@@ -16,7 +16,7 @@ var toggleState = function (elem, one, two) {
 
 // Table of contents generator
 	// Choose elements from page
-	var headlines 	 = document.querySelectorAll('.main h1,.main h2,.main h3'); // Selected titles to use
+	var headlines 	 = document.querySelectorAll('.main--content h2, .main--content h3'); // Selected titles to use
 	var contents 	 = document.querySelector('#contents'); // Selected element to append contents to
 
 	// Create list
