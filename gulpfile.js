@@ -7,7 +7,7 @@ var filter 	= require('gulp-filter');
 // Asset filter variables
 var cssfilter 	= filter('*.css')
 var scssfilter 	= filter('*.scss')
-var fontfilter 	= filter(['*', '!*.css', '!*.scss'])
+var fontfilter 	= filter(['*.eot', '*.svg', '*.ttf', '.woff', '.otf'])
 var jsfilter 	= filter('*.js')
 
 // CSS components task
