@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: widget
 title: Tweet Button
 versions:
 - version: Latest (2.0)

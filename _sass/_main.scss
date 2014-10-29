@@ -132,15 +132,14 @@ a {
 	&:hover {
 		border-bottom: 1px solid lighten($dark-links, 20%);
 	}
-	&.current {
+	&.current,
+	&:active {
 		color: darken($dark-links, 20%);
 	}
 }
 
 // Mobile
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
 	.main--body .container {
 		display: inherit;
