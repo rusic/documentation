@@ -19,8 +19,8 @@ body {
 }
 
 // Header
-.header--primary,
-.footer--primary {
+.header--main,
+.footer--main {
 	background: $dark-header;
 	color: $light-text;
 	a {
@@ -29,20 +29,27 @@ body {
 }
 
 // Main
-.main--primary {
-}
+
 
 // Aside
-.aside--primary {
-	border-right: 1px solid $light-border;
-	padding: 20px 0;
+.aside {
+	padding: 15px 10px;
 	h3 {
 		margin-top: 0;
 	}
 }
 
+.aside--docs {
+	border-right: 1px solid $light-border;
+}
+
+.aside--contents {
+	border-left: 1px solid $light-border;
+	border-bottom: 1px solid $light-border;
+}
+
 // Navigation
-.nav--header {
+.nav--main {
 	text-align: right;
 }
 
@@ -50,7 +57,7 @@ body {
 	display: none;
 }
 
-.nav--aside {
+.nav--docs {
 	.nav-list {
 		padding: 0;
 		margin: 0;
@@ -62,10 +69,13 @@ body {
 }
 
 // Footer
+.footer--main {
+	clear: both;
+}
+
 .nav--footer {
 	display: inline;
 }
-
 
 // Links
 a {

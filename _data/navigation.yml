@@ -1,10 +1,10 @@
-navheader:
+navmain:
 - title: Home
   url: /
 - title: Blog
   url: /blog/
 
-navaside:
+navdocs:
 - title: Getting Started
   url: /getting-started/
 - title: Templating
