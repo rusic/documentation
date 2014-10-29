@@ -1,14 +1,14 @@
 // Create gulp variables
-var gulp = require('gulp');
-var bower = require('main-bower-files');
-var rename = require('gulp-rename');
-var filter = require('gulp-filter');
+var gulp 	= require('gulp');
+var bower 	= require('main-bower-files');
+var rename 	= require('gulp-rename');
+var filter 	= require('gulp-filter');
 
 // Asset filter variables
-var cssfilter = filter('*.css')
-var scssfilter = filter('*.scss')
-var fontfilter = filter(['*', '!*.css', '!*.scss'])
-var jsfilter = filter('*.js')
+var cssfilter 	= filter('*.css')
+var scssfilter 	= filter('*.scss')
+var fontfilter 	= filter(['*', '!*.css', '!*.scss'])
+var jsfilter 	= filter('*.js')
 
 // CSS components task
 gulp.task('css', function() {
