@@ -23,4 +23,7 @@ gems:
 
 # Sass options
 sass:
-  style: :compressed
+  style: compressed
+
+# BaseKit Data
+bkversion: 7.42

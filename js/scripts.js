@@ -9,7 +9,7 @@ var toggleState = function (elem, one, two) {
 
 	// Aside navigation toggle
 	toggle.onclick = function (e) {
-	  toggleState('.nav--aside', 'closed', 'open');
+	  toggleState('.nav--docs', 'closed', 'open');
 	  e.preventDefault();
 	};
 
@@ -21,14 +21,14 @@ var toggleState = function (elem, one, two) {
 
 	// Create list
 	var contentsList = document.createElement('ol'); // List element (ol or ul)
-	contentsList.classList.add('contents-list'); // Class name for list
+	contentsList.classList.add('nav-list'); // Class name for list
 
 	// Loop through items
 	for (var i = 0; i < headlines.length; i++) {
 
 		// Create list item
 		var contentsItem = document.createElement('li'); // List item element
-		contentsItem.classList.add('contents-item'); // Class name for list item
+		contentsItem.classList.add('nav-item'); // Class name for list item
 
 		// Append list item to contents list
 		contentsList.appendChild(contentsItem);
@@ -48,3 +48,6 @@ var toggleState = function (elem, one, two) {
 
 	// Append list to element on page
 	contents.appendChild(contentsList);
+
+// Position Sticky elements
+PositionSticky([document.getElementById('sticky')]);

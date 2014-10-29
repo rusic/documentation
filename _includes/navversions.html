@@ -1,0 +1,13 @@
+<ol class="nav-list">
+
+	{% for version in page.versions %}
+
+		<li class="nav-item">
+
+			<a href="{{ version.url }}" {% if page.url == version.url %}class="current"{% endif %}>{{ version.version }}</a>
+
+		</li>
+
+	{% endfor %}
+
+</ol>

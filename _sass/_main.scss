@@ -27,6 +27,11 @@ body {
 	color: $light-text;
 	a {
 		color: $light-links;
+		border-bottom: 1px solid darken($light-links, 50%);
+		margin: 0 10px;
+		&:hover {
+			border-bottom: 1px solid darken($light-links, 30%);
+		}
 	}
 }
 
@@ -35,7 +40,11 @@ body {
 	background: $light-background;
 	float: left;
 	width: 100%;
+	.container {
+		display: flex;
+	}
 }
+
 .main--content {
 	border-left: 1px solid $light-border;
 	padding: 15px 15px 20px;
@@ -45,9 +54,28 @@ body {
 }
 	// Pygments
 	.highlight {
+		position: relative;
 		background: darken($light-background, 3%);
-		padding: 1px 15px;
+		padding: 20px 15px 1px;
 	}
+
+	code[data-lang]:before {
+		content: attr(data-lang);
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 0 5px;
+		background: darken($light-background, 8%);;
+	}
+	code[data-lang=ruby]:before {
+		content: "twig";
+	}
+	code[data-lang=sass]:before {
+		content: "less";
+	}
+
 
 // Aside
 .aside {
@@ -57,7 +85,8 @@ body {
 	}
 }
 
-.aside--contents {
+.aside--contents,
+.aside--verions {
 	border-left: 1px solid $light-border;
 	border-bottom: 1px solid $light-border;
 }
@@ -69,17 +98,20 @@ body {
 
 .toggle-button {
 	display: none;
+	span {
+		display: inline-block;
+		width: 0;
+		text-indent: 100px;
+	}
 }
 
-.nav--docs {
-	.nav-list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	.nav-list--child {
-		padding-left: 20px;
-	}
+.nav-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-list--child {
+	padding-left: 20px;
 }
 
 // Footer
@@ -94,6 +126,12 @@ body {
 // Links
 a {
 	color: $dark-links;
+	text-decoration: none;
+	border-bottom: 1px solid lighten($dark-links, 40%);
+	padding-bottom: 1px;
+	&:hover {
+		border-bottom: 1px solid lighten($dark-links, 20%);
+	}
 	&.current {
 		color: darken($dark-links, 20%);
 	}
@@ -103,6 +141,10 @@ a {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+
+	.main--body .container {
+		display: inherit;
+	}
 
 	// Navigation toggle
 	.toggle-button {

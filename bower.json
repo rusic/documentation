@@ -21,11 +21,12 @@
     "fontawesome": "~4.2.0",
     "flynn": "git@github.com:daviddarnes/flynn.git",
     "html5shiv": "~3.7.2",
-    "pygments": "~1.6.0"
+    "pygments": "~1.6.0",
+    "position-sticky-polyfill": "~0.1.1"
   },
   "overrides": {
-     "pygments": {
-        "main": "css/autumn.css"
-      }
-   }
+    "pygments": {
+      "main": "css/autumn.css"
+    }
+  }
 }
