@@ -14,6 +14,11 @@ navdocs:
     url: /templating/twig/
   - title: File Structure
     url: /templating/file-structure/
+- title: Widgets
+  url: /widgets/
+  subnav:
+  - title: Tweet Button
+    url: /widgets/tweet-button/
 
 navfooter:
 - title: Terms
