@@ -1,9 +1,9 @@
 ---
 layout: widget
-title: Tweet Button
+title: Tweet Button 2.0
 versions:
-- version: Latest (2.0)
-  url: /widgets/tweet-button/
+- version: Version 2.0
+  url: /widgets/v2/tweet-button/
 - version: Version 1.0
   url: /widgets/v1/tweet-button/
 ---
