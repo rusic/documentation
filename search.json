@@ -1,0 +1,13 @@
+---
+layout: nil
+---
+
+[
+	{% for page in site.pages %}{% if page.url != '/search.json' %}{% if page.url != '/css/screen.css' %}
+		{
+			"title"    : "{{ page.title }}",
+			"content"  : {{ page.content | jsonify }},
+			"url"      : {{ page.url | jsonify }}
+		}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}
+	{% endfor %}
+]
