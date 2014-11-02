@@ -16,8 +16,8 @@ var toggleState = function (elem, one, two) {
 
 // Table of contents generator
 	// Choose elements from page
-	var headlines 	 = document.querySelectorAll('.main--content h2, .main--content h3'); // Selected titles to use
-	var contents 	 = document.querySelector('#contents'); // Selected element to append contents to
+	var headlines	= document.querySelectorAll('.main--content h2, .main--content h3'); // Selected titles to use
+	var contents	= document.querySelector('#contents'); // Selected element to append contents to
 
 	// Create list
 	var contentsList = document.createElement('ol'); // List element (ol or ul)
@@ -47,7 +47,7 @@ var toggleState = function (elem, one, two) {
 	}
 
 	// Append list to element on page
-	contents.appendChild(contentsList);
+	if (contents != null) contents.appendChild(contentsList);
 
 // Position Sticky elements
 PositionSticky([document.getElementById('sticky')]);
@@ -55,8 +55,8 @@ PositionSticky([document.getElementById('sticky')]);
 // Jekyll search
 JekyllSearch.init({
     searchInput: document.getElementById("search-field"),
-    searchResults: document.querySelector('.main--content'),
-    searchResultsHeader: "<h1>Search Results</h1>",
+    searchResults: document.getElementById('search-results'),
+    searchResultsHeader: "<label>Results</label>",
     jsonFile: "/search.json",
     template: "<p><a href='{url}' title='{category}'>{title}</a></p>",
     fuzzy: true
