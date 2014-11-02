@@ -24,8 +24,8 @@ gulp.task('css', function() {
 
 });
 
-// SCSS components task
-gulp.task('scss', function() {
+// SASS components task
+gulp.task('sass', function() {
 
 	return gulp.src(bower())
 
