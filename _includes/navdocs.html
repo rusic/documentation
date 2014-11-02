@@ -20,7 +20,7 @@
 
 				{% for subitem in item.subnav %}
 
-					<li>
+					<li class="nav-item  nav-item--child">
 
 						<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
 
