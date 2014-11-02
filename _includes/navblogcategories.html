@@ -1,0 +1,19 @@
+<h3>Categories</h3>
+
+<nav class="nav  nav--categories">
+
+	<ul class="nav-list">
+
+		{% for category in site.categories %}
+
+		<li class="nav-item  nav-item--parent">
+
+			<a href="{{ category | first }}" {% if page.url == category | first %}class="current"{% endif %}>{{ category | first }}</a>
+
+		</li>
+
+		{% endfor %}
+
+	</ul>
+
+</nav>
