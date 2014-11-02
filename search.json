@@ -1,13 +1,13 @@
 ---
 title: nil
 ---
-
+{% assign items = site.pages %}
 [
-	{% for page in site.pages %}{% if page.url != '/search.json' %}{% if page.url != '/css/screen.css' %}
+	{% for item in items %}{% if item.url != '/search.json' %}{% if item.url != '/css/screen.css' %}
 		{
-			"title"    : "{{ page.title }}",
-			"content"  : {{ page.content | jsonify }},
-			"url"      : {{ page.url | jsonify }}
+			"title"    : "{{ item.title }}",
+			"content"  : {{ item.content | jsonify }},
+			"url"      : {{ item.url | jsonify }}
 		}{% unless forloop.last %},{% endunless %}{% endif %}{% endif %}
 	{% endfor %}
 ]
