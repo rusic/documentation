@@ -22,10 +22,10 @@ Gulp tasks
 These are tasks that can be ran with gulp, all of which take the installed bower components and place them into the relevant project directories:
 
 * ```$ gulp assets``` - Processes all assets for the project
-* ```$ gulp js``` - Places any JavaScript assets into the js directory
-* ```$ gulp css``` - Places any CSS file into the _sass directory, prefixes it with ```_``` and changes the file type to ```.scss```
-* ```$ gulp sass``` - Places any SCSS file into the _sass directory and prefixes it with ```_```
-* ```$ gulp fonts``` - Places any font file into the fonts directory
+* ```$ gulp js``` - Places any JavaScript assets into the ```js``` directory
+* ```$ gulp css``` - Places any CSS file into the ```_sass``` directory, prefixes it with ```_``` and changes the file type to ```.scss```
+* ```$ gulp sass``` - Places any SCSS file into the ```_sass``` directory and prefixes it with ```_```
+* ```$ gulp fonts``` - Places any font file into the ```fonts``` directory
 
 License
 -------
