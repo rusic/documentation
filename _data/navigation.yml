@@ -7,6 +7,11 @@ navmain:
 navdocs:
 - title: Getting Started
   url: /getting-started/
+  subnav:
+  - title: Local Development
+    url: /getting-started/local-development/
+  - title: Uploading
+    url: /getting-started/uploading/
 - title: Templating
   url: /templating/
   subnav:
