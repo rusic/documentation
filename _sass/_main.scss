@@ -90,29 +90,29 @@ body {
 	border-left: 1px solid $light-border;
 	border-bottom: 1px solid $light-border;
 }
-
-// Navigation
-.nav--main {
-	text-align: right;
-}
-
-.toggle-button {
-	display: none;
-	span {
-		display: inline-block;
-		width: 0;
-		text-indent: 100px;
+	// Navigation
+	.nav--main {
+		text-align: right;
 	}
-}
 
-.nav-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.nav-list--child {
-	padding-left: 20px;
-}
+	.toggle-button {
+		display: none;
+		span {
+			display: inline-block;
+			width: 0;
+			text-indent: 100px;
+		}
+	}
+
+	.nav-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.nav-list--child {
+		padding-left: 20px;
+	}
+
 
 
 // Footer
