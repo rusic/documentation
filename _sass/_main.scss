@@ -46,8 +46,7 @@ body {
 }
 
 .main--content {
-	border-left: 1px solid $light-border;
-	padding: 15px 15px 20px;
+	padding: 15px 0 20px;
 	h1 {
 		margin-top: 0;
 	}
@@ -105,11 +104,16 @@ body {
 	}
 }
 
-.aside--contents,
-.aside--verions {
-	border-left: 1px solid $light-border;
-	border-bottom: 1px solid $light-border;
-}
+	.aside--contents,
+	.aside--verions {
+		border-left: 1px solid $light-border;
+		border-bottom: 1px solid $light-border;
+	}
+	.aside--search,
+	.aside--docs {
+		border-right: 1px solid $light-border;
+		border-bottom: 1px solid $light-border;
+	}
 
 	// Navigation
 	.nav--main {
