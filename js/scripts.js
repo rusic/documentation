@@ -53,11 +53,10 @@ var toggleState = function (elem, one, two) {
 PositionSticky([document.getElementById('sticky')]);
 
 // Jekyll search
-JekyllSearch.init({
-    searchInput: document.getElementById("search-field"),
-    searchResults: document.getElementById('search-results'),
-    searchResultsHeader: "<label>Results</label>",
-    jsonFile: "/search.json",
-    template: "<p><a href='{url}' title='{category}'>{title}</a></p>",
+SimpleJekyllSearch.init({
+	searchInput: document.getElementById('search-field'),
+	resultsContainer: document.getElementById('search-results'),
+    dataSource: "/search.json",
+    searchResultTemplate: "<li class='list-item'><a href='{url}' title='{category}'>{title}</a></li>",
     fuzzy: true
-});
+})
