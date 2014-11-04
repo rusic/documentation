@@ -53,7 +53,7 @@ You can change the following options for the widget:
 
 ## LESS Styles
 
-{% highlight sass %}
+{% highlight css %}
 
 // ----------------
 // 4. #Tweet Button

@@ -19,6 +19,16 @@ navdocs:
     url: /templating/twig/
   - title: File Structure
     url: /templating/file-structure/
+  - title: Assets
+    url: /templating/assets/
+  - title: JavaScript
+    url: /templating/javascript/
+  - title: Page Types
+    url: /templating/page-types/
+  - title: Metadata
+    url: /templating/metadata/
+  - title: LESS
+    url: /templating/less/
 - title: Widgets
   url: /widgets/
   subnav:

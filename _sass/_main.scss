@@ -72,7 +72,8 @@ body {
 	code[data-lang=ruby]:before {
 		content: "twig";
 	}
-	code[data-lang=sass]:before {
+	code[data-lang=sass]:before,
+	code[data-lang=css]:before {
 		content: "less";
 	}
 
@@ -80,6 +81,9 @@ body {
 	code {
 		background: darken($light-background, 3%);
 		padding: 3px 7px;
+	}
+	pre code {
+		padding: 0;
 	}
 
 	// Text alignment
