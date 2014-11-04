@@ -6,7 +6,7 @@
 
 // Variables
 $dark-background: #222;
-$light-border: #f4f4f4;
+$light-border: #ddd;
 $dark-text: #555;
 $light-links: #fff;
 $light-text: #aaa;
@@ -97,6 +97,12 @@ body {
 	// Images
 	.main--content img {
 		border: 1px solid $light-border;
+	}
+
+	hr {
+		height: 1px;
+		background: $light-border;
+		border: none;
 	}
 
 
