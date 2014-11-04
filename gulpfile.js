@@ -58,4 +58,4 @@ gulp.task('js', function() {
 });
 
 // All assets task
-gulp.task('assets', ['css', 'scss', 'fonts', 'js'])
+gulp.task('assets', ['css', 'sass', 'fonts', 'js'])
