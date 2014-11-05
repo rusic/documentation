@@ -1,0 +1,24 @@
+---
+layout: widget
+title: Ecommerce Featured Products
+---
+
+# Ecommerce Featured Products
+
+Version: >= 7.32. Like a slideshow widget but for Featured Products.
+
+## Overview
+
+**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account.**
+
+{% highlight ruby %}
+{% raw %}
+
+	{{widget('ecomfeaturedproducts', 'thisunqiuewidgetname', {})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+## Widget Options
+
+Currently, this widget does not have any options.
