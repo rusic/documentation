@@ -1,8 +1,8 @@
 navmain:
 - title: Home
   url: /
-- title: Blog
-  url: /blog/
+- title: BaseKit
+  url: http://basekit.com
 
 navdocs:
 - title: Getting Started
