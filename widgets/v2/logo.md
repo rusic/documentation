@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Logo
-
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/logo/
+- version: Version 1.0
+  url: /widgets/v1/logo/
 ---
 
 # Logo

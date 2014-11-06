@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Content Widget
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/content-widget/
+- version: Version 1.0
+  url: /widgets/v1/content-widget/
 ---
 
 # Content Widget

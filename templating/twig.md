@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: Twig
+searchable: true
 ---
 
 # Twig Views

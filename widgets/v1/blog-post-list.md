@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Blog Post List
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/blog-post-list/
+- version: Version 1.0
+  url: /widgets/v1/blog-post-list/
 ---
 
 # Blog Post List
@@ -21,6 +27,7 @@ Version: >= 7.32. Add a List Blog Post to the Page
 
 ## Widget Options
 
-* ```postDisplayType``` (string): This will make the blog post list widget either display the summary or the whole post. 
+* ```postDisplayType``` (string): This will make the blog post list widget either display the summary or the whole post
+
   * ```summary``` (default)
   * ```post```

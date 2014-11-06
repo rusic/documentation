@@ -57,6 +57,6 @@ SimpleJekyllSearch.init({
 	searchInput: document.getElementById('search-field'),
 	resultsContainer: document.getElementById('search-results'),
     dataSource: "/search.json",
-    searchResultTemplate: "<li class='list-item'><a href='{url}' title='{category}'>{title}</a></li>",
+    searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
     fuzzy: true
 })

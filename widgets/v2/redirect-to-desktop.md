@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Redirect To Desktop
-
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/redirect-to-desktop/
+- version: Version 1.0
+  url: /widgets/v1/redirect-to-desktop/
 ---
 
 # Redirect to desktop - (V6 + M Version only)

@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: LinkedIn Company Profile
-
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/linkedin-company-profile/
+- version: Version 1.0
+  url: /widgets/v1/linkedin-company-profile/
 ---
 
 # LinkedIn Company Profile

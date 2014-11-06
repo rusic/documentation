@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Menu Sections
-
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/menu-sections/
+- version: Version 1.0
+  url: /widgets/v1/menu-sections/
 ---
 
 # Menu Sections

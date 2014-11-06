@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Image
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/image/
+- version: Version 1.0
+  url: /widgets/v1/image/
 ---
 
 # Image

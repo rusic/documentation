@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Ecommerce Basket
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/ecommerce-basket/
+- version: Version 1.0
+  url: /widgets/v1/ecommerce-basket/
 ---
 
 # Ecommerce Basket

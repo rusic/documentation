@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Blog Post
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/blog-post/
+- version: Version 1.0
+  url: /widgets/v1/blog-post/
 ---
 
 # Blog Post

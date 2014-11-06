@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Ecommerce Featured Products
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/ecommerce-featured/
+- version: Version 1.0
+  url: /widgets/v1/ecommerce-featured/
 ---
 
 # Ecommerce Featured Products

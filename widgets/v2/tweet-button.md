@@ -1,6 +1,7 @@
 ---
 layout: widget
-title: Tweet Button 2.0
+title: Tweet
+searchable: false
 versions:
 - version: Version 2.0
   url: /widgets/v2/tweet-button/
@@ -8,21 +9,15 @@ versions:
   url: /widgets/v1/tweet-button/
 ---
 
-# Tweet Button
+# Tweet
 
-## Widget Options
+Add a tweet widget to your template.
+
+## Overview
 
 You can add a tweet widget to your template that will allow to tweet the page you are currently in.
+
 To include a tweet widget in your template you will need to add the following line:
-
-You can change the following options for the widget:
-
-* linkText: The text that will appear in the tweet button.
-
-* align: The widget alignment. You can set it to:
-  * widget-align-left, widget-align-center, widget-align-right
-  
-## Twig Snippet
 
 {% highlight ruby %}
 {% raw %}
@@ -60,3 +55,14 @@ You can change the following options for the widget:
 // ----------------
 
 {% endhighlight %}
+
+## Widget Options
+
+You can change the following options for the widget:
+
+* ```linkText```: The text that will appear in the tweet button
+
+* ```align```: The widget alignment. You can set it to: 
+  * ```widget-align-left```
+  * ```widget-align-center```
+  * ```widget-align-right```

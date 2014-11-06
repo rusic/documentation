@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Ecommerce Legal
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/ecommerce-legal/
+- version: Version 1.0
+  url: /widgets/v1/ecommerce-legal/
 ---
 
 # Ecommerce Legal

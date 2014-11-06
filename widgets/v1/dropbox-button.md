@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Dropbox Button
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/dropbox-button/
+- version: Version 1.0
+  url: /widgets/v1/dropbox-button/
 ---
 
 # Dropbox Button

@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: SoundCloud
-
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/soundcloud/
+- version: Version 1.0
+  url: /widgets/v1/soundcloud/
 ---
 
 # SoundCloud

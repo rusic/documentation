@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Ecommerce Categories
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/ecommerce-categories/
+- version: Version 1.0
+  url: /widgets/v1/ecommerce-categories/
 ---
 
 # Ecommerce Categories

@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Twitter
-
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/twitter/
+- version: Version 1.0
+  url: /widgets/v1/twitter/
 ---
 
 # Twitter

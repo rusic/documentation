@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Social Icons
-
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/social-icons/
+- version: Version 1.0
+  url: /widgets/v1/social-icons/
 ---
 
 # Social Icons

@@ -1,6 +1,12 @@
 ---
 layout: widget
 title: Click To Call
+searchable: false
+versions:
+- version: Version 2.0
+  url: /widgets/v2/click-to-call/
+- version: Version 1.0
+  url: /widgets/v1/click-to-call/
 ---
 
 # Click To Call

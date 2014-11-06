@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: Redirect To Desktop
-
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/sign-up-form/
+- version: Version 1.0
+  url: /widgets/v1/sign-up-form/
 ---
 
 # Sign Up Form

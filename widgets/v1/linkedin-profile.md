@@ -1,7 +1,12 @@
 ---
 layout: widget
 title: LinkedIn Profile
-
+searchable: true
+versions:
+- version: Version 2.0
+  url: /widgets/v2/linkedin-profile/
+- version: Version 1.0
+  url: /widgets/v1/linkedin-profile/
 ---
 
 # LinkedIn Profile

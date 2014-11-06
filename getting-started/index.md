@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: Getting Started
+searchable: true
 ---
 
 # Getting Started
