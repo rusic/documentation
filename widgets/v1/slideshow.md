@@ -30,7 +30,7 @@ To include a slideshow widget in your template you will need to add the followin
 
 You can change the following options for the widget:
 
-* ```duration```: The slide show duration in seconds
+* ```duration```: The slideshow duration in seconds
 
 * ```transSpeed```: The speed of the transition in milliseconds
 

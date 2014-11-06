@@ -10,13 +10,13 @@ versions:
 
 # Gallery
 
-Add a Gallery widget to your template
+Add a gallery widget to your template.
 
 ## Overview
 
-You can add a Gallery widget to your template. It will use images in your album and can be later customised within the BaseKit Editor. 
+You can add a gallery widget to your template. It will use images in your album and can be later customised within the BaseKit Editor. 
 
-To include a Gallery widget in your template you will need to add the following line:
+To include a gallery widget in your template you will need to add the following line:
 
 {% highlight ruby %}
 {% raw %}
@@ -28,8 +28,8 @@ To include a Gallery widget in your template you will need to add the following 
 
 ## Widget Options
 
-* ```showTitle```: optional Show or hide the image title. ```true``` or ```false```
+* ```showTitle```: optional show or hide the image title. ```true``` or ```false```
 
-* ```showDescription```: optional Show or hide the image description. ```true``` or ```false```
+* ```showDescription```: optional show or hide the image description. ```true``` or ```false```
 
 * ```images```: optional An array of images with properties (```imageHeight```, ```imageWidth```, ```url```, ```title```, ```description```) as opposed to using an album

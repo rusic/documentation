@@ -11,7 +11,7 @@ versions:
 
 # Content Widget
 
-Add a Content widget to your template
+Add a content widget to your template.
 
 ## Overview
 
@@ -31,9 +31,9 @@ To include a content widget in your template you will need to add the following 
 
 You can change the following options for the widget:
 
-* ```content```: The content on the widget.
+* ```content```: The content on the widget
 
-* ```lines```: Set the text truncation.
+* ```lines```: Set the text truncation
 
   * ```one```
   * ```two```

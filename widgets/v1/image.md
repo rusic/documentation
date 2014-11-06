@@ -10,11 +10,11 @@ versions:
 
 # Image
 
-Add an Image widget to your template
+Add an image widget to your template.
 
 ## Overview
 
-You can add an Image widget to your template. The widget can be later customised within the BaseKit Editor. 
+You can add an image widget to your template. The widget can be later customised within the BaseKit Editor. 
 
 To include an image widget in your template you will need to add the following line:
 
@@ -32,9 +32,9 @@ You can change the following options for the widget:
 
 * ```src```: A relative url of the image, e.g. ```asset('furcoat/images/my-image.jpg')```
 
-* ```title```: optionalThe image title
+* ```title``` (optional): The image title
 
-* ```alt```: optionalThe image alt attribute
+* ```alt``` (optional): The image alt attribute
 
 * ```fileName```: The image file name, e.g. ```my-image.jpg```
 

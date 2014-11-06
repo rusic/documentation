@@ -20,9 +20,12 @@ Widgets can be easily added to a template using the a Twig ```widget()``` functi
 
 The above will render an extended navigation widget in place of the above function. The widget function accepts the following parameters:
 
-* Type (string): All widget types are displayed below.
-* Name (string, needs to unique name within a layout): This is a name for this widget. If a template / page type is swapped on the page and it contains a widget with the same name, it will pick up the values associated to this widget name (this only happens when a user has changed the values within the editor. Otherwise it will use the default values associated within the values object literal - 3rd parameter).
-* Default Values (object literal): coma separated key value pairs. All are defined and exampled in the respective widget documentation below.
+* Type (string): All widget types are displayed below
+
+* Name (string, needs to be a unique name within a layout): This is a name for this widget. If a template / page type is swapped on the page and it contains a widget with the same name, it will pick up the values associated to this widget name. (This only happens when a user has changed the values within the editor. Otherwise it will use the default values associated within the values object literal - 3rd parameter)
+
+* Default Values (object literal): comma separated key value pairs. Examples are shown and all are defined in the respective widget documentation below
+
 * Hide Widgets: To hide a widget by default the following code can be inserted: ```"showTplWidget":"0"``` See example of the company logo widget below:
 
 {% highlight ruby %}
