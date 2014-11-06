@@ -1,0 +1,67 @@
+---
+layout: widget
+title: Button Widget
+---
+
+# Button Widget
+
+Add a Button to your template
+
+## Overview
+
+You can add Button to your template. The Button can be later customised within the BaseKit Editor. 
+To include a button in your template you will need to add the following line:
+
+{% highlight ruby %}
+{% raw %}
+
+	{{widget('button', 'thisunqiuewidgetname', {italic: true, text:'button', 'align':'widget-align-center'})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+## Widget Options
+
+You can change the following options for the widget:
+
+* ```text```: The Button text:
+
+* ```italic```: The Button text style. true or false(default)
+
+* ```bold```: The Button text style. true or false(default)
+
+* ```textAlign```: The Button text alignment. You can set it:
+
+  * ```justifyleft```
+  * ```justifyright```
+  * ```justifycenter``` (default)
+  * ```justifyfull```
+  
+* ```fontSize```: The Button text style. You can set it to: 
+
+  * ```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
+
+* ```align```: The widget alignment. You can set it to: 
+
+  * ```widget-align-left```
+  * ```widget-align-center```
+  * ```widget-align-right```
+
+* ```action```: The Button link action. You can set it to:
+
+  * ```none``` (default)
+  * ```internal```
+  * ```external```
+  * ```email```
+
+* ```url```: The Button link url. You can set it depends on the action:
+
+  * if action is set ```none```, then url should be empty (default) 
+  * if action is set ```internal```, then url should be an internal link to your page. e.g. ```/home```
+  * if action is set ```external```, then url should be an external link, e.g. ```www.basekit.com```
+  * if action is set ```email```, then url should be an email address, e.g. ```example@example.com```
+
+* ```target```: It sets where to open the external url. You set it only when action is set to ```external```:
+
+  * if want to open the external link in the current window, set it to ```_self```
+  * if want to open the external link in a new window, set it to ```_blank```
