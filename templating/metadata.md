@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Metadata
-searchable: true
 ---
 
 # Metadata

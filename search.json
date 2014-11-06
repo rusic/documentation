@@ -3,17 +3,17 @@ searchable: false
 ---
 {% assign items = site.pages %}
 [
-	{% for item in items %}{% if item.searchable == true %}
-		{
-			"title"     : {{ item.title | jsonify }},
-			"content"   : {{ item.content | jsonify }},
-			"url"       : {{ item.url | jsonify }},
-			"searchable": {{ item.searchable | jsonify }}
-		}{% else %}
+	{% for item in items %}{% if item.searchable == false %}
 		{
 			"title"     : "",
 			"content"   : "",
 			"url"       : "",
+			"searchable": {{ item.searchable | jsonify }}
+		}{% else %}
+		{
+			"title"     : {{ item.title | jsonify }},
+			"content"   : {{ item.content | jsonify }},
+			"url"       : {{ item.url | jsonify }},
 			"searchable": {{ item.searchable | jsonify }}
 		}{% endif %}{% unless forloop.last %},{% endunless %}
 	{% endfor %}

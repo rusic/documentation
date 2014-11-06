@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Uploading
-searchable: true
 ---
 
 # Upload your template to a BaseKit site

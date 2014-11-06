@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: LESS
-searchable: true
 ---
 
 # LESS

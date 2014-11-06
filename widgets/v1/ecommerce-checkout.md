@@ -1,7 +1,6 @@
 ---
 layout: widget
 title: Ecommerce Checkout
-searchable: true
 versions:
 - version: Version 2.0
   url: /widgets/v2/ecommerce-checkout/

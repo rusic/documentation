@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Local Development
-searchable: true
 ---
 
 # Local Template Emulator

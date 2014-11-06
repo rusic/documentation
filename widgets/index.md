@@ -1,7 +1,6 @@
 ---
 layout: doc
 title: Widgets
-searchable: true
 ---
 
 # Widgets
