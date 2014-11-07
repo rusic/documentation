@@ -82,7 +82,7 @@ These will bring widgets to life and let the BaseKit editor know that the page i
 {% endraw %}
 {% endhighlight %}
 
-You can easily feed data into the template's html from the BaseKit engine. The BaseKit TDK Documentation | Twig Views will pull the title value from the page's data and display it into the HTML. A complete list of data properties can be found here: [BaseKit Template Data](http://developers.basekit.com/data-layer)
+You can easily feed data into the template's html from the BaseKit engine. Twig Views will pull the title value from the page's data and display it into the HTML. A complete list of data properties can be found here: [BaseKit Template Data](/data/)
 
 
 ### Common Assets in templates
@@ -101,7 +101,7 @@ This will pull in common assets into the template feed from the BaseKit engine. 
 {% endraw %}
 {% endhighlight %}
 
-You can find more information on the asset function in [this article](http://developers.basekit.com/assets#functions)
+You can find more information on the asset function in [this article](/templating/assets/#asset--image-functions/)
 
 ### Background Rendering
 

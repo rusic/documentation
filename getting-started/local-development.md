@@ -17,9 +17,9 @@ In order to use the local Template Development Kit (TDK), you will need to have 
 ### Download Now!
 * [Download Version 7.42](http://goo.gl/mkXySA) (stable)
 * [Bleeding Edge (for version 7.43)](http://goo.gl/TFEiBm) (development)
-* [Previous Versions](http://developers.basekit.com/previous-versions)
+* [Previous Versions](https://github.com/basekit-templates/tdk/wiki)
 
-Firstly, you will need to download the TDK (Template Development Kit) from [developers.basekit.com](http://developers.basekit.com/). If your web server is configured correctly, and the files are in the right place, then you should see the emulator when you navigate to your virtual host in a browser.
+Firstly, you will need to download the TDK (Template Development Kit) from [developers.basekit.com](/). If your web server is configured correctly, and the files are in the right place, then you should see the emulator when you navigate to your virtual host in a browser.
 
 ### Don't Forget
 
@@ -35,9 +35,9 @@ Any changes you make to the files within the ```templates/sycamore``` directory 
 
 The controls at the top of the emulator can be used to switch between templates, layouts and colour swatches.
 
-Layouts can added to the template. The only required one is ```default.twig```. The rest will be selectable via the editor when a user creates a page. This layout will be used for that page. Read more about [Page Types](http://developers.basekit.com/page-types).
+Layouts can added to the template. The only required one is ```default.twig```. The rest will be selectable via the editor when a user creates a page. This layout will be used for that page. Read more about [Page Types](/templating/page-types/).
 
-Adding the following [Page Types](http://developers.basekit.com/page-types) to your [metadata.json](http://developers.basekit.com/metadata) file, the template engine would look for a matching [Twig](http://developers.basekit.com/twig) file. If the twig file is not found, it will always fallback to ```default.twig```.
+Adding the following [Page Types](/templating/page-types/) to your [metadata.json](/templating/metadata/) file, the template engine would look for a matching [Twig](/templating/twig/) file. If the twig file is not found, it will always fallback to ```default.twig```.
 
 {% highlight json %}
 {

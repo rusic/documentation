@@ -17,7 +17,7 @@ LESS runs on both **server-side** and **client-side** and is used to combine val
 BaseKit provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
 
 ## Important Note: BaseKit Variable Dependencies
-The BaseKit Variables defined below are used in conjunction with [Advanced Metadata](http://developers.basekit.com/advanced-metadata). Adding Advanced Metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
+The BaseKit Variables defined below are used in conjunction with [Advanced Metadata](/templating/metadata/#advanced-metadatajson-optional). Adding Advanced Metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
 
 ## BaseKit LESS Variables
 Here is the list of variables you can use in the stylesheet.less to get values from the editor:

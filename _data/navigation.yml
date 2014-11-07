@@ -29,6 +29,19 @@ navdocs:
     url: /templating/metadata/
   - title: LESS
     url: /templating/less/
+  - title: Quality
+    url: /templating/quality/
+- title: Data
+  url: /data/
+  subnav:
+  - title: Site
+    url: /data/site/
+  - title: Page
+    url: /data/page/
+  - title: Profile
+    url: /data/profile/
+  - title: Plugin
+    url: /data/plugin/
 - title: Widgets
   url: /widgets/
   subnav:
