@@ -4,6 +4,7 @@
 @import "grid";
 @import "autumn";
 
+
 // Variables
 $dark-background: #222;
 $light-border: #ddd;
@@ -12,6 +13,7 @@ $light-links: #fff;
 $light-text: #aaa;
 $dark-links: #0074D9;
 $light-background: #fff;
+
 
 // Body
 body {
@@ -59,7 +61,6 @@ body {
 		background: darken($light-background, 3%);
 		padding: 20px 15px 1px;
 	}
-
 	code[data-lang]:before {
 		content: attr(data-lang);
 		text-transform: uppercase;
@@ -153,6 +154,7 @@ body {
 			}
 		}
 	}
+
 		// Mobile toggle
 		.toggle-button {
 			display: none;
@@ -172,7 +174,6 @@ body {
 		.nav-list--child {
 			padding-left: 20px;
 		}
-
 		.subtitle-item, .nav-item--parent {
 			margin-top: 10px;
 			display: inline-block;
@@ -261,7 +262,6 @@ h3, legend {
 	.toggle-button {
 		display: inherit;
 	}
-
 	.nav[data-state=closed] {
 		display: none;
 	}
