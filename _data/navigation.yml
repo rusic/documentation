@@ -3,6 +3,8 @@ navmain:
   url: /
 - title: BaseKit
   url: http://basekit.com
+- title: GitHub
+  url: http://github.com/basekit
 
 navdocs:
 - title: Getting Started
@@ -153,7 +155,5 @@ navdocs:
     url: /widgets/v1/redirect-to-desktop/
 
 navfooter:
-- title: Terms
-  url: /terms/
-- title: GitHub
-  url: http://github.com/basekit
+- title: Back to top
+  url:

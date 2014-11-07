@@ -19,21 +19,21 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	background: $dark-background;
+	-webkit-font-smoothing: antialiased;
 }
 
-// Header
+
+// Header & footer
 .header--main,
 .footer--main {
 	color: $light-text;
-	a {
-		color: $light-links;
-		border-bottom: 1px solid darken($light-links, 50%);
-		margin: 0 10px;
-		&:hover {
-			border-bottom: 1px solid darken($light-links, 30%);
-		}
-	}
 }
+
+	// BK logo
+	.logo a {
+		border-bottom: none;
+	}
+
 
 // Main
 .main--body {
@@ -45,12 +45,13 @@ body {
 	}
 }
 
-.main--content {
-	padding: 15px 0 20px;
-	h1 {
-		margin-top: 0;
+	// In-page content
+	.main--content {
+		padding: 15px 0 20px;
+		h1 {
+			margin-top: 0;
+		}
 	}
-}
 
 	// Pygments
 	.highlight {
@@ -99,6 +100,7 @@ body {
 		border: 1px solid $light-border;
 	}
 
+	// Keylines
 	hr {
 		height: 1px;
 		background: $light-border;
@@ -113,6 +115,7 @@ body {
 		width: 100%;
 	}
 
+
 // Aside
 .aside {
 	padding: 15px 10px;
@@ -121,54 +124,67 @@ body {
 	}
 }
 
+	// In-page navigations
+	.aside {
+		border: 1px solid $light-border;
+		border-top: none;
+	}
 	.aside--contents,
 	.aside--verions {
-		border-left: 1px solid $light-border;
-		border-bottom: 1px solid $light-border;
+		border-right: none;
 	}
 	.aside--search,
 	.aside--docs {
-		border-right: 1px solid $light-border;
-		border-bottom: 1px solid $light-border;
+		border-left: none;
 	}
 
 	// Navigation
-	.nav--main {
+	.nav--main,
+	.nav--footer {
 		text-align: right;
-	}
-
-	.toggle-button {
-		display: none;
-		span {
-			display: inline-block;
-			width: 0;
-			text-indent: 100px;
+		color: $light-text;
+		a {
+			color: $light-links;
+			border-bottom: 1px solid darken($light-links, 50%);
+			margin-left: 10px;
+			&:hover {
+				color: $light-links;
+				border-bottom: 1px solid darken($light-links, 30%);
+			}
 		}
 	}
+		// Mobile toggle
+		.toggle-button {
+			display: none;
+			span {
+				display: inline-block;
+				width: 0;
+				text-indent: 100px;
+			}
+		}
 
-	.nav-list {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	.nav-list--child {
-		padding-left: 20px;
-	}
+		// Navigation items
+		.nav-list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.nav-list--child {
+			padding-left: 20px;
+		}
 
-	.subtitle-item, .nav-item--parent {
-		margin-top: 10px;
-		display: inline-block;
-		font-weight: bold;
-	}
+		.subtitle-item, .nav-item--parent {
+			margin-top: 10px;
+			display: inline-block;
+			font-weight: bold;
+		}
+
 
 // Footer
 .footer--main {
 	clear: both;
 }
 
-.nav--footer {
-	display: inline;
-}
 
 // Links
 a {
@@ -176,15 +192,14 @@ a {
 	text-decoration: none;
 	border-bottom: 1px solid lighten($dark-links, 40%);
 	padding-bottom: 1px;
-	&:hover {
-		border-color: lighten($dark-links, 20%);
-	}
+	&:hover,
 	&.current,
 	&:active {
-		color: darken($dark-links, 10%);
+		color: darken($dark-links, 15%);
 		border-color: $dark-links;
 	}
 }
+
 
 // Forms
 fieldset {
@@ -221,14 +236,21 @@ fieldset {
 		background: none;
 	}
 
+
 // Headings
 h3, legend {
 	font-weight: bold;
 	font-size: 16px;
 }
 
+
 // Mobile
 @media (min-width: 320px) and (max-width: 767px) {
+
+	// Header & footer
+	.span--half {
+		width: 50%;
+	}
 
 	// Main content
 	.main--body .row {
@@ -248,11 +270,14 @@ h3, legend {
 	}
 
 	// Aside
-	.aside--contents,
-	.aside--verions,
-	.aside--search,
-	.aside--docs {
+	.aside {
+		padding: 15px 0;
 		border-left: none;
 		border-right: none;
+	}
+
+	// Footer
+	.nav--footer {
+		text-align: right;
 	}
 }
