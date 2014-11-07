@@ -10,7 +10,7 @@ $light-border: #ddd;
 $dark-text: #555;
 $light-links: #fff;
 $light-text: #aaa;
-$dark-links: #777;
+$dark-links: #0074D9;
 $light-background: #fff;
 
 // Body
@@ -113,7 +113,6 @@ body {
 		width: 100%;
 	}
 
-
 // Aside
 .aside {
 	padding: 15px 10px;
@@ -162,8 +161,6 @@ body {
 		font-weight: bold;
 	}
 
-
-
 // Footer
 .footer--main {
 	clear: both;
@@ -177,14 +174,15 @@ body {
 a {
 	color: $dark-links;
 	text-decoration: none;
-	border-bottom: 2px solid lighten($dark-links, 40%);
+	border-bottom: 1px solid lighten($dark-links, 40%);
 	padding-bottom: 1px;
 	&:hover {
 		border-color: lighten($dark-links, 20%);
 	}
 	&.current,
 	&:active {
-		color: darken($dark-links, 20%);
+		color: darken($dark-links, 10%);
+		border-color: $dark-links;
 	}
 }
 
@@ -196,16 +194,32 @@ fieldset {
 }
 
 	// Search Form
-	.search-input {
-		border: 1px solid lighten($dark-links, 40%);
+	input[type=text] {
+		border: 1px solid $light-border;
 		width: 100%;
 		padding: 4px 9px;
+		&:focus {
+			border-color: $dark-links;
+			outline: none;
+			background: $light-background;
+		}
+	}
+	.search-label {
+		position: absolute;
+		padding: 1px 9px;
+		z-index: 0;
+		color: $light-text;
 	}
 	.search-field {
+		position: relative;
 		padding-bottom: 10px;
+		background: $light-background;
 	}
-
-
+	.search-input {
+		position: relative;
+		z-index: 1;
+		background: none;
+	}
 
 // Headings
 h3, legend {
@@ -216,6 +230,7 @@ h3, legend {
 // Mobile
 @media (min-width: 320px) and (max-width: 767px) {
 
+	// Main content
 	.main--body .row {
 		display: inherit;
 	}
@@ -232,4 +247,12 @@ h3, legend {
 		display: inherit;
 	}
 
+	// Aside
+	.aside--contents,
+	.aside--verions,
+	.aside--search,
+	.aside--docs {
+		border-left: none;
+		border-right: none;
+	}
 }
