@@ -12,7 +12,7 @@ Widgets that are included in the template differ from those added by users in th
 
 Widgets can be easily added to a template using the a Twig ```widget()``` function
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 	{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
 {% endraw %}
@@ -28,7 +28,7 @@ The above will render an extended navigation widget in place of the above functi
 
 * Hide Widgets: To hide a widget by default the following code can be inserted: ```"showTplWidget":"0"``` See example of the company logo widget below:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 	{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
 {% endraw %}

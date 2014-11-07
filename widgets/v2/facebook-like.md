@@ -19,7 +19,7 @@ You can add a Facebook Like widget to your template. The widget can be later cus
 
 To include a Facebook Like widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('facebooklike', 'thisunqiuewidgetname', {text: 'FaceBook Like', showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.basekit.com'})|raw}}

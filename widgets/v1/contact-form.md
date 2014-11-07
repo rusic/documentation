@@ -18,7 +18,7 @@ You can add a Contact Form widget to your template to allow the visitor to send 
 
 To include a Contact Form widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}

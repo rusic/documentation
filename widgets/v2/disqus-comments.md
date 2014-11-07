@@ -17,7 +17,7 @@ Version: >= 7.32. Add a Disqus widget to your website. Disqus usage documentatio
 
 This widget is provisioned by a third party. BaseKit wraps the Disqus comments widget and enables you to add it you your website.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('blogpost', 'thisunqiuewidgetname', {})|raw}}

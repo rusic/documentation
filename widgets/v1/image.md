@@ -18,7 +18,7 @@ You can add an image widget to your template. The widget can be later customised
 
 To include an image widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('image', 'thisunqiuewidgetname', { 'src': asset('furcoat/images/my-image.jpg'), 'title': 'my image', 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}

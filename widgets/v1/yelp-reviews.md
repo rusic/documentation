@@ -18,7 +18,7 @@ You can add a yelp review widget to your template. The yelp business id can be c
 
 To include a yelp widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('yelpreview', 'thisunqiuewidgetname', {'title': 'Yelp Review', 'yelpbusinessid': ''})|raw}}

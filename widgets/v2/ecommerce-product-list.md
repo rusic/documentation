@@ -17,7 +17,7 @@ Version: >= 7.32. Add an Ecommerce Product List to the Page
 
 **IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account.**
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('ecomproductlist', 'thisunqiuewidgetname', {})|raw}}

@@ -19,7 +19,7 @@ You can add a dropbox widget to your template that will allow to add a link to a
 
 To include a dropbox widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('dropbox', 'thisunqiuewidgetname', {'align': 'left', 'showFileName': false})|raw}}

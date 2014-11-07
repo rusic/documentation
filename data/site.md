@@ -25,7 +25,7 @@ You can render these values from the page data:
 
 * ```primaryDomain``` (string): Will display the primary domain for this site
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{ site.primaryDomain }}
@@ -35,7 +35,7 @@ You can render these values from the page data:
 
 * ```templateData``` (array): Data regarding the template currently being used. This is an array of data that includes keys ```name```, ```pageTypes```, ```assetDomain```, ```templateFolder```
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{ site.templateData['name'] }}

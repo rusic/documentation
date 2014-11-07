@@ -61,7 +61,7 @@ You can render these values from the assets plugin data:
 ### Example Usage
 
 
-{% highlight liquid %}
+{% highlight django %}
 {% raw %}
 
 {% set resizerUrl = app.resizerUrl %}
@@ -81,7 +81,7 @@ You can render these values from the assets plugin data:
 
 ### Example Usage
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 {% set resizerUrl = app.resizerUrl %}
@@ -146,7 +146,7 @@ All blog functionality feeds of this data:
 
 ### Example Usage
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 {% if plugins.blog.posts|length %}
@@ -1030,7 +1030,7 @@ All blog functionality feeds of this data:
 
 ### Example Usage
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 {% set products = plugins.ecommerce.products %}
@@ -1049,7 +1049,7 @@ All blog functionality feeds of this data:
 
 ### Example Usage
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 {% set products = plugins.ecommerce.filteredProducts.products %}
@@ -1184,7 +1184,7 @@ All menu functionality feeds of this data:
 
 ### Example Usage
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 {% if plugins.menu and plugins.menu.items and plugins.menu.items|length > 0 %}

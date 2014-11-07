@@ -18,7 +18,7 @@ Add a Button to your template
 You can add Button to your template. The Button can be later customised within the BaseKit Editor. 
 To include a button in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('button', 'thisunqiuewidgetname', {italic: true, text:'button', 'align':'widget-align-center'})|raw}}

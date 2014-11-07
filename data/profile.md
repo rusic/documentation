@@ -13,7 +13,7 @@ You can render these values from the profile data:
 
 * ```business``` (string): Company name entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.business}}
@@ -34,7 +34,7 @@ You can render these values from the profile data:
 
 * ```strapline``` (string): Company strap line entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.strapline}}
@@ -44,7 +44,7 @@ You can render these values from the profile data:
 
 * ```email``` (string): Email associated to the user's company profile. Important note: this is not the one associated to the BaseKit account.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.email}}
@@ -54,7 +54,7 @@ You can render these values from the profile data:
 
 * ```address1``` (string): First line of the address entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.address1}}
@@ -64,7 +64,7 @@ You can render these values from the profile data:
 
 * ```address2``` (string): Second line of the address entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.address2}}
@@ -74,7 +74,7 @@ You can render these values from the profile data:
 
 * ```address``` (string): This is the combination of address1 and address2
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.address}}
@@ -84,7 +84,7 @@ You can render these values from the profile data:
 
 * ```country``` (string): Country of the company entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.country}}
@@ -94,7 +94,7 @@ You can render these values from the profile data:
 
 * ```postalcode``` (string): Postal Code of the company entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.postalcode}}
@@ -104,7 +104,7 @@ You can render these values from the profile data:
 
 * ```twitter``` (string): Twitter tag entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.twitter}}
@@ -114,7 +114,7 @@ You can render these values from the profile data:
 
 * ```phone``` (string): Telephone number entered in by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.phone}}
@@ -134,7 +134,7 @@ You can render these values from the profile data:
 
 * ```logowidth``` (string): If required, the logo width is associated to the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.logowidth}}
@@ -144,7 +144,7 @@ You can render these values from the profile data:
 
 * ```logoheight``` (string): If required, the logo height is associated to the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.logoheight}}
@@ -154,7 +154,7 @@ You can render these values from the profile data:
 
 * ```linkedin``` (string): The URL of the LinkedIn profile account entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.linkedin}}
@@ -164,7 +164,7 @@ You can render these values from the profile data:
 
 * ```facebook``` (string): The URL of the Facebook profile / page entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.facebook}}
@@ -174,7 +174,7 @@ You can render these values from the profile data:
 
 * ```rss``` (string): The URL of the RSS feed entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.rss}}
@@ -184,7 +184,7 @@ You can render these values from the profile data:
 
 * ```youtube``` (string): The URL of the YouTube page entered by the user via the company profile.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{profile.youtube}}

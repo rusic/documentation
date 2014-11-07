@@ -19,7 +19,7 @@ You can add a LinkedIn company profile widget to your template. This profile URL
 
 To include a LinkedIn profile widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('linkedincompanyprofile', 'thisunqiuewidgetname', {'source': 'companyname', 'companyName': 'BaseKit'})|raw}}

@@ -19,7 +19,7 @@ You can add a Profile widget to your template. The Profile widget contains 11 ty
 
 To include a Profile widget in your template you will need to add the following example lines:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('profile', 'thisunqiuewidgetname', { 'profileType':'twitter', 'twitter':'profile', 'refreshtime':'1800000'})|raw}}

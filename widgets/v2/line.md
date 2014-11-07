@@ -19,7 +19,7 @@ You can add a line widget to your template. This adds a line separator.
 
 To include a line in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('line', 'thisunqiuewidgetname', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}

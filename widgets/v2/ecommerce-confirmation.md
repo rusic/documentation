@@ -17,7 +17,7 @@ Version: >= 7.32. This widget displays the user's payment confirmation text from
 
 **IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account. It's best to place this widget in ```ecomorderconf.twig``` as this page type is used by the ecommerce plugin engine to redirect the user to after successful payment has gone through.**
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('ecomconfirmation', 'thisunqiuewidgetname', {})|raw}}

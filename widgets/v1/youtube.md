@@ -18,7 +18,7 @@ You can add Youtube videos to your template. The videos can be later customised 
 
 To include a video in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('youtube', 'thisunqiuewidgetname', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe src="http://www.youtube.com/embed/j9Hjrs6WQ8M" frameborder="0" allowfullscreen></iframe>'})|raw}}

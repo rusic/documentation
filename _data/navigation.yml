@@ -101,6 +101,8 @@ navdocs:
     url: /widgets/v1/blog-post-list/
   - title: Blog Post
     url: /widgets/v1/blog-post/
+  - title: Blog Search
+    url: /widgets/v1/blog-search/
   - title: Ecommerce
     url:
   - title: Ecommerce Basket

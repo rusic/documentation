@@ -18,7 +18,7 @@ You can add Twitter feed widget to your template. The feed source can be changed
 
 To include a Twitter widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('twitter', 'thisunqiuewidgetname', {'searchKey': 'basekit', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}

@@ -18,7 +18,7 @@ You can add a Feature widget to your template to showcase key content on your si
 
 To include a Feature widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('feature', 'thisunqiuewidgetname', {"header": "CREATIVE IDEAS. COMMON RESULTS.", "strapline":"GET INVOLVED TODAY. LET US BUILD YOUR FUTURE - THE PEARL WAY.", "buttonText":"Find out more today →","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}

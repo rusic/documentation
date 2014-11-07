@@ -19,7 +19,7 @@ You can add a single line Signup form widget to your template to allow the visit
 
 To include a Signup Form widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('signupform', 'thisunqiuewidgetname', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}

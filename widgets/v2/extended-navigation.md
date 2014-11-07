@@ -19,7 +19,7 @@ You can add an extended navigation widget to your template. This will show a nav
 
 To include an extended navigation widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('extendednavigation', 'thisunqiuewidgetname', {"align":"center"})|raw}}

@@ -117,7 +117,7 @@ We can code whatever design required into a BaseKit template, but we want the us
 
 This is where a user can drag there content. Where ever you place this tag in your template is where user placed content will be rendered into the HTML. The content is page based so if the zone is rendered for multiple pages, the BaseKit engine will provide the widget HTML to the template and render it in place of this tag:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 	{{zone('main')|raw}}
 {% endraw %}

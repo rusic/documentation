@@ -16,7 +16,7 @@ Version: >= 7.32. Add an Ecommerce Categories to the Page
 
 **IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account**. It will add a list of blog categories to your page that will link to all posts in that category.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('ecomcategories', 'thisunqiuewidgetname', {'title': 'Categories', 'showCount', true})|raw}}

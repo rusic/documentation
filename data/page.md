@@ -62,7 +62,7 @@ You can render these values from the page data:
 
 * ```headscript```: Specifically for the markup that needs to live in the ```HEAD``` tag for this page only. This is the code entered by the user via the page settings to display for this page. This value is automatically included into the template by the BaseKit Editor and is added at the very bottom of the ```HEAD``` block statement. 
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{ page.headscript|raw }}
@@ -72,7 +72,7 @@ You can render these values from the page data:
 
 * ```bodyscript```: Similar to the ```headscript``` but for the ```BODY``` tag. This value is automatically included into the template by the BaseKit Editor and is added at the very bottom of the document. 
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
   {{ page.bodyscript|raw }}

@@ -19,7 +19,7 @@ You can add a tweet widget to your template that will allow to tweet the page yo
 
 To include a tweet widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('tweet', 'thisunqiuewidgetname', {'linkText': 'Tweet'})|raw}}

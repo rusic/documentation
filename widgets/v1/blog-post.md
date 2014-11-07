@@ -16,7 +16,7 @@ Version: >= 7.32. Add a Blog Post to the Page
 
 **IMPORTANT**: This widget will only work as expected in the blogpost.twig page type. Otherwise the engine will fallback to default.twig and the blog plugin activated on the user's account.
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('blogpost', 'thisunqiuewidgetname', {})|raw}}

@@ -18,7 +18,7 @@ You can add a logo widget to your template which contains the logo in the manage
 
 To include a logo widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('logo', 'thisunqiuewidgetname', {"defaultlogo": asset('images/logo.png')})|raw}}

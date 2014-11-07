@@ -19,7 +19,7 @@ You can add a Click To Call widget to your template to allow the visitor to clic
 
 To include a click to call widget in your template you will need to add the following line:
 
-{% highlight ruby %}
+{% highlight django %}
 {% raw %}
 
 	{{widget('clicktocall', 'thisunqiuewidgetname', {phoneText: 'Click to Call'})|raw}}
