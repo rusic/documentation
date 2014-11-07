@@ -14,7 +14,9 @@ Widgets can be easily added to a template using the a Twig ```widget()``` functi
 
 {% highlight django %}
 {% raw %}
-	{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+
+  {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+
 {% endraw %}
 {% endhighlight %}
 

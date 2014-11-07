@@ -21,7 +21,7 @@ To include a button in your template you will need to add the following line:
 {% highlight django %}
 {% raw %}
 
-	{{widget('button', 'thisunqiuewidgetname', {italic: true, text:'button', 'align':'widget-align-center'})|raw}}
+  {{widget('button', 'thisunqiuewidgetname', {italic: true, text:'button', 'align':'widget-align-center'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

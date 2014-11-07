@@ -21,7 +21,7 @@ To include an image widget in your template you will need to add the following l
 {% highlight django %}
 {% raw %}
 
-	{{widget('image', 'thisunqiuewidgetname', { 'src': asset('furcoat/images/my-image.jpg'), 'title': 'my image', 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}
+  {{widget('image', 'thisunqiuewidgetname', { 'src': asset('furcoat/images/my-image.jpg'), 'title': 'my image', 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

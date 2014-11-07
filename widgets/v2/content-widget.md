@@ -22,7 +22,7 @@ To include a content widget in your template you will need to add the following 
 {% highlight django %}
 {% raw %}
 
-	{{widget('content', 'thisunqiuewidgetname', {content: 'This is a content widget.', lines: 'all'})|raw}}
+  {{widget('content', 'thisunqiuewidgetname', {content: 'This is a content widget.', lines: 'all'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

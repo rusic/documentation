@@ -15,8 +15,8 @@ You can render these values from the page data:
 {% highlight html %}
 {% raw %}
 
-<title>{{ page.title }}</title>
-	
+  <title>{{ page.title }}</title>
+
 {% endraw %}
 {% endhighlight %}
 
@@ -25,8 +25,8 @@ You can render these values from the page data:
 {% highlight html %}
 {% raw %}
 
-<meta name="keywords" content="{{ page.keywords }}" />
-	
+  <meta name="keywords" content="{{ page.keywords }}" />
+
 {% endraw %}
 {% endhighlight %}
 
@@ -35,8 +35,8 @@ You can render these values from the page data:
 {% highlight html %}
 {% raw %}
 
-<meta name="description" content="{{ page.description }}" />
-	
+  <meta name="description" content="{{ page.description }}" />
+
 {% endraw %}
 {% endhighlight %}
 
@@ -45,8 +45,8 @@ You can render these values from the page data:
 {% highlight html %}
 {% raw %}
 
-<meta http-equiv="content-language" content="{{ page.seoLang }}" />
-	
+  <meta http-equiv="content-language" content="{{ page.seoLang }}" />
+
 {% endraw %}
 {% endhighlight %}
 
@@ -55,8 +55,8 @@ You can render these values from the page data:
 {% highlight html %}
 {% raw %}
 
-<body class="{{ page.backgroundClass }}">
-	
+  <body class="{{ page.backgroundClass }}">
+
 {% endraw %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ You can render these values from the page data:
 {% raw %}
 
   {{ page.headscript|raw }}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ You can render these values from the page data:
 {% raw %}
 
   {{ page.bodyscript|raw }}
-	
+
 {% endraw %}
 {% endhighlight %}
 

@@ -21,7 +21,7 @@ To include an extended navigation widget in your template you will need to add t
 {% highlight django %}
 {% raw %}
 
-	{{widget('extendednavigation', 'thisunqiuewidgetname', {"align":"center"})|raw}}
+  {{widget('extendednavigation', 'thisunqiuewidgetname', {"align":"center"})|raw}}
 
 {% endraw %}
 {% endhighlight %}

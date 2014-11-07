@@ -19,7 +19,7 @@ You can render these values from the page data:
   <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
   <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
 {% endif %}
-	
+
 {% endraw %}
 {% endhighlight %}
 

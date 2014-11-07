@@ -41,7 +41,7 @@ Adding the following [Page Types](/templating/page-types/) to your [metadata.jso
 
 {% highlight json %}
 {
-"pageTypes": ["home", "about", "contact"],
+  "pageTypes": ["home", "about", "contact"],
 }
 {% endhighlight %}
 

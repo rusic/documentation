@@ -17,5 +17,5 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
 ---
 
 <p class="text-align--center">
-	<a class="button" href="http://goo.gl/mkXySA">Download the Template Development Kit (7.42 stable)</a>
+  <a class="button" href="http://goo.gl/mkXySA">Download the Template Development Kit (7.42 stable)</a>
 </p>

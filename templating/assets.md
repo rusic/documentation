@@ -76,7 +76,7 @@ In ```*.less``` files you use the ```image()``` function
 {% highlight css %}
 {% raw %}
 
-	div.logo { background-image:image('/image/logo.png'); }
+  div.logo { background-image:image('/image/logo.png'); }
 
 {% endraw %}
 {% endhighlight %}
@@ -88,7 +88,7 @@ In *.twig files you use the asset() function.
 {% highlight html %}
 {% raw %}
 
-	<img src="//d35onr1h4eb0bw.cloudfront.net/ef8d958/templates/5149d4be5e7f8d92a41a0a8aa131a24d//image/logo.png" />
+  <img src="//d35onr1h4eb0bw.cloudfront.net/ef8d958/templates/5149d4be5e7f8d92a41a0a8aa131a24d//image/logo.png" />
 
 {% endraw %}
 {% endhighlight %}
@@ -98,7 +98,7 @@ NOTE: You can reference any asset file in a Twig file. i.e.
 {% highlight html %}
 {% raw %}
 
-	<link href="//d35onr1h4eb0bw.cloudfront.net/ef8d958/templates/5149d4be5e7f8d92a41a0a8aa131a24d//css/style.css" />
+  <link href="//d35onr1h4eb0bw.cloudfront.net/ef8d958/templates/5149d4be5e7f8d92a41a0a8aa131a24d//css/style.css" />
 
 {% endraw %}
 {% endhighlight %}

@@ -22,7 +22,7 @@ To include a dropbox widget in your template you will need to add the following 
 {% highlight django %}
 {% raw %}
 
-	{{widget('dropbox', 'thisunqiuewidgetname', {'align': 'left', 'showFileName': false})|raw}}
+  {{widget('dropbox', 'thisunqiuewidgetname', {'align': 'left', 'showFileName': false})|raw}}
 
 {% endraw %}
 {% endhighlight %}

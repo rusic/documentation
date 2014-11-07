@@ -22,7 +22,7 @@ To include a logo widget in your template you will need to add the following lin
 {% highlight django %}
 {% raw %}
 
-	{{widget('logo', 'thisunqiuewidgetname', {"defaultlogo": asset('images/logo.png')})|raw}}
+  {{widget('logo', 'thisunqiuewidgetname', {"defaultlogo": asset('images/logo.png')})|raw}}
 
 {% endraw %}
 {% endhighlight %}

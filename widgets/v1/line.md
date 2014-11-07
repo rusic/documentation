@@ -21,7 +21,7 @@ To include a line in your template you will need to add the following line:
 {% highlight django %}
 {% raw %}
 
-	{{widget('line', 'thisunqiuewidgetname', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+  {{widget('line', 'thisunqiuewidgetname', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

@@ -17,7 +17,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.business}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ You can render these values from the profile data:
 
 <h2>About Us</h2>
 <p>{{profile.companydescription}}</p>
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.strapline}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.email}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.address1}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.address2}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -78,7 +78,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.address}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.country}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -98,7 +98,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.postalcode}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.twitter}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -118,7 +118,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.phone}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -128,7 +128,7 @@ You can render these values from the profile data:
 {% raw %}
 
   <img alt="Company Logo" src="{{profile.logo}}{"/>
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -138,7 +138,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.logowidth}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -148,7 +148,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.logoheight}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -158,7 +158,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.linkedin}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -168,7 +168,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.facebook}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -178,7 +178,7 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.rss}}
-	
+
 {% endraw %}
 {% endhighlight %}
 
@@ -188,6 +188,6 @@ You can render these values from the profile data:
 {% raw %}
 
   {{profile.youtube}}
-	
+
 {% endraw %}
 {% endhighlight %}

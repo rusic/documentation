@@ -22,7 +22,7 @@ To include a tweet widget in your template you will need to add the following li
 {% highlight django %}
 {% raw %}
 
-	{{widget('tweet', 'thisunqiuewidgetname', {'linkText': 'Tweet'})|raw}}
+  {{widget('tweet', 'thisunqiuewidgetname', {'linkText': 'Tweet'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

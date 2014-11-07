@@ -24,28 +24,28 @@ Stripped down to the basics, a twig file should look like the following:
 {% raw %}
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>{{ page.title }}</title>
-		<meta name="keywords" content="{{ page.keywords }}" />
-		<meta name="description" content="{{ page.description }}" />
-		<meta http-equiv="content-language" content="{{ page.seoLang }}" />
-	
-		{% if site.favicon %}
-		<link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
-		<link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
-		{% endif %}
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-		{% include basekit.headScript %}
-	</head>
-	<body class="{{ page.backgroundClass }}">
-	
-		{{zone('main')|raw}}
-	
-		{% include basekit.bodyScript %}
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta http-equiv="content-language" content="{{ page.seoLang }}" />
+  
+    {% if site.favicon %}
+    <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ 'now'|date('U') }}" type="image/x-icon" />
+    {% endif %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    {% include basekit.headScript %}
+  </head>
+  <body class="{{ page.backgroundClass }}">
+  
+    {{zone('main')|raw}}
+  
+    {% include basekit.bodyScript %}
+  </body>
 </html>
 {% endraw %}
 {% endhighlight %}
@@ -62,12 +62,12 @@ There are 2 tags that are required in any template to get them to work in a Base
 {% raw %}
 <!doctype html>
 <html>
-	<head>
-		{% include basekit.headScript %}
-	</head>
-	<body>
-		{% include basekit.bodyScript %}
-	</body>
+  <head>
+    {% include basekit.headScript %}
+  </head>
+  <body>
+    {% include basekit.bodyScript %}
+  </body>
 </html>
 {% endraw %}
 {% endhighlight %}
@@ -78,7 +78,7 @@ These will bring widgets to life and let the BaseKit editor know that the page i
 
 {% highlight html %}
 {% raw %}
-	<title>{{ page.title }}</title>
+  <title>{{ page.title }}</title>
 {% endraw %}
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ You can easily feed data into the template's html from the BaseKit engine. Twig 
 
 {% highlight html %}
 {% raw %}
-	<link rel="stylesheet" href="//{/{{env.assetDomain}}/templates/common/responsive-columns.css" />
+  <link rel="stylesheet" href="//{/{{env.assetDomain}}/templates/common/responsive-columns.css" />
 {% endraw %}
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ This will pull in common assets into the template feed from the BaseKit engine. 
 
 {% highlight html %}
 {% raw %}
-	<link rel="stylesheet" href="{{asset('/css/responsive-columns.css')}}" />
+  <link rel="stylesheet" href="{{asset('/css/responsive-columns.css')}}" />
 {% endraw %}
 {% endhighlight %}
 
@@ -109,7 +109,7 @@ We can code whatever design required into a BaseKit template, but we want the us
 
 {% highlight html %}
 {% raw %}
-	<body class="{{ page.backgroundClass }}">
+  <body class="{{ page.backgroundClass }}">
 {% endraw %}
 {% endhighlight %}
 
@@ -119,7 +119,7 @@ This is where a user can drag there content. Where ever you place this tag in yo
 
 {% highlight django %}
 {% raw %}
-	{{zone('main')|raw}}
+  {{zone('main')|raw}}
 {% endraw %}
 {% endhighlight %}
 

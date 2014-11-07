@@ -22,7 +22,7 @@ To include a Signup Form widget in your template you will need to add the follow
 {% highlight django %}
 {% raw %}
 
-	{{widget('signupform', 'thisunqiuewidgetname', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
+  {{widget('signupform', 'thisunqiuewidgetname', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

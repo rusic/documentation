@@ -22,7 +22,7 @@ To include a map widget in your template you will need to add the following line
 {% highlight django %}
 {% raw %}
 
-	{{widget('map', 'thisunqiuewidgetname', {'height': '150', 'zoom': '15', 'address': 'profile'})|raw}}
+  {{widget('map', 'thisunqiuewidgetname', {'height': '150', 'zoom': '15', 'address': 'profile'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

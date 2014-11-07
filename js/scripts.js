@@ -1,6 +1,6 @@
 // Data attribute switch
-var toggleState = function (elem, one, two) {
-	var elem 	= document.querySelector(elem);
+var toggleState	= function (elem, one, two) {
+	var elem	= document.querySelector(elem);
 		elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
 };
 
@@ -9,8 +9,8 @@ var toggleState = function (elem, one, two) {
 
 	// Aside navigation toggle
 	toggle.onclick = function (e) {
-	  toggleState('.nav--docs', 'closed', 'open');
-	  e.preventDefault();
+		toggleState('.nav--docs', 'closed', 'open');
+		e.preventDefault();
 	};
 
 
@@ -56,7 +56,7 @@ PositionSticky([document.getElementById('sticky')]);
 SimpleJekyllSearch.init({
 	searchInput: document.getElementById('search-field'),
 	resultsContainer: document.getElementById('search-results'),
-    dataSource: "/search.json",
-    searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
-    fuzzy: true
+	dataSource: "/search.json",
+	searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
+	fuzzy: true
 })

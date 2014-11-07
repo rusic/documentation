@@ -198,87 +198,91 @@ We have built some other functions so we can achieve most advanced responsive ef
 The bkscale function will scale down a number value between 1 and 0. For example, if you wanted text to reduce text down for smaller devices you can do the following:
 
 {% highlight css %}
+
 /* @font-swatch1-font-size comes through to the stylesheet at 36px */
 h1 {
-	font-size: @font-swatch1-font-size; /* 36px */
+  font-size: @font-swatch1-font-size; /* 36px */
 }
 
 @media only screen and (max-width: 480px) {
-	h1 {
-		font-size: bkscale(@font-swatch1-font-size, 0.6); /* 21.6px */
-	}
+  h1 {
+    font-size: bkscale(@font-swatch1-font-size, 0.6); /* 21.6px */
+  }
 }
+
 {% endhighlight %}
 
 ### Example CSS File
 Here is a simple example of how stylesheet.less files could be created. For more examples see [https://github.com/basekit-templates](https://github.com/basekit-templates)
 
 {% highlight css %}
+
 body {
-	background-color: @color-swatch1;
-	margin: 0;
-	padding: 0;
+  background-color: @color-swatch1;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	font-family:@font-swatch2-font-family;
-	font-size:@font-swatch5-font-size;
-	font-weight:@font-swatch5-font-weight;
-	color:@color-swatch3;
-	text-decoration: none;
+  font-family:@font-swatch2-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  color:@color-swatch3;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, p {
-	margin: 0;
-	padding: 0 0 10px;
+  margin: 0;
+  padding: 0 0 10px;
 }
 
 h1 {
-	font-family:@font-swatch1-font-family;
-	font-weight: @font-swatch1-font-weight;
-	color:@font-swatch1-color;
-	line-height:@font-swatch1-line-height;
-	letter-spacing: @font-swatch1-letter-spacing;
-	font-size: @font-swatch1-font-size;
+  font-family:@font-swatch1-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch1-color;
+  line-height:@font-swatch1-line-height;
+  letter-spacing: @font-swatch1-letter-spacing;
+  font-size: @font-swatch1-font-size;
 }
 
 h2 {
-	font-family:@font-swatch2-font-family;
-	font-size: @font-swatch2-font-size;
-	font-weight: @font-swatch2-font-weight;
-	line-height:@font-swatch2-line-height;
-	color: @font-swatch2-color;
-	letter-spacing: @font-swatch2-letter-spacing;
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
 }
 
 h3 {
-	font-family:@font-swatch3-font-family;
-	font-size:@font-swatch3-font-size;
-	font-weight: @font-swatch3-font-weight;
-	color: @font-swatch3-color;
-	line-height:@font-swatch3-line-height;
-	letter-spacing: @font-swatch3-letter-spacing;
+  font-family:@font-swatch3-font-family;
+  font-size:@font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  color: @font-swatch3-color;
+  line-height:@font-swatch3-line-height;
+  letter-spacing: @font-swatch3-letter-spacing;
 }
 
 h4 {
-	font-family:@font-swatch4-font-family;
-	font-size:@font-swatch4-font-size;
-	font-weight:@font-swatch4-font-weight;
-	line-height:@font-swatch4-line-height;
-	color:@font-swatch4-color;
-	letter-spacing: @font-swatch4-letter-spacing;
+  font-family:@font-swatch4-font-family;
+  font-size:@font-swatch4-font-size;
+  font-weight:@font-swatch4-font-weight;
+  line-height:@font-swatch4-line-height;
+  color:@font-swatch4-color;
+  letter-spacing: @font-swatch4-letter-spacing;
 }
 
 p {
-	font-family:@font-swatch5-font-family;
-	font-size:@font-swatch5-font-size;
-	font-weight: @font-swatch5-font-weight;
-	line-height:@font-swatch5-line-height;
-	color:@font-swatch5-color;
-	letter-spacing: @font-swatch5-letter-spacing;
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
 }
+
 {% endhighlight %}

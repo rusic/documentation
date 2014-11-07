@@ -6,7 +6,7 @@
 
 		{% for category in site.categories %}
 
-		<li class="nav-item  nav-item--parent">
+		<li class="nav-item">
 
 			<a href="{{ category | first }}" {% if page.url == category | first %}class="current"{% endif %}>{{ category | first }}</a>
 

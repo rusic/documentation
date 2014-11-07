@@ -21,7 +21,7 @@ To include a Twitter widget in your template you will need to add the following 
 {% highlight django %}
 {% raw %}
 
-	{{widget('twitter', 'thisunqiuewidgetname', {'searchKey': 'basekit', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}
+  {{widget('twitter', 'thisunqiuewidgetname', {'searchKey': 'basekit', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

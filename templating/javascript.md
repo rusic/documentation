@@ -25,7 +25,7 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
   
     {% if site.favicon %}
       <link rel="icon" href="{{ site.favicon['favicon'] }}" type="image/x-icon" />
-      <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ "now"|date("U") }}" type="image/x-icon" />
+      <link rel="SHORTCUT ICON" href="{{ site.favicon['thumbnail'] }}?v={{ 'now'|date('U') }}" type="image/x-icon" />
     {% endif %}
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -33,11 +33,11 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
   
     <!-- Script Example: Adding a Google Webmaster verification tag -->
     <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
-  
+
     <link rel="stylesheet" href="//{{assetSubdomain}}.{{ brand.domain }}/templates/common/responsive-columns.css" />
-  
+
     {% include basekit.headScript %}
-  
+
     <!-- Head Script Example: Add Google Analytics -->
     <script type="text/javascript">
 
@@ -50,7 +50,7 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-  
+
     </script>
   </head>
   <body class="{{ page.backgroundClass }}">

@@ -20,7 +20,7 @@ Version: >= 7.32. Add an Ecommerce Product List to the Page
 {% highlight django %}
 {% raw %}
 
-	{{widget('ecomproductlist', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecomproductlist', 'thisunqiuewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

@@ -22,7 +22,7 @@ To include a SoundCloud widget in your template you will need to add the followi
 {% highlight django %}
 {% raw %}
 
-	{{widget('soundcloud', 'thisunqiuewidgetname', {'iframeCode': '<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151493449&amp;auto_play=false"></iframe>'})|raw}}
+  {{widget('soundcloud', 'thisunqiuewidgetname', {'iframeCode': '<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151493449&amp;auto_play=false"></iframe>'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

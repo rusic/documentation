@@ -20,7 +20,7 @@ Version: >= 7.32. Add a List Blog Post to the Page
 {% highlight django %}
 {% raw %}
 
-	{{widget('blogpostlist', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('blogpostlist', 'thisunqiuewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

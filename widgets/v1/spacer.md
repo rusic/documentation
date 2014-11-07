@@ -21,7 +21,7 @@ To include a spacer widget in your template you will need to add the following l
 {% highlight django %}
 {% raw %}
 
-	{{widget('space', 'thisunqiuewidgetname', {'height': '50'})|raw}}
+  {{widget('space', 'thisunqiuewidgetname', {'height': '50'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

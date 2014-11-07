@@ -22,36 +22,36 @@ You can render these values from the assets plugin data:
 ### Example Data
 
 {% highlight json %}
-{% raw %}
 
-"plugins": {
+{
+  "plugins": {
     "assets": {
        "images": {
-        "3324003":{
-            "ref":3324003, // image ref
-            "url":"http://image.basekit.com/live275712_bob-van-aubel-ray-bans.jpg", // full url to the image
-            "fileName":"bob-van-aubel-ray-bans.jpg", // file name
-            "fileType":"image", // file type;
-            "fileSize":21705, // file size in bytes
-            "title":"", // title set in the image albums section
-            "updated":{
-                 "date":"2014-06-11 15:41:27", // upload time
-                 "timezone_type":3, 
-                 "timezone":"Europe/London" 
-            },
-            "description":"", // meta description set in the image albums section
-            "path":"live275712_bob-van-aubel-ray-bans.jpg", // path on server
-            "imageWidth":256, // width in px
-            "imageHeight":171, // height in px
-            "deleted":false, // is it deleted?
-            "albumRef":2139, // album ref, can only be in one album
-            "albumTitle":"Standard", // album title
-            "providerRef":null // stock library reference
-        }
+      "3324003":{
+        "ref":3324003,
+        "url":"http://image.basekit.com/live275712_bob-van-aubel-ray-bans.jpg",
+        "fileName":"bob-van-aubel-ray-bans.jpg",
+        "fileType":"image",
+        "fileSize":21705,
+        "title":"",
+        "updated":{
+          "date":"2014-06-11 15:41:27",
+          "timezone_type":3, 
+          "timezone":"Europe/London" 
+        },
+        "description":"",
+        "path":"live275712_bob-van-aubel-ray-bans.jpg",
+        "imageWidth":256,
+        "imageHeight":171,
+        "deleted":false,
+        "albumRef":2139,
+        "albumTitle":"Standard",
+        "providerRef":null
+      }
     }
+  }
 }
 
-{% endraw %}
 {% endhighlight %}
 
 ### Usage
@@ -102,42 +102,42 @@ All blog functionality feeds of this data:
 
 
 {% highlight json %}
-{% raw %}
 
-"plugins": {
-   "blog": {
+{
+  "plugins": {
+    "blog": {
       "posts":[
-         {
-            "ref":19, // Blog post unique ref
-            "title":"Welcome to my blog", // blog post title 
-            "slug":"welcome-to-my-blog", // blog post slug
-            "summary":"We are pleased to announce our new blog. We hope that you enjoy it!", // blog post summary 
-            "content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tristique est. Nulla sed orci vel mauris ultrices mattis eget in dolor. Nam elementum eros dolor, nec dignissim risus dictum non. Proin eu ultricies eros. Duis varius velit et orci pharetra, sit amet sollicitudin augue dapibus. Cras posuere scelerisque neque et venenatis. Praesent ullamcorper hendrerit arcu, sed consectetur orci ultricies a. Ut luctus pretium arcu, eu convallis risus ultricies ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut cursus sem vitae interdum molestie. Praesent dictum bibendum odio a sodales. Nullam quis lacus viverra, viverra nunc eu, cursus lorem. Praesent feugiat enim sit amet pellentesque aliquet. Aenean blandit volutpat leo a tristique. Maecenas ut varius magna.</p>", // blog post main body of content
-            "publishedDate":{ // date time info
-               "date":"2014-06-11 15:42:46",
-               "timezone_type":3,
-               "timezone":"Europe/London"
-            },
-            "featureImageAssetRef":3324007, // feature image reference (to obtain information use plugins.assets.images)
-            "tags":[ // tags associated to this blog post
-               "Ford",
-               "Lotus"
-            ],
-            "category":"Cars" // blog post category
-         }
+        {
+          "ref":19,
+          "title":"Welcome to my blog",
+          "slug":"welcome-to-my-blog",
+          "summary":"We are pleased to announce our new blog. We hope that you enjoy it!",
+          "content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tristique est. Nulla sed orci vel mauris ultrices mattis eget in dolor. Nam elementum eros dolor, nec dignissim risus dictum non. Proin eu ultricies eros. Duis varius velit et orci pharetra, sit amet sollicitudin augue dapibus. Cras posuere scelerisque neque et venenatis. Praesent ullamcorper hendrerit arcu, sed consectetur orci ultricies a. Ut luctus pretium arcu, eu convallis risus ultricies ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut cursus sem vitae interdum molestie. Praesent dictum bibendum odio a sodales. Nullam quis lacus viverra, viverra nunc eu, cursus lorem. Praesent feugiat enim sit amet pellentesque aliquet. Aenean blandit volutpat leo a tristique. Maecenas ut varius magna.</p>",
+          "publishedDate":{
+            "date":"2014-06-11 15:42:46",
+            "timezone_type":3,
+            "timezone":"Europe/London"
+          },
+          "featureImageAssetRef":3324007,
+          "tags":[
+            "Ford",
+            "Lotus"
+          ],
+          "category":"Cars"
+        }
       ],
-      "isPostPage":false, // This will be true when on the single blog post page; false on every other type of page
-      "searchUrl":"/blog/search/", // search url
-      "directory":"blog", // the main slug of the blog (currently unchangable). i.e. http://www.basekit.com/blog
-      "displayBlogHomePageLink":false, // this is for the blog post widget. If on the search / categories / tags page, it will be set to true and a link back to the blog home page will be displayed
-      "postsPerPage":25, // number of posts to display in a blog post list. Centrally controlled via the blog manage section under setup
-      "totalPages":0, // This number is defined by: number of blog posts / posts per page
-      "currentPage":1, // which page are we on? Only useds in blogpostlist.twig
-      "pathFormat":"/blog/page/" // path format (currently unchangable)
-   }
+      "isPostPage":false,
+      "searchUrl":"/blog/search/",
+      "directory":"blog",
+      "displayBlogHomePageLink":false,
+      "postsPerPage":25,
+      "totalPages":0,
+      "currentPage":1,
+      "pathFormat":"/blog/page/"
+    }
+  }
 }
 
-{% endraw %}
 {% endhighlight %}
 
 ### Usage
