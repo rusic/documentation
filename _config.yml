@@ -1,8 +1,8 @@
 # Main configuration
-url: http://documentation.basekit.com
+url: http://docs.basekit.com
 title: BaseKit Documentation
 description: Official documentation for building websites on the BaseKit platform
-repository: https://github.com/basekit/documentation.basekit.com
+repository: https://github.com/basekit/docs.basekit.com
 
 # Jekyll options
 exclude:
