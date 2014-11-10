@@ -9,7 +9,7 @@ Setup
 Installing via the command line (as of 24-10-14):
 
 1. ```$ brew install npm jekyll```
-2. ```$ git clone git@github.com:basekit/documentation.basekit.com.git```
+2. ```$ git clone git@github.com:basekit/docs.basekit.com.git```
 3. ```$ cd documentation.basekit.com```
 4. ```$ npm install```
 6. ```$ bower install```
