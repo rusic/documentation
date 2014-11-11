@@ -79,8 +79,6 @@ navdocs:
     url: /widgets/v1/click-to-call/
   - title: Dropbox Button
     url: /widgets/v1/dropbox-button/
-  - title: Tweet
-    url: /widgets/v1/tweet/
   - title: Facebook Like
     url: /widgets/v1/facebook-like/
   - title: Social Icons
