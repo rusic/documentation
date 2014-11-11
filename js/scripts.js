@@ -60,3 +60,9 @@ SimpleJekyllSearch.init({
 	searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
 	fuzzy: true
 })
+	// Disable enter key submission on search form
+	document.getElementById('search-field').addEventListener('keypress', function(event) {
+		if (event.keyCode == 13) {
+			event.preventDefault();
+		}
+	});
