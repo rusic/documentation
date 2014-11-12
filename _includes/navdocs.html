@@ -22,27 +22,30 @@
 
 			{% if item.subnav %}
 
-				<ul class="nav-list  nav-list--child">
+				<li>
+					<ul class="nav-list  nav-list--child">
 
-				{% for subitem in item.subnav %}
+						{% for subitem in item.subnav %}
 
-					<li class="nav-item  nav-item--child">
+							<li class="nav-item  nav-item--child">
 
-						{% if subitem.url == null %}
+								{% if subitem.url == null %}
 
-							<span class="subtitle-item">{{ subitem.title }}</span>
+									<span class="subtitle-item">{{ subitem.title }}</span>
 
-						{% else %}
+								{% else %}
 
-						<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
+									<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
 
-						{% endif %}
+								{% endif %}
 
-					</li>
+							</li>
 
-				{% endfor %}
+						{% endfor %}
 
-				</ul>
+					</ul>
+				
+				</li>
 
 			{% endif %}
 
