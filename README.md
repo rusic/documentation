@@ -6,15 +6,23 @@ Official documentation for building websites on the BaseKit platform
 Setup
 -----
 
-Installing via the command line (as of 24-10-14):
+### Local Installation
 
-1. ```$ brew install npm jekyll```
+Running the site on your local machine:
+
+1. ```$ gem install github-pages```
 2. ```$ git clone git@github.com:basekit/docs.basekit.com.git```
-3. ```$ cd documentation.basekit.com```
-4. ```$ npm install```
-6. ```$ bower install```
-7. ```$ jekyll serve --watch```
-8. go to [http://localhost:4000](http://localhost:4000)
+3. ```$ cd docs.basekit.com```
+4. ```$ jekyll serve --watch```
+5. go to [```http://localhost:4000```](http://localhost:4000)
+
+### Install Dependancies
+
+Installing all the assets and dependancies required for development:
+
+1. ```$ brew install npm``` - Install node
+2. ```$ npm install``` - Install package dependancies
+3. ```$ bower install``` - Install project assets
 
 Gulp tasks
 ----------
