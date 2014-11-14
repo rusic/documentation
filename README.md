@@ -10,18 +10,18 @@ Setup
 
 Running the site on your local machine:
 
-1. ```$ gem install github-pages```
-2. ```$ git clone git@github.com:basekit/docs.basekit.com.git```
-3. ```$ cd docs.basekit.com```
-4. ```$ jekyll serve --watch```
+1. ```$ gem install github-pages``` - Install github pages ruby gem
+2. ```$ git clone git@github.com:basekit/docs.basekit.com.git``` - clone project
+3. ```$ cd docs.basekit.com``` - Switch to project directory
+4. ```$ jekyll serve --watch``` - Serve site locally using Jekyll
 5. go to [```http://localhost:4000```](http://localhost:4000)
 
-### Install Dependancies
+### Install Dependencies
 
-Installing all the assets and dependancies required for development:
+Installing all the assets and dependencies required for development:
 
 1. ```$ brew install npm``` - Install node
-2. ```$ npm install``` - Install package dependancies
+2. ```$ npm install``` - Install package dependencies
 3. ```$ bower install``` - Install project assets
 
 Gulp tasks
