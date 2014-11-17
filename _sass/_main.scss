@@ -7,12 +7,13 @@
 
 // Variables
 $dark-background: #222;
-$light-border: #ddd;
 $dark-text: #555;
+$dark-links: #0074D9;
+
+$light-background: #fff;
 $light-links: #fff;
 $light-text: #aaa;
-$dark-links: #0074D9;
-$light-background: #fff;
+$light-border: #ddd;
 
 
 // Body
@@ -53,6 +54,18 @@ body {
 		h1 {
 			margin-top: 0;
 		}
+		p {
+			margin-top: 0.3em;
+		}
+	}
+
+	// Type
+	h2, h3, h4, h5, h6 {
+		margin-bottom: 0.3em;
+	}
+
+	p {
+		line-height: 26px;
 	}
 
 	// Pygments
@@ -120,23 +133,26 @@ body {
 // Aside
 .aside {
 	padding: 15px 10px;
+	border-color: $light-border;
+	border-style: solid;
+	border-width: 0;
 	h3 {
 		margin-top: 0;
 	}
 }
 
 	// In-page navigations
-	.aside {
-		border: 1px solid $light-border;
-		border-top: none;
+	.aside--docs,
+	.aside--search {
+		border-right-width: 1px;
 	}
-	.aside--contents,
-	.aside--verions {
-		border-right: none;
+	.aside--verions,
+	.aside--contents {
+		border-left-width: 1px;
 	}
-	.aside--search,
-	.aside--docs {
-		border-left: none;
+	.aside--verions,
+	.aside--search {
+		border-bottom-width: 1px;
 	}
 
 	// Navigation
@@ -146,11 +162,12 @@ body {
 		color: $light-text;
 		a {
 			color: $light-links;
-			border-bottom: 1px solid darken($light-links, 50%);
 			margin-left: 10px;
 			&:hover {
-				color: $light-links;
-				border-bottom: 1px solid darken($light-links, 30%);
+				color: darken($light-links, 15%);
+			}
+			&:active {
+				color: darken($light-links, 20%);
 			}
 		}
 	}
@@ -174,9 +191,9 @@ body {
 		.nav-list--child {
 			padding-left: 20px;
 		}
-		.subtitle-item, .nav-item--parent {
+		.nav-item--parent,
+		.nav-item--subtitle {
 			margin-top: 10px;
-			display: inline-block;
 			font-weight: bold;
 		}
 
@@ -191,15 +208,36 @@ body {
 a {
 	color: $dark-links;
 	text-decoration: none;
-	border-bottom: 1px solid lighten($dark-links, 40%);
 	padding-bottom: 1px;
-	&:hover,
-	&.current,
-	&:active {
+	&:hover {
+		color: darken($dark-links, 10%);
+	}
+	&:active,
+	&.current {
 		color: darken($dark-links, 15%);
-		border-color: $dark-links;
+	}
+	&.current {
+		border-bottom: 1px solid $dark-links;
 	}
 }
+
+	// Buttons
+	.button,
+	button {
+		background: $dark-links;
+		border: none;
+		padding: 6px 11px 7px;
+		border-radius: 3px;
+		color: $light-links;
+		&:hover {
+			color: $light-links;
+			background: darken($dark-links, 10%);
+		}
+		&:active {
+			color: $light-links;
+			background: darken($dark-links, 15%);
+		}
+	}
 
 
 // Forms
@@ -212,6 +250,8 @@ fieldset {
 	// Search Form
 	input[type=text] {
 		border: 1px solid $light-border;
+		box-shadow: none;
+		border-radius: 0;
 		width: 100%;
 		padding: 4px 9px;
 		&:focus {
@@ -220,15 +260,22 @@ fieldset {
 			background: $light-background;
 		}
 	}
-	.search-label {
+	.search-label,
+	.search-icon {
 		position: absolute;
 		padding: 1px 9px;
 		z-index: 0;
 		color: $light-text;
 	}
+	.search-icon {
+		z-index: 2;
+		right: 0;
+		top: 4px;
+		text-shadow: 0 0 10px $light-background,  0 0 8px $light-background, 0 0 6px $light-background, 0 0 4px $light-background;
+	}
 	.search-field {
 		position: relative;
-		padding-bottom: 10px;
+		z-index: 1;
 		background: $light-background;
 	}
 	.search-input {
@@ -251,6 +298,14 @@ h3, legend {
 	// Header & footer
 	.span--half {
 		width: 50%;
+	}
+
+	.span--quarter {
+		width: 25%;
+	}
+
+	.span--three-quarters {
+		width: 75%;
 	}
 
 	// Main content

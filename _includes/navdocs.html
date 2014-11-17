@@ -6,11 +6,11 @@
 
 		{% for item in site.data.navigation.navdocs %}
 
-		<li class="nav-item  nav-item--parent">
+		<li class="nav-item  nav-item--parent{% if subitem.url == null %}  nav-item--subtitle{% endif %}">
 
 			{% if item.url == null %}
 
-				<span class="subtitle-item">{{ item.title }}</span>
+				<span class="nav-subtitle">{{ item.title }}</span>
 
 			{% else %}
 
@@ -27,11 +27,11 @@
 
 						{% for subitem in item.subnav %}
 
-							<li class="nav-item  nav-item--child">
+							<li class="nav-item  nav-item--child{% if subitem.url == null %}  nav-item--subtitle{% endif %}">
 
 								{% if subitem.url == null %}
 
-									<span class="subtitle-item">{{ subitem.title }}</span>
+									<span class="nav-subtitle">{{ subitem.title }}</span>
 
 								{% else %}
 
@@ -44,7 +44,7 @@
 						{% endfor %}
 
 					</ul>
-				
+
 				</li>
 
 			{% endif %}

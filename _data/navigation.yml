@@ -1,10 +1,11 @@
 navmain:
-- title: Home
-  url: /
 - title: BaseKit
   url: http://basekit.com
 - title: GitHub
   url: http://github.com/basekit
+- title: Download TDK
+  url: http://goo.gl/mkXySA
+  class: button
 
 navdocs:
 - title: Getting Started

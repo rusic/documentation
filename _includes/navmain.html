@@ -4,7 +4,7 @@
 
 	{% for item in site.data.navigation.navmain %}
 
-		<a href="{{ item.url }}">{{ item.title }}</a>
+		<a {% if item.class != null %}class="{{ item.class }}"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
 
 	{% endfor %}
 

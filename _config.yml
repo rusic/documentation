@@ -16,6 +16,8 @@ exclude:
 
 highlighter: pygments
 
+markdown: kramdown
+
 # Permalinks
 permalink: pretty
 
