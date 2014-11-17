@@ -10,11 +10,11 @@ versions:
 
 # Ecommerce Product
 
-Version: >= 7.32. Add an Ecommerce Product to the Page
+Version: >= 7.32. Add an ecommerce product to the page.
 
 ## Overview
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account. It is best to place this ```ecomproduct.twig``` if you require it in a different layout. Otherwise the engine will fallback to ```default.twig```.**
+**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account. It is best to place this ```ecomproduct.twig```, if you require it in a different layout. Otherwise the engine will fallback to ```default.twig```.**
 
 {% highlight django %}
 {% raw %}
@@ -26,4 +26,4 @@ Version: >= 7.32. Add an Ecommerce Product to the Page
 
 ## Widget Options
 
-Currently, this widget does not have any options.
+Currently this widget does not have any options.

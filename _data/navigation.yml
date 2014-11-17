@@ -86,8 +86,8 @@ navdocs:
     url: /widgets/v1/social-icons/
   - title: Forms
     url:
-  - title: Sign Up Form
-    url: /widgets/v1/sign-up-form/
+  - title: Signup Form
+    url: /widgets/v1/signup-form/
   - title: Contact Form
     url: /widgets/v1/contact-form/
   - title: Menu

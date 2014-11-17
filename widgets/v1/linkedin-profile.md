@@ -30,5 +30,5 @@ To include a LinkedIn profile widget in your template you will need to add the f
 
 You can change the following options for the widget:
 
-* ```linkedin```: The linkedin profile public URL. For example: ```http://www.linkedin.com/in/johndoe```
+* ```linkedin```: The LinkedIn profile public URL. For example: ```http://www.linkedin.com/in/johndoe```
 

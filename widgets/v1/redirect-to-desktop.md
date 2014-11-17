@@ -8,13 +8,13 @@ versions:
   url: /widgets/v1/redirect-to-desktop/
 ---
 
-# Redirect to desktop - (V6 + M Version only)
+# Redirect to Desktop - (V6 + M Version only)
 
 Add a redirect to desktop widget to your template.
 
 ## Overview
 
-You can add a redirect to desktop widget to your template. This widget will allow to go to the desktop from the mobile site.
+You can add a redirect to desktop widget to your template. This widget will allow access to go to the desktop from the mobile site.
 
 To include a redirect to desktop widget in your template you will need to add the following line:
 

@@ -10,13 +10,13 @@ versions:
 
 # Profile
 
-Add a Profile widget to your template.
+Add a profile widget to your template.
 
 ## Overview
 
-You can add a Profile widget to your template. The Profile widget contains 11 types and can use data from the user profile or customised by the user. The widget can be later customised within the BaseKit Editor. 
+You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor. 
 
-To include a Profile widget in your template you will need to add the following example lines:
+To include a profile widget in your template you will need to add the following example lines:
 
 {% highlight django %}
 {% raw %}
@@ -52,10 +52,10 @@ Once you select the profile type, you need to specify options for the type:
 
   * ```email```: The email address to display. If set to ```profile```, it will use the profile data, or you can put email address e.g. ```basekit@basekit.com```
 
-* ### Strap Line type
+* ### Strapline type
   ```profileType```: ```strapline```
 
-  * ```strapline```: The strap line to display. If set to ```profile```, it will use the profile data, or you can put custom strap line e.g. ```my strap line```
+  * ```strapline```: The strap line to display. If set to ```profile```, it will use the profile data, or you can put custom strap line e.g. ```my strapline```
 
 * ### Company Description type
   ```profileType```: ```companydescription```
@@ -77,17 +77,17 @@ Once you select the profile type, you need to specify options for the type:
 
   * ```copyright```: The copyright to display. If set to ```profile```, it will use the profile data, or you can put custom data e.g. ```© Copyright 2012 BaseKit Platform. All rights reserved```
 
-* ### Latest twitter type
+* ### Latest Twitter type
   ```profileType```: ```twitter```
 
   * ```twitter```: The twitter username for getting the latest tweet. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```BaseKit```
 
-  * ```refreshtime```: It controls how often the date gets refreshed. It uses millisecond as the unit. You can set ```60000``` for one minute
+  * ```refreshtime```: It controls how often the data gets refreshed. It uses millisecond as the unit. You can set ```60000``` for one minute
 
 * ### Map type
   ```profileType```: ```map```
 
-  * ```mapAddress```: The address for rendering the google map. If set to ```profile```, it will use the profile data, or you can put custom data e.g. ```BS1 2ND```
+  * ```mapAddress```: The address for rendering a Google Maps visual. If set to ```profile```, it will use the profile data, or you can put custom data e.g. ```BS1 2ND```
 
   * ```mapZoom```: The map zoom level, e.g ```12```
 
@@ -102,11 +102,11 @@ Once you select the profile type, you need to specify options for the type:
 
   * ```formTitle```: The email subject. It can be set e.g ```Contact Form```
 
-  * ```formItalic```: The Button text style. ```true``` or ```false```
+  * ```formItalic```: The button text style. ```true``` or ```false```
 
-  * ```formBold```: The Button text style. ```true``` or ```false```
+  * ```formBold```: The button text style. ```true``` or ```false```
 
-  * ```formAlign```: The Button text style. You can set it:
+  * ```formAlign```: The button text style. You can set it:
 
     * ```justifyleft```
     * ```justifyright```
@@ -115,14 +115,14 @@ Once you select the profile type, you need to specify options for the type:
 
   * ```formFontSize```: The Button text style. You can set it: ```inherit```, ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
 
-  * ```goalSource```: The source of the url after submit the form
+  * ```goalSource```: The source of the URL after you submit the form
     * ```profile``` will use the internal link
     * ```custom``` could be set to custom email address
 
   * ```goalUrl```: The url after submit the form
   
-    * if the ```goalSource``` is set to ```profile```, it should set to an internal link, e.g. ```home``` 
-    * if the ```goalSource``` is set to ```custom```, it should set to an external link, e.g. ```www.basekit.com```
+    * If the ```goalSource``` is set to ```profile```, it should be set to an internal link, e.g. ```home``` 
+    * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.basekit.com```
 
 * ### Social Icons type
   ```profileType```: ```socialicons```
@@ -133,9 +133,9 @@ Once you select the profile type, you need to specify options for the type:
 
   * ```socialIconsFacebook```: Facebook icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://facebook.com/basekit‎```
 
-  * ```socialIconsRss```: Rss icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.google.com/rss```
+  * ```socialIconsRss```: RSS icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.google.com/rss```
 
   * ```socialIconsGoogleplus```: Google+ icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.googleplus.com/basekit‎```
 
-  * ```socialIconsYoutube```: Youtube icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.youtube.com/basekit‎```
+  * ```socialIconsYoutube```: YouTube icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.youtube.com/basekit‎```
   

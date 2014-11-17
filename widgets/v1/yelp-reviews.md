@@ -10,13 +10,13 @@ versions:
 
 # Yelp Reviews
 
-Version: >= 7.34. Add a yelp review widget to your template.
+Version: >= 7.34. Add a Yelp review widget to your template.
 
 ## Overview
 
-You can add a yelp review widget to your template. The yelp business id can be changed later with the BaseKit Editor.
+You can add a Yelp review widget to your template. The Yelp business ID can be changed later with the BaseKit Editor.
 
-To include a yelp widget in your template you will need to add the following line:
+To include a Yelp widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
@@ -30,8 +30,8 @@ To include a yelp widget in your template you will need to add the following lin
 
 You can change the following options for the widget:
 
-* ```title```: The title to display above the review. can be left blank
+* ```title```: The title to display above the review, can be left blank
 
-* ```yelpbusinessid```: This is the unique yelp id yelp uses to find your business, i.e. ```apple-store-london-5```
+* ```yelpbusinessid```: This is the unique ID Yelp uses to find your business, i.e. ```apple-store-london-5```
 
 * ```refreshTime```: How often the widget refreshes ```3600000``` ```72000000```

@@ -32,6 +32,6 @@ You can change the following options for the widget:
 
 * ```source```: The source type. Possible values: ```companyName``` or ```id```
 
-* ```companyName```: If the type is set to ```companyName``` you have to set the company name to allow the widget to retrieve the profile
+* ```companyName```: If the type is set to ```companyName```, you have to set the company name to allow the widget to retrieve the profile
 
-* ```linkedinID```: If the type is set to ```id``` you have to set the linkedin ID to allow the widget to retrieve the profile
+* ```linkedinID```: If the type is set to ```id```, you have to set the LinkedIn ID to allow the widget to retrieve the profile
