@@ -14,9 +14,9 @@ Add a twitter feed widget to your template.
 
 ## Overview
 
-You can add Twitter feed widget to your template. The feed source can be changed later within the BaseKit Editor. 
+You can add a Twitter feed widget to your template. The feed source can be changed later within the BaseKit Editor. 
 
-To include a Twitter widget in your template you will need to add the following line:
+To include a Twitter feed widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

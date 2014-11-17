@@ -10,7 +10,7 @@ versions:
 
 # Ecommerce Categories
 
-Version: >= 7.32. Add an Ecommerce Categories to the Page
+Version: >= 7.32. Add an ecommerce categories to the page.
 
 ## Overview
 

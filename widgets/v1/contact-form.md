@@ -10,13 +10,13 @@ versions:
 
 # Contact Form
 
-Add a Contact Form widget to your template
+Add a contact form widget to your template.
 
 ## Overview
 
-You can add a Contact Form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the BaseKit Editor.
+You can add a contact form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the BaseKit Editor.
 
-To include a Contact Form widget in your template you will need to add the following line:
+To include a contact form widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
@@ -30,7 +30,7 @@ To include a Contact Form widget in your template you will need to add the follo
 
 You can change the following options for the widget:
 
-* ```text```: The text on the button.
+* ```text```: The text on the button
 
 * ```italic```: The text style on the button. ```true``` or ```false``` (default)
 
@@ -44,20 +44,17 @@ You can change the following options for the widget:
   * ```justifyfull```
 
 * ```fontSize```: The text style on the button. You can set it: 
-```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
+  ```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
 
-* ```formTitle```: The subject for the email.
+* ```formTitle```: The subject for the email
 
-* ```email```: Where the email is to be sent. It can be set to use the manage shared email address or put your own email address.
-```profile``` (default). It will use the email address in the manage shared contact email address.
-or example@example.com It could be set to custom email address
+* ```email```: The email address that the final message will be sent to. Using ```profile``` (default), will mean that it will use the email set in the manage shared email address settings. Alternatively you can set a custom email address, e.g. ```example@example.com```
 
-* ```goalSource```: The source of the url to redirect to after the form is submitted.
-profile It will use the internal url.
-or custom It can be set to a custom url
+* ```goalSource```: The source of the URL to redirect to after the form is submitted.
+  Using ```profile``` will mean it will use the internal URL, or you can set a URL of your choice
 
-* ```goalUrl```: The url after submit the form.
+* ```goalUrl```: The URL after submit the form
 
-  * If the ```goalSource``` is set to ```profile```, it should set to an internal link, e.g. ```home```
-  * If the ```goalSource``` is set to ```custom```, it should set to an external link, e.g. ```www.basekit.com```
+  * If the ```goalSource``` is set to ```profile```, it should be set to an internal link, e.g. ```home```
+  * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.basekit.com```
 

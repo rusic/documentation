@@ -10,7 +10,7 @@ versions:
 
 # Ecommerce Legal
 
-Version: >= 7.32. Add an Ecommerce Legal to the Page
+Version: >= 7.32. Add an ecommerce legal to the page.
 
 ## Overview
 
@@ -26,4 +26,4 @@ Version: >= 7.32. Add an Ecommerce Legal to the Page
 
 ## Widget Options
 
-Currently, this widget does not have any options.
+Currently this widget does not have any options.

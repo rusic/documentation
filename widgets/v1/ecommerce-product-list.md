@@ -10,7 +10,7 @@ versions:
 
 # Ecommerce Product List
 
-Version: >= 7.32. Add an Ecommerce Product List to the Page
+Version: >= 7.32. Add an ecommerce product list to the page.
 
 ## Overview
 
@@ -28,4 +28,4 @@ Version: >= 7.32. Add an Ecommerce Product List to the Page
 
 You can change the following options for the widget:
 
-* ```productFiltering```: (integer) Show / Hide Product Filter functionality. ```1``` (default) shows functionality within the widget or ```0``` to hide it.
+* ```productFiltering```: (integer) show/hide product filter functionality. ```1``` (default) shows functionality within the widget or ```0``` to hide it

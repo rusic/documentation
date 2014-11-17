@@ -10,7 +10,7 @@ versions:
 
 # Ecommerce Featured Products
 
-Version: >= 7.32. Like a slideshow widget but for Featured Products.
+Version: >= 7.32. Like a slideshow widget but for featured products.
 
 ## Overview
 
@@ -26,4 +26,4 @@ Version: >= 7.32. Like a slideshow widget but for Featured Products.
 
 ## Widget Options
 
-Currently, this widget does not have any options.
+Currently this widget does not have any options.

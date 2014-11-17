@@ -10,11 +10,11 @@ versions:
 
 # Disqus Comments
 
-Version: >= 7.32. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/)
+Version: >= 7.32. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/){:target="_blank"}
 
 ## Overview
 
-This widget is provisioned by a third party. BaseKit wraps the Disqus comments widget and enables you to add it you your website.
+This widget is managed by a third party. BaseKit wraps the Disqus comments widget, and enables you to add it to your website.
 
 {% highlight django %}
 {% raw %}

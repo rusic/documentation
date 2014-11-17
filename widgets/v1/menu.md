@@ -10,11 +10,11 @@ versions:
 
 # Menu
 
-Version: >= 7.32. Add an Menu List to the Page (i.e. Restaurant menu)
+Version: >= 7.32. Add a menu list to the page (i.e. restaurant menu).
 
 ## Overview
 
-**IMPORTANT: This widget will only work as expected when the menu plugin is activated on the user's account.** This widget is used to display a list of items, dishes, services with a price as per our menu functionality. Lots of HTML generated here based on the complexity of the menu.
+**IMPORTANT: This widget will only work as expected when the menu plugin is activated on the user's account.** This widget is used to display a list of items, dishes, services with a price as per a conventional restaurant menu.
 
 {% highlight django %}
 {% raw %}
@@ -26,4 +26,4 @@ Version: >= 7.32. Add an Menu List to the Page (i.e. Restaurant menu)
 
 ## Widget Options
 
-Currently, this widget does not have any options.
+Currently this widget does not have any options.
