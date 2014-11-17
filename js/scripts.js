@@ -3,7 +3,6 @@ var toggleState	= function (elem, one, two) {
 	var elem	= document.querySelector(elem);
 		elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
 };
-
 	// Mobile navigation toggle selector
 	var toggle 	= document.querySelector('.toggle-button');
 
@@ -12,7 +11,6 @@ var toggleState	= function (elem, one, two) {
 		toggleState('.nav--docs', 'closed', 'open');
 		e.preventDefault();
 	};
-
 
 // Table of contents generator
 	// Choose elements from page

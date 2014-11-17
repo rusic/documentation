@@ -11,11 +11,8 @@ title: Introduction
 
 BaseKit Development tools offers full control of all HTML, CSS and JavaScript on your website. Giving you the ability to customise your website any way you like. Using LESS and other tools effectively, it will dynamically change the way you use BaseKit.
 
-[Download the Template Development Kit now!](/getting-started/local-development/) - Runs on PHP. View and build templates on your local machine.
-[BaseKit Developers Account](http://www.basekit.com/developers) - Setting up is easy. Using an existing BaseKit account provides the Developer Tools for free.
+* [Download the Template Development Kit now!](/getting-started/local-development/) - Runs on PHP. View and build templates on your local machine
 
----
+* [BaseKit Developers Account](http://www.basekit.com/developers) - Setting up is easy. Using an existing BaseKit account provides the Developer Tools for free
 
-<p class="text-align--center">
-  <a class="button" href="http://goo.gl/mkXySA">Download the Template Development Kit (7.42 stable)</a>
-</p>
+{% include buttoncenter.html link="http://goo.gl/mkXySA" text="Download the Template Development Kit (7.42 stable)" %}
