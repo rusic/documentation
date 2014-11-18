@@ -5,7 +5,10 @@ description: Official documentation for building websites on the BaseKit platfor
 repository: https://github.com/basekit/docs.basekit.com
 
 # Site details
-facebook: TeamBaseKit
+facebook:
+  page: TeamBaseKit
+  website: docs.basekit.com
+
 twitter: BaseKitDevs
 
 # Jekyll options
