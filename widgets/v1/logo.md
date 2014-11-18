@@ -10,7 +10,7 @@ versions:
 
 # Logo
 
-Add a logo widget to your template
+Add a logo widget to your template.
 
 ## Overview
 

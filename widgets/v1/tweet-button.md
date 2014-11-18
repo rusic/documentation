@@ -14,7 +14,7 @@ Add a tweet widget to your template.
 
 ## Overview
 
-You can add a tweet widget to your template that will allow to tweet the page you are currently in.
+You can add a tweet button to your template that will allow the user to share the current page via Twitter.
 
 To include a tweet widget in your template you will need to add the following line:
 

@@ -10,7 +10,7 @@ versions:
 
 # Facebook Like
 
-Add a Facebook Like widget to your template
+Add a Facebook Like widget to your template.
 
 ## Overview
 
@@ -30,7 +30,7 @@ To include a Facebook Like widget in your template you will need to add the foll
 
 You can change the following options for the widget:
 
-* ```text```: The text on the widget.
+* ```text```: The text on the widget
 
 * ```showFaces```: Display the Facebook profile pictures below the button. ```true``` or ```false```
 
@@ -51,10 +51,10 @@ You can change the following options for the widget:
 
 * ```og_url```: The page visitors are going to like, e.g. ```www.basekit.com```
 
-* ```og_title```: optional The liked page title, e.g. ```Home Page```
+* ```og_title``` (optional): The liked page title, e.g. ```Home Page```
 
-* ```og_description```: optional The liked page title. ```This is the home page```
+* ```og_description``` (optional): The liked page title. ```This is the home page```
 
-* ```og_site_name```: optional The liked page site name, e.g. ```BaseKit```
+* ```og_site_name``` (optional): The liked page site name, e.g. ```BaseKit```
 
-* ```og_image```: optional The image showing alongside the news item, e.g. ```http://image.basekit.com/live77891_bk13-imac-and-iphone-hp-new-headerv8-big.png```
+* ```og_image``` ( optional): The image showing alongside the news item, e.g. ```http://image.basekit.com/live77891_bk13-imac-and-iphone-hp-new-headerv8-big.png```

@@ -124,7 +124,7 @@ Once you select the profile type, you need to specify options for the type:
     * If the ```goalSource``` is set to ```profile```, it should be set to an internal link, e.g. ```home``` 
     * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.basekit.com```
 
-* ### Social Icons type
+* ### Social Icons Type
   ```profileType```: ```socialicons```
 
   * ```socialIconsLinkedin```: LinkedIn icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.linkedin.com/company/basekit‎```
