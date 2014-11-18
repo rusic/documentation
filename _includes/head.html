@@ -25,4 +25,23 @@
 	<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 	<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 	<meta name="application-name" content="BaseKit Docs">
+
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@{{ site.twitter }}" />
+	<meta name="twitter:title" content="{{ page.title }}" />
+	<meta name="twitter:description" content="{{ page.excerpt }}" />
+	<meta name="twitter:url" content="{{ page.url }}" />
+
+	<!-- General meta -->
+	<meta name="description" content="{{ page.excerpt }}" />
+
+	<!-- Open graph meta -->
+	<meta property="og:url" content="{{ page.url }}" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	<meta property="og:description" content="{{ page.excerpt }}" />
+	<meta property="article:author" content="https://www.facebook.com/{{ site.facebook }}" />
+
 </head>
