@@ -4,6 +4,10 @@ title: BaseKit Documentation
 description: Official documentation for building websites on the BaseKit platform
 repository: https://github.com/basekit/docs.basekit.com
 
+# Site details
+facebook: TeamBaseKit
+twitter: BaseKitDevs
+
 # Jekyll options
 exclude:
 - LICENSE
@@ -17,6 +21,8 @@ exclude:
 highlighter: pygments
 
 markdown: kramdown
+
+excerpt_separator: "\n\n"
 
 # Permalinks
 permalink: pretty
