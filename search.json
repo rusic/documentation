@@ -5,9 +5,9 @@ searchable: false
 [
 	{% for item in items %}{% if item.searchable == false %}
 		{
-			"title"     : "",
-			"content"   : "",
-			"url"       : "",
+			"title"     : " ",
+			"content"   : " ",
+			"url"       : " ",
 			"searchable": "{{ item.searchable }}"
 		}{% else %}
 		{

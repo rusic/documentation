@@ -48,19 +48,26 @@ var toggleState	= function (elem, one, two) {
 	if (contents != null) contents.appendChild(contentsList);
 
 // Position Sticky elements
-PositionSticky([document.getElementById('sticky')]);
+if(document.getElementById("sticky")){
+	PositionSticky([document.getElementById('sticky')]);
+}
 
 // Jekyll search
-SimpleJekyllSearch.init({
-	searchInput: document.getElementById('search-field'),
-	resultsContainer: document.getElementById('search-results'),
-	dataSource: "/search.json",
-	searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
-	fuzzy: true
-})
+if(document.getElementById("search-field")){
+
+	SimpleJekyllSearch.init({
+		searchInput: document.getElementById('search-field'),
+		resultsContainer: document.getElementById('search-results'),
+		dataSource: "/search.json",
+		searchResultTemplate: "<li class='list-item'><a href='{url}' title='{title}'>{title}</a></li>",
+		fuzzy: true
+	})
+
 	// Disable enter key submission on search form
 	document.getElementById('search-field').addEventListener('keypress', function(event) {
 		if (event.keyCode == 13) {
 			event.preventDefault();
 		}
 	});
+
+}
