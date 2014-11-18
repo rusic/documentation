@@ -25,18 +25,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-
 // Header & footer
 .header--main,
 .footer--main {
 	color: $light-text;
 }
-
 	// BK logo
-	.logo a {
-		border-bottom: none;
+	.logo {
+		margin-top: 15px;
+		display: inline-block;
 	}
-
 
 // Main
 .main--body {
@@ -47,7 +45,6 @@ body {
 		display: flex;
 	}
 }
-
 	// In-page content
 	.main--content {
 		padding: 15px 0 20px;
@@ -140,7 +137,6 @@ body {
 		margin-top: 0;
 	}
 }
-
 	// In-page navigations
 	.aside--docs,
 	.aside--search {
@@ -171,7 +167,6 @@ body {
 			}
 		}
 	}
-
 		// Mobile toggle
 		.toggle-button {
 			display: none;
@@ -197,12 +192,10 @@ body {
 			font-weight: bold;
 		}
 
-
 // Footer
 .footer--main {
 	clear: both;
 }
-
 
 // Links
 a {
@@ -220,7 +213,6 @@ a {
 		border-bottom: 1px solid $dark-links;
 	}
 }
-
 	// Buttons
 	.button,
 	button {
@@ -239,14 +231,12 @@ a {
 		}
 	}
 
-
 // Forms
 fieldset {
 	border: none;
 	padding: 0;
 	margin: 0;
 }
-
 	// Search Form
 	input[type=text] {
 		border: 1px solid $light-border;
@@ -284,13 +274,11 @@ fieldset {
 		background: none;
 	}
 
-
 // Headings
 h3, legend {
 	font-weight: bold;
 	font-size: 16px;
 }
-
 
 // Mobile
 @media (min-width: 320px) and (max-width: 767px) {
