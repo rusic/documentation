@@ -10,11 +10,11 @@ versions:
 
 # Click To Call
 
-Add a Click To Call widget to your template
+Add a click to call widget to your template.
 
 
 ## Overview
-You can add a Click To Call widget to your template to allow the visitor to click and call the number in the profile section or customised by the editor user. The widget can be later customised within the BaseKit Editor.
+You can add a click to call widget to your template to allow the visitor to click and call the number in the profile section or customised by the editor user. The widget can be later customised within the BaseKit Editor.
 
 To include a click to call widget in your template you will need to add the following line:
 
@@ -29,11 +29,11 @@ To include a click to call widget in your template you will need to add the foll
 ## Widget Options
 You can change the following options for the widget:
 
-* ```phoneText```: The text on the widget.
+* ```phoneText```: The text on the widget
 
-* ```italic```: The text style. true or ```false``` (default)
+* ```italic```: The text style. ```true``` or ```false``` (default)
 
-* ```bold```: The text style. true or ```false``` (default)
+* ```bold```: The text style. ```true``` or ```false``` (default)
 
 * ```textAlign```: The text style. You can set it:
 

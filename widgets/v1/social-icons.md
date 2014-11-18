@@ -28,7 +28,7 @@ To include a social icons widget in your template you will need to add the follo
 
 ## Widget Options
 
-You can change the following options for the widget. You can put the link there or put profile to use the shared profile data.
+You can change the following options for the widget. You can use custom links or use the shared profile data: 
 
 * ```googleplus```: The Google+ URL. i.e., ```https://plus.google.com/101946323226233111530``` or ```profile```
 

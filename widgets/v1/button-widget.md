@@ -10,11 +10,11 @@ versions:
 
 # Button Widget
 
-Add a Button to your template
+Add a button to your template.
 
 ## Overview
 
-You can add Button to your template. The Button can be later customised within the BaseKit Editor. 
+You can add a button to your template. The button can be later customised within the BaseKit Editor. 
 To include a button in your template you will need to add the following line:
 
 {% highlight django %}
@@ -29,20 +29,20 @@ To include a button in your template you will need to add the following line:
 
 You can change the following options for the widget:
 
-* ```text```: The Button text:
+* ```text```: The button text:
 
-* ```italic```: The Button text style. true or false(default)
+* ```italic```: The button text style. ```true``` or ```false``` (default)
 
-* ```bold```: The Button text style. true or false(default)
+* ```bold```: The button text style. ```true``` or ```false``` (default)
 
-* ```textAlign```: The Button text alignment. You can set it:
+* ```textAlign```: The button text alignment. You can set it:
 
   * ```justifyleft```
   * ```justifyright```
   * ```justifycenter``` (default)
   * ```justifyfull```
   
-* ```fontSize```: The Button text style. You can set it to: 
+* ```fontSize```: The button text style. You can set it to: 
 
   * ```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
 
@@ -52,14 +52,14 @@ You can change the following options for the widget:
   * ```widget-align-center```
   * ```widget-align-right```
 
-* ```action```: The Button link action. You can set it to:
+* ```action```: The button link action. You can set it to:
 
   * ```none``` (default)
   * ```internal```
   * ```external```
   * ```email```
 
-* ```url```: The Button link url. You can set it depends on the action:
+* ```url```: The button link url. You can set it depends on the action:
 
   * if action is set ```none```, then url should be empty (default) 
   * if action is set ```internal```, then url should be an internal link to your page. e.g. ```/home```
@@ -68,5 +68,5 @@ You can change the following options for the widget:
 
 * ```target```: It sets where to open the external url. You set it only when action is set to ```external```:
 
-  * if want to open the external link in the current window, set it to ```_self```
-  * if want to open the external link in a new window, set it to ```_blank```
+  * if you want to open the external link in the current window set it to ```_self```
+  * if you want to open the external link in a new window set it to ```_blank```
