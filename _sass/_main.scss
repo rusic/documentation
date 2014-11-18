@@ -265,6 +265,7 @@ fieldset {
 	}
 	.search-field {
 		position: relative;
+		overflow: hidden;
 		z-index: 1;
 		background: $light-background;
 	}
@@ -299,6 +300,10 @@ h3, legend {
 	// Main content
 	.main--body .row {
 		display: inherit;
+	}
+
+	.row {
+		margin: 0 2.5%;
 	}
 
 	// Navigation toggle
