@@ -3,6 +3,7 @@ var gulp 	= require('gulp');
 var bower 	= require('main-bower-files');
 var rename 	= require('gulp-rename');
 var filter 	= require('gulp-filter');
+var uglify	= require('gulp-uglify');
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
@@ -48,14 +49,25 @@ gulp.task('fonts', function() {
 });
 
 // JavaScript components task
-gulp.task('js', function() {
+gulp.task('scripts', function() {
 
 	return gulp.src(bower())
 
 		.pipe(jsfilter)
-		.pipe(gulp.dest('js'));
+		.pipe(gulp.dest('_scripts'));
 
 });
+
+// Uglify JavaScipt
+gulp.task('compress', function() {
+  gulp.src('_scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('js'))
+});
+
+// JavaScript components and uglify task
+gulp.task('js', ['scripts', 'compress'])
+
 
 // All assets task
 gulp.task('assets', ['css', 'sass', 'fonts', 'js'])
