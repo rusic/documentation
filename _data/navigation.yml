@@ -14,12 +14,12 @@ navdocs:
   - title: Uploading
     url: /getting-started/uploading/
 - title: Templating
-  url: /templating/
+  url: #/templating/
   subnav:
   - title: Twig
     url: /templating/twig/
-  - title: File Structure
-    url: /templating/file-structure/
+  #- title: File Structure
+    #url: /templating/file-structure/
   - title: Assets
     url: /templating/assets/
   - title: JavaScript
