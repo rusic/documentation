@@ -239,7 +239,7 @@ fieldset {
 }
 	// Search Form
 	input[type=text] {
-		border: 1px solid $light-border;
+		border: 1px solid darken($light-border, 20%);
 		box-shadow: none;
 		border-radius: 0;
 		width: 100%;
