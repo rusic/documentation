@@ -5,50 +5,51 @@ title: Page Types
 
 # Page Types
 
-There are always different page types within a template; a home page layout is different to a contact page layout. Therefore will require different mark up. Page types are used to provide different layouts within one template.
+There are always different page types within a template; a homepage layout is different to a contact page layout. These page types will require different HTML. Page types are used to provide different layouts within one template.
 
-Not only will page types use a alternative markup but when a page is created with a certain type, the zone (where users drag their content into) will be populated with page type related content. For example, a contact page type will populate the zone with a map and a contact form.
+Not only will page types use an alternative markup but when a page is created with a certain type, the zone (where users drag their content into) will be populated with page type related content. For example, a contact page type will populate the zone with a map and a contact form.
 
-## How a user chooses a page type
+## How a User Chooses a Page Type
 
 A user can select a page type at the point of page creation within the editor.
 
 ![Add page lightbox](/assets/content/add-page.png)
 
-Default Page Type
-Page type layouts are defined as twig files within the template. The currently supported page types supported are:
+### Default Page Types
 
-* ```home.twig``` (optional): used to create a home page layout
+Page types are defined as Twig files within the template. The currently supported page types are:
 
-* ```about.twig``` (optional): used to create an about page layout and will populate the zone with about page content.
+* ```home.twig``` (optional): Used to create a homepage layout
 
-* ```contact.twig``` (optional): used to create an contact page layout and will populate the zone with contact page content.
+* ```about.twig``` (optional): Used to create an about page layout and will populate the zone with about page content
 
-* ```default.twig``` (required): This is the default layout. This will always the layout used when 'blank' is selected (see lightbox image above). Also, when a template does not include a certain layout (for example contact.twig), then it will always fallback to this layout.
+* ```contact.twig``` (optional): Used to create an contact page layout and will populate the zone with contact page content
 
-## Page type layouts within a template
+* ```default.twig``` (required): This is the default layout. This is used when 'blank' is selected (see lightbox image above). Also, when a template does not include a certain layout (for example contact.twig) it will always fallback to this layout
 
-Below is an extension of the file structure defines in the [assets](/templating/assets) section. This extension includes more twig files - highlighted in bold
+## Page Type Layouts Within a Template
+
+Below is an extension of the file structure defined in the [assets](/templating/assets) section. This extension includes more Twig files - marked with a "*".
 
 {% highlight html %}
 images/
 - logo.png
 README.md
-about.twig
-contact.twig
-default.twig
+about.twig *
+contact.twig *
+default.twig *
 example.jpg
-home.twig
+home.twig *
 metadata.json
 stylesheet.less
-404.twig
+404.twig *
 {% endhighlight %}
 
 ## 404 Page
 
 You can have a custom 404 design included in your template. Follow these steps:
 
-* Add a 404.twig in the top level directory of your template
+* Add a ```404.twig``` in the top level directory of your template
 
 * Add ```404``` to the ```pageTypes``` array with in [metadata.json](/templating/metadata/)
 

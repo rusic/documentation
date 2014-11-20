@@ -11,14 +11,14 @@ You have complete document access in twig files; access to html tags, head tags 
 
 All the documentation for Twig can be found at these sources:
 
-* Twig - The flexible, fast, and secure template engine: [http://twig.sensiolabs.org/](http://twig.sensiolabs.org/)
+* Twig - the flexible, fast, and secure template engine: [http://twig.sensiolabs.org/](http://twig.sensiolabs.org/)
 * Client side rendering library: [https://github.com/schmittjoh/twig.js](https://github.com/schmittjoh/twig.js)
 
 ## default.twig
 
 This is where the HTML lives for the default page. If you only include default.twig in a template, then every page will use this file to render its HTML.
 
-Stripped down to the basics, a twig file should look like the following:
+Stripped down to the basics, a Twig file should look like the following:
 
 {% highlight html %}
 {% raw %}
@@ -54,9 +54,11 @@ Stripped down to the basics, a twig file should look like the following:
 
 Let's look at this HTML in more detail
 
-#### The Important Stuff - Bringing a Template to life in the Editor
+#### The Important Stuff
 
-There are 2 tags that are required in any template to get them to work in a BaseKit editor. **Without these, the Template will not come to life in the editor**. These tags are that must appear in the head tag and that must appear at the bottom of the body tag.
+#### Bringing a template to life in the Editor
+
+There are 2 tags that are required in any template to get them to work in a BaseKit Editor. **Without these, the template will not come to life in the Editor**. These tags must appear in the head tag and at the bottom of the body tag.
 
 {% highlight html %}
 {% raw %}
@@ -72,7 +74,7 @@ There are 2 tags that are required in any template to get them to work in a Base
 {% endraw %}
 {% endhighlight %}
 
-These will bring widgets to life and let the BaseKit editor know that the page is ready.
+These will bring widgets to life and let the BaseKit Editor know that the page is ready.
 
 ### Rendering Data in Twig
 
@@ -82,10 +84,10 @@ These will bring widgets to life and let the BaseKit editor know that the page i
 {% endraw %}
 {% endhighlight %}
 
-You can easily feed data into the template's html from the BaseKit engine. Twig Views will pull the title value from the page's data and display it into the HTML. A complete list of data properties can be found here: [BaseKit Template Data](/data/)
+You can easily feed data into the template's html from the BaseKit engine. Twig views will pull the title value from the page's data and display it into the HTML. A complete list of data properties can be found here: [BaseKit Template Data](/data/)
 
 
-### Common Assets in templates
+### Common Assets in Templates
 
 {% highlight html %}
 {% raw %}
@@ -93,7 +95,7 @@ You can easily feed data into the template's html from the BaseKit engine. Twig 
 {% endraw %}
 {% endhighlight %}
 
-This will pull in common assets into the template feed from the BaseKit engine. In the example about, we pull in CSS from the BaseKit engine to give default CSS to the responsive columns. This is placed in the template so that you can bring the columns widget to life. If you need to create your own css for columns, remove this line and place your css file in. For example:
+This will pull common assets into the template feed from the BaseKit engine. In the example above we pull in CSS from the BaseKit engine to give default CSS to the responsive columns. This is placed in the template so that you can bring the columns widget to life. If you need to create your own CSS for columns, remove this line and place your css file in. For example:
 
 {% highlight html %}
 {% raw %}
@@ -105,7 +107,7 @@ You can find more information on the asset function in [this article](/templatin
 
 ### Background Rendering
 
-We can code whatever design required into a BaseKit template, but we want the user to be able to override certain design settings like the background color, image, etc. When we place this tag into the body tag, a user will be able to edit the background using the BaseKit Editor.
+We can code whatever design required into a BaseKit template, but we want the user to be able to override certain design settings like the background colour, image, etc. When we place this tag into the body tag, a user will be able to edit the background using the BaseKit Editor.
 
 {% highlight html %}
 {% raw %}
@@ -115,7 +117,7 @@ We can code whatever design required into a BaseKit template, but we want the us
 
 ### The Zone
 
-This is where a user can drag there content. Where ever you place this tag in your template is where user placed content will be rendered into the HTML. The content is page based so if the zone is rendered for multiple pages, the BaseKit engine will provide the widget HTML to the template and render it in place of this tag:
+This is where a user can drag their content. Wherever you place this tag in your template is where user placed content will be rendered into the HTML. The content is page-based so if the zone is rendered for multiple pages, the BaseKit engine will provide the widget HTML to the template and render it in place of this tag:
 
 {% highlight django %}
 {% raw %}
@@ -123,4 +125,4 @@ This is where a user can drag there content. Where ever you place this tag in yo
 {% endraw %}
 {% endhighlight %}
 
-**Note:** a page does not have to have a zone but if one is not rendered a user will not be able to render widgets into a template.
+**Note:** A page does not have to have a zone but if one is not rendered a user will not be able to render widgets into a template.
