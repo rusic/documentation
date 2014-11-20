@@ -11,11 +11,11 @@ All templates must contain a ```metadata.json``` file. This file provides key in
 
 * ```name``` (string) Name of the template. Use only the letters of the alphabet (upper or lower case), underscores (_), and dashes (-).
 
-* ```thumbnail``` (string) Filename of the thumbnail that needs to included with the template repository. The file type should be JPG. Width: 285px. Height: 410px
+* ```thumbnail``` (string) Filename of the thumbnail that need to be included with the template repository. The file type should be JPG. Width: 285px. Height: 410px
 
 * ```pageTypes``` (array) From Version >= 7.22. The page types that are available with your template. These are linked to the Twig files within the top level directory in your repository. i.e. home would expect home.twig. Currently supported page types are: ["home, about, contact, gallery"]
 
-## The metadata.json example file
+## The metadata.json Example File
 
 {% highlight json %}
 
@@ -29,11 +29,11 @@ All templates must contain a ```metadata.json``` file. This file provides key in
 
 {% endhighlight %}
 
-## Advanced Metadata.json (optional)
+## Advanced Metadata.json (Optional)
 
-Adding more information to your metadata file means that you can take advantage of BaseKit features such as colour swatch swapping and font swatch editing. Add custom colours and fonts gives the user more control of the appearance of their site.
+Adding more information to your metadata file means that you can take advantage of BaseKit features such as colour swatch swapping and font swatch editing. Adding custom colours and fonts gives the user more control of the appearance of their site.
 
-* ```templateType``` (string): From Version >= 7.30. Template type of the template. Default is ```standard``` if not included. This will determine which type of template is for filtering in the template picker. Can either be ```standard```, ```blog```, ```ecommerce``` and ```menu```
+* ```templateType``` (string): From Version >= 7.30. Template type of the template. Default is ```standard``` if not included. This will determine which type of template is for filtering in the template picker. Can either be ```standard```, ```blog```, ```ecommerce``` or ```menu```
 
 * ```images``` (array): From Version >= 7.32. If you want the images in your template to appear in the BaseKit Images sidebar, you can define them in metadata.json
 
@@ -93,7 +93,7 @@ body {
 
 {% endhighlight %}
 
-* ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the BaseKit editor. The fonts are linked to certain tags in the editor. For example, font-swatch1 is linked to the H1 tag in all BaseKit Templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: font-swatch1 does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use font-swatch1 for H1 properties there will be a disconnect between the editor and your design. So we suggest you stick to BaseKit standards.
+* ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the Editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the BaseKit Editor. The fonts are linked to certain tags in the Editor. For example, font-swatch1 is linked to the H1 tag in all BaseKit templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: ```font-swatch1``` does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use ```font-swatch1``` for H1 properties there will be a disconnect between the Editor and your design, we therefore suggest that you stick to BaseKit standards.
 
 {% highlight json %}
 
@@ -207,7 +207,7 @@ h1 {
 
 ### Available Font Family Values
 
-These are font values that we support current. You can use more but if you do, they will not match up to the BaseKit Editor. We recommend you stick to the list below:
+These are font values that we currently support. You can use more but if you do, they will not match up to the BaseKit Editor. We recommend you stick to the list below:
 
 | Primary Font          | Font Stack                                                    | Font Stack Escaped (use this within JSON or Javascript)             | 
 |-----------------------|---------------------------------------------------------------|---------------------------------------------------------------------| 
@@ -254,7 +254,7 @@ These are font values that we support current. You can use more but if you do, t
 | Courier New           | "Courier New", monospace                                      | \"Courier New\", monospace                                          | 
 | Arial                 | "Arial", sans-serif                                           | \"Arial\", sans-serif                                               | 
 
-### The advance metadata.json example file
+### The Advance metadata.json Example File
 
 {% highlight json %}
 

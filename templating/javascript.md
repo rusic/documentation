@@ -7,9 +7,9 @@ title: JavaScript
 
 Adding customisation to your template is easy. We give you all the tools you need to bake in custom functionality to your templates.
 
-## Adding scripts
+## Adding Scripts
 
-BaseKit Development tools offers full control of all HTML, CSS and JavaScript on your website. Giving you the ability to customise your website any way you like. This makes it easy to add scripts / css / images in where ever you need. The example below adds a few custom scripts to show what is capable.
+BaseKit Development Tools offers full control of all HTML, CSS and JavaScript on your website. Giving you the ability to customise your website any way you like. This makes it easy to add scripts / CSS / images in wherever you need. The example below adds a few custom scripts to show what is capable.
 
 {% highlight html %}
 {% raw %}

@@ -4,39 +4,39 @@ title: Assets
 ---
 
 # Assets
-With a BaseKit template you can upload assets along with it. There are a certain file types that we accept within a git repository.
+With a BaseKit template you can upload assets along with it. There are certain file types that we accept within a Git repository.
 
-## HTML file types
+## HTML File Types
 
 ```
 *.twig
 ```
 
-## CSS file types
+## CSS File Types
 
 ```
 *.less *.css
 ```
 
-## Image file types
+## Image File Types
 
 ```
 *.jpg *.jpeg *.png *.gif *.svg
 ```
 
-## JavaScript file types
+## JavaScript File Types
 
 ```
 *.js *.json
 ```
 
-## Other file types
+## Other File Types
 
 ```
 *.md
 ```
 
-### File and structure
+### File Structure
 
 A common BaseKit repository directory structure looks like:
 
@@ -59,11 +59,11 @@ stylesheet.less
 
 ## Recommendations
 
-* If you include any other file types, the repository will not upload to a BaseKit environment.
+* If you include any other file types, the repository will not upload to a BaseKit environment
 
-* Please use [a-z_-] characters only.
+* Please use [a-z_-] characters only
 
-* There is a 100MB size limit on repositories. Anything over will not be
+* There is a 100MB size limit on repositories, anything over this won't be processed
 
 ## asset() & image() functions
 
