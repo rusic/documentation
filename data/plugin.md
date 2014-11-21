@@ -218,7 +218,7 @@ All blog functionality feeds of this data:
 {
    "store":{
       "ref":84,
-      "email":"noreply@basekit.com",
+      "email":"noreply@mysite.com",
       "currency":{
          "ref":3,
          "name":"Pound Sterling",

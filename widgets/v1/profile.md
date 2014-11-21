@@ -37,11 +37,11 @@ Once you select the profile type, you need to specify options for the type:
 * ### Address type
   ```profileType```: ```address```
 
-  * ```address```: The address to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```BaseKit```
+  * ```address```: The address to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```My Company Name```
 
-  * ```address1```: The address1 to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```BaseKit```
+  * ```address1```: The address1 to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```Example Street```
 
-  * ```address2```: The address2 to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```BaseKit```
+  * ```address2```: The address2 to display. If set to ```profile```, it will use the profile data, or you can put address e.g. ```Atown```
 
   * ```country```: The country to display. You can only set to ```profile```
 
@@ -50,7 +50,7 @@ Once you select the profile type, you need to specify options for the type:
 * ### Email type
   ```profileType```: ```email```
 
-  * ```email```: The email address to display. If set to ```profile```, it will use the profile data, or you can put email address e.g. ```basekit@basekit.com```
+  * ```email```: The email address to display. If set to ```profile```, it will use the profile data, or you can put email address e.g. ```me@myemail.com```
 
 * ### Strapline type
   ```profileType```: ```strapline```
@@ -122,20 +122,20 @@ Once you select the profile type, you need to specify options for the type:
   * ```goalUrl```: The url after submit the form
   
     * If the ```goalSource``` is set to ```profile```, it should be set to an internal link, e.g. ```home``` 
-    * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.basekit.com```
+    * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.mysite.com```
 
 * ### Social Icons Type
   ```profileType```: ```socialicons```
 
-  * ```socialIconsLinkedin```: LinkedIn icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.linkedin.com/company/basekit‎```
+  * ```socialIconsLinkedin```: LinkedIn icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.linkedin.com/company/mycompany```
 
-  * ```socialIconsTwitter```: Twitter icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```BaseKit```
+  * ```socialIconsTwitter```: Twitter icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```twitter```
 
-  * ```socialIconsFacebook```: Facebook icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://facebook.com/basekit‎```
+  * ```socialIconsFacebook```: Facebook icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://facebook.com/mycompany```
 
   * ```socialIconsRss```: RSS icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.google.com/rss```
 
-  * ```socialIconsGoogleplus```: Google+ icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.googleplus.com/basekit‎```
+  * ```socialIconsGoogleplus```: Google+ icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.googleplus.com/mycompany```
 
-  * ```socialIconsYoutube```: YouTube icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.youtube.com/basekit‎```
+  * ```socialIconsYoutube```: YouTube icon. If set to ```profile```, it will use the profile data, or you can put custom data in e.g. ```http://www.youtube.com/mycompany```
   

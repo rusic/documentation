@@ -3,7 +3,7 @@ layout: doc
 title: Uploading
 ---
 
-# Upload your template to a BaseKit site
+# Upload your template to the Editor
 
 When your developer account has been set up. You will be able to upload templates via the Template section within your account. This can be done by uploading a ZIP or using a GIT repository.
 
@@ -51,7 +51,7 @@ basekit-templates/example
 
 If the repository is private, click the ```Private``` option checkbox.
 
-#### Pull the template into BaseKit
+#### Pull the template into the Editor
 
 When you enter a correctly formatted location for the repository. Click the ```Get branches``` button.
 
@@ -59,7 +59,7 @@ You have the option to pull a version of the template you want; ```branches``` o
 
 ![Select branch](/assets/content/add-templates-5.png)
 
-This will start the process of pulling the template down into your BaseKit account. This will take 10 - 30 seconds.
+This will start the process of pulling the template down into your account. This will take 10 - 30 seconds.
 
 ![Processing template](/assets/content/add-templates-6.png)
 
@@ -83,7 +83,7 @@ To re-pull code down from the template's git repository, click the template ```O
 
 You have the option to pull a version of the template you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
 
-This will start the process of pulling the template down into your BaseKit account. This will take 10 - 30 seconds.
+This will start the process of pulling the template down into your account. This will take 10 - 30 seconds.
 
 ---
 
