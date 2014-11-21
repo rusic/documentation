@@ -3,6 +3,15 @@
 
 Official documentation for building websites on the BaseKit platform
 
+Contents
+--------
+* [Setup](#setup)
+  * [Local Installation](#local-installation)
+  * [Install Dependencies](#install-dependencies)
+* [Gulp Tasks](#gulp-tasks)
+* [Writing](#writing)
+* [License](#license)
+
 Setup
 -----
 
@@ -24,7 +33,7 @@ Installing all the assets and dependencies required for development:
 2. ```$ npm install``` - Install package dependencies
 3. ```$ bower install``` - Install project assets
 
-Gulp tasks
+Gulp Tasks
 ----------
 
 These are tasks that can be ran with gulp, all of which take the installed bower components and place them into the relevant project directories:
@@ -36,6 +45,30 @@ These are tasks that can be ran with gulp, all of which take the installed bower
   * ```$ gulp js``` - Places any JavaScript assets into the ```js``` directory
     *  ```$ gulp scripts``` - Places any JavaScript assets into the ```_scripts``` directory
     *  ```$ gulp compress``` - Compresses & places any JavaScript files in ```_scripts``` into the ```js``` directory
+
+Writing
+-------
+The Documentation uses markdown to manage it's content. It also uses pygments for code samples and liquid shortcodes for small chunks of HTML. Take a look at the examples below:
+
+### Code Sample
+```
+{% highlight html %}
+{% raw %}
+  <div class="element">
+    <span>This is some sample HTML</span>
+  </div>
+{% endraw %}
+{% endhighlight %}
+```
+
+### Button
+```{% include button.html link="http://docs.basekit.com" text="This a button" %}```
+
+### Centralised Text
+```{% include aligncenter.html content="This text is centre aligned" %}```
+
+### Centralised Button
+```{% include buttoncenter.html link="http://docs.basekit.com" text="This button is centre aligned" %}```
 
 License
 -------
