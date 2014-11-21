@@ -21,7 +21,7 @@ To include a Facebook Like widget in your template you will need to add the foll
 {% highlight django %}
 {% raw %}
 
-  {{widget('facebooklike', 'thisunqiuewidgetname', {text: 'FaceBook Like', showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.basekit.com'})|raw}}
+  {{widget('facebooklike', 'thisunqiuewidgetname', {text: 'FaceBook Like', showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.mysite.com'})|raw}}
 
 {% endraw %}
 {% endhighlight %}
@@ -49,7 +49,7 @@ You can change the following options for the widget:
   
 * ```font```: The button text font. ```arial```, ```lucida grande```, ```segoe ui```, ```tahoma```, ```trebuchet ms```, ```verdana```
 
-* ```og_url```: The page visitors are going to like, e.g. ```www.basekit.com```
+* ```og_url```: The page visitors are going to like, e.g. ```www.mysite.com```
 
 * ```og_title``` (optional): The liked page title, e.g. ```Home Page```
 

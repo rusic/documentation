@@ -62,4 +62,4 @@ You can change the following options for the widget:
 * ```goalUrl```: The URL after the user submits the form
 
   * If the ```goalSource``` is set to ```profile```, it should be set to an internal link, e.g. ```home```
-  * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.basekit.com```
+  * If the ```goalSource``` is set to ```custom```, it should be set to an external link, e.g. ```www.mysite.com```

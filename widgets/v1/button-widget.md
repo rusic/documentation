@@ -63,7 +63,7 @@ You can change the following options for the widget:
 
   * if action is set ```none```, then url should be empty (default) 
   * if action is set ```internal```, then url should be an internal link to your page. e.g. ```/home```
-  * if action is set ```external```, then url should be an external link, e.g. ```www.basekit.com```
+  * if action is set ```external```, then url should be an external link, e.g. ```www.mysite.com```
   * if action is set ```email```, then url should be an email address, e.g. ```example@example.com```
 
 * ```target```: It sets where to open the external url. You set it only when action is set to ```external```:
