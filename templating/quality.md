@@ -5,20 +5,15 @@ title: Quality Checklist
 
 # BaseKit Template Quality Checklist
 
-**Quality of Build** is of the upmost importance to BaseKit Template Designers. Building templates for BaseKit customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the template must work with its respective editor feature. Every point on this list must be checked before we release your template.
+**Quality of build** is of the utmost importance to BaseKit Template Designers. Building templates for BaseKit customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the template must work with its respective editor feature. Every point on this list must be checked before we release your template.
 
-## Publish Site
-
-* Publish the template to bksites.net domain
-* Put URL into Templates Spreadsheet
-
-## Browsers / Responsive Testing
+## Browsers/Responsive Testing
 
 * Test in all desktop browsers (Firefox, Chrome, IE, Safari)
-* Test for different devices / browser sizes
+* Test for different devices/browser sizes
 * Test image sizes and positioning
 * Test navigation
-* Test Print preview within the BaseKit editor
+* Test Print Preview within the BaseKit Editor
 
 ## Optimisation
 
@@ -26,34 +21,34 @@ title: Quality Checklist
 
 ## Font Swatches
 
-* Check all type relevant styles are linked to the metadata.json file correctly 1 comment
+* Check all type relevant styles are linked to the metadata.json file correctly
 * Check font family and stack
 * Check font colours are linked to the correct colour swatches
 
 ## Colour Swatches
 
 * All colours are linked to the metadata.json file correctly
-* At least 2 colour swatches, optimum of 5
+* At least two colour swatches, optimum of five
 * Overall legibility and visibility
 
 ## Typography
 
 * Style accordingly in your template and then test in the editor
-* Headings (h1 to h4 in particular)
-* a (hover & active optional)
-* Paragraph
-* Lists (bulleted and numbered)
-* Bold, Italics, Strikethrough and Underline
-* Text alignment
-* Text resizing
-* Blockquote
-* Code (pre)
+  * Headings (h1 to h4 in particular)
+  * a/anchor (hover & active optional)
+  * Paragraph
+  * Lists (bulleted and numbered)
+  * Bold, Italics, Strikethrough and Underline
+  * Text alignment
+  * Text resizing
+  * Blockquote
+  * Code (pre)
 
 ## Template Files & Assets
 
-* Create files but also test if editor is using the correct templates
+* Create files but also test if the Editor is using the correct templates
 * Check graphics are linked in the template correctly
-* Check if thumbnail matches template and is linked correctly
+* Check if the thumbnail matches the template and is linked correctly
 * default.twig
 * home.twig (optional)
 * about.twig (optional)
@@ -69,31 +64,31 @@ title: Quality Checklist
 
 * Check if all images are editable
 * Check if all text is editable
-* Check that logo area works with portrait and landscape graphics
-* Check that design doesn't break when hiding a 'baked in' widget
+* Check that the logo area works with portrait and landscape graphics
+* Check that the design doesn't break when hiding a 'baked in' widget
 
 ## Widget Checklist
 
 * General form design
-* Sign-up form design
+* Sign Up Form design
 * General button design
 * PayPal button design (with icon)
-* Dropbox button design (with icon)
-* Social button designs (with icons)
-* Tweet button design (with icon)
-* Twitter feed design
-* Column widget structure and styling
+* Dropbox Button design (with icon)
+* Social Button designs (with icons)
+* Tweet Button design (with icon)
+* Twitter Feed design
+* Column Widget structure and styling
 * Alignment options work correctly
 * Gallery grid
 * Slideshow buttons and captions
-* YouTube embed (just make sure its visible, no design work required)
-* Feature section design and styling
+* YouTube Embed (just make sure its visible, no design work required)
+* Feature Section design and styling
 * Test Profile Widget areas with all variations
 * Address
 * Email
 * Headline
 * Strapline
-* Company description
+* Company Description
 * Phone
 * Business
 * Copyright
@@ -123,12 +118,12 @@ title: Quality Checklist
 * Checkout section design
 * Delivery form design
 * Delivery select box styling
-* Order, categories, tags, select boxes styling
+* Order, categories, tags and select boxes styling
 * Product list styling
 * Product item styling
 * Checkout button styling
 * Checkout page styling
-* Category, Tags, Item name links all work
+* Category, tags and item name links all work
 * Image column check
 * Select box design
 

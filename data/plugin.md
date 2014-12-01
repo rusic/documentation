@@ -7,13 +7,14 @@ title: Plugin Data
 
 Version: >= 7.32. Plugin data is the backbone of the site's data. All plugin widgets feed off this data.
 
-Overview
+## Overview
+
 The plugin data currently contains the following data:
 
-* [Assets](#assets): image and album data
-* [Blog](#blog): all the post data for the blog
-* [Ecommerce](#ecommerce): all the product data for the ecommerce
-* [Menu](#menu): all the item and price data for a menu
+* [Assets](#assets): Image and album data
+* [Blog](#blog): All the post data for the blog
+* [Ecommerce](#ecommerce): All the product data for the ecommerce
+* [Menu](#menu): All the item and price data for a menu
 
 ## Assets
 
@@ -96,7 +97,7 @@ You can render these values from the assets plugin data:
 
 ## Blog
 
-All blog functionality feeds of this data:
+All blog functionality feeds off this data:
 
 ### Example Data
 
@@ -142,7 +143,7 @@ All blog functionality feeds of this data:
 
 ### Usage
 
-* ```posts``` (object): This is an object of posts. Will contain multiple posts on all pages. The expection to this is one the single posts page (viewing the post via the permalink); in this case, there will be only 1 post in the posts object.
+* ```posts``` (object): This is an object of posts. This will contain multiple posts on all pages. The exception to this is the single posts page (viewing the post via the permalink). In this case, there will be only one post in the posts object
 
 ### Example Usage
 
@@ -208,7 +209,7 @@ All blog functionality feeds of this data:
 
 ## Ecommerce
 
-All blog functionality feeds of this data:
+All ecommerce functionality feeds off this data:
 
 ### Example Data
 
@@ -1066,7 +1067,7 @@ All blog functionality feeds of this data:
 
 ### Menu
 
-All menu functionality feeds of this data:
+All menu functionality feeds off this data:
 
 ### Example Data
 
