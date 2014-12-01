@@ -7,10 +7,11 @@ title: Site Data
 
 Data relating to the current site.
 
-Attributes
+## Attributes
+
 You can render these values from the page data:
 
-* ```favicon``` (array): Favicon uploaded by the user via the manage section within the editor. This is an array of data which 2 parts; ```favicon``` and ```thumbnail```
+* ```favicon``` (array): Favicon uploaded by the user via the manage section within the Editor. This is an array of data with two parts; ```favicon``` and ```thumbnail```
 
 {% highlight html %}
 {% raw %}

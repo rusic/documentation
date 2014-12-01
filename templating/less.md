@@ -7,23 +7,19 @@ title: LESS
 
 [LESS](http://lesscss.org/) extends CSS with dynamic behaviour such as **mixins, operations, functions and variables**. As an extension to CSS, LESS is not only backwards compatible with CSS, but the extra features it adds use existing CSS syntax. What this means is that you can write leaner code very quickly.
 
-## Why Use LESS?
-
-LESS extends CSS with dynamic behaviour such as mixins, operations, functions and variables. As an extension to CSS, LESS is not only backwards compatible with CSS, but the extra features it adds use existing CSS syntax. This makes learning LESS a breeze, and if in doubt, lets you fall back to CSS.
-
 ## LESS Usage
-LESS runs on both **server-side** and **client-side** and is used to combine values from the editor with a templates CSS style.
+LESS runs on both **server-side** and **client-side**, and is used to combine values from the editor with a templates CSS style.
 
-BaseKit provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
+BaseKit provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the Editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
 
 ## Important Note: BaseKit Variable Dependencies
-The BaseKit Variables defined below are used in conjunction with [Advanced Metadata](/templating/metadata/#advanced-metadatajson-optional). Adding Advanced Metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
+The BaseKit variables defined below are used in conjunction with [advanced metadata](/templating/metadata/#advanced-metadatajson-optional). Adding advanced metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
 
 ## BaseKit LESS Variables
-Here is the list of variables you can use in the stylesheet.less to get values from the editor:
+Here is the list of variables you can use in the stylesheet.less to get values from the Editor:
 
 ### Colour Swatch Variables
-A template can be created around one or more colour swatches. There are 7 colour in a swatch. They can be added to a template. They can be changed by the user with the editor. We use colour swatches to link up colour theming to a editor.
+A template can be created around one or more colour swatches. There are 7 colour in a swatch. They can be added to a template. They can be changed by the user with the editor. We use colour swatches to link up colour theming to the Editor.
 
 {% highlight css %}
 /* Colour Swatch Variables related to the colour swatches within the editor */
@@ -37,7 +33,7 @@ A template can be created around one or more colour swatches. There are 7 colour
 {% endhighlight %}
 
 ### Background Style Variables
-It's common for a user to want to be able to change background properties of a site's design. This can also be achieved in the editor and values can be referenced in the LESS file using the following variables.
+It's common for a user to want to be able to change background properties of a site design. This can also be achieved in the Editor, and values can be referenced in the LESS file using the following variables.
 
 {% highlight css %}
 /* Site Background Properties */
@@ -54,7 +50,7 @@ It's common for a user to want to be able to change background properties of a s
 
 ### Font Swatch Variables
 
-Font swatches are extensive in the BaseKit template engine. A font swatch contains 9 fonts, each with properties such as colour, size, line height, etc. Within the BaseKit Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
+Font swatches are extensive in the BaseKit template engine. A font swatch contains nine fonts, each with properties such as colour, size, line height, etc. Within the BaseKit Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
 
 {% highlight css %}
 /* Font Swatch Variables related to the colour swatches within the editor */
@@ -147,9 +143,9 @@ Font swatches are extensive in the BaseKit template engine. A font swatch contai
 
 ### @Import for LESS
 
-BaseKit library supports ```@import``` functionality for less. This means you are able to split your styles into separate files and have have the LESS compiler render the files in place. This means that you can avoid large stylesheets and organise code into smaller partials.
+BaseKit library supports ```@import``` functionality for less. This means you are able to split your styles into separate files and have the LESS compiler render the files in place. This means that you can avoid large stylesheets and organise code into smaller partials.
 
-BaseKit supports Server side LESS rendering and well as client side rendering. As Server side and Client side rendering engines reference files in different formats, we have to prepend the location on the front of the path so both technologies can locate the file accordingly.
+BaseKit supports server-side LESS rendering and well as client-side rendering. As server-side and client-side rendering engines reference files in different formats, we have to prepend the location on the front of the path so both technologies can locate the file accordingly.
 
 This means we need to inject a path pointing to the LESS file:
 
@@ -160,7 +156,7 @@ This means we need to inject a path pointing to the LESS file:
 
 #### templateCommon
 
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the BaseKit common template resources directory, we're you can reference files; such as basekit-bootstrap.less.
+The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the BaseKit common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
 
 #### templateLocal
 
@@ -180,7 +176,7 @@ mytemplate/
     - widgets.less
 {% endhighlight %}
 
-To reference the css files in the css directory, you would place the following code in your stylesheet.less file.
+To reference the css files in the CSS directory, you would place the following code in your stylesheet.less file.
 
 {% highlight sass %}
 @import "@{templateLocal}/css/boilerplate.less";
@@ -190,12 +186,12 @@ To reference the css files in the css directory, you would place the following c
 
 ### Special Functions for LESS
 
-There are many functions that you can use within LESS files. Most of them are found within the library itself. See [here](http://lesscss.org/#reference) for LESS functions references
+There are many functions that you can use within LESS files. Most of them are found within the library itself. See [here](http://lesscss.org/#reference) for LESS functions references.
 
-We have built some other functions so we can achieve most advanced responsive effects
+We have built some other functions so we can achieve the most advanced responsive effects.
 
 #### BKScale Function
-The bkscale function will scale down a number value between 1 and 0. For example, if you wanted text to reduce text down for smaller devices you can do the following:
+The ```bkscale``` function will scale down a number value between 1 and 0. For example, if you wanted to reduce the text down for smaller devices you can do the following:
 
 {% highlight css %}
 
