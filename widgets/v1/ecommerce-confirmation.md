@@ -19,7 +19,7 @@ Version: >= 7.32. This widget displays the user's payment confirmation text from
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomconfirmation', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecomconfirmation', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

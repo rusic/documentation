@@ -19,7 +19,7 @@ Version: >= 7.32. Add a blog post to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('blogpost', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('blogpost', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

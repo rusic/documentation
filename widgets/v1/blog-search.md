@@ -19,7 +19,7 @@ Version: >= 7.32. Add a Blog Search Widget to the Page
 {% highlight django %}
 {% raw %}
 
-  {{widget('blogsearch', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('blogsearch', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

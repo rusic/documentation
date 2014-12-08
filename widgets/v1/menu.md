@@ -19,7 +19,7 @@ Version: >= 7.32. Add a menu list to the page (i.e. restaurant menu).
 {% highlight django %}
 {% raw %}
 
-  {{widget('menu', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('menu', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

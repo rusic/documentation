@@ -21,7 +21,7 @@ To include a Twitter feed widget in your template you will need to add the follo
 {% highlight django %}
 {% raw %}
 
-  {{widget('twitter', 'thisunqiuewidgetname', {'searchKey': 'cats', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}
+  {{widget('twitter', 'thisuniquewidgetname', {'searchKey': 'cats', 'searchType': 'username', 'count': '3','refreshTime': '1800000','includeRts': '0'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

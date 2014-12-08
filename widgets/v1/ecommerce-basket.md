@@ -19,7 +19,7 @@ Version: >= 7.32. Add an ecommerce basket to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecombasket', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecombasket', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

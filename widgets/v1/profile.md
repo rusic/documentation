@@ -21,7 +21,7 @@ To include a profile widget in your template you will need to add the following 
 {% highlight django %}
 {% raw %}
 
-  {{widget('profile', 'thisunqiuewidgetname', { 'profileType':'twitter', 'twitter':'profile', 'refreshtime':'1800000'})|raw}}
+  {{widget('profile', 'thisuniquewidgetname', { 'profileType':'twitter', 'twitter':'profile', 'refreshtime':'1800000'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

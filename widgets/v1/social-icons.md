@@ -21,7 +21,7 @@ To include a social icons widget in your template you will need to add the follo
 {% highlight django %}
 {% raw %}
 
-  {{widget('socialicons', 'thisunqiuewidgetname', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/mycompanyname', 'facebook': 'https://www.facebook.com/mycompanyname', 'twitter': 'https://twitter.com/mycompanyname', 'youtube': 'https://www.youtube.com/user/mycompanyname', 'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'})|raw}}
+  {{widget('socialicons', 'thisuniquewidgetname', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/mycompanyname', 'facebook': 'https://www.facebook.com/mycompanyname', 'twitter': 'https://twitter.com/mycompanyname', 'youtube': 'https://www.youtube.com/user/mycompanyname', 'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'})|raw}}
 
 {% endraw %}
 {% endhighlight %}
