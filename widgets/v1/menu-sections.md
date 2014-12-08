@@ -19,7 +19,7 @@ Version: >= 7.32. Add a menu sections navigation to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('menu', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('menu', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

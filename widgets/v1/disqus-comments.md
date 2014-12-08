@@ -19,7 +19,7 @@ This widget is managed by a third party. BaseKit wraps the Disqus comments widge
 {% highlight django %}
 {% raw %}
 
-  {{widget('blogpost', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('disqus', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

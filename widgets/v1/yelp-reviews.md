@@ -21,7 +21,7 @@ To include a Yelp widget in your template you will need to add the following lin
 {% highlight django %}
 {% raw %}
 
-  {{widget('yelpreview', 'thisunqiuewidgetname', {'title': 'Yelp Review', 'yelpbusinessid': ''})|raw}}
+  {{widget('yelpreview', 'thisuniquewidgetname', {'title': 'Yelp Review', 'yelpbusinessid': ''})|raw}}
 
 {% endraw %}
 {% endhighlight %}

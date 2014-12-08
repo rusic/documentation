@@ -19,7 +19,7 @@ Version: >= 7.32. Like a slideshow widget but for featured products.
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomfeaturedproducts', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecomfeaturedproducts', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

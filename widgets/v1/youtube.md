@@ -21,7 +21,7 @@ To include a video in your template you will need to add the following line:
 {% highlight django %}
 {% raw %}
 
-  {{widget('youtube', 'thisunqiuewidgetname', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe src="http://www.youtube.com/embed/j9Hjrs6WQ8M" frameborder="0" allowfullscreen></iframe>'})|raw}}
+  {{widget('youtube', 'thisuniquewidgetname', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe src="http://www.youtube.com/embed/j9Hjrs6WQ8M" frameborder="0" allowfullscreen></iframe>'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

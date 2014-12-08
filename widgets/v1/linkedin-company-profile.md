@@ -21,7 +21,7 @@ To include a LinkedIn profile widget in your template you will need to add the f
 {% highlight django %}
 {% raw %}
 
-  {{widget('linkedincompanyprofile', 'thisunqiuewidgetname', {'source': 'companyname', 'companyName': 'My Company'})|raw}}
+  {{widget('linkedincompanyprofile', 'thisuniquewidgetname', {'source': 'companyname', 'companyName': 'My Company'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

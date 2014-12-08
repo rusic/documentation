@@ -19,7 +19,7 @@ Version: >= 7.32. Add an ecommerce legal to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomlegal', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecomlegal', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

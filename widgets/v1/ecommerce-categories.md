@@ -19,7 +19,7 @@ Version: >= 7.32. Add an ecommerce categories to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomcategories', 'thisunqiuewidgetname', {'title': 'Categories', 'showCount', true})|raw}}
+  {{widget('ecomcategories', 'thisuniquewidgetname', {'title': 'Categories', 'showCount', true})|raw}}
 
 {% endraw %}
 {% endhighlight %}

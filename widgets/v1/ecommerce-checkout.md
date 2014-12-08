@@ -21,7 +21,7 @@ This widget is used to amalgamate the items, show the user a final price, and co
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomcheckout', 'thisunqiuewidgetname', {})|raw}}
+  {{widget('ecomcheckout', 'thisuniquewidgetname', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}

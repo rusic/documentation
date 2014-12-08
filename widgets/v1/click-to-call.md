@@ -21,7 +21,7 @@ To include a click to call widget in your template you will need to add the foll
 {% highlight django %}
 {% raw %}
 
-  {{widget('clicktocall', 'thisunqiuewidgetname', {phoneText: 'Click to Call'})|raw}}
+  {{widget('clicktocall', 'thisuniquewidgetname', {phoneText: 'Click to Call'})|raw}}
 
 {% endraw %}
 {% endhighlight %}

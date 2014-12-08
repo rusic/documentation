@@ -21,7 +21,7 @@ To include a contact form widget in your template you will need to add the follo
 {% highlight django %}
 {% raw %}
 
-  {{widget('contactform', 'thisunqiuewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+  {{widget('contactform', 'thisuniquewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
 
 {% endraw %}
 {% endhighlight %}
