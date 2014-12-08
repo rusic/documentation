@@ -171,11 +171,8 @@ body {
 		// Mobile toggle
 		.toggle-button {
 			display: none;
-			span {
-				display: inline-block;
-				width: 0;
-				text-indent: 100px;
-			}
+			float: right;
+			padding: 1px 5px;
 		}
 
 		// Navigation items
@@ -226,6 +223,7 @@ a {
 		padding: 6px 11px 7px;
 		border-radius: 3px;
 		color: $light-links;
+		outline: none;
 		&:hover {
 			color: $light-links;
 			background: darken($dark-links, 10%);
@@ -306,8 +304,13 @@ h3, legend {
 		width: 25%;
 	}
 
-	.span--three-quarters {
+	.span--three-quarters,
+	.search-form {
 		width: 75%;
+	}
+
+	.search-form {
+		display: inline-block;
 	}
 
 	// Main content
@@ -321,13 +324,15 @@ h3, legend {
 
 	// Navigation toggle
 	.toggle-button {
-		display: inherit;
+		display: inline-block;
 	}
 	.nav[data-state=closed] {
 		display: none;
 	}
 	.nav[data-state=open] {
 		display: inherit;
+		padding-bottom: 15px;
+		border-bottom: 1px solid $light-border;
 	}
 
 	// Aside
@@ -335,6 +340,10 @@ h3, legend {
 		padding: 15px 0;
 		border-left: none;
 		border-right: none;
+	}
+
+	.aside--docs {
+		padding: 0;
 	}
 
 	// Footer
