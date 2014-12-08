@@ -32,7 +32,7 @@ body {
 }
 	// BK logo
 	.logo {
-		margin-top: 15px;
+		margin: 16px 10px 0;
 		display: inline-block;
 	}
 
@@ -156,6 +156,7 @@ body {
 	.nav--footer {
 		text-align: right;
 		color: $light-text;
+		margin: 0 10px;
 		a {
 			color: $light-links;
 			margin-left: 10px;
@@ -195,6 +196,10 @@ body {
 // Footer
 .footer--main {
 	clear: both;
+}
+
+.copyright {
+	margin: 0 10px;
 }
 
 // Links
@@ -285,6 +290,14 @@ h3, legend {
 @media (min-width: 320px) and (max-width: 767px) {
 
 	// Header & footer
+	.nav--main,
+	.nav--footer,
+	.logo,
+	.copyright {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.span--half {
 		width: 50%;
 	}
