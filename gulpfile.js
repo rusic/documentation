@@ -4,6 +4,7 @@ var bower 	= require('main-bower-files');
 var rename 	= require('gulp-rename');
 var filter 	= require('gulp-filter');
 var uglify	= require('gulp-uglify');
+var mainfiles = bower();
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
@@ -14,7 +15,7 @@ var jsfilter 	= filter('*.js')
 // CSS components task
 gulp.task('css', function() {
 
-	return gulp.src(bower())
+	return gulp.src(mainfiles)
 
 		.pipe(cssfilter)
 		.pipe(rename({
@@ -28,7 +29,7 @@ gulp.task('css', function() {
 // SASS components task
 gulp.task('sass', function() {
 
-	return gulp.src(bower())
+	return gulp.src(mainfiles)
 
 		.pipe(scssfilter)
 		.pipe(rename({
@@ -41,7 +42,7 @@ gulp.task('sass', function() {
 // Fonts components task
 gulp.task('fonts', function() {
 
-	return gulp.src(bower())
+	return gulp.src(mainfiles)
 
 		.pipe(fontfilter)
 		.pipe(gulp.dest('fonts'));
@@ -49,24 +50,17 @@ gulp.task('fonts', function() {
 });
 
 // JavaScript components task
-gulp.task('scripts', function() {
+gulp.task('js', function() {
 
-	return gulp.src(bower())
+	mainfiles.push('_scripts/*.js')
+
+	return gulp.src(mainfiles)
 
 		.pipe(jsfilter)
-		.pipe(gulp.dest('_scripts'));
+		.pipe(uglify())
+		.pipe(gulp.dest('js'));
 
 });
-
-// Uglify JavaScipt
-gulp.task('compress', function() {
-  gulp.src('_scripts/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('js'))
-});
-
-// JavaScript components and uglify task
-gulp.task('js', ['scripts', 'compress'])
 
 
 // All assets task
