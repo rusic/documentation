@@ -28,6 +28,8 @@ navdocs:
     url: /templating/page-types/
   - title: Metadata
     url: /templating/metadata/
+  - title: Font Stacks
+    url: /templating/font-stacks/
   - title: LESS
     url: /templating/less/
   - title: Quality
