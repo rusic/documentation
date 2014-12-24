@@ -184,10 +184,11 @@ body {
 		.nav-list--child {
 			padding-left: 20px;
 		}
-		.nav-item--parent,
-		.nav-item--subtitle {
-			margin-top: 10px;
+		.nav-subtitle {
 			font-weight: bold;
+		}
+		.nav-item--parent {
+			margin-top: 10px;
 		}
 
 // Footer
@@ -322,13 +323,22 @@ h3, legend {
 		margin: 0 2.5%;
 	}
 
+	.main--content {
+		button, .button {
+			display: inline-block;
+			line-height: initial;
+		}
+	}
+
 	// Navigation toggle
 	.toggle-button {
 		display: inline-block;
 	}
+
 	.nav[data-state=closed] {
 		display: none;
 	}
+
 	.nav[data-state=open] {
 		display: inherit;
 		padding-bottom: 15px;

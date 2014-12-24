@@ -1,10 +1,10 @@
 <nav class="nav  nav--docs" data-state="closed">
 
-	<ul class="nav-list">
+	<ul class="nav-list  nav-list--parent">
 
 		{% for item in site.data.navigation.navdocs %}
 
-		<li class="nav-item  nav-item--parent{% if subitem.url == null %}  nav-item--subtitle{% endif %}">
+		<li class="nav-item  nav-item--parent">
 
 			{% if item.url == null %}
 
@@ -12,40 +12,37 @@
 
 			{% else %}
 
-				<a href="{{ item.url }}" {% if page.url == item.url %}class="current"{% endif %}>{{ item.title }}</a>
+				<a href="{{ item.url }}" class="nav-subtitle{% if page.url == item.url %}  current{% endif %}">{{ item.title }}</a>
+
+			{% endif %}
+
+			{% if item.subnav %}
+
+				<ul class="nav-list  nav-list--child">
+
+					{% for subitem in item.subnav %}
+
+						<li class="nav-item  nav-item--child{% if subitem.url == null %}  nav-item--parent{% endif %}">
+
+							{% if subitem.url == null %}
+
+								<span class="nav-subtitle">{{ subitem.title }}</span>
+
+							{% else %}
+
+								<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
+
+							{% endif %}
+
+						</li>
+
+					{% endfor %}
+
+				</ul>
 
 			{% endif %}
 
 		</li>
-
-			{% if item.subnav %}
-
-				<li>
-					<ul class="nav-list  nav-list--child">
-
-						{% for subitem in item.subnav %}
-
-							<li class="nav-item  nav-item--child{% if subitem.url == null %}  nav-item--subtitle{% endif %}">
-
-								{% if subitem.url == null %}
-
-									<span class="nav-subtitle">{{ subitem.title }}</span>
-
-								{% else %}
-
-									<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
-
-								{% endif %}
-
-							</li>
-
-						{% endfor %}
-
-					</ul>
-
-				</li>
-
-			{% endif %}
 
 		{% endfor %}
 
