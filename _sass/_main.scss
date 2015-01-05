@@ -1,11 +1,11 @@
 // Bower imports
 @import "normalize";
-@import "font-awesome";
 @import "grid";
 @import "autumn";
+@import "mixins";
 
 
-// Variables
+// Colour Variables
 $dark-background: #222;
 $dark-text: #555;
 $dark-links: #4183c4;
@@ -173,6 +173,9 @@ body {
 			display: none;
 			float: right;
 			padding: 1px 5px;
+			span, svg {
+				vertical-align: middle;
+			}
 		}
 
 		// Navigation items
@@ -235,6 +238,30 @@ a {
 		}
 	}
 
+// Icons
+.icon {
+	width: 20px;
+	height: 20px;
+}
+	.icon--search {
+		position: absolute;
+		z-index: 2;
+		right: 3px;
+		top: 3px;
+		@include linearGradient(rgba($light-background, 0), $light-background);
+		&:before {
+			content: "";
+		}
+	}
+
+	#icon-spyglass {
+		fill: $light-text;
+	}
+
+	#icon-menu {
+		fill: $light-links;
+	}
+
 // Forms
 fieldset {
 	border: none;
@@ -254,18 +281,11 @@ fieldset {
 			background: $light-background;
 		}
 	}
-	.search-label,
-	.search-icon {
+	.search-label {
 		position: absolute;
 		padding: 1px 9px;
 		z-index: 0;
 		color: $light-text;
-	}
-	.search-icon {
-		z-index: 2;
-		right: 0;
-		top: 4px;
-		text-shadow: 0 0 10px $light-background,  0 0 8px $light-background, 0 0 6px $light-background, 0 0 4px $light-background;
 	}
 	.search-field {
 		position: relative;
