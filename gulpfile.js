@@ -1,19 +1,22 @@
 // Create gulp variables
-var gulp 	= require('gulp');
-var bower 	= require('main-bower-files');
-var rename 	= require('gulp-rename');
-var filter 	= require('gulp-filter');
-var uglify	= require('gulp-uglify');
-var mainfiles = bower();
+var gulp		= require('gulp');
+var bower		= require('main-bower-files');
+var rename		= require('gulp-rename');
+var filter		= require('gulp-filter');
+var uglify		= require('gulp-uglify');
+var svgstore	= require('gulp-svgstore');
+var svgmin		= require('gulp-svgmin');
+var cheerio		= require('gulp-cheerio');
+var raster		= require('gulp-raster');
+var mainfiles	= bower();
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
 var scssfilter 	= filter('*.scss')
-var fontfilter 	= filter(['*.eot', '*.svg', '*.ttf', '.woff', '.otf'])
 var jsfilter 	= filter('*.js')
 
 // CSS components task
-gulp.task('css', function() {
+gulp.task('cssconvert', function() {
 
 	return gulp.src(mainfiles)
 
@@ -27,7 +30,7 @@ gulp.task('css', function() {
 });
 
 // SASS components task
-gulp.task('sass', function() {
+gulp.task('sassinsert', function() {
 
 	return gulp.src(mainfiles)
 
@@ -39,18 +42,12 @@ gulp.task('sass', function() {
 
 });
 
-// Fonts components task
-gulp.task('fonts', function() {
+// Styles task
+gulp.task('styles', ['cssconvert', 'sassinsert'])
 
-	return gulp.src(mainfiles)
-
-		.pipe(fontfilter)
-		.pipe(gulp.dest('fonts'));
-
-});
 
 // JavaScript components task
-gulp.task('js', function() {
+gulp.task('jscompile', function() {
 
 	mainfiles.push('_scripts/*.js')
 
@@ -62,6 +59,32 @@ gulp.task('js', function() {
 
 });
 
+// SVG compiling task
+gulp.task('svgcompile', function () {
+    return gulp
+        .src('_icons/*.svg')
+        .pipe(svgmin())
+        .pipe(svgstore({ fileName: 'icons.svg', prefix: 'icon-', inlineSvg: true }))
+        .pipe(cheerio(function ($) {
+            $('svg').attr('style', 'display:none');
+            $('path').attr('fill', null);
+            $('symbol').attr('fill', '#777');
+        }))
+        .pipe(gulp.dest('_includes'));
+});
+
+// PNG rastering task
+gulp.task('pngconvert', function () {
+	return gulp
+	.src('_icons/*.svg')
+	.pipe(raster())
+	.pipe(rename({extname: '.png'}))
+	.pipe(gulp.dest('assets/icons'))
+});
+
+// Icons task
+gulp.task('icons', ['svgcompile', 'pngconvert'])
+
 
 // All assets task
-gulp.task('assets', ['css', 'sass', 'fonts', 'js'])
+gulp.task('assets', ['styles', 'icons', 'jscompile'])
