@@ -6,13 +6,20 @@
 
 			<label class="search-label" for="search-field">Search documentation...</label>
 
-			<i class="search-icon fa fa-search"></i>
+			<svg class="icon icon--search">
+				<switch>
+					<use xlink:href="#icon-spyglass"></use>
+					<foreignObject>
+						<img src="assets/icons/spyglass.png" alt="spyglass">
+					</foreignObject>
+				</switch>
+			</svg>
 
 			<input type="text" id="search-field" class="search-input" autocomplete="off" />
 
 		</div>
 
-		<ul id="search-results" class="nav-list nav-list--search-zxresults">
+		<ul id="search-results" class="nav-list nav-list--search-results">
 
 		</ul>
 
@@ -20,4 +27,17 @@
 
 </form>
 
-<button class="toggle-button" data-state="closed"><span>Menu </span><i class="fa fa-bars fa-lg"></i></button>
+<button class="toggle-button" data-state="closed">
+
+	<span>Menu</span>
+
+	<svg class="icon icon--menu">
+		<switch>
+			<use xlink:href="#icon-menu"></use>
+			<foreignObject>
+				<img src="assets/icons/menu.png" alt="menu">
+			</foreignObject>
+		</switch>
+	</svg>
+
+</button>
