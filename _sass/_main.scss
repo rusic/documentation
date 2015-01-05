@@ -126,6 +126,14 @@ body {
 		width: 100%;
 	}
 
+	th {
+		background: darken($light-background, 8%);
+	}
+	td, th {
+		border: 1px solid darken($light-background, 8%);
+		padding: 1px 3px;
+	}
+
 
 // Aside
 .aside {
