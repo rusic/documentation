@@ -8,12 +8,14 @@ var svgstore	= require('gulp-svgstore');
 var svgmin		= require('gulp-svgmin');
 var cheerio		= require('gulp-cheerio');
 var raster		= require('gulp-raster');
+var replace		= require('gulp-replace');
 var mainfiles	= bower();
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
 var scssfilter 	= filter('*.scss')
 var jsfilter 	= filter('*.js')
+var fontfilter 	= filter(['*.eot','*.svg','*.ttf','*.woff'])
 
 // CSS components task
 gulp.task('cssconvert', function() {
@@ -35,6 +37,7 @@ gulp.task('sassinsert', function() {
 	return gulp.src(mainfiles)
 
 		.pipe(scssfilter)
+		.pipe(replace("font-url('octicons", "font-url('/fonts/octicons"))
 		.pipe(rename({
 			prefix: "_"
 		}))
@@ -80,6 +83,17 @@ gulp.task('pngicons', function () {
 	.pipe(rename({extname: '.png'}))
 	.pipe(gulp.dest('assets/icons'))
 });
+
+// Octicons icon fonts
+gulp.task('octicons', function() {
+
+	return gulp.src(mainfiles)
+
+		.pipe(fontfilter)
+		.pipe(gulp.dest('fonts'));
+
+});
+
 
 // Icons task
 gulp.task('icons', ['svgicons', 'pngicons'])
