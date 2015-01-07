@@ -2,6 +2,7 @@
 @import "normalize";
 @import "grid";
 @import "autumn";
+@import "sprockets-octicons";
 @import "mixins";
 
 
@@ -247,9 +248,10 @@ a {
 	}
 
 // Icons
-.icon {
+svg {
 	width: 20px;
 	height: 20px;
+	fill: $dark-text;
 }
 	.icon--search {
 		position: absolute;
