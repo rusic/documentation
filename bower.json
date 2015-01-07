@@ -28,9 +28,6 @@
   "overrides": {
     "pygments": {
       "main": "css/autumn.css"
-    },
-    "octicons": {
-	  "main": "svg/*.svg"
     }
   }
 }
