@@ -4,11 +4,20 @@ var toggleState	= function (elem, one, two) {
 		elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
 };
 	// Mobile navigation toggle selector
-	var toggle 	= document.querySelector('.toggle-button');
+	var navtoggle = document.querySelector('.toggle-button');
 
 	// Aside navigation toggle
-	toggle.onclick = function (e) {
+	navtoggle.onclick = function (e) {
 		toggleState('.nav--docs', 'closed', 'open');
+		e.preventDefault();
+	};
+
+	// Search results indicator
+	var searchtoggle = document.querySelector('.octicon-search');
+
+	// Aside navigation toggle
+	searchtoggle.onclick = function (e) {
+		toggleState('.nav-list--search-results', 'default', 'highlighted');
 		e.preventDefault();
 	};
 

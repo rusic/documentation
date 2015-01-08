@@ -1,73 +1,111 @@
 // Create gulp variables
-var gulp 	= require('gulp');
-var bower 	= require('main-bower-files');
-var rename 	= require('gulp-rename');
-var filter 	= require('gulp-filter');
-var uglify	= require('gulp-uglify');
+var gulp		= require('gulp');
+var bower		= require('main-bower-files');
+var rename		= require('gulp-rename');
+var filter		= require('gulp-filter');
+
+var uglify		= require('gulp-uglify');
+
+var svgstore	= require('gulp-svgstore');
+var svgmin		= require('gulp-svgmin');
+var svg2png		= require('gulp-svg2png');
+
+var replace		= require('gulp-replace');
+var cheerio		= require('gulp-cheerio');
+
+var mainfiles	= bower();
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
 var scssfilter 	= filter('*.scss')
-var fontfilter 	= filter(['*.eot', '*.svg', '*.ttf', '.woff', '.otf'])
 var jsfilter 	= filter('*.js')
+var fontfilter 	= filter(['*.eot','*.svg','*.ttf','*.woff'])
+
 
 // CSS components task
-gulp.task('css', function() {
+gulp.task('cssassets', function() {
 
-	return gulp.src(bower())
+	return gulp.src(mainfiles)
 
 		.pipe(cssfilter)
 		.pipe(rename({
 			prefix: "_",
 			extname: ".scss"
 		}))
-		.pipe(gulp.dest('_sass'));
+		.pipe(gulp.dest('_sass'))
 
 });
 
 // SASS components task
-gulp.task('sass', function() {
+gulp.task('sassassets', function() {
 
-	return gulp.src(bower())
+	return gulp.src(mainfiles)
 
 		.pipe(scssfilter)
+		.pipe(replace("font-url('octicons", "url('/fonts/octicons"))
 		.pipe(rename({
 			prefix: "_"
 		}))
-		.pipe(gulp.dest('_sass'));
+		.pipe(gulp.dest('_sass'))
 
 });
 
-// Fonts components task
-gulp.task('fonts', function() {
+	// Styles task
+	gulp.task('styleassets', ['cssassets', 'sassassets'])
 
-	return gulp.src(bower())
-
-		.pipe(fontfilter)
-		.pipe(gulp.dest('fonts'));
-
-});
 
 // JavaScript components task
-gulp.task('scripts', function() {
+gulp.task('jsassets', function() {
 
-	return gulp.src(bower())
+	mainfiles.push('_scripts/*.js')
+
+	return gulp.src(mainfiles)
 
 		.pipe(jsfilter)
-		.pipe(gulp.dest('_scripts'));
+		.pipe(uglify())
+		.pipe(gulp.dest('js'))
 
 });
 
-// Uglify JavaScipt
-gulp.task('compress', function() {
-  gulp.src('_scripts/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('js'))
+// SVG icons task
+gulp.task('svgicons', function () {
+
+	return gulp.src('_icons/*.svg')
+
+		.pipe(svgmin())
+		.pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
+		.pipe(cheerio(function ($) {
+			$('svg').attr('style', 'display:none');
+			$('path').attr('fill', null);
+		}))
+		.pipe(gulp.dest('_includes'))
+
 });
 
-// JavaScript components and uglify task
-gulp.task('js', ['scripts', 'compress'])
+// PNG icons task
+gulp.task('pngicons', function () {
+
+	return gulp.src('_icons/*.svg')
+
+		.pipe(svg2png())
+		.pipe(rename({extname: '.png'}))
+		.pipe(gulp.dest('assets/icons'))
+
+});
+
+// Octicons icon fonts
+gulp.task('fonticons', function() {
+
+	return gulp.src(mainfiles)
+
+		.pipe(fontfilter)
+		.pipe(gulp.dest('fonts'))
+
+});
+
+	// Icons task
+	gulp.task('icons', ['svgicons', 'pngicons','fonticons'])
 
 
 // All assets task
-gulp.task('assets', ['css', 'sass', 'fonts', 'js'])
+gulp.task('assets', ['styleassets', 'icons', 'jsassets'])

@@ -11,7 +11,7 @@ Before you begin to develop your Responsive site you will need to do the followi
   If you do not already have an account, you will need to sign up!
   
 2. ### Upload using a zip
-  [Download this simple Zip Template](http://goo.gl/zhzvUr). Open up the zip file and have a play with the ```default.twig```; the main HTML of the template. Upload again to see your changes! Do this by going to the Custom Templates panel in the Manage section of the BaseKit Editor. If you prefer, you can also use a Git repository. See the [Upload Template instructions](/getting-started/uploading/) for more info.
+  [Download this simple Zip Template](http://goo.gl/DqoGhX). Open up the zip file and have a play with the ```default.twig```; the main HTML of the template. Upload again to see your changes! Do this by going to the Custom Templates panel in the Manage section of the BaseKit Editor. If you prefer, you can also use a Git repository. See the [Upload Template instructions](/getting-started/uploading/) for more info.
   
 3. ### Build templates locally
   Our local development kit allows you to view templates on your local machine. It has all the features required to build templates for BaseKit. [Download the Template Development Kit](/getting-started/local-development/) from the Tools section. Requires a local PHP server.
