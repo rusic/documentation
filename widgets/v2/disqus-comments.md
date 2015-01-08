@@ -25,6 +25,16 @@ This widget is managed by a third party. BaseKit wraps the Disqus comments widge
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 Currently, this widget does not have any options.

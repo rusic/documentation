@@ -25,6 +25,16 @@ Version: >= 7.32. Add an ecommerce product list to the page.
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 You can change the following options for the widget:

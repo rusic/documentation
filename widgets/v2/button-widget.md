@@ -26,6 +26,16 @@ To include a button in your template you will need to add the following line:
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 You can change the following options for the widget:

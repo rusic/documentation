@@ -27,6 +27,16 @@ This widget is used to amalgamate the items, show the user a final price, and co
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 Currently this widget does not have any options.

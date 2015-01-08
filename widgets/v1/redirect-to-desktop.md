@@ -2,8 +2,6 @@
 layout: widget
 title: Redirect To Desktop
 versions:
-- version: Version 2.0
-  url: /widgets/v2/redirect-to-desktop/
 - version: Version 1.0
   url: /widgets/v1/redirect-to-desktop/
 ---

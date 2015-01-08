@@ -25,6 +25,16 @@ Version: >= 7.32. Add an ecommerce categories to the page.
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 * ```title``` (string): This is the string that sits above the categories widget. ```categories``` (default)

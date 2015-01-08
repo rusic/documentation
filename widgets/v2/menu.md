@@ -25,6 +25,16 @@ Version: >= 7.32. Add a menu list to the page (i.e. restaurant menu).
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 Currently this widget does not have any options.

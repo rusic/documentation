@@ -25,6 +25,16 @@ Version: >= 7.32. Add a blog post list to the page.
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 * ```postDisplayType``` (string): This will make the blog post list widget either display the summary or the whole post

@@ -26,6 +26,16 @@ To include a company address widget in your template you will need to add the fo
 {% endraw %}
 {% endhighlight %}
 
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
+
 ## Widget Options
 
 This widget will use the data in your 'manage shared contact' section. So you don't need to set it.

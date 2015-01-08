@@ -26,3 +26,13 @@ To include a logo widget in your template you will need to add the following lin
 
 {% endraw %}
 {% endhighlight %}
+
+
+<h4>Result</h4>
+{% highlight html %}
+{% raw %}
+
+  <!-- v2 widget HTML output -->
+
+{% endraw %}
+{% endhighlight %}
