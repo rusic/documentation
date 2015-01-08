@@ -8,12 +8,14 @@ var svgstore	= require('gulp-svgstore');
 var svgmin		= require('gulp-svgmin');
 var cheerio		= require('gulp-cheerio');
 var raster		= require('gulp-raster');
+var replace		= require('gulp-replace');
 var mainfiles	= bower();
 
 // Asset filter variables
 var cssfilter 	= filter('*.css')
 var scssfilter 	= filter('*.scss')
 var jsfilter 	= filter('*.js')
+var fontfilter 	= filter(['*.eot','*.svg','*.ttf','*.woff'])
 
 // CSS components task
 gulp.task('cssconvert', function() {
@@ -35,6 +37,7 @@ gulp.task('sassinsert', function() {
 	return gulp.src(mainfiles)
 
 		.pipe(scssfilter)
+		.pipe(replace("font-url('octicons", "url('/fonts/octicons"))
 		.pipe(rename({
 			prefix: "_"
 		}))
@@ -59,22 +62,21 @@ gulp.task('jscompile', function() {
 
 });
 
-// SVG compiling task
-gulp.task('svgcompile', function () {
+// SVG icons task
+gulp.task('svgicons', function () {
     return gulp
         .src('_icons/*.svg')
         .pipe(svgmin())
-        .pipe(svgstore({ fileName: 'icons.svg', prefix: 'icon-', inlineSvg: true }))
+        .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
         .pipe(cheerio(function ($) {
             $('svg').attr('style', 'display:none');
             $('path').attr('fill', null);
-            $('symbol').attr('fill', '#777');
         }))
         .pipe(gulp.dest('_includes'));
 });
 
-// PNG rastering task
-gulp.task('pngconvert', function () {
+// PNG icons task
+gulp.task('pngicons', function () {
 	return gulp
 	.src('_icons/*.svg')
 	.pipe(raster())
@@ -82,8 +84,19 @@ gulp.task('pngconvert', function () {
 	.pipe(gulp.dest('assets/icons'))
 });
 
+// Octicons icon fonts
+gulp.task('octicons', function() {
+
+	return gulp.src(mainfiles)
+
+		.pipe(fontfilter)
+		.pipe(gulp.dest('fonts'));
+
+});
+
+
 // Icons task
-gulp.task('icons', ['svgcompile', 'pngconvert'])
+gulp.task('icons', ['svgicons', 'pngicons'])
 
 
 // All assets task
