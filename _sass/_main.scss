@@ -17,6 +17,10 @@ $light-text: #aaa;
 $light-border: #ddd;
 $highlighted-text: #fff9da;
 
+$json-colour: #F9E6D2;
+$less-colour: #CAD5E8;
+$html-colour: #FFD080;
+$twig-colour: #DFEA95;
 
 // Body
 body {
@@ -62,17 +66,12 @@ body {
 	h2, h3, h4, h5, h6 {
 		margin-bottom: 0.3em;
 		position: relative;
+		&[id] {
+			padding: 2px 4px;
+			background: darken($light-background, 3%);
+		}
 		&:target {
 			background: $highlighted-text;
-			&:after {
-				content: "";
-				position: absolute;
-				top: -4px;
-				left: -4px;
-				right: -4px;
-				bottom: -4px;
-				border: 4px solid $highlighted-text;
-			}
 		}
 	}
 
@@ -96,12 +95,20 @@ body {
 		padding: 0 5px;
 		background: darken($light-background, 8%);;
 	}
+	code[data-lang=json]:before {
+		background: $json-colour;
+	}
+	code[data-lang=html]:before {
+		background: $html-colour;
+	}
 	code[data-lang=django]:before {
 		content: "twig";
+		background: $twig-colour;
 	}
 	code[data-lang=sass]:before,
 	code[data-lang=css]:before {
 		content: "less";
+		background: $less-colour;
 	}
 
 	// Inline code
