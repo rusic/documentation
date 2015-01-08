@@ -1,1 +1,1 @@
-<a class="button" href="{{ include.link }}">{{ include.text }}</a>
+<a class="button" href="{{ include.link }}">{{ include.text }} {% if include.icon != null %}<span class="octicon octicon-{{ include.icon }}"></span>{% endif %}</a>

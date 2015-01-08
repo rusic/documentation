@@ -225,9 +225,6 @@ a {
 	&.current {
 		color: darken($dark-links, 15%);
 	}
-	&.current {
-		border-bottom: 1px solid $dark-links;
-	}
 }
 	// Buttons
 	.button,

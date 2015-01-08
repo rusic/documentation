@@ -15,8 +15,11 @@ The local template emulator provides you with a way to view your BaseKit templat
 In order to use the local Template Development Kit (TDK), you will need to have a local web server installed, preferrably Apache. If you don't already have a local web server, you may want to check out tools such as [WampServer](http://www.wampserver.com/en/) for Windows or [MAMP](http://www.mamp.info/en/index.html) for Mac OSX. These will get you up and running with a web server very quickly, and they provide GUI tools for basic configuration tasks.
 
 ### Download Now!
-* [Download Latest Stable Version](http://goo.gl/DqoGhX) (stable)
-* [Bleeding Edge](http://goo.gl/TFEiBm) (development)
+
+* {% include button.html link="http://goo.gl/DqoGhX" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
+
+* {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
+
 * [Download Specific Version](https://github.com/basekit-templates/tdk/wiki)
 
 Firstly, you will need to [download the TDK (Template Development Kit)](https://github.com/basekit-templates/tdk/wiki). If your web server is configured correctly, and the files are in the right place, then you should see the emulator when you navigate to your virtual host in a browser.

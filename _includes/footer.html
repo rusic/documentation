@@ -22,7 +22,7 @@
 
 						{% for item in site.data.navigation.navfooter %}
 
-							<a href="{{ item.url }}">{{ item.title }}</a>
+							<a href="{{ item.url }}">{{ item.title }} {% if item.icon != null %}<span class="octicon octicon-{{ item.icon }}"></span>{% endif %}</a>
 
 						{% endfor %}
 
