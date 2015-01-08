@@ -15,6 +15,7 @@ $light-background: #fff;
 $light-links: #fff;
 $light-text: #aaa;
 $light-border: #ddd;
+$highlighted-text: #fff9da;
 
 
 // Body
@@ -256,8 +257,8 @@ svg {
 	.search-form .octicon {
 		position: absolute;
 		z-index: 2;
-		right: 5px;
-		top: 5px;
+		right: 4px;
+		top: 4px;
 		@include linearGradient(rgba($light-background, 0), $light-background);
 	}
 
@@ -269,33 +270,38 @@ fieldset {
 }
 	// Search Form
 	input[type=text] {
-		border: 1px solid darken($light-border, 20%);
+		border: none;
 		box-shadow: none;
 		border-radius: 0;
 		width: 100%;
-		padding: 4px 9px;
-		&:focus {
-			border-color: $dark-links;
-			outline: none;
-			background: $light-background;
-		}
+	}
+	input:valid,
+	input:focus {
+		outline: none;
+		background: $light-background;
 	}
 	.search-label {
 		position: absolute;
-		padding: 1px 9px;
 		z-index: 0;
 		color: $light-text;
-	}
-	.search-field {
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-		background: $light-background;
 	}
 	.search-input {
 		position: relative;
 		z-index: 1;
 		background: none;
+	}
+	.search-field,
+	.nav-list--search-results {
+		padding: 0 9px;
+	}
+	.search-form {
+		border: 1px solid darken($light-border, 20%);
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+	.nav-list--search-results[data-state=highlighted] {
+		background: $highlighted-text;
 	}
 
 // Headings
