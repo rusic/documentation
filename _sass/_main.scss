@@ -61,6 +61,19 @@ body {
 	// Type
 	h2, h3, h4, h5, h6 {
 		margin-bottom: 0.3em;
+		position: relative;
+		&:target {
+			background: $highlighted-text;
+			&:after {
+				content: "";
+				position: absolute;
+				top: -4px;
+				left: -4px;
+				right: -4px;
+				bottom: -4px;
+				border: 4px solid $highlighted-text;
+			}
+		}
 	}
 
 	p {
@@ -256,6 +269,7 @@ svg {
 		z-index: 2;
 		right: 4px;
 		top: 4px;
+		cursor: pointer;
 		@include linearGradient(rgba($light-background, 0), $light-background);
 	}
 
@@ -296,6 +310,9 @@ fieldset {
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
+	}
+	.nav-list--search-results {
+		transition: .2s;
 	}
 	.nav-list--search-results[data-state=highlighted] {
 		background: $highlighted-text;
