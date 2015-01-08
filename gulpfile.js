@@ -37,7 +37,7 @@ gulp.task('sassinsert', function() {
 	return gulp.src(mainfiles)
 
 		.pipe(scssfilter)
-		.pipe(replace("font-url('octicons", "font-url('/fonts/octicons"))
+		.pipe(replace("font-url('octicons", "url('/fonts/octicons"))
 		.pipe(rename({
 			prefix: "_"
 		}))
