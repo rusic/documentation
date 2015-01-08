@@ -2,6 +2,7 @@
 @import "normalize";
 @import "grid";
 @import "autumn";
+@import "sprockets-octicons";
 @import "mixins";
 
 
@@ -247,27 +248,17 @@ a {
 	}
 
 // Icons
-.icon {
+svg {
 	width: 20px;
 	height: 20px;
+	fill: $dark-text;
 }
-	.icon--search {
+	.search-form .octicon {
 		position: absolute;
 		z-index: 2;
-		right: 3px;
-		top: 3px;
+		right: 5px;
+		top: 5px;
 		@include linearGradient(rgba($light-background, 0), $light-background);
-		&:before {
-			content: "";
-		}
-	}
-
-	#icon-spyglass {
-		fill: $light-text;
-	}
-
-	#icon-menu {
-		fill: $light-links;
 	}
 
 // Forms
