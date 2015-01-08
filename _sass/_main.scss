@@ -253,23 +253,12 @@ svg {
 	height: 20px;
 	fill: $dark-text;
 }
-	.icon--search {
+	.octicon-search {
 		position: absolute;
 		z-index: 2;
-		right: 3px;
-		top: 3px;
+		right: 5px;
+		top: 5px;
 		@include linearGradient(rgba($light-background, 0), $light-background);
-		&:before {
-			content: "";
-		}
-	}
-
-	#icon-spyglass {
-		fill: $light-text;
-	}
-
-	#icon-menu {
-		fill: $light-links;
 	}
 
 // Forms
