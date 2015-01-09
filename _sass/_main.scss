@@ -156,6 +156,18 @@ body {
 		padding: 1px 3px;
 	}
 
+	// Feature cards
+	.feature-card {
+		width: 25%;
+		float: left;
+		padding: 15px;
+		border: 1px solid $light-background;
+		background: darken($light-background, 3%);
+		text-align: center;
+		.octicon {
+			font-size: 44px;
+		}
+	}
 
 // Aside
 .aside {
@@ -313,6 +325,7 @@ fieldset {
 		padding: 0 9px;
 	}
 	.search-form {
+		width: 100%;
 		border: 1px solid darken($light-border, 20%);
 		position: relative;
 		overflow: hidden;
@@ -323,6 +336,18 @@ fieldset {
 	}
 	.nav-list--search-results[data-state=highlighted] {
 		background: $highlighted-text;
+	}
+
+	.header--feature {
+		.octicon-search {
+			font-size: 34px;
+			top: 5px;
+			right: 6px;
+		}
+		.search-form {
+			font-size: 34px;
+			line-height: 44px;
+		}
 	}
 
 // Headings
@@ -352,7 +377,7 @@ h3, legend {
 	}
 
 	.span--three-quarters,
-	.search-form {
+	.aside--docs .search-form {
 		width: 75%;
 	}
 
@@ -374,6 +399,10 @@ h3, legend {
 			display: inline-block;
 			line-height: initial;
 		}
+	}
+
+	.feature-card {
+		width: 50%;
 	}
 
 	// Navigation toggle
