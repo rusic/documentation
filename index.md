@@ -1,9 +1,7 @@
 ---
-layout: doc
+layout: feature
 title: Introduction
 ---
-
-# Welcome
 
 **BaseKit** is proud to reveal our new **Template Development Kit** - making custom sites easier to build and publish. Our site editor includes **100+ professionally designed templates** designed just for all resolutions. Each design is quick to load and easy to navigate. You can change the appearance of the site at any time by customising the **colours**, **fonts** and **layout** or swap to a different template at no extra cost.
 
@@ -14,3 +12,12 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
 * [Download the Template Development Kit now!](/getting-started/local-development/) - Runs on PHP. View and build templates on your local machine.
 
 {% include buttoncenter.html link="http://goo.gl/DqoGhX" text="Download the Template Development Kit (7.45 stable)" icon="cloud-download" %}
+
+
+{% include featurecard.html title="Getting Started" link="/getting-started/" icon="milestone" content="This is some more info about the card" %}
+
+{% include featurecard.html title="Templating" link="/templating/twig/" icon="file-code" content="This is some more info about the card" %}
+
+{% include featurecard.html title="Site Data" link="/data/" icon="file-text" content="This is some more info about the card" %}
+
+{% include featurecard.html title="Widgets" link="/widgets/" icon="puzzle" content="This is some more info about the card" %}
