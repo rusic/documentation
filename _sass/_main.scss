@@ -42,11 +42,19 @@ body {
 		display: inline-block;
 	}
 
+	// Feature header
+	.header--feature {
+		padding: 100px 0;
+		background: darken($light-background, 3%);
+	}
+
+
 // Main
 .main--body {
 	background: $light-background;
 	float: left;
 	width: 100%;
+	padding-bottom: 20px;
 	.row {
 		display: flex;
 	}
@@ -66,6 +74,7 @@ body {
 	h2, h3, h4, h5, h6 {
 		margin-bottom: 0.3em;
 		position: relative;
+		clear: both;
 		&[id] {
 			padding: 2px 4px;
 			background: darken($light-background, 3%);
@@ -77,6 +86,10 @@ body {
 
 	p {
 		line-height: 26px;
+	}
+
+	hr {
+		clear: both;
 	}
 
 	// Pygments
@@ -156,11 +169,14 @@ body {
 		padding: 1px 3px;
 	}
 
+
 	// Feature cards
 	.feature-card {
 		width: 25%;
 		float: left;
-		padding: 15px;
+		padding: 30px 15px;
+		margin-bottom: 5px;
+		min-height: 260px;
 		border: 1px solid $light-background;
 		background: darken($light-background, 3%);
 		text-align: center;
@@ -327,6 +343,7 @@ fieldset {
 	.search-form {
 		width: 100%;
 		border: 1px solid darken($light-border, 20%);
+		background: $light-background;
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
