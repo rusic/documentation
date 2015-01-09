@@ -7,19 +7,30 @@ var toggleState	= function (elem, one, two) {
 	var navtoggle = document.querySelector('.toggle-button');
 
 	// Aside navigation toggle
-	navtoggle.onclick = function (e) {
-		toggleState('.nav--docs', 'closed', 'open');
-		e.preventDefault();
+	if (typeof(navtoggle) != 'undefined' && navtoggle != null) {
+		navtoggle.onclick = function (e) {
+			toggleState('.nav--docs', 'closed', 'open');
+			e.preventDefault();
+		};
 	};
 
-	// Search results indicator
+	// Search results icon selector
 	var searchtoggle = document.querySelector('.octicon-search');
 
-	// Aside navigation toggle
-	searchtoggle.onclick = function (e) {
-		toggleState('.nav-list--search-results', 'default', 'highlighted');
-		e.preventDefault();
+	// Search indicator toggle
+	if (typeof(searchtoggle) != 'undefined' && searchtoggle != null) {
+		searchtoggle.onclick = function (e) {
+			toggleState('.nav-list--search-results', 'default', 'highlighted');
+			e.preventDefault();
+		};
 	};
+
+
+var element =  document.getElementById('elementId');
+if (typeof(element) != 'undefined' && element != null)
+{
+  // exists.
+}
 
 // Table of contents generator
 	// Choose elements from page
