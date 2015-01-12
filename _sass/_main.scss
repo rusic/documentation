@@ -95,6 +95,19 @@ body {
 		clear: both;
 	}
 
+	ul, ol {
+		padding-left: 18px;
+	}
+	ul {
+		list-style: square;
+		ul {
+			list-style: disc;
+			ul {
+				list-style: circle;
+			}
+		}
+	}
+
 	// Pygments
 	.highlight {
 		position: relative;
@@ -174,10 +187,10 @@ body {
 
 
 // Feature
-	.main--feature {
-		background: darken($light-background, 3%);
-		padding-bottom: 60px;
-	}
+.main--feature {
+	background: darken($light-background, 3%);
+	padding-bottom: 60px;
+}
 
 	// Feature cards
 	.feature-card {
@@ -210,23 +223,23 @@ body {
 	h3 {
 		margin-top: 0;
 	}
+	.octicon {
+		min-width: 18px;
+	}
 }
 	// In-page navigations
 	.aside--docs,
 	.aside--search {
 		border-right-width: 1px;
 	}
-	.aside--verions,
+	.aside--versions,
 	.aside--contents {
 		border-left-width: 1px;
-		.nav-item {
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			color: $dark-links;
+		li {
+			list-style: square;
 		}
 	}
-	.aside--verions,
+	.aside--versions,
 	.aside--search {
 		border-bottom-width: 1px;
 	}
@@ -260,18 +273,21 @@ body {
 
 		// Navigation items
 		.nav-list {
-			padding: 0;
 			margin: 0;
-			list-style: none;
-		}
-		.nav-list--child {
-			padding-left: 20px;
 		}
 		.nav-subtitle {
 			font-weight: bold;
 		}
 		.nav-item--parent {
 			margin-top: 10px;
+		}
+		.nav--docs {
+			> .nav-list--parent {
+				padding-left: 0;
+			}
+			.nav-item {
+				list-style: none;
+			}
 		}
 
 // Footer
@@ -291,9 +307,9 @@ a {
 	&:hover {
 		color: darken($dark-links, 10%);
 	}
-	&:active,
 	&.current {
 		color: darken($dark-links, 15%);
+		border-bottom: 1px solid darken($dark-links, 10%);
 	}
 }
 	// Buttons
