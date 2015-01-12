@@ -42,16 +42,6 @@ body {
 		display: inline-block;
 	}
 
-	// Feature header
-	.header--feature {
-		padding: 8% 0;
-		margin-bottom: 20px;
-		h2 {
-			padding-bottom: 3%;
-		}
-	}
-
-
 // Main
 .main--body {
 	background: $light-background;
@@ -190,7 +180,26 @@ body {
 .main--feature {
 	background: darken($light-background, 3%);
 	padding-bottom: 60px;
+	.octicon {
+		font-size: 34px;
+	}
 }
+	// Feature header
+	.header--feature {
+		padding: 8% 0;
+		margin-bottom: 20px;
+		h2 {
+			padding-bottom: 3%;
+		}
+		.search-form .octicon {
+			top: 5px;
+			right: 6px;
+		}
+		.search-form {
+			font-size: 34px;
+			line-height: 44px;
+		}
+	}
 
 	// Feature cards
 	.feature-card {
@@ -202,15 +211,15 @@ body {
 		border: 1px solid darken($light-background, 3%);
 		background: $light-background;
 		text-align: center;
-		.octicon {
-			font-size: 44px;
-		}
 		.button-container {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
 			min-height: 60px;
+		}
+		.octicon {
+			font-size: 44px;
 		}
 	}
 
@@ -340,7 +349,7 @@ svg {
 	.search-form .octicon {
 		position: absolute;
 		z-index: 2;
-		right: 4px;
+		right: 1px;
 		top: 4px;
 		cursor: pointer;
 		@include linearGradient(rgba($light-background, 0), $light-background);
@@ -376,7 +385,7 @@ fieldset {
 	}
 	.search-field,
 	.nav-list--search-results {
-		padding: 0 9px;
+		padding: 0 5px;
 	}
 	.search-form {
 		width: 100%;
@@ -391,17 +400,6 @@ fieldset {
 	}
 	.nav-list--search-results[data-state=highlighted] {
 		background: $highlighted-text;
-	}
-	.header--feature {
-		.octicon-search {
-			font-size: 34px;
-			top: 5px;
-			right: 6px;
-		}
-		.search-form {
-			font-size: 34px;
-			line-height: 44px;
-		}
 	}
 
 // Headings
