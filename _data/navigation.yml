@@ -12,6 +12,8 @@ navdocs:
   url: /getting-started/
   icon: milestone
   subnav:
+  - title: Welcome
+    url: /getting-started/welcome/
   - title: Local Development
     url: /getting-started/local-development/
   - title: Uploading
