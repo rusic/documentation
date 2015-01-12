@@ -12,6 +12,10 @@
 
 	<p>{{ include.content }}</p>
 
-	{% if include.buttontext != null %}<a class="button" href="{{ include.link }}">{{ include.buttontext }}</a>{% endif %}
+	<div class="button-container">
+
+		{% if include.buttontext != null %}<a class="button" href="{{ include.link }}">{{ include.buttontext }}</a>{% endif %}
+
+	</div>
 
 </div>
