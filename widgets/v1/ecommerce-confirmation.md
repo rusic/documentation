@@ -1,6 +1,7 @@
 ---
 layout: widget
 title: Ecommerce Confirmation
+searchable: false
 versions:
 - version: Version 2.0
   url: /widgets/v2/ecommerce-confirmation/

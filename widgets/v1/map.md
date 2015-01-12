@@ -1,6 +1,7 @@
 ---
 layout: widget
 title: Map
+searchable: false
 versions:
 - version: Version 2.0
   url: /widgets/v2/map/

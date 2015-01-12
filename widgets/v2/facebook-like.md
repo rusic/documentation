@@ -1,7 +1,7 @@
 ---
 layout: widget
 title: Facebook Like
-searchable: false
+searchable: true
 versions:
 - version: Version 2.0
   url: /widgets/v2/facebook-like/

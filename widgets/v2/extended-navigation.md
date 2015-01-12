@@ -1,7 +1,7 @@
 ---
 layout: widget
 title: Extended Navigation
-searchable: false
+searchable: true
 versions:
 - version: Version 2.0
   url: /widgets/v2/extended-navigation/
