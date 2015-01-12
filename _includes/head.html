@@ -26,22 +26,23 @@
 	<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 	<meta name="application-name" content="BaseKit Docs">
 
+	{% assign description = page.excerpt | strip_html | strip_newlines %}
 	<!-- Twitter meta -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@{{ site.twitter }}" />
 	<meta name="twitter:title" content="{{ page.title }}" />
-	<meta name="twitter:description" content="{{ page.excerpt }}" />
+	<meta name="twitter:description" content="{{ description }}" />
 	<meta name="twitter:url" content="{{ page.url }}" />
 
 	<!-- General meta -->
-	<meta name="description" content="{{ page.excerpt }}" />
+	<meta name="description" content="{{ description }}" />
 
 	<!-- Open graph meta -->
 	<meta property="og:url" content="{{ site.facebook.website }}" />
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
 	<meta property="og:site_name" content="{{ site.title }}" />
-	<meta property="og:description" content="{{ page.excerpt }}" />
+	<meta property="og:description" content="{{ description }}" />
 	<meta property="article:author" content="https://www.facebook.com/{{ site.facebook.page }}" />
 
 </head>
