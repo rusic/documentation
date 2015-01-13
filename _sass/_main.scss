@@ -181,12 +181,12 @@ body {
 	background: darken($light-background, 3%);
 	padding-bottom: 60px;
 	.octicon {
-		font-size: 34px;
+		font-size: 24px;
 	}
 }
 	// Feature header
 	.header--feature {
-		padding: 8% 0;
+		padding: 2% 0;
 		margin-bottom: 20px;
 		h2 {
 			padding-bottom: 3%;
@@ -196,8 +196,8 @@ body {
 			right: 6px;
 		}
 		.search-form {
-			font-size: 34px;
-			line-height: 44px;
+			font-size: 24px;
+			line-height: 34px;
 		}
 	}
 
@@ -459,16 +459,6 @@ h3, legend {
 		button, .button {
 			display: inline-block;
 			line-height: initial;
-		}
-	}
-
-	.header--feature {
-		.octicon-search {
-			font-size: 24px;
-		}
-		.search-form {
-			font-size: 24px;
-			line-height: 34px;
 		}
 	}
 
