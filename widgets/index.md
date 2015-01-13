@@ -21,7 +21,7 @@ If you wish to use Zone Widgets within your template you must define an area for
 {% endraw %}
 {% endhighlight %}
 
-Using the above snippet you can define an area of space in which you would like users to drag and drop widgets. This can be placed anywhere within the ```<body>``` element on any [Page Type](/templating/page-types/) you desire. However Zone Areas can only be defined once on each page type, defining a Zone Area twice on the same Page Type can cause unwanted results.
+Using the above snippet you can define an area of space in which you would like users to drag and drop widgets. This can be placed anywhere within the ```<body>``` element on any [Page Type](/templating/page-types/) you desire. However Zone Areas **can only be defined once on each page type**, defining a Zone Area twice on the same Page Type can cause unwanted results.
 
 Below is a basic example of defining a Zone Area within a template file, for example ```default.twig```:
 
