@@ -8,7 +8,7 @@ title: Getting Started
 1. ## Access to BaseKit's Editor
   * If you have come to us through the editor, you will already be signed up and logged in via your hosting/telecoms package. [Head straight to Step 2](#a-code-editor).
   * If you already have an account but are not logged in, do so now.
-  * Don't have an account? Head to our [developer homepage](http://www.basekit.com/developers) to find a partner to sign up with. [Link]
+  * Don't have an account? Head to our [developer homepage](http://www.basekit.com/developers) to find a partner to sign up with.
 
 2. ## A code editor 
    In order to start developing a template, you'll need to download a code editor of your choice. <br/> We recommend using:
@@ -41,4 +41,4 @@ title: Getting Started
    * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
 
 4. ## Access to BaseKit's Theme Viewer
-   [Download our Template Development Kit](/getting-started/local-development/) and up the unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+   [Download our Template Development Kit](/getting-started/local-development/) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
