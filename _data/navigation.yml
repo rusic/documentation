@@ -8,24 +8,27 @@ navmain:
   icon: cloud-download
 
 navdocs:
+
+# GETTING STARTED
 - title: Getting Started
   url: /getting-started/
   icon: milestone
   subnav:
-  - title: Welcome
-    url: /getting-started/welcome/
-  - title: Local Development
-    url: /getting-started/local-development/
-  - title: Uploading
+  - title: Downloading a Template
+    url: /getting-started/downloading/
+  - title: Editing a Template
+    url: /getting-started/editing/
+  - title: Uploading a Template
     url: /getting-started/uploading/
+
+# TEMPLATING
 - title: Templating
-  url: #/templating/
   icon: file-code
   subnav:
   - title: Twig
     url: /templating/twig/
-  #- title: File Structure
-    #url: /templating/file-structure/
+  - title: File Structure
+    url: /templating/file-structure/
   - title: Assets
     url: /templating/assets/
   - title: JavaScript
@@ -38,6 +41,8 @@ navdocs:
     url: /templating/less/
   - title: Quality
     url: /templating/quality/
+
+# DATA
 - title: Data
   url: /data/
   icon: file-text
@@ -50,14 +55,16 @@ navdocs:
     url: /data/profile/
   - title: Plugin
     url: /data/plugin/
+
+# WIDGETS
 - title: Widgets
   url: /widgets/
   icon: puzzle
-
   subnav:
+
+  # CONTENT & IMAGES
   - title: Content & Images
     url:
-
   - title: Content Widget
     url: /widgets/v2/content-widget/
   - title: Line
@@ -71,6 +78,7 @@ navdocs:
   - title: Slideshow
     url: /widgets/v2/slideshow/
 
+  # TEMPLATE ELEMENTS
   - title: Template Elements
     url:
   - title: Logo
@@ -80,6 +88,7 @@ navdocs:
   - title: Feature
     url: /widgets/v2/feature/
 
+  # BUTTONS
   - title: Buttons
     url:
   - title: Button Widget
@@ -95,6 +104,7 @@ navdocs:
   - title: Social Icons
     url: /widgets/v2/social-icons/
 
+  # FORMS
   - title: Forms
     url:
   - title: Signup Form
@@ -102,6 +112,50 @@ navdocs:
   - title: Contact Form
     url: /widgets/v2/contact-form/
 
+  # EMBEDS
+  - title: Embeds
+    url:
+  - title: Map
+    url: /widgets/v2/map/
+  - title: SoundCloud
+    url: /widgets/v2/soundcloud/
+  - title: YouTube
+    url: /widgets/v2/youtube/
+  - title: Disqus Comments
+    url: /widgets/v2/disqus-comments/
+  - title: LinkedIn Company Profile
+    url: /widgets/v2/linkedin-company-profile/
+  - title: LinkedIn Profile
+    url: /widgets/v2/linkedin-profile/
+
+  # PROFILE
+  - title: Profile
+    url:
+  - title: Profile
+    url: /widgets/v2/profile/
+  - title: Company Address
+    url: /widgets/v2/company-address/
+
+  # APIs
+  - title: APIs
+    url:
+  - title: Yelp Reviews
+    url: /widgets/v2/yelp-reviews/
+  - title: Twitter
+    url: /widgets/v2/twitter/
+
+  # DEPRECATED
+  - title: Deprecated
+    url:
+  - title: Redirect To Desktop
+    url: /widgets/v1/redirect-to-desktop/
+
+# PLUGINS
+- title: Plugins
+  icon: package
+  subnav:
+
+  # MENU
   - title: Menu
     url:
   - title: Menu Sections
@@ -109,6 +163,7 @@ navdocs:
   - title: Menu
     url: /widgets/v2/menu/
 
+  # BLOG
   - title: Blog
     url:
   - title: Blog Post List
@@ -118,6 +173,7 @@ navdocs:
   - title: Blog Search
     url: /widgets/v2/blog-search/
 
+  # ECOMMERCE
   - title: Ecommerce
     url:
   - title: Ecommerce Basket
@@ -136,40 +192,6 @@ navdocs:
     url: /widgets/v2/ecommerce-product-list/
   - title: Ecommerce Product
     url: /widgets/v2/ecommerce-product/
-
-  - title: Embeds
-    url:
-  - title: Map
-    url: /widgets/v2/map/
-  - title: SoundCloud
-    url: /widgets/v2/soundcloud/
-  - title: YouTube
-    url: /widgets/v2/youtube/
-  - title: Disqus Comments
-    url: /widgets/v2/disqus-comments/
-  - title: LinkedIn Company Profile
-    url: /widgets/v2/linkedin-company-profile/
-  - title: LinkedIn Profile
-    url: /widgets/v2/linkedin-profile/
-
-  - title: Profile
-    url:
-  - title: Profile
-    url: /widgets/v2/profile/
-  - title: Company Address
-    url: /widgets/v2/company-address/
-
-  - title: APIs
-    url:
-  - title: Yelp Reviews
-    url: /widgets/v2/yelp-reviews/
-  - title: Twitter
-    url: /widgets/v2/twitter/
-
-  - title: Deprecated
-    url:
-  - title: Redirect To Desktop
-    url: /widgets/v1/redirect-to-desktop/
 
 navfooter:
 - title: Back to top
