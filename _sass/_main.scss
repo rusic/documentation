@@ -17,6 +17,10 @@ $light-text: #aaa;
 $light-border: #ddd;
 $highlighted-text: #fff9da;
 
+$json-colour: #F9E6D2;
+$less-colour: #CAD5E8;
+$html-colour: #FFD080;
+$twig-colour: #DFEA95;
 
 // Body
 body {
@@ -61,6 +65,14 @@ body {
 	// Type
 	h2, h3, h4, h5, h6 {
 		margin-bottom: 0.3em;
+		position: relative;
+		&[id] {
+			padding: 2px 4px;
+			background: darken($light-background, 3%);
+		}
+		&:target {
+			background: $highlighted-text;
+		}
 	}
 
 	p {
@@ -83,12 +95,20 @@ body {
 		padding: 0 5px;
 		background: darken($light-background, 8%);;
 	}
+	code[data-lang=json]:before {
+		background: $json-colour;
+	}
+	code[data-lang=html]:before {
+		background: $html-colour;
+	}
 	code[data-lang=django]:before {
 		content: "twig";
+		background: $twig-colour;
 	}
 	code[data-lang=sass]:before,
 	code[data-lang=css]:before {
 		content: "less";
+		background: $less-colour;
 	}
 
 	// Inline code
@@ -225,9 +245,6 @@ a {
 	&.current {
 		color: darken($dark-links, 15%);
 	}
-	&.current {
-		border-bottom: 1px solid $dark-links;
-	}
 }
 	// Buttons
 	.button,
@@ -259,6 +276,7 @@ svg {
 		z-index: 2;
 		right: 4px;
 		top: 4px;
+		cursor: pointer;
 		@include linearGradient(rgba($light-background, 0), $light-background);
 	}
 
@@ -299,6 +317,9 @@ fieldset {
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
+	}
+	.nav-list--search-results {
+		transition: .2s;
 	}
 	.nav-list--search-results[data-state=highlighted] {
 		background: $highlighted-text;

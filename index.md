@@ -13,4 +13,4 @@ BaseKit Development tools offers full control of all HTML, CSS and JavaScript on
 
 * [Download the Template Development Kit now!](/getting-started/local-development/) - Runs on PHP. View and build templates on your local machine.
 
-{% include buttoncenter.html link="http://goo.gl/DqoGhX" text="Download the Template Development Kit (7.45 stable)" %}
+{% include buttoncenter.html link="http://goo.gl/1ezSXO" text="Download the Template Development Kit (7.47 stable)" icon="cloud-download" %}
