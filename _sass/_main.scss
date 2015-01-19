@@ -152,6 +152,12 @@ body {
 	.main--content img {
 		border: 1px solid $light-border;
 	}
+	.image--center {
+		text-align: center;
+		background: lighten($light-border, 10%);
+		line-height: 0;
+		padding: 10px;
+	}
 
 	// Keylines
 	hr {
