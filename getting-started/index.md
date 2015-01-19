@@ -3,7 +3,9 @@ layout: doc
 title: Getting Started
 ---
 
-# Things you'll need before getting started
+# Getting Started
+
+You'll need the following before you start working on a template:
 
 1. ## Access to BaseKit's Editor
   * If you have come to us through the editor, you will already be signed up and logged in via your hosting/telecoms package. [Head straight to Step 2](#a-code-editor).

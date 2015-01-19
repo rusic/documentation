@@ -3,7 +3,7 @@ layout: doc
 title: Editing a Template
 ---
 
-# Editing and Uploading Your Template
+# Editing & Uploading a Template
 
 This document will explain how to use our TDK and how to upload that final template. If you haven’t downloaded your template for editing yet please check out the [How to download a template](/getting-started/downloading/) documentation.
 
