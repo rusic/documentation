@@ -16,7 +16,7 @@ In order to use the local Template Development Kit (TDK), you will need to have 
 
 ### Download Now!
 
-* {% include button.html link="http://goo.gl/DqoGhX" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
+* {% include button.html link="http://goo.gl/1ezSXO" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
 
 * {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
 
