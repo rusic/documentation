@@ -41,4 +41,10 @@ title: Getting Started
    * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
 
 4. ## Access to BaseKit's Theme Viewer
-   [Download our Template Development Kit](/getting-started/local-development/) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+   [Download our Template Development Kit](http://goo.gl/DqoGhX) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+
+   {% include button.html link="http://goo.gl/DqoGhX" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
+
+   {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
+
+   [Download Specific Version](https://github.com/basekit-templates/tdk/wiki)

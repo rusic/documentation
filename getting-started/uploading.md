@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Uploading
+title: Uploading a Template
 ---
 
 # Upload your template to the Editor
