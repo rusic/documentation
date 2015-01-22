@@ -32,7 +32,28 @@ To include a contact form widget in your template you will need to add the follo
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__ContactFormWidget" data-name="contactform" class="widget  widget--zone-widget">
+  <div class="bk-contactform  contactform  widget__contactform">
+    <form class="form  contactform__form">
+      <fieldset class="fieldset  contactform__fieldset">
+        <legend class="legend  contactform__legend">Contact Us</legend>
+        <div class="form-body  contactform__form-body">
+          <div class="form-group  contactform__form-group">
+            <label class="label  label--email  contactform__label" for="page-zones__main-widgets__ContactFormWidget__input--email">Your Email</label>
+            <input class="input  input--email  input--single-line  contactform__input js-email-input" id="page-zones__main-widgets__ContactFormWidget__input--email" name="page-zones__main-widgets__ContactFormWidget__input--email" placeholder="name@email.com" type="email" />
+          </div>
+          <div class="form-group  contactform__form-group">
+            <label class="label  label--message  contactform__label" for="page-zones__main-widgets__ContactFormWidget__textarea--message">Message</label>
+            <textarea class="textarea  textarea--message  contactform__textarea js-message-input" id="page-zones__main-widgets__ContactFormWidget__textarea--message" name="page-zones__main-widgets__ContactFormWidget__textarea--message"></textarea>
+          </div>
+          <div class="form-group  contactform__form-group">
+            <input class="button  button--submit  contactform__input  " type="submit"  value="Send" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

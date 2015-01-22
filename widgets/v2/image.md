@@ -32,7 +32,19 @@ To include an image widget in your template you will need to add the following l
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__ImageWidget" data-name="image" class="widget  widget--zone-widget">
+  <div class="bk-image imagewidget  widget__imagewidget">
+    <figure class="figure  imagewidget__figure">
+      <a  href="#" data-image-href="//placehold.it/250x250" rel="lightbox"  title="This is the image title" class="image-link  imagewidget__image-link">
+        <img class="image  imagewidget__image " src="//placehold.it/250x250" alt="" title="This is the image title" data-filename="" data-filesize="" data-imagesize=""  />
+      </a>
+      <figcaption class="caption  imagewidget__caption">
+        <span class="image-title  imagewidget__image-title">This is the image title</span>
+        <span class="image-description  imagewidget__image-description">This is the image description</span>
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

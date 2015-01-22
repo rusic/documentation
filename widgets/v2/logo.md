@@ -32,7 +32,13 @@ To include a logo widget in your template you will need to add the following lin
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__template-widgets__logo-logo" class="widget  widget--template-widget" data-widget-type="logo">
+  <div class="bk-logo  logo  widget__logo">
+    <a href="/" class="logo-link  logo__logo-link">
+      <img class="logo-image  logo__logo-image" alt="Business Name" title="Business Name" src="/images/default-logo.png">
+    </a>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

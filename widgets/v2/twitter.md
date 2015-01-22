@@ -32,7 +32,48 @@ To include a Twitter feed widget in your template you will need to add the follo
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__TwitterWidget" data-name="twitter" class="widget  widget--zone-widget">
+  <div class="bk-twitter  twitter  widget__twitter">
+    <ul class="tweet-list  twitter__tweet-list  js-twitter">
+      <li class="tweet-item  twitter__tweet-item">
+        <div class="avatar  twitter__avatar">
+          <a class="avatar-link  twitter__avatar-link" href="https://twitter.com/basekit" target="_blank">
+            <img class="avatar-image  twitter__avatar-image" alt="BaseKit.Com" title="BaseKit.Com" data-screename="basekit" src="//placehold.it/98x98">
+          </a>
+        </div>
+        <div class="tweet-wrap  twitter__tweet-wrap">
+          <a class="account-link  twitter__account-link" href="https://twitter.com/basekit" target="_blank">
+            <span class="account-name  twitter__account-name">BaseKit.Com</span>
+          </a>
+          <p class="tweet-content  twitter__tweet-content">How To Get Big-Brand Search Visibility</p>
+          <span class="tweet-metadata  twitter__tweet-meta">
+            <time class="timestamp  twitter__timestamp" datetime="2014-08-07T00:00:00+00:00">Thu Aug 2014</time>
+            <span class="via  twitter__via">via</span>
+            <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+          </span>
+        </div>
+      </li>
+      <li class="tweet-item  twitter__tweet-item">
+        <div class="avatar  twitter__avatar">
+          <a class="avatar-link  twitter__avatar-link" href="https://twitter.com/basekit" target="_blank">
+            <img class="avatar-image  twitter__avatar-image" alt="BaseKit.Com" title="BaseKit.Com" data-screename="basekit" src="//placehold.it/98x98">
+          </a>
+        </div>
+        <div class="tweet-wrap  twitter__tweet-wrap">
+          <a class="account-link  twitter__account-link" href="https://twitter.com/basekit" target="_blank">
+            <span class="account-name  twitter__account-name">BaseKit.Com</span>
+          </a>
+          <p class="tweet-content  twitter__tweet-content">Check out the 10 companies that control the internet </p>
+          <span class="tweet-metadata  twitter__tweet-meta">
+            <time class="timestamp  twitter__timestamp" datetime="2014-08-07T00:00:00+00:00">Thu Aug 2014</time>
+            <span class="via  twitter__via">via</span>
+            <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

@@ -32,7 +32,13 @@ To include a LinkedIn profile widget in your template you will need to add the f
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__template-widgets__linkedinprofile-thisuniquewidgetname" class="widget  widget--template-widget" data-widget-type="linkedinprofile">
+  <div class="bk-linkedinprofile  linkedinprofile  widget__linkedinprofile">
+    <div class="embed-wrap  embed-wrap--linkedin  linkedinprofile__embed-wrap">
+      ...
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

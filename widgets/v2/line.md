@@ -32,7 +32,11 @@ To include a line in your template you will need to add the following line:
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__LineWidget" data-name="line" class="widget  widget--zone-widget">
+  <div class="bk-line  line  widget__line">
+    <hr class="rule  line__rule" style="height: 1px; width: 100%; margin: 1px auto;"/>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

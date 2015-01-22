@@ -32,7 +32,11 @@ To include a content widget in your template you will need to add the following 
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__ContentWidget" data-name="content" class="widget  widget--zone-widget">
+  <div class="bk-content  content  widget__content  js-text-content">
+    <p>Lorem ipsum dolor sit amet...</p>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

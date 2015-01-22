@@ -30,7 +30,20 @@ Version: >= 7.32. Add an ecommerce categories to the page.
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__ecomcategorieslistWidget" data-name="ecomcategorieslist" class="widget  widget--zone-widget">
+  <div class="bk-ecomcategorieslist  ecomcategorieslist  widget__ecomcategorieslist">
+    <div class="categories-listing  widget__categories-listing">
+      <ul class="categories-list  categories-listing__categories-list">
+        <li class="category-item  categories-listing__category-item">
+          <a class="category-link  categories-listing__category-link" href="/store?category=woman">woman</a>
+        </li>
+        <li class="category-item  categories-listing__category-item">
+          <a class="category-link  categories-listing__category-link" href="/store?category=man">man</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

@@ -32,7 +32,24 @@ To include a signup Form widget in your template you will need to add the follow
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__signupformWidget" data-name="signupform" class="widget  widget--zone-widget">
+  <div class="bk-signupform  signupform  widget__signupform">
+    <form class="form  signupform__form">
+      <fieldset class="fieldset  signupform__fieldset">
+        <legend class="legend  signupform__legend">Sign up</legend>
+        <div class="form-body  signupform__form-body">
+          <div class="form-group  signupform__form-group">
+            <label class="label  label--email  signupform__label" for="page-zones__main-widgets__signupformWidget__input--email">Sign up form</label>
+            <input class="input  input--email  input--single-line signupform__input   js-email" id="page-zones__main-widgets__signupformWidget__input--email" name="page-zones__main-widgets__signupformWidget__input--email" placeholder="name@email.com" type="email" />
+          </div>
+          <div class="form-group  signupform__form-group">
+            <input class="button  button--submit  signupform__input  " type="submit" value="Sign up" >
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

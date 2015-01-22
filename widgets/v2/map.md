@@ -32,7 +32,13 @@ To include a map widget in your template you will need to add the following line
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__MapWidget" data-name="map" class="widget  widget--zone-widget">
+  <div class="bk-map  map  widget__map">
+    <div class="embed-wrap  map__embed-wrap  js-map">
+      ...
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

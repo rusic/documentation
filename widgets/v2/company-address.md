@@ -31,7 +31,13 @@ To include a company address widget in your template you will need to add the fo
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__ProfileWidget6" data-name="profile" class="widget  widget--zone-widget">
+  <div class="bk-profile  profile  widget__profile">
+    <div class="company-business  company-business--profile-widget">
+      <p class="business  company-business__business">Business Name</p>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

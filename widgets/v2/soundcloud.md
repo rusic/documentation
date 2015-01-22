@@ -32,7 +32,13 @@ To include a SoundCloud widget in your template you will need to add the followi
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__soundcloudWidget" data-name="soundcloud" class="widget  widget--zone-widget">
+  <div class="bk-soundcloud  soundcloud  widget__soundcloud">
+    <div class="embed-wrap  embed-wrap--audio  soundcloud__embed-wrap">
+      <iframe width="100" height="200" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151493449&amp;auto_play=false"></iframe>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

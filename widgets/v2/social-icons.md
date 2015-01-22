@@ -32,7 +32,42 @@ To include a social icons widget in your template you will need to add the follo
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__socialiconsWidget" data-name="socialicons" class="widget  widget--zone-widget">
+  <div class="bk-socialicons  socialicons  widget__socialicons">
+    <ul class="social-list  socialicons__social-list">
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--twitter  socialicons__social-link" href="https://twitter.com/twitter.com" target="_blank">
+          <span class="social-name  socialicons__social-name">Twitter</span>
+        </a>
+      </li>
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--facebook  socialicons__social-link" href="facebook.com " target="_blank">
+          <span class="social-name  socialicons__social-name">Facebook</span>
+        </a>
+      </li>
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--rss  socialicons__social-link" href="rss.com " target="_blank">
+          <span class="social-name  socialicons__social-name">RSS</span>
+        </a>
+      </li>
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--linkedin  socialicons__social-link" href="linkedin.com " target="_blank">
+          <span class="social-name  socialicons__social-name">Linkedin</span>
+        </a>
+      </li>
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--googleplus  socialicons__social-link" href="googleplus.com " target="_blank">
+          <span class="social-name  socialicons__social-name">Google+</span>
+        </a>
+      </li>
+      <li class="social-item  socialicons__social-item">
+        <a class="social-link  icon  icon--youtube  socialicons__social-link" href="youtube.com " target="_blank">
+          <span class="social-name  socialicons__social-name">YouTube</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

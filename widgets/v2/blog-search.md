@@ -30,7 +30,24 @@ Version: >= 7.32. Add a Blog Search Widget to the Page
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__blogsearchWidget" data-name="blogsearch" class="widget  widget--zone-widget">
+  <div class="bk-blogsearch  blogsearch  widget__blogsearch">
+    <form class="form  blogsearch__form  js-blogsearch-form">
+      <fieldset class="fieldset  blogsearch__fieldset">
+        <legend class="legend  blogsearch__legend">Search Blog</legend>
+        <div class="form-body  blogsearch__form-body">
+          <div class="form-group  blogsearch__form-group">
+            <label class="label  label--search  blogsearch__label" for="page-zones__main-widgets__blogsearchWidget__blogsearch__search">Search posts</label>
+            <input class="input  input--search  input--single-line  blogsearch__input  js-blogsearch-input" id="page-zones__main-widgets__blogsearchWidget__blogsearch__search" name="page-zones__main-widgets__blogsearchWidget__blogsearch__search" placeholder="Search term" type="search" />
+          </div>
+          <div class="form-group  blogsearch__form-group">
+            <input class="button  button--submit  blogsearch__input" type="submit" value="Search" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

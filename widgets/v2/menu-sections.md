@@ -30,7 +30,20 @@ Version: >= 7.32. Add a menu sections navigation to the page.
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__menusectionsWidget" data-name="menusections" class="widget  widget--zone-widget">
+  <div class="bk-menusections  menusections  widget__menusections">
+    <nav class="menusections-body  menusections__navigation-body">
+      <ul class="menusections-list  menusections__navigation-list  js-menu-section-list">
+        <li class="menusections-item  menusections__menusections-item">
+          <a class="menu-item-name  menusections__item-name" href="#menu-section-373">Breakfast</a>
+        </li>
+        <li class="menusections-item  menusections__menusections-item">
+          <a class="menu-item-name  menusections__item-name" href="#menu-section-374">Lunch</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

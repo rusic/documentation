@@ -32,7 +32,13 @@ To include a video in your template you will need to add the following line:
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__youtubeWidget" data-name="youtube" class="widget  widget--zone-widget">
+  <div class="bk-youtube  youtube  widget__youtube">
+    <div class="embed-wrap  embed-wrap--video  youtube__embed-wrap">
+      <iframe class="iframe  iframe--video  youtube__iframe" width='100' height='215' src="https://www.youtube.com/embed/j9Hjrs6WQ8M?wmode=transparent"></iframe>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

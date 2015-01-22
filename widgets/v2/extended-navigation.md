@@ -32,7 +32,39 @@ To include an extended navigation widget in your template you will need to add t
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div class="bk-extendednavigation  extendednavigation  widget__extendednavigation">
+  <button class="js-pull  navigation-toggle  icon  icon--bars  extendednavigation__navigation-toggle">Menu</button>
+  <nav class="navigation-body  extendednavigation__navigation-body">
+    <ul class="navigation-list  extendednavigation__navigation-list  js-menu-list  itemcount-5">
+      <li id="menu-item_1" class="navigation-item  extendednavigation__navigation-item home selected">
+        <a href="/" class="item-name  extendednavigation__item-name">Home</a>
+      </li>
+      <li id="menu-item_2" class="navigation-item  extendednavigation__navigation-item page">
+        <a href="/about" class="item-name  extendednavigation__item-name">About</a>      
+      </li>
+      <li id="menu-item_3" class="navigation-item  extendednavigation__navigation-item page">
+        <a href="/contact" class="item-name  extendednavigation__item-name">Contact</a>
+      </li>
+      <li id="menu-item_4" class="navigation-item  extendednavigation__navigation-item folder" aria-haspopup="true">
+        <span class="item-name  item-name--parent  extendednavigation__item-name">Portfolio</span>
+        <ul class="navigation-list  navigation-list--children  extendednavigation__navigation-list itemcount-3">
+          <li id="menu-item_5" class="navigation-item  navigation-item--child  extendednavigation__navigation-item page">
+            <a href="/portfolio/web" class="item-name  extendednavigation__item-name">Web</a>
+          </li>
+          <li id="menu-item_6" class="navigation-item  navigation-item--child  extendednavigation__navigation-item page">
+            <a href="/portfolio/print" class="item-name  extendednavigation__item-name">Print</a>
+          </li>
+          <li id="menu-item_7" class="navigation-item  navigation-item--child  extendednavigation__navigation-item page">
+            <a href="/portfolio/canvas" class="item-name  extendednavigation__item-name">Canvas</a>
+          </li>
+        </ul>
+      </li>
+      <li id="menu-item_8" class="navigation-item  extendednavigation__navigation-item page">
+        <a href="/gallery" class="item-name  extendednavigation__item-name">Gallery</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 {% endraw %}
 {% endhighlight %}

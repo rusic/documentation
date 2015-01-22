@@ -32,7 +32,12 @@ To include a Dropbox widget in your template you will need to add the following 
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__dropboxWidget" data-name="dropbox" class="widget  widget--zone-widget">
+  <div class="bk-dropbox  dropbox  widget__dropbox">
+    <button class="button  icon  icon--dropbox  dropbox__button  js-link-btn" data-link="">Download</button>
+    <span class="label  dropbox__label">test.file</span>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

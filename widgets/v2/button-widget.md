@@ -31,7 +31,11 @@ To include a button in your template you will need to add the following line:
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__buttonWidget" data-name="button" class="widget  widget--zone-widget">
+  <div class="bk-button  buttonwidget  widget__buttonwidget js-btn">
+    <button class="button  icon  buttonwidget__button  " >Hello Button</button>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

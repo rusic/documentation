@@ -32,7 +32,17 @@ To include a feature widget in your template you will need to add the following 
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__template-widgets__feature-feature" class="widget  widget--template-widget" data-widget-type="feature">
+  <div class="bk-feature  feature  widget__feature">
+    <div class="background-image  feature__background-image">
+      <div class="content-wrap  feature__content-wrap">
+        <h2 class="headline  feature__headline">My Website Header</h2>
+        <h3 class="strapline  feature__strapline">Here is the website strapline!</h3>
+        <button class="button  icon  button--primary  feature__button  js-feature-btn">Button</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

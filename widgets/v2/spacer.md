@@ -32,7 +32,11 @@ To include a spacer widget in your template you will need to add the following l
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__template-widgets__space-space" class="widget  widget--template-widget" data-widget-type="space">
+  <div class="bk-space  space  widget__space">
+    <div class="spacer  space__spacer" style="height: 0px">&nbsp;</div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

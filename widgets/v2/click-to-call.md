@@ -32,7 +32,13 @@ To include a click to call widget in your template you will need to add the foll
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__clicktocallWidget" data-name="clicktocall" class="widget  widget--zone-widget">
+  <div class="bk-clicktocall  clicktocall  widget__clicktocall">
+    <a href="tel:020123456789" class="phone-number-link  icon  icon--phone  clicktocall__phone-number-link  " >
+    <span class="label  clicktocall__label">Click to call</span>
+    </a>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

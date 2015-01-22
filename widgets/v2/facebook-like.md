@@ -32,7 +32,11 @@ To include a Facebook Like widget in your template you will need to add the foll
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__facebookLikeWidget" data-name="facebooklike" class="widget  widget--zone-widget">
+  <div class="bk-facebooklike  facebooklike  widget__facebooklike">
+    <iframe src="//www.facebook.com/plugins/like.php..." style="height:40px;"></iframe>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

@@ -30,7 +30,19 @@ This widget is managed by a third party. BaseKit wraps the Disqus comments widge
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__disqusWidget" data-name="disqus" class="widget  widget--zone-widget">
+  <div class="bk-disqus  disqus  widget__disqus">
+    <div class="embed-wrap  embed-wrap  disqus__embed-wrap">
+      <div id="disqus_thread"></div>
+      <script>
+        ...
+      </script>
+      <noscript>
+        <p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p>
+      </noscript>
+    </div>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

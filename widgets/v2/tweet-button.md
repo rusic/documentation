@@ -32,7 +32,11 @@ To include a tweet widget in your template you will need to add the following li
 {% highlight html %}
 {% raw %}
 
-  <!-- v2 widget HTML output -->
+<div id="page-zones__main-widgets__tweetWidget" data-name="tweet" class="widget  widget--zone-widget">
+  <div class="bk-tweet  tweet  widget__tweet">
+    <a class="button  icon  icon--twitter  tweet__button" target="_blank" href="https://twitter.com/share?text=&amp;url=">Tweet</a>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}

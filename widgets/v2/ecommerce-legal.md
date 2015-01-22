@@ -20,7 +20,11 @@ Version: >= 7.32. Add an ecommerce legal to the page.
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomlegal', 'thisuniquewidgetname', {})|raw}}
+<div id="page-zones__main-widgets__EcomLegalWidget" data-name="ecomlegal" class="widget  widget--zone-widget">
+  <div class="bk-ecomlegal  ecomlegal  widget__ecomlegal  js-text-ecomlegal">
+    <p>Legal...</p>
+  </div>
+</div>
 
 {% endraw %}
 {% endhighlight %}
