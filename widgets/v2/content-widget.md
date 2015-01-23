@@ -9,15 +9,15 @@ versions:
   url: /widgets/v1/content-widget/
 ---
 
-# Content Widget
+# Content widget
 
-The content widget is used to write blocks of formatted text using basic text editor controls. This is mainly used to display paragraphs of text or headings. Within the Editor there are options to drag a paragraph or a h1 heading, these are both based upon the Content Widget but with provide the user with a paragraph or heading as a starting point.
+The content widget is used to write blocks of formatted text using basic text editor controls. This is mainly used to display paragraphs of text or headings. Within the Editor there are options to drag a paragraph or a h1 heading, these are both based upon the content widget but will provide the user with a paragraph or heading as a starting point.
 
 ## Examples
 
-Adding a Content Widget to your template means the user can add text content the area you have defined.
+Adding a content widget to your template means the user can add text content to the area that you have defined.
 
-### Basic Usage
+### Basic usage
 
 {% highlight django %}
 {% raw %}
@@ -27,9 +27,9 @@ Adding a Content Widget to your template means the user can add text content the
 {% endraw %}
 {% endhighlight %}
 
-The above example has an ID of ```sidebarcontent```, which will mean any Content Widget with this ID will use the same content. Providing a different ID for another Content Widget will allow the user to edit them independently.
+The above example has an ID of ```sidebarcontent```, which will mean any content widget with this ID will use the same content. Providing a different ID for another content widget will allow the user to edit them independently.
 
-### Example Usage
+### Example usage
 
 {% highlight django %}
 {% raw %}
@@ -55,9 +55,9 @@ Resulting HTML:
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-These are additional options that can be set by the template developer. However they can all be change by the user, these will be the initial settings of the Widget:
+These are additional options that can be set by the template developer, however they can all be changed by the user. These will be the initial settings of the widget:
 
 * ```content```: The content on the widget
 
