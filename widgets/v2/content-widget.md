@@ -11,24 +11,38 @@ versions:
 
 # Content Widget
 
-Add a content widget to your template.
+The content widget is used to write blocks of formatted text using basic text editor controls. This is mainly used to display paragraphs of text or headings. Within the Editor there are options to drag a paragraph or a h1 heading, these are both based upon the Content Widget but with provide the user with a paragraph or heading as a starting point.
 
-## Overview
+## Examples
 
-You can add a content widget to your template to display a paragraph text. The widget can be later customised within the BaseKit Editor. 
+Adding a Content Widget to your template means the user can add text content the area you have defined.
 
-To include a content widget in your template you will need to add the following line:
+### Basic Usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('content', 'thisuniquewidgetname', {content: 'This is a content widget.', lines: 'all'})|raw}}
+  {{widget('content', 'sidebarcontent', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+The above example has an ID of ```sidebarcontent```, which will mean any Content Widget with this ID will use the same content. Providing a different ID for another Content Widget will allow the user to edit them independently.
 
-<h4>Result</h4>
+### Example Usage
+
+{% highlight django %}
+{% raw %}
+
+{{widget('content', 'sidebarcontent', {
+  content: '<p>Lorem ipsum dolor sit amet...</p>'
+})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
@@ -43,12 +57,11 @@ To include a content widget in your template you will need to add the following 
 
 ## Widget Options
 
-You can change the following options for the widget:
+These are additional options that can be set by the template developer. However they can all be change by the user, these will be the initial settings of the Widget:
 
 * ```content```: The content on the widget
 
-* ```lines```: Set the text truncation
-
-  * ```one```
-  * ```two```
-  * ```all```
+* ```lines```: The amount of content that can be seen upon first viewing, by default it shows all content.
+  * ```all```: Shows all the content, this is the default.
+  * ```one```: Shows only the first paragraph with a "more..." button to toggle the rest of the content.
+  * ```two```: Shows the first two paragraphs with a "more..." button to toggle the rest of the content.
