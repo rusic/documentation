@@ -9,24 +9,19 @@ versions:
   url: /widgets/v1/spacer/
 ---
 
-# Spacer
+# Space widget
 
-Add a spacer widget to your template.
+The space widget is designed to allow the user to control spaces between pieces of content and sections within their website. They are limited to one variable, height.
 
-## Overview
 
-You can add a spacer widget to your template. This widget can be used to insert a separation between widgets.
-
-To include a spacer widget in your template you will need to add the following line:
-
+## Example
 {% highlight django %}
 {% raw %}
 
-  {{widget('space', 'thisuniquewidgetname', {'height': '50'})|raw}}
+  {{widget('space', 'pagespace', {'height': '20'})|raw}}
 
 {% endraw %}
 {% endhighlight %}
-
 
 <h4>Result</h4>
 {% highlight html %}
@@ -34,15 +29,13 @@ To include a spacer widget in your template you will need to add the following l
 
 <div id="page-zones__template-widgets__space-space" class="widget  widget--template-widget" data-widget-type="space">
   <div class="bk-space  space  widget__space">
-    <div class="spacer  space__spacer" style="height: 0px">&nbsp;</div>
+    <div class="spacer  space__spacer" style="height: 20px">&nbsp;</div>
   </div>
 </div>
 
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-You can change the following options for the widget:
-
-* ```height```: The height of the spacer. Possible values: from ```10``` to ```250```
+The only option available to the space widget is ```height```, which can be any pixel value (as shown in the above example). This can be changed by the user when they select the widget in the Editor.
