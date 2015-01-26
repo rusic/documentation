@@ -46,7 +46,7 @@ Resulting HTML:
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__ContentWidget" data-name="content" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__contentwidget" data-name="content" class="widget  widget--template-widget">
   <div class="bk-content  content  widget__content  js-text-content">
     <p>Lorem ipsum dolor sit amet...</p>
   </div>
