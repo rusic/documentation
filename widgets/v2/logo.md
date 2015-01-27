@@ -11,34 +11,46 @@ versions:
 
 # Logo
 
-Add a logo widget to your template.
+The logo widget is classed as a template widget, which means it is designed to only be used in templates and it's not possible drag the widget into the site via the Editor. The logo widget can be overwritten by the user but they also have the choice of reverting back to the logo that is set by the code in the template.
 
-## Overview
+The logo can either be changed directly in the visual Editor or by navigating to Manage > Profile. Images can either be chosen from the Images panel or by uploading an image.
 
-You can add a logo widget to your template which contains the logo in the manage shared contact section. The text displayed in the widget can be later customised within the BaseKit Editor.
-
-To include a logo widget in your template you will need to add the following line:
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('logo', 'thisuniquewidgetname', {"defaultlogo": asset('images/logo.png')})|raw}}
+  {{widget('logo', 'sitelogo', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+The logo widget only has one option of a default logo, which is set with ```defaultlogo``` as shown in the below example:
 
-<h4>Result</h4>
+## Example usage
+
+{% highlight django %}
+{% raw %}
+
+  {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__logo-logo" class="widget  widget--template-widget" data-widget-type="logo">
+<div id="page-zones__template-widgets__logo-defaultoptionslogo" class="widget  widget--template-widget" data-widget-type="logo">
   <div class="bk-logo  logo  widget__logo">
     <a href="/" class="logo-link  logo__logo-link">
-      <img class="logo-image  logo__logo-image" alt="Business Name" title="Business Name" src="/images/default-logo.png">
+      <img class="logo-image  logo__logo-image" alt="Business Name" title="Business Name" src="...images/logo.png">
     </a>
   </div>
 </div>
 
 {% endraw %}
 {% endhighlight %}
+
+Much in the same way the [image widget](/widgets/v2/image/) works, the image set in the logo widget must be in the the template.
