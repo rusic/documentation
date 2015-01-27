@@ -1,12 +1,12 @@
 ---
 layout: widget
-title: Spacer
+title: Space
 searchable: true
 versions:
 - version: Version 2.0
-  url: /widgets/v2/spacer/
+  url: /widgets/v2/space/
 - version: Version 1.0
-  url: /widgets/v1/spacer/
+  url: /widgets/v1/space/
 ---
 
 # Space widget
@@ -23,7 +23,8 @@ The space widget is designed to allow the user to control spaces between pieces 
 {% endraw %}
 {% endhighlight %}
 
-<h4>Result</h4>
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 

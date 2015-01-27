@@ -41,7 +41,7 @@ The above example has an ID of ```sidebarcontent```, which will mean any content
 {% endraw %}
 {% endhighlight %}
 
-Resulting HTML:
+#### Resulting HTML:
 
 {% highlight html %}
 {% raw %}

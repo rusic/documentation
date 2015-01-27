@@ -41,7 +41,8 @@ The above example has an ID of ```footerline```, which will mean any line widget
 {% endraw %}
 {% endhighlight %}
 
-Resulting HTML:
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
