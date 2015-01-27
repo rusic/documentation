@@ -11,81 +11,108 @@ versions:
 
 # Slideshow
 
-Add a slideshow widget to your template.
+Much in the same way the [gallery widget](/widgets/v2/gallery/) works, the slideshow widget allows the user to display a selection or group of images that have been uploaded to the Images section of the Editor. By default the slideshow comes with no images, the user must select them when they select the widget. If you are using the slideshow as part of your template you can state the images that are shown.
 
-## Overview
-
-You can add a slideshow widget to your template. This widget will display an image gallery slideshow.
-
-To include a slideshow widget in your template you will need to add the following line:
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('responsiveslideshow', 'thisuniquewidgetname', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': false, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}]})|raw}}
+{{widget('responsiveslideshow', 'slideshow', {})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+The above example will display an area in the template where the user can select and then add images to, it will not show any images by default.
+
+## Example usage
+
+{% highlight django %}
+{% raw %}
+
+  {{widget('responsiveslideshow', 'slideshow', {
+    'duration':'3',
+    'transSpeed': '1000',
+    'transType': 'fade',
+    'showButtons': true,
+    'showBullets': false,
+    'allowPause': true,
+    'allowLoop': true,
+    'images':[
+      {
+        'imageHeight':'350',
+        'imageWidth':'300',
+        'url':'http://placehold.it/350x300',
+        'title':'First slide title',
+        'description': 'First slide description'
+      },
+      {
+        'imageHeight':'350',
+        'imageWidth':'400',
+        'url':'http://placehold.it/350x400', 
+        'title':'Second slide title',
+        'description': 'Second slide description'
+      },
+      {
+        'imageHeight':'350',
+        'imageWidth':'500',
+        'url':'http://placehold.it/350x500',
+        'title':'Third slide title',
+        'description': 'Third slide description'
+      }
+    ]
+  })|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
 
-<h4>Result</h4>
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__responsiveslideshowWidget" data-name="responsiveslideshow" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__responsiveslideshow-slideshow" class="widget  widget--template-widget" data-widget-type="responsiveslideshow">
   <div class="bk-responsiveslideshow  responsiveslideshow  widget__responsiveslideshow">
-    <ul class="slides-list  responsiveslideshow__slides-list  cover">
+    <ul class="slides-list  responsiveslideshow__slides-list  contain">
       <li data-ref="0" class="slide-item  responsiveslideshow__slide-item  responsiveslideshow-image-item  js-responsiveslideshow-image-item  current">
-        <figure class="figure  responsiveslideshow__figure  " style="background-image:url('http://placehold.it/2250x800');">
-          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/2250x800" alt="Test Title Goes Here">
+        <figure class="figure  responsiveslideshow__figure  portrait">
+          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/350x300" alt="First slide title">
           <figcaption class="caption  responsiveslideshow__caption">
-            <span class="image-title  responsiveslideshow__image-title">Test Title Goes Here</span>
-            <span class="image-description  responsiveslideshow__image-description">This is the description for the image gallery</span>
+            <span class="image-title  responsiveslideshow__image-title">First slide title</span>
+            <span class="image-description  responsiveslideshow__image-description">First slide description</span>
           </figcaption>
         </figure>
       </li>
       <li data-ref="1" class="slide-item  responsiveslideshow__slide-item  responsiveslideshow-image-item  js-responsiveslideshow-image-item">
-        <figure class="figure  responsiveslideshow__figure  " style="background-image:url('http://placehold.it/300x100');">
-          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/300x100" alt="Test Title Goes Here">
+        <figure class="figure  responsiveslideshow__figure  landscape">
+          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/350x400" alt="Second slide title">
           <figcaption class="caption  responsiveslideshow__caption">
-            <span class="image-title  responsiveslideshow__image-title">Test Title Goes Here</span>
-            <span class="image-description  responsiveslideshow__image-description">This is the description for the image gallery</span>
+            <span class="image-title  responsiveslideshow__image-title">Second slide title</span>
+            <span class="image-description  responsiveslideshow__image-description">Second slide description</span>
           </figcaption>
         </figure>
       </li>
       <li data-ref="2" class="slide-item  responsiveslideshow__slide-item  responsiveslideshow-image-item  js-responsiveslideshow-image-item">
-        <figure class="figure  responsiveslideshow__figure  " style="background-image:url('http://placehold.it/250x250');">
-          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/250x250" alt="Test Title Goes Here">
+        <figure class="figure  responsiveslideshow__figure  landscape">
+          <img class="image  responsiveslideshow__image  js-responsiveslideshow-image" src="//placehold.it/350x500" alt="Third slide title">
           <figcaption class="caption  responsiveslideshow__caption">
-            <span class="image-title  responsiveslideshow__image-title">Test Title Goes Here</span>
-            <span class="image-description  responsiveslideshow__image-description">This is the description for the image gallery</span>
+            <span class="image-title  responsiveslideshow__image-title">Third slide title</span>
+            <span class="image-description  responsiveslideshow__image-description">Third slide description</span>
           </figcaption>
         </figure>
       </li>
     </ul>
     <nav class="slide-navigation  responsiveslideshow__slide-navigation">
-      <button class="previous-button  button  icon  icon--previous  responsiveslideshow__previous-button js-btn-prev js-slide-ctrl" data-ref="5">
+      <button class="previous-button  button  icon  icon--previous  responsiveslideshow__previous-button js-btn-prev js-slide-ctrl" data-ref="2">
         <span class="control-text  responsiveslideshow__control-text">Previous</span>
       </button>
       <button class="pause-toggle  button  icon  icon--pause  responsiveslideshow__pause-toggle js-btn-play">
         <span class="control-text  responsiveslideshow__control-text">Pause</span>
       </button>
-      <button class="next-button  button  icon  icon--next  responsiveslideshow__next-button js-btn-next js-slide-ctrl" data-ref="5">
+      <button class="next-button  button  icon  icon--next  responsiveslideshow__next-button js-btn-next js-slide-ctrl" data-ref="2">
         <span class="control-text  responsiveslideshow__control-text">Next</span>
       </button>
-    </nav>
-    <nav class="slide-pagination  responsiveslideshow__slide-pagination">
-      <ul class="pagination-list  responsiveslideshow__pagination-list">
-        <li data-ref="0" class="pagination-item  responsiveslideshow__pagination-item js-dot js-slide-ctrl  selected">
-          <button class="button  button--pagination  responsiveslideshow__button">1</button>
-        </li>
-        <li data-ref="1" class="pagination-item  responsiveslideshow__pagination-item js-dot js-slide-ctrl ">
-          <button class="button  button--pagination  responsiveslideshow__button">2</button>
-        </li>
-        <li data-ref="2" class="pagination-item  responsiveslideshow__pagination-item js-dot js-slide-ctrl ">
-          <button class="button  button--pagination  responsiveslideshow__button">3</button>
-        </li>
-      </ul>
     </nav>
   </div>
 </div>
@@ -93,28 +120,43 @@ To include a slideshow widget in your template you will need to add the followin
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 
-* ```duration```: The slideshow duration in seconds
+* ```duration```: The duration of time the slide is shown for in seconds.
 
-* ```transSpeed```: The speed of the transition in milliseconds
+* ```transSpeed```: The speed of the slide transition in milliseconds.
 
-* ```transType```: The type of transition. Possible values:
+* ```transType```: The type of transition between slides. There are currently 3 possible options; ```dissolve```, ```fade```, and ```none```.
 
-  * ```dissolve```
-  * ```fade```
-  * ```none```
+* ```showButtons```: Whether to show or hide the previous and next controls. ```true``` for show and ```false``` for hide.
 
-* ```showButtons```: Show the buttons to go to the next/prev image. Possible values: ```true``` or ```false```
+* ```showBullets```: Whether to show or hide the numbered pagination controls. ```true``` for show and ```false``` for hide.
 
-* ```showBullets```: Show the bullets to go to a different image. Possible values: ```true``` or ```false```
+* ```allowPause```: Whether to show or hide the pause button. ```true``` for show and ```false``` for hide.
 
-* ```allowPause```: Allow to pause the slideshow. Possible values: ```true``` or ```false```
+* ```allowLoop```: Whether the slideshow should loop through the images repeatively. ```true``` to loop them, ```false``` to stop at the end of the cycle.
 
-* ```allowLoop```: Make the slideshow repeat in a loop. Possible values: ```true``` or ```false```
+* ```crop```: Whether the images should crop or fit the slideshow area. Setting to ```true``` will make the images fill the entire slideshow space, ```false``` will make them fit the available space but keep them entirely visible.
 
-* ```crop```: Crop the images in the slideshow to fit, or not. Possible values: ```true``` or ```false```
+* ```images```: The default images for the slideshow, see [Setting images](#setting-images) for more details.
 
-* ```images```: An array of images with properties (```imageHeight```, ```imageWidth```, ```url```, ```title```, ```description```) as opposed to using an album
+## Setting images
+
+{% highlight django %}
+{% raw %}
+...
+{
+  'imageHeight':'350',
+  'imageWidth':'300',
+  'url':'http://placehold.it/350x300',
+  'title':'First slide title',
+  'description': 'First slide description'
+}
+...
+{% endraw %}
+{% endhighlight %}
+
+To see the above example in context please refer to the [Example usage](#example-usage). The images will be shown as default in the template, but they won't be shown in the images panel of the Editor. If the user replaces the images they will no longer be accessible, you will need to state them in the metadata file in order for them to appear in the images panel. The ```url``` can be either an internal or external image path, all other image settings are optional.
+

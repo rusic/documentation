@@ -13,7 +13,7 @@ versions:
 
 The gallery widget allows the user to display a selection or group of images that have been uploaded to the Images section of the Editor. By default the gallery comes with no images, the user must select them when they select the widget. If you are using the image gallery as part of your template you can state the images that are shown.
 
-## Basic Usage
+## Basic usage
 
 {% highlight django %}
 {% raw %}
@@ -55,7 +55,8 @@ The above example will display an area in the template where the user can select
 {% endraw %}
 {% endhighlight %}
 
-Resulting HTML:
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
