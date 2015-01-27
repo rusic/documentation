@@ -25,9 +25,9 @@ The logo can either be changed directly in the visual Editor or by navigating to
 {% endraw %}
 {% endhighlight %}
 
-The logo widget only has one option of a default logo, which is set with ```defaultlogo``` as shown in the below example:
-
 ## Example usage
+
+The logo widget only has one option of a default logo, which is set with ```defaultlogo``` as shown in the below example:
 
 {% highlight django %}
 {% raw %}
