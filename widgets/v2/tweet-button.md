@@ -1,6 +1,6 @@
 ---
 layout: widget
-title: Tweet
+title: Tweet button
 searchable: true
 versions:
 - version: Version 2.0
@@ -9,45 +9,60 @@ versions:
   url: /widgets/v1/tweet-button/
 ---
 
-# Tweet
+# Tweet button
 
-Add a tweet widget to your template.
+The tweet button widget allows the option to post the currently viewed page to Twitter along with a message.
 
-## Overview
-
-You can add a tweet button to your template that will allow the user to share the current page via Twitter.
-
-To include a tweet widget in your template you will need to add the following line:
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('tweet', 'thisuniquewidgetname', {'linkText': 'Tweet'})|raw}}
+{{widget('tweet', 'button', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+By default the text in the button is empty, so it's advised that you add text using the ```linkText``` option.
 
-<h4>Result</h4>
+## Example usage
+
+{% highlight django %}
+{% raw %}
+
+{{widget('tweet', 'tweetblog', {
+  'linkText': 'Share the blog',
+  'tweetText': 'Checkout this blog',
+  'align': 'widget-align-right'
+})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__tweetWidget" data-name="tweet" class="widget  widget--zone-widget">
-  <div class="bk-tweet  tweet  widget__tweet">
-    <a class="button  icon  icon--twitter  tweet__button" target="_blank" href="https://twitter.com/share?text=&amp;url=">Tweet</a>
+<div id="page-zones__template-widgets__tweet-tweetblog" class="widget  widget--template-widget" data-widget-type="tweet">
+  <div class="bk-tweet  tweet  widget__tweet  widget-align-right">
+    <a class="button  icon  icon--twitter  tweet__button" target="_blank" href="https://twitter.com/share?text=Checkout this blog&amp;url=">Share the blog</a>
   </div>
 </div>
 
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-You can change the following options for the widget:
+The button widget has a wide selection of options:
 
-* ```linkText```: The text that will appear in the tweet button
+* ```linkText```: The text shown on the tweet button.
 
-* ```align```: The widget alignment. You can set it to: 
-  * ```widget-align-left```
-  * ```widget-align-center```
-  * ```widget-align-right```
+* ```tweetText```: The text shown in the posted tweet.
+
+* ```align```: Sets the button alignment using classes on the surrounding ```div``` element. The following options are available:
+
+  * ```widget-align-left```: To align the button to the left.
+  * ```widget-align-center```: To align the button to centre.
+  * ```widget-align-right```: To align the button to the right.

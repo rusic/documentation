@@ -54,7 +54,7 @@ The button widget is capable of showing a simple button on a web page, this can 
 
 The button widget has a wide selection of options. All of which are optional but it is advised that you set the ```text``` option, if not the button will be shown with no text at all.
 
-* ```text```: The text shown for the button.
+* ```text```: The text shown on the button.
 
 * ```italic```: Sets the button to italicised using an ```italic``` class on the button element, ```true``` or ```false``` respectively.
 
