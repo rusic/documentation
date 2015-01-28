@@ -11,31 +11,43 @@ versions:
 
 # Click To Call
 
-Add a click to call widget to your template.
+The click to call widget has similar properties to the [button widget](/widgets/v2/button-widget/) but links directly to the phone number that has been added into the profile settings. This provides a direct way for a user to call the company, either via mobile web viewing or from a desktop calling application such as Skype. The widget uses the phone number from the profile section as a default for the link and the text in the link. These can be both changed via the Editor.
 
-
-## Overview
-You can add a click to call widget to your template to allow the visitor to click and call the number in the profile section or customised by the editor user. The widget can be later customised within the BaseKit Editor.
-
-To include a click to call widget in your template you will need to add the following line:
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('clicktocall', 'thisuniquewidgetname', {phoneText: 'Click to Call'})|raw}}
+  {{widget('clicktocall', 'clicktocalldefault', {})|raw}}
+ 
+{% endraw %}
+{% endhighlight %}
+
+## Example usage
+
+{% highlight django %}
+{% raw %}
+
+{{widget('clicktocall', 'headerclicktocall', {
+  'phoneText': 'Call Now',
+  'italic': true,
+  'bold': true,
+  'fontSize': 18,
+  'align': 'widget-align-center'
+})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__clicktocallWidget" data-name="clicktocall" class="widget  widget--zone-widget">
-  <div class="bk-clicktocall  clicktocall  widget__clicktocall">
-    <a href="tel:020123456789" class="phone-number-link  icon  icon--phone  clicktocall__phone-number-link  " >
-    <span class="label  clicktocall__label">Click to call</span>
+<div id="page-zones__template-widgets__clicktocall-headerclicktocall" class="widget  widget--template-widget" data-widget-type="clicktocall">
+  <div class="bk-clicktocall  clicktocall  widget__clicktocall  widget-align-center">
+    <a href="tel:" class="phone-number-link  icon  icon--phone  clicktocall__phone-number-link italic bold" style="font-size:18px">
+      <span class="label  clicktocall__label">Call Now</span>
     </a>
   </div>
 </div>
@@ -43,27 +55,20 @@ To include a click to call widget in your template you will need to add the foll
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
+
 You can change the following options for the widget:
 
-* ```phoneText```: The text on the widget
+* ```phoneText```: The text shown in the click to call widget.
 
-* ```italic```: The text style. ```true``` or ```false``` (default)
+* ```italic```: Sets the click to call to italicised using an ```italic``` class on the button element, ```true``` or ```false``` respectively.
 
-* ```bold```: The text style. ```true``` or ```false``` (default)
+* ```bold```: Sets the click to call to bold using a ```bold``` class on the button element, ```true``` or ```false``` respectively.
 
-* ```textAlign```: The text style. You can set it:
+* ```fontSize```: Changes the click to call font size in pixel values, options are ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
 
-  * ```justifyleft```
-  * ```justifyright```
-  * ```justifycenter``` (default)
-  * ```justifyfull```
+* ```align```: Sets the button alignment using classes on the surround ```div``` element. The following options are available:
 
-* ```fontSize```: The text style. You can set it: 
-```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
-
-* ```align```: The widget alignment. You can set it to:
-
-  * ```widget-align-left```
-  * ```widget-align-center```
-  * ```widget-align-right```
+  * ```widget-align-left```: To align the text to the left.
+  * ```widget-align-center```: To align the text to centre.
+  * ```widget-align-right```: To align the text to the right.
