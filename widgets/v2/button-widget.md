@@ -11,77 +11,86 @@ versions:
 
 # Button Widget
 
-Add a button to your template.
+The button widget is capable of showing a simple button on a web page, this can be added within the Editor and by adding it into the template.
 
-## Overview
-
-You can add a button to your template. The button can be later customised within the BaseKit Editor. 
-To include a button in your template you will need to add the following line:
-
+## Basic usage
 {% highlight django %}
 {% raw %}
 
-  {{widget('button', 'thisuniquewidgetname', {italic: true, text:'button', 'align':'widget-align-center'})|raw}}
+{{widget('button', 'button', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+## Example usage
+{% highlight django %}
+{% raw %}
 
-<h4>Result</h4>
+{{widget('button', 'docsbutton', {
+  'text': 'Documentation',
+  'align': 'widget-align-center',
+  'action': 'external',
+  'url': 'http://docs.basekit.com',
+  'target': '_blank'
+})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__buttonWidget" data-name="button" class="widget  widget--zone-widget">
-  <div class="bk-button  buttonwidget  widget__buttonwidget js-btn">
-    <button class="button  icon  buttonwidget__button  " >Hello Button</button>
+<div id="page-zones__template-widgets__button-docsbutton" class="widget  widget--template-widget" data-widget-type="button">
+  <div class="bk-button  buttonwidget  widget__buttonwidget js-btn  widget-align-center">
+    <button class="button  icon  buttonwidget__button  ">Documentation</button>
   </div>
 </div>
 
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-You can change the following options for the widget:
+The button widget has a wide selection of options. All of which are optional but it is advised that you set the ```text``` option, if not the button will be shown with no text at all.
 
-* ```text```: The button text:
+* ```text```: The text shown for the button.
 
-* ```italic```: The button text style. ```true``` or ```false``` (default)
+* ```italic```: Sets the button to italicised using an ```italic``` class on the button element, ```true``` or ```false``` respectively.
 
-* ```bold```: The button text style. ```true``` or ```false``` (default)
+* ```bold```: Sets the button to bold using a ```bold``` class on the button element, ```true``` or ```false``` respectively.
 
-* ```textAlign```: The button text alignment. You can set it:
+* ```fontSize```: Changes the button font size in pixel values, options are ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
 
-  * ```justifyleft```
-  * ```justifyright```
-  * ```justifycenter``` (default)
-  * ```justifyfull```
-  
-* ```fontSize```: The button text style. You can set it to: 
+* ```align```: Sets the button alignment using classes on the surround ```div``` element. The following options are available:
 
-  * ```inherit``` (default), ```14```, ```16```, ```18```, ```20```, ```22```, ```24```
+  * ```widget-align-left```: To align the button to the left.
+  * ```widget-align-center```: To align the button to centre.
+  * ```widget-align-right```: To align the button to the right.
 
-* ```align```: The widget alignment. You can set it to: 
 
-  * ```widget-align-left```
-  * ```widget-align-center```
-  * ```widget-align-right```
+* ```action```: Changes the button action type. Options are:
 
-* ```action```: The button link action. You can set it to:
+  * ```none```: No action will be set.
+  * ```internal```: Sets the action for internal pages, e.g. ```/blog```.
+  * ```external```: Sets the action for internal pages, e.g. ```http://docs.basekit.com```.
+  * ```email```:  Sets the action for emails.
 
-  * ```none``` (default)
-  * ```internal```
-  * ```external```
-  * ```email```
+* ```target```: Sets the ```target``` attribute of the button. ```_blank``` to open the page in a new window or tab, or ```_self``` to open in the same window or tab.
 
-* ```url```: The button link url. You can set it depends on the action:
+* ```url```: To be used in conjunction with ```action```. See following examples:
 
-  * if action is set ```none```, then url should be empty (default) 
-  * if action is set ```internal```, then url should be an internal link to your page. e.g. ```/home```
-  * if action is set ```external```, then url should be an external link, e.g. ```www.mysite.com```
-  * if action is set ```email```, then url should be an email address, e.g. ```example@example.com```
-
-* ```target```: It sets where to open the external url. You set it only when action is set to ```external```:
-
-  * if you want to open the external link in the current window set it to ```_self```
-  * if you want to open the external link in a new window set it to ```_blank```
+{% highlight django %}
+{% raw %}
+...
+'action': 'internal',
+'url': '/blog'
+...
+'action': 'external',
+'url': 'http://docs.basekit.com'
+...
+'action': 'email',
+'url': 'my@email.com'
+...
+{% endraw %}
+{% endhighlight %}

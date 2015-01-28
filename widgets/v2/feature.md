@@ -33,12 +33,12 @@ By default the feature widget will only show the title and strapline, which will
 {% raw %}
 
 {{widget('feature', 'homepagefeature', {
-  "header": "This is the header",
-  "strapline":"This is the strapline",
-  "defaultBgImg": asset('images/feature-image.jpg'),
+  'header': 'This is the header',
+  'strapline': 'This is the strapline',
+  'defaultBgImg': asset('images/feature-image.jpg'),
   'positionTopPercentage': '50',
   'showBtn': true,
-  "buttonText":"This is the button",
+  'buttonText': 'This is the button',
   'action': 'external',
   'url': 'http://docs.basekit.com',
   'target': '_blank'
