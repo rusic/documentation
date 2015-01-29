@@ -14,6 +14,14 @@ All the documentation for Twig can be found at these sources:
 * Twig - the flexible, fast, and secure template engine: [http://twig.sensiolabs.org/](http://twig.sensiolabs.org/)
 * Client side rendering library: [https://github.com/schmittjoh/twig.js](https://github.com/schmittjoh/twig.js)
 
+## Syntax Highlighting
+
+Some text editors don't come with Twig syntax highlighting when you download them for the first time. This means it can be hard to read Twig code without the colours. Here's some helpful plugins to fix this issue:
+
+* [Coda 2 Twig-HTML syntax highlighting mode](https://github.com/muxx/Twig-HTML.mode)
+* [Sublime Text 3 syntax highlighting](https://github.com/Anomareh/PHP-Twig.tmbundle)
+* [Atom Editor Twig syntax](https://atom.io/packages/php-twig)
+
 ## default.twig
 
 This is where the HTML lives for the default page. If you only include default.twig in a template, then every page will use this file to render its HTML.
@@ -103,7 +111,7 @@ This will pull common assets into the template feed from the BaseKit engine. In 
 {% endraw %}
 {% endhighlight %}
 
-You can find more information on the asset function in [this article](/templating/assets/#asset--image-functions/)
+You can find more information on the asset function in [this article](/templating/assets/#asset--image-functions)
 
 ### Background Rendering
 

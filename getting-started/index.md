@@ -5,16 +5,48 @@ title: Getting Started
 
 # Getting Started
 
-Before you begin to develop your Responsive site you will need to do the following:
+You'll need the following before you start working on a template:
 
-1. ### BaseKit Sign Up
-  If you do not already have an account, you will need to sign up!
-  
-2. ### Upload using a zip
-  [Download this simple Zip Template](http://goo.gl/zhzvUr). Open up the zip file and have a play with the ```default.twig```; the main HTML of the template. Upload again to see your changes! Do this by going to the Custom Templates panel in the Manage section of the BaseKit Editor. If you prefer, you can also use a Git repository. See the [Upload Template instructions](/getting-started/uploading/) for more info.
-  
-3. ### Build templates locally
-  Our local development kit allows you to view templates on your local machine. It has all the features required to build templates for BaseKit. [Download the Template Development Kit](/getting-started/local-development/) from the Tools section. Requires a local PHP server.
-  
-4. ### Learn more!
-  We have plenty of documentation on this site which is updated regularly. If you want to ask us a question, do this on our [Developer Forum](http://knowledge.basekit.com/). Also, our [Template Developer Blog](http://developers.basekit.com/blog) is continuously publishing new articles to help you become a more knowledgable BaseKit Template Developer.
+1. ## Access to BaseKit's Editor
+  * If you have come to us through the editor, you will already be signed up and logged in via your hosting/telecoms package. [Head straight to Step 2](#a-code-editor).
+  * If you already have an account but are not logged in, do so now.
+  * Don't have an account? Head to our [developer homepage](http://www.basekit.com/developers) to find a partner to sign up with.
+
+2. ## A code editor 
+   In order to start developing a template, you'll need to download a code editor of your choice. <br/> We recommend using:
+   * [Sublime Text 3](http://www.sublimetext.com/3), for Windows and Mac OS X
+   * [Coda 2](http://panic.com/coda/) for Mac OS X
+   * [Notepad++](http://notepad-plus-plus.org/) for Windows
+   * [Atom Editor](https://atom.io/), for Windows and Mac OS X
+
+   ### What is a code editor?
+   A code, or text, editor is an application designed specifically for editing source code within development projects. Think of it as Microsoft Word for coders.
+
+   ### Why use a code editor?
+   In a nutshell... because you need your files to contain plain text. Word processing programs like Microsoft Word, Apple Pages or Google Docs add special hidden formatting, something you really don't want if you're coding. In fact, your code generally won't work if it hasn't been written and saved in a plain text environment - a text editor.
+
+   For more detailed information on code editors and help choosing which ones to use, check out this [rather brilliant article](http://blog.teamtreehouse.com/which-text-editor-should-i-use) from Treehouse.
+
+3. ## A local web server application
+   In order to run our local Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-basekits-theme-viewer). <br/> We recommend using:
+   * [Mamp for Mac OS X](http://www.mamp.info/en/downloads/)
+   * [Mamp for Windows](http://www.mamp.info/en/mamp_windows.html)
+
+   ### What is a local web server application?
+   * It does what is says on the tin and runs a local web server on your machine.
+   * In other words, it's simulating an internet connection.
+
+   ### Why use one?
+   * It saves you pain, lots of pain! 
+   * You won't be breaking a live site - let's be honest, no one wants that!
+   * You can work on your site to your heart's content without worrying about having internet connection.
+   * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
+
+4. ## Access to BaseKit's Theme Viewer
+   [Download our Template Development Kit](http://goo.gl/DqoGhX) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+
+   {% include button.html link="http://goo.gl/DqoGhX" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
+
+   {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
+
+   [Download Specific Version](https://github.com/basekit-templates/tdk/wiki)

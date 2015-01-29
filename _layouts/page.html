@@ -12,7 +12,9 @@ layout: default
 
 	<aside class="aside  aside--docs">
 
-		{% include navdocs.html %}
+		{% include search.html %}
+
+		{% include nav-toggle.html %}
 
 	</aside>
 
@@ -20,7 +22,7 @@ layout: default
 
 <div class="span-9">
 
-	<main class="main  main--content">
+	<main class="main  main--content" role="main">
 
 		{{ content }}
 

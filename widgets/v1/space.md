@@ -1,11 +1,12 @@
 ---
 layout: widget
 title: Spacer
+searchable: false
 versions:
 - version: Version 2.0
-  url: /widgets/v2/spacer/
+  url: /widgets/v2/space/
 - version: Version 1.0
-  url: /widgets/v1/spacer/
+  url: /widgets/v1/space/
 ---
 
 # Spacer

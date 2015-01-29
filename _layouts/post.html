@@ -8,6 +8,8 @@ layout: default
 
 		{% include search.html %}
 
+		{% include nav-toggle.html %}
+
 	</aside>
 
 	<aside class="aside  aside--docs">
@@ -23,6 +25,8 @@ layout: default
 	<article class="article  article--content">
 
 		{{ content }}
+
+		<time class="time">{{ page.date | date: "%A, %d %B %Y" }}</time>
 
 	</article>
 
