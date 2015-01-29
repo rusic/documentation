@@ -1,4 +1,7 @@
 navmain:
+- title: Knowledge Forum
+  url: http://knowledge.basekit.com/
+  icon: comment-discussion
 - title: GitHub
   url: http://github.com/basekit-templates
   icon: mark-github

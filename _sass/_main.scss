@@ -342,7 +342,7 @@ a {
 	button {
 		background: $dark-links;
 		border: none;
-		padding: 6px 11px 7px;
+		padding: 7px 11px 7px;
 		border-radius: 3px;
 		color: $light-links;
 		outline: none;
@@ -393,6 +393,7 @@ fieldset {
 		position: absolute;
 		z-index: 0;
 		color: $light-text;
+		line-height: 38px;
 	}
 	.search-input {
 		position: relative;
@@ -434,6 +435,10 @@ h3, legend {
 	.copyright {
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.nav--main .button {
+		display: none;
 	}
 
 	.span--half {
