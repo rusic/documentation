@@ -144,12 +144,6 @@ navdocs:
   - title: Twitter
     url: /widgets/v2/twitter/
 
-  # DEPRECATED
-  - title: Deprecated
-    url:
-  - title: Redirect To Desktop
-    url: /widgets/v1/redirect-to-desktop/
-
 # PLUGINS
 - title: Plugins
   icon: package
@@ -178,12 +172,10 @@ navdocs:
     url:
   - title: Ecommerce Basket
     url: /widgets/v2/ecommerce-basket/
+  - title: Ecommerce Basket Summary
+    url: /widgets/v2/ecommerce-basket-summary/
   - title: Ecommerce Categories
     url: /widgets/v2/ecommerce-categories/
-  - title: Ecommerce Checkout
-    url: /widgets/v2/ecommerce-checkout/
-  - title: Ecommerce Confirmation
-    url: /widgets/v2/ecommerce-confirmation/
   - title: Ecommerce Featured
     url: /widgets/v2/ecommerce-featured/
   - title: Ecommerce Legal
@@ -192,6 +184,17 @@ navdocs:
     url: /widgets/v2/ecommerce-product-list/
   - title: Ecommerce Product
     url: /widgets/v2/ecommerce-product/
+
+  # DEPRECATED
+- title: Deprecated
+  icon: trashcan
+  subnav:
+  - title: Redirect To Desktop
+    url: /widgets/v1/redirect-to-desktop/
+  - title: Ecommerce Checkout
+    url: /widgets/v1/ecommerce-checkout/
+  - title: Ecommerce Confirmation
+    url: /widgets/v1/ecommerce-confirmation/
 
 navfooter:
 - title: Back to top

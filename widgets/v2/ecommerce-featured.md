@@ -11,13 +11,25 @@ versions:
 
 # Ecommerce Featured Products
 
-Version: >= 7.32. Like a slideshow widget but for featured products.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account.
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account.**
+## Examples
+
+### Example usage
 
 {% highlight django %}
+{% raw %}
+
+{{widget('ecomfeaturedproducts', 'featuredproducts', {})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
+{% highlight html %}
 {% raw %}
 
 <div id="page-zones__main-widgets__ecomfeaturedproductsWidget" data-name="ecomfeaturedproducts" class="widget  widget--zone-widget">
@@ -82,16 +94,6 @@ Version: >= 7.32. Like a slideshow widget but for featured products.
 {% endraw %}
 {% endhighlight %}
 
-
-<h4>Result</h4>
-{% highlight html %}
-{% raw %}
-
-  <!-- v2 widget HTML output -->
-
-{% endraw %}
-{% endhighlight %}
-
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.

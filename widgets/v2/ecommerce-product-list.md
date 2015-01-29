@@ -9,24 +9,26 @@ versions:
   url: /widgets/v1/ecommerce-product-list/
 ---
 
-# Ecommerce Product List
+# Ecommerce product list
 
-Version: >= 7.32. Add an ecommerce product list to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account.
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account.**
+## Examples
+
+### Example usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomproductlist', 'thisuniquewidgetname', {})|raw}}
+  {{widget('ecomproductlist', 'productlist', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
@@ -159,8 +161,9 @@ Version: >= 7.32. Add an ecommerce product list to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 
-* ```productFiltering```: (integer) show/hide product filter functionality. ```1``` (default) shows functionality within the widget or ```0``` to hide it
+* ```productFiltering```: Show or hide the product filters above the product items. ```1``` shows the filters, ```0``` will hide them. If this is not set they are shown by default.
+

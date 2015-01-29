@@ -9,28 +9,26 @@ versions:
   url: /widgets/v1/blog-search/
 ---
 
-# Blog Post
+# Blog search
 
-Version: >= 7.32. Add a Blog Search Widget to the Page
-
-## Overview
+Version: >= 7.32. Add a blog search widget to the page.
 
 **IMPORTANT**: This widget will only work with the Blog plugin is enabled on the user's account. This search the blog posts associated to the users site.
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('blogsearch', 'thisuniquewidgetname', {})|raw}}
+  {{widget('blogsearch', 'blogsearch', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Reulsting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__blogsearchWidget" data-name="blogsearch" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__blogsearch" data-name="blogsearch" class="widget  widget--zone-widget">
   <div class="bk-blogsearch  blogsearch  widget__blogsearch">
     <form class="form  blogsearch__form  js-blogsearch-form">
       <fieldset class="fieldset  blogsearch__fieldset">
@@ -52,6 +50,6 @@ Version: >= 7.32. Add a Blog Search Widget to the Page
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently, this widget does not have any options.

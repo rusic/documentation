@@ -9,24 +9,25 @@ versions:
   url: /widgets/v1/ecommerce-products/
 ---
 
-# Ecommerce Product
+# Ecommerce product
 
-Version: >= 7.32. Add an ecommerce product to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account. It is best to place this ```ecomproduct.twig```, if you require it in a different layout. Otherwise the engine will fallback to ```default.twig```.
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account. It is best to place this ```ecomproduct.twig```, if you require it in a different layout. Otherwise the engine will fallback to ```default.twig```.**
+## Examples
 
+### Example usage
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomproduct', 'thisuniquewidgetname', {})|raw}}
+  {{widget('ecomproduct', 'singleproduct', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
@@ -120,6 +121,6 @@ Version: >= 7.32. Add an ecommerce product to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.

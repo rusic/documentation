@@ -11,26 +11,27 @@ versions:
 
 # Ecommerce Basket
 
-Version: >= 7.32. Add an ecommerce basket to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account.
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account.**
+## Examples
 
+### Example usage
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecombasket', 'thisuniquewidgetname', {})|raw}}
+  {{widget('ecombasket', 'shopbasket', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__ecombasketWidget" data-name="ecombasket" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__shopbasket" data-name="ecombasket" class="widget  widget--zone-widget">
   <div class="bk-ecombasket  ecombasket  widget__ecombasket  js-pull">
     <button class="basket-toggle  button  icon  icon--basket  ecombasket__basket-toggle  js-toggle-basket">Basket: <span class="item-count  ecombasket__item-count">2</span></button>
     <div class="basket-body  ecombasket__basket-body">
@@ -77,6 +78,6 @@ Version: >= 7.32. Add an ecommerce basket to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.

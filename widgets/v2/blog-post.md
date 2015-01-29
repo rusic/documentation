@@ -13,14 +13,12 @@ versions:
 
 Version: >= 7.32. Add a blog post to the page.
 
-## Overview
-
 **IMPORTANT**: This widget will only work as expected in the ```blogpost.twig``` page type. Otherwise the engine will fallback to ```default.twig```.
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('blogpost', 'thisuniquewidgetname', {})|raw}}
+  {{widget('blogpost', 'singleblogpost', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
@@ -30,7 +28,7 @@ Version: >= 7.32. Add a blog post to the page.
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__blogpostWidget" data-name="blogpost" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__singleblogpost" data-name="blogpost" class="widget  widget--zone-widget">
   <div class="bk-blogpost  blogpost  widget__blogpost">
     <article class="post-article  post-article--has-image  blogpost__post-article">
       <div class="post-image  blogpost__post-image">

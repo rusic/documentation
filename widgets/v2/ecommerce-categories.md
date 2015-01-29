@@ -9,24 +9,40 @@ versions:
   url: /widgets/v1/ecommerce-categories/
 ---
 
-# Ecommerce Categories
+# Ecommerce categories
 
-Version: >= 7.32. Add an ecommerce categories to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account. It will add a list of blog categories to your page that will link to all posts in that category.
 
-**IMPORTANT: This widget will only work as expected when the ecommerce plugin is activated on the user's account**. It will add a list of blog categories to your page that will link to all posts in that category.
+## Examples
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('ecomcategories', 'thisuniquewidgetname', {'title': 'Categories', 'showCount', true})|raw}}
+  {{widget('ecomcategories', 'productcategories', {})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+### Example usage
+
+{% highlight django %}
+{% raw %}
+
+  {{widget('ecomcategories', 'productcategories', {
+    'title': 'Categories',
+    'showCount', true
+  })|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
 
-<h4>Result</h4>
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
@@ -48,8 +64,8 @@ Version: >= 7.32. Add an ecommerce categories to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-* ```title``` (string): This is the string that sits above the categories widget. ```categories``` (default)
+* ```title```: The title of the widget, shown above the list itself. If this is not set if will default to the word ```Categories```.
 
-* ```showCount``` (boolean): Shows the number of posts in each category. ```true``` (default) or ```false```
+* ```showCount```: Shows the number of products under each category. Set to ```true``` to show or ```false``` to hide them, if this option isn't set then they are shown by default.
