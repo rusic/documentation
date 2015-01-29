@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Example Blog Post"
-categories: test
+title: "Initial Blog Post"
+categories: general
 ---
 
-This is just some testing to see if the blog works correctly.
+# Initial Blog Post
+
+More news to follow shortly.

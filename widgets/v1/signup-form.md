@@ -1,11 +1,12 @@
 ---
 layout: widget
 title: Signup Form
+searchable: false
 versions:
 - version: Version 2.0
-  url: /widgets/v2/sign-up-form/
+  url: /widgets/v2/signup-form/
 - version: Version 1.0
-  url: /widgets/v1/sign-up-form/
+  url: /widgets/v1/signup-form/
 ---
 
 # Sign Up Form

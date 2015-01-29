@@ -1,9 +1,9 @@
 ---
 layout: doc
-title: Uploading
+title: Uploading a Template
 ---
 
-# Upload your template to the Editor
+# Upload a Template to The Editor
 
 When your developer account has been set up. You will be able to upload templates via the Template section within your account. This can be done by uploading a ZIP or using a GIT repository.
 

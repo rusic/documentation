@@ -8,22 +8,27 @@ navmain:
   icon: cloud-download
 
 navdocs:
+
+# GETTING STARTED
 - title: Getting Started
   url: /getting-started/
   icon: milestone
   subnav:
-  - title: Local Development
-    url: /getting-started/local-development/
-  - title: Uploading
+  - title: Downloading a Template
+    url: /getting-started/downloading/
+  - title: Editing a Template
+    url: /getting-started/editing/
+  - title: Uploading a Template
     url: /getting-started/uploading/
+
+# TEMPLATING
 - title: Templating
-  url: #/templating/
   icon: file-code
   subnav:
   - title: Twig
     url: /templating/twig/
-  #- title: File Structure
-    #url: /templating/file-structure/
+  - title: File Structure
+    url: /templating/file-structure/
   - title: Assets
     url: /templating/assets/
   - title: JavaScript
@@ -36,6 +41,8 @@ navdocs:
     url: /templating/less/
   - title: Quality
     url: /templating/quality/
+
+# DATA
 - title: Data
   url: /data/
   icon: file-text
@@ -48,128 +55,148 @@ navdocs:
     url: /data/profile/
   - title: Plugin
     url: /data/plugin/
+
+# WIDGETS
 - title: Widgets
   url: /widgets/
   icon: puzzle
-
   subnav:
+
+  # CONTENT & IMAGES
   - title: Content & Images
     url:
-
   - title: Content Widget
-    url: /widgets/v1/content-widget/
+    url: /widgets/v2/content-widget/
   - title: Line
-    url: /widgets/v1/line/
-  - title: Spacer
-    url: /widgets/v1/spacer/
+    url: /widgets/v2/line/
+  - title: Space
+    url: /widgets/v2/space/
   - title: Gallery
-    url: /widgets/v1/gallery/
+    url: /widgets/v2/gallery/
   - title: Image
-    url: /widgets/v1/image/
+    url: /widgets/v2/image/
   - title: Slideshow
-    url: /widgets/v1/slideshow/
+    url: /widgets/v2/slideshow/
 
+  # TEMPLATE ELEMENTS
   - title: Template Elements
     url:
   - title: Logo
-    url: /widgets/v1/logo/
+    url: /widgets/v2/logo/
   - title: Extended Navigation
-    url: /widgets/v1/extended-navigation/
+    url: /widgets/v2/extended-navigation/
   - title: Feature
-    url: /widgets/v1/feature/
+    url: /widgets/v2/feature/
 
+  # BUTTONS
   - title: Buttons
     url:
   - title: Button Widget
-    url: /widgets/v1/button-widget/
+    url: /widgets/v2/button-widget/
   - title: Tweet Button
-    url: /widgets/v1/tweet-button/
+    url: /widgets/v2/tweet-button/
   - title: Click To Call
-    url: /widgets/v1/click-to-call/
+    url: /widgets/v2/click-to-call/
   - title: Dropbox Button
-    url: /widgets/v1/dropbox-button/
+    url: /widgets/v2/dropbox-button/
   - title: Facebook Like
-    url: /widgets/v1/facebook-like/
+    url: /widgets/v2/facebook-like/
   - title: Social Icons
-    url: /widgets/v1/social-icons/
+    url: /widgets/v2/social-icons/
 
+  # FORMS
   - title: Forms
     url:
   - title: Signup Form
-    url: /widgets/v1/signup-form/
+    url: /widgets/v2/signup-form/
   - title: Contact Form
-    url: /widgets/v1/contact-form/
+    url: /widgets/v2/contact-form/
 
+  # EMBEDS
+  - title: Embeds
+    url:
+  - title: Map
+    url: /widgets/v2/map/
+  - title: SoundCloud
+    url: /widgets/v2/soundcloud/
+  - title: YouTube
+    url: /widgets/v2/youtube/
+  - title: Disqus Comments
+    url: /widgets/v2/disqus-comments/
+  - title: LinkedIn Company Profile
+    url: /widgets/v2/linkedin-company-profile/
+  - title: LinkedIn Profile
+    url: /widgets/v2/linkedin-profile/
+
+  # PROFILE
+  - title: Profile
+    url:
+  - title: Profile
+    url: /widgets/v2/profile/
+  - title: Company Address
+    url: /widgets/v2/company-address/
+
+  # APIs
+  - title: APIs
+    url:
+  - title: Yelp Reviews
+    url: /widgets/v2/yelp-reviews/
+  - title: Twitter
+    url: /widgets/v2/twitter/
+
+# PLUGINS
+- title: Plugins
+  icon: package
+  subnav:
+
+  # MENU
   - title: Menu
     url:
   - title: Menu Sections
-    url: /widgets/v1/menu-sections/
+    url: /widgets/v2/menu-sections/
   - title: Menu
-    url: /widgets/v1/menu/
+    url: /widgets/v2/menu/
 
+  # BLOG
   - title: Blog
     url:
   - title: Blog Post List
-    url: /widgets/v1/blog-post-list/
+    url: /widgets/v2/blog-post-list/
   - title: Blog Post
-    url: /widgets/v1/blog-post/
+    url: /widgets/v2/blog-post/
   - title: Blog Search
-    url: /widgets/v1/blog-search/
+    url: /widgets/v2/blog-search/
 
+  # ECOMMERCE
   - title: Ecommerce
     url:
   - title: Ecommerce Basket
-    url: /widgets/v1/ecommerce-basket/
+    url: /widgets/v2/ecommerce-basket/
+  - title: Ecommerce Basket Summary
+    url: /widgets/v2/ecommerce-basket-summary/
   - title: Ecommerce Categories
-    url: /widgets/v1/ecommerce-categories/
+    url: /widgets/v2/ecommerce-categories/
+  - title: Ecommerce Featured
+    url: /widgets/v2/ecommerce-featured/
+  - title: Ecommerce Legal
+    url: /widgets/v2/ecommerce-legal/
+  - title: Ecommerce Product List
+    url: /widgets/v2/ecommerce-product-list/
+  - title: Ecommerce Product
+    url: /widgets/v2/ecommerce-product/
+
+# DEPRECATED
+- title: Deprecated
+  icon: trashcan
+  subnav:
+  - title: Redirect To Desktop
+    url: /widgets/v1/redirect-to-desktop/
   - title: Ecommerce Checkout
     url: /widgets/v1/ecommerce-checkout/
   - title: Ecommerce Confirmation
     url: /widgets/v1/ecommerce-confirmation/
-  - title: Ecommerce Featured
-    url: /widgets/v1/ecommerce-featured/
-  - title: Ecommerce Legal
-    url: /widgets/v1/ecommerce-legal/
-  - title: Ecommerce Product List
-    url: /widgets/v1/ecommerce-product-list/
-  - title: Ecommerce Product
-    url: /widgets/v1/ecommerce-product/
-
-  - title: Embeds
-    url:
-  - title: Map
-    url: /widgets/v1/map/
-  - title: SoundCloud
-    url: /widgets/v1/soundcloud/
-  - title: YouTube
-    url: /widgets/v1/youtube/
-  - title: Disqus Comments
-    url: /widgets/v1/disqus-comments/
-  - title: LinkedIn Company Profile
-    url: /widgets/v1/linkedin-company-profile/
-  - title: LinkedIn Profile
-    url: /widgets/v1/linkedin-profile/
-
-  - title: Profile
-    url:
-  - title: Profile
-    url: /widgets/v1/profile/
-  - title: Company Address
-    url: /widgets/v1/company-address/
-
-  - title: APIs
-    url:
-  - title: Yelp Reviews
-    url: /widgets/v1/yelp-reviews/
-  - title: Twitter
-    url: /widgets/v1/twitter/
-
-  - title: Deprecated
-    url:
-  - title: Redirect To Desktop
-    url: /widgets/v1/redirect-to-desktop/
 
 navfooter:
 - title: Back to top
-  url:
+  url: '#top'
   icon: arrow-up

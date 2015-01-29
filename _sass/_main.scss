@@ -47,6 +47,7 @@ body {
 	background: $light-background;
 	float: left;
 	width: 100%;
+	padding-bottom: 20px;
 	.row {
 		display: flex;
 	}
@@ -66,6 +67,7 @@ body {
 	h2, h3, h4, h5, h6 {
 		margin-bottom: 0.3em;
 		position: relative;
+		clear: both;
 		&[id] {
 			padding: 2px 4px;
 			background: darken($light-background, 3%);
@@ -77,6 +79,24 @@ body {
 
 	p {
 		line-height: 26px;
+	}
+
+	hr {
+		clear: both;
+	}
+
+	ul, ol {
+		padding-left: 18px;
+	}
+
+	ul {
+		list-style: square;
+		ul {
+			list-style: disc;
+			ul {
+				list-style: circle;
+			}
+		}
 	}
 
 	// Pygments
@@ -132,6 +152,12 @@ body {
 	.main--content img {
 		border: 1px solid $light-border;
 	}
+	.image--center {
+		text-align: center;
+		background: lighten($light-border, 10%);
+		line-height: 0;
+		padding: 10px;
+	}
 
 	// Keylines
 	hr {
@@ -157,6 +183,62 @@ body {
 	}
 
 
+// Feature
+.main--feature {
+	background: darken($light-background, 3%);
+	padding-bottom: 60px;
+	.octicon {
+		font-size: 24px;
+	}
+}
+	// Feature header
+	.header--feature {
+		padding: 2% 0;
+		margin-bottom: 20px;
+		h2 {
+			padding-bottom: 3%;
+		}
+		.search-form .octicon {
+			top: 5px;
+			right: 6px;
+		}
+		.search-form {
+			font-size: 24px;
+			line-height: 34px;
+		}
+	}
+
+	// Feature cards
+	.feature-card {
+		width: 50%;
+		float: left;
+		position: relative;
+		padding: 30px 30px 60px;
+		min-height: 300px;
+		border: 1px solid darken($light-background, 3%);
+		background: $light-background;
+		text-align: center;
+		.button-container {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			min-height: 60px;
+		}
+		.octicon {
+			font-size: 44px;
+		}
+	}
+
+// Blog
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+	.post-item {
+		margin-top: 0;
+	}
+
 // Aside
 .aside {
 	padding: 15px 10px;
@@ -166,17 +248,23 @@ body {
 	h3 {
 		margin-top: 0;
 	}
+	.octicon {
+		min-width: 18px;
+	}
 }
 	// In-page navigations
 	.aside--docs,
 	.aside--search {
 		border-right-width: 1px;
 	}
-	.aside--verions,
+	.aside--versions,
 	.aside--contents {
 		border-left-width: 1px;
+		li {
+			list-style: square;
+		}
 	}
-	.aside--verions,
+	.aside--versions,
 	.aside--search {
 		border-bottom-width: 1px;
 	}
@@ -210,18 +298,21 @@ body {
 
 		// Navigation items
 		.nav-list {
-			padding: 0;
 			margin: 0;
-			list-style: none;
-		}
-		.nav-list--child {
-			padding-left: 20px;
 		}
 		.nav-subtitle {
 			font-weight: bold;
 		}
 		.nav-item--parent {
 			margin-top: 10px;
+		}
+		.nav--docs {
+			> .nav-list--parent {
+				padding-left: 0;
+			}
+			.nav-item {
+				list-style: none;
+			}
 		}
 
 // Footer
@@ -241,9 +332,9 @@ a {
 	&:hover {
 		color: darken($dark-links, 10%);
 	}
-	&:active,
 	&.current {
 		color: darken($dark-links, 15%);
+		border-bottom: 1px solid darken($dark-links, 10%);
 	}
 }
 	// Buttons
@@ -274,7 +365,7 @@ svg {
 	.search-form .octicon {
 		position: absolute;
 		z-index: 2;
-		right: 4px;
+		right: 1px;
 		top: 4px;
 		cursor: pointer;
 		@include linearGradient(rgba($light-background, 0), $light-background);
@@ -310,10 +401,12 @@ fieldset {
 	}
 	.search-field,
 	.nav-list--search-results {
-		padding: 0 9px;
+		padding: 0 5px;
 	}
 	.search-form {
+		width: 100%;
 		border: 1px solid darken($light-border, 20%);
+		background: $light-background;
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
@@ -352,7 +445,7 @@ h3, legend {
 	}
 
 	.span--three-quarters,
-	.search-form {
+	.aside--search .search-form {
 		width: 75%;
 	}
 
@@ -374,6 +467,11 @@ h3, legend {
 			display: inline-block;
 			line-height: initial;
 		}
+	}
+
+	.feature-card {
+		width: 100%;
+		min-height: inherit;
 	}
 
 	// Navigation toggle
