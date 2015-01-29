@@ -8,7 +8,7 @@ title: Font Stacks
 These are font that we currently support. You can use others but they will not match up in the Editor. We recommend you stick to these:
 
 | Primary Font          | Font Stack Escaped (use this within JSON or Javascript)                                  | Light | Normal | Bold | In Editor |
-|-----------------------|------------------------------------------------------------------------------------------|-------|--------|------|-----------| 
+|-----------------------|------------------------------------------------------------------------------------------|-------|--------|------|-----------|
 | Abel                  | \\"Abel\\", \\"Lucida Console\\", monospace                                              | -     | 400    | 700  | Y         |
 | Abril Fatface         | \\"Abril Fatface\\", \\"Palatino Linotype\\", serif                                      | -     | 400    | 700  | Y         |
 | Alfa Slab One         | \\"Alfa Slab One\\", \\"Oswald\\", Arial, sans-serif                                     | -     | 400    | 700  | Y         |
