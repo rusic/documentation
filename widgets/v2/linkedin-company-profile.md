@@ -13,26 +13,41 @@ versions:
 
 Add a Linkedin company profile widget to your template.
 
-## Overview
-
 You can add a LinkedIn company profile widget to your template. This profile URL can be changed later in the BaseKit Editor.
 
+## Examples
+
 To include a LinkedIn profile widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('linkedincompanyprofile', 'thisuniquewidgetname', {'source': 'companyname', 'companyName': 'My Company'})|raw}}
+  {{widget('linkedincompanyprofile', 'companyprofile', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('linkedincompanyprofile', 'companyprofile', {
+    'source': 'companyname',
+    'companyName': 'My Company'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__linkedincompanyprofile-thisuniquewidgetname" class="widget  widget--template-widget" data-widget-type="linkedincompanyprofile">
+<div id="page-zones__template-widgets__companyprofile" class="widget  widget--template-widget" data-widget-type="linkedincompanyprofile">
   <div class="bk-linkedincompanyprofile  linkedincompanyprofile  widget__linkedincompanyprofile">
     ...
   </div>
@@ -41,7 +56,7 @@ To include a LinkedIn profile widget in your template you will need to add the f
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

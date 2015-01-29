@@ -13,27 +13,33 @@ versions:
 
 Add a profile widget to your template.
 
-## Overview
+You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor.
 
-You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor. 
+## Examples
 
 To include a profile widget in your template you will need to add the following example lines:
+
+### Example usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('profile', 'thisuniquewidgetname', { 'profileType':'twitter', 'twitter':'profile', 'refreshtime':'1800000'})|raw}}
+  {{widget('profile', 'profilearea', {
+    'profileType':'twitter',
+    'twitter':'profile',
+    'refreshtime':'1800000'
+  })|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
 <!-- PROFILE COMPANY STRAPLINE WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget1" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-strapline company-strapline--profile-widget">
       <h2 class="strapline  company-strapline__strapline">Here is the website strapline!</h2>
@@ -42,7 +48,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE COMPANY DESCRIPTION WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget2" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-description  company-description--profile-widget">
       <h3 class="description  company-description__description">This is the company description</h3>
@@ -52,7 +58,7 @@ To include a profile widget in your template you will need to add the following 
 
 
 <!-- PROFILE COMPANY ADDRES WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget3" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="vcard  company-address__vcard">
       <address class="address  company-address__address">
@@ -67,7 +73,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE EMAIL ADDRESS WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget4" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="email-address  email-address--profile-widget">
       <a class="email  email-address__email" href="mailto:defaultemail@provider.com">defaultemail@provider.com</a>
@@ -76,7 +82,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE PHONE NUMBER WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget5" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-phone-number  company-phone-number--profile-widget">
       <a class="phone-number-link  icon  icon--phone  company-phone-number__phone-number-link" href="tel:  ">
@@ -87,7 +93,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE COMPANY ADDRESS WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget6" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-business  company-business--profile-widget">
       <p class="business  company-business__business">Business Name</p>
@@ -96,7 +102,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE COMPANY COPYRIGHT WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget7" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-copyright  company-copyright--profile-widget">
       <p class="copyright  company-copyright__copyright">Copyright 2014. All Rights Reserved.</p>
@@ -105,7 +111,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE TWITTER FEED WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget8" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="twitter-feed  twitter-feed--profile  widget__twitter-feed js-twitter">
       <div class="tweet-item  twitter-feed__tweet-item">
@@ -129,15 +135,15 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE SIGN UP FORM WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget9" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <form class="form  signup-form__form">
       <fieldset class="fieldset  signup-form__fieldset">
         <legend class="legend  signup-form__legend">Sign Up</legend>
         <div class="form-body  signup-form__form-body">
           <div class="form-group  signup-form__form-group">
-            <label class="label  signup-form__label  label--email" for="page-zones__main-widgets__ProfileWidget9__input--email">Your email</label>
-            <input class="input  signup-form__input  input--email js-email" id="page-zones__main-widgets__ProfileWidget9__input--email" name="page-zones__main-widgets__ProfileWidget9__input--email" placeholder="Type your email" type="email" />
+            <label class="label  signup-form__label  label--email" for="page-zones__main-widgets__profilearea">Your email</label>
+            <input class="input  signup-form__input  input--email js-email" id="page-zones__main-widgets__profilearea" name="page-zones__main-widgets__profilearea" placeholder="Type your email" type="email" />
           </div>
           <div class="form-group  signup-form__form-group">
             <input class="button  signup-form__input  button--submit" type="submit" value="Send" />
@@ -149,7 +155,7 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE SOCIAL ICONS WIDGET -->
-<div id="page-zones__main-widgets__ProfileWidget10" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="social-icons  social-icons--profile  widget__social-icons">
       <ul class="social-list  social-icons__social-list">
@@ -191,7 +197,7 @@ To include a profile widget in your template you will need to add the following 
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

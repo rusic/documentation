@@ -11,28 +11,43 @@ versions:
 
 # Yelp Reviews
 
-Version: >= 7.34. Add a Yelp review widget to your template.
-
-## Overview
+This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a Yelp review widget to your template.
 
 You can add a Yelp review widget to your template. The Yelp business ID can be changed later with the BaseKit Editor.
 
+## Examples
+
 To include a Yelp widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('yelpreview', 'thisuniquewidgetname', {'title': 'Yelp Review', 'yelpbusinessid': ''})|raw}}
+  {{widget('yelpreview', 'reviews', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('yelpreview', 'reviews', {
+    'title': 'Yelp Review',
+    'yelpbusinessid': ''
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__YelpreviewWidget" data-name="yelpreview" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__reviews" data-name="yelpreview" class="widget  widget--template-widget">
   <div class="bk-yelpreview  yelpreview  widget__yelpreview  js-yelpreview">
     <h2 class="yelp-title  yelpreview__yelp-title">Yelp Review</h2>
     <ul class="review-list  yelpreview__review-list">
@@ -62,7 +77,7 @@ To include a Yelp widget in your template you will need to add the following lin
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

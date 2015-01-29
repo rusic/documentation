@@ -13,26 +13,45 @@ versions:
 
 Add a Facebook Like widget to your template.
 
-## Overview
-
 You can add a Facebook Like widget to your template. The widget can be later customised within the BaseKit Editor.
 
+## Examples
 To include a Facebook Like widget in your template you will need to add the following line:
 
+## Basic usage
 {% highlight django %}
 {% raw %}
 
-  {{widget('facebooklike', 'thisuniquewidgetname', {text: 'FaceBook Like', showFaces: 'true', action: 'like', colorscheme: 'light', layout: 'standard', height: '80', font: 'arial', locale: 'en_US', thisUrl: 'www.mysite.com'})|raw}}
+  {{widget('facebooklike', 'likebutton', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+## Example usage
+{% highlight django %}
+{% raw %}
 
-<h4>Result</h4>
+  {{widget('facebooklike', 'likebutton', {
+    text: 'FaceBook Like',
+    showFaces: 'true',
+    action: 'like',
+    colorscheme: 'light',
+    layout: 'standard',
+    height: '80',
+    font: 'arial',
+    locale: 'en_US',
+    thisUrl: 'www.mysite.com'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__facebookLikeWidget" data-name="facebooklike" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__likebutton" data-name="facebooklike" class="widget  widget--template-widget">
   <div class="bk-facebooklike  facebooklike  widget__facebooklike">
     <iframe src="//www.facebook.com/plugins/like.php..." style="height:40px;"></iframe>
   </div>
@@ -41,7 +60,7 @@ To include a Facebook Like widget in your template you will need to add the foll
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

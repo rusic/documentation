@@ -13,26 +13,38 @@ versions:
 
 Add a signup form widget to your template.
 
-## Overview
-
 You can add a single line signup form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section, or customised email address by the editor user. The widget can be later customised within the BaseKit Editor. 
 
+## Examples
+
 To include a signup Form widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('signupform', 'thisuniquewidgetname', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
+  {{widget('signupform', 'emailsignup', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('signupform', 'emailsignup', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__signupformWidget" data-name="signupform" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__emailsignup" data-name="signupform" class="widget  widget--template-widget">
   <div class="bk-signupform  signupform  widget__signupform">
     <form class="form  signupform__form">
       <fieldset class="fieldset  signupform__fieldset">
@@ -54,7 +66,7 @@ To include a signup Form widget in your template you will need to add the follow
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

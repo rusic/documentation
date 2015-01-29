@@ -9,30 +9,49 @@ versions:
   url: /widgets/v1/social-icons/
 ---
 
-# Social Icons
+# Social icons
 
 Add a social icons widget to your template.
 
-## Overview
-
 You can add a social icons widget to your template. This widget will display icon links for the user's social media profile URLs.
 
+## Examples
+
 To include a social icons widget in your template you will need to add the following line:
+
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('socialicons', 'thisuniquewidgetname', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/mycompanyname', 'facebook': 'https://www.facebook.com/mycompanyname', 'twitter': 'https://twitter.com/mycompanyname', 'youtube': 'https://www.youtube.com/user/mycompanyname', 'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'})|raw}}
+  {{widget('socialicons', 'socialnetworks', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+## Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('socialicons', 'socialnetworks', {
+    'googleplus': 'https://plus.google.com/101946323226233111530',
+    'linkedin':'http://www.linkedin.com/company/mycompanyname',
+    'facebook': 'https://www.facebook.com/mycompanyname',
+    'twitter': 'https://twitter.com/mycompanyname',
+    'youtube': 'https://www.youtube.com/user/mycompanyname',
+    'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__socialiconsWidget" data-name="socialicons" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__socialnetworks" data-name="socialicons" class="widget  widget--template-widget">
   <div class="bk-socialicons  socialicons  widget__socialicons">
     <ul class="social-list  socialicons__social-list">
       <li class="social-item  socialicons__social-item">
@@ -72,7 +91,7 @@ To include a social icons widget in your template you will need to add the follo
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget. You can use custom links or use the shared profile data: 
 
@@ -88,7 +107,8 @@ You can change the following options for the widget. You can use custom links or
 
 * ```rss```: The RSS URL. i.e, ```http://news.bbc.co.uk/1/hi/help/rss/default.stm``` or ```profile```
 
-* ```align```: The widget alignment. You can set it to:
-  * ```widget-align-left```
-  * ```widget-align-center```
-  * ```widget-align-right```
+* ```align```: Sets the social icon alignment using classes on the surround ```div``` element. The following options are available:
+
+  * ```widget-align-left```: To align the icons to the left.
+  * ```widget-align-center```: To align the icons to centre.
+  * ```widget-align-right```: To align the icons to the right.

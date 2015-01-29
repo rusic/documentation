@@ -13,25 +13,28 @@ versions:
 
 Add a company address widget to your template.
 
-## Overview
 You can add a company address widget to your template which contains the company address in the 'manage shared contact' section. The widget can be later customised within the BaseKit Editor.
 
+## Examples
+
 To include a company address widget in your template you will need to add the following line:
+
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('companyaddress', 'thisuniquewidgetname', {})|raw}}
+  {{widget('companyaddress', 'address', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__ProfileWidget6" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__address" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
     <div class="company-business  company-business--profile-widget">
       <p class="business  company-business__business">Business Name</p>
@@ -42,6 +45,6 @@ To include a company address widget in your template you will need to add the fo
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 This widget will use the data in your 'manage shared contact' section. So you don't need to set it.

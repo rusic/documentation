@@ -13,26 +13,41 @@ versions:
 
 Add a YouTube video to your template.
 
-## Overview
-
 You can add YouTube videos to your template. The videos can be later customised within the BaseKit Editor. 
 
+## Examples
+
 To include a video in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('youtube', 'thisuniquewidgetname', {'videoId': 'j9Hjrs6WQ8M', 'userInput': '<iframe src="http://www.youtube.com/embed/j9Hjrs6WQ8M" frameborder="0" allowfullscreen></iframe>'})|raw}}
+  {{widget('youtube', 'video', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('youtube', 'video', {
+    'videoId': '...',
+    'userInput': '<iframe src="..." allowfullscreen></iframe>'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__youtubeWidget" data-name="youtube" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__video" data-name="youtube" class="widget  widget--template-widget">
   <div class="bk-youtube  youtube  widget__youtube">
     <div class="embed-wrap  embed-wrap--video  youtube__embed-wrap">
       <iframe class="iframe  iframe--video  youtube__iframe" width='100' height='215' src="https://www.youtube.com/embed/j9Hjrs6WQ8M?wmode=transparent"></iframe>
@@ -43,7 +58,7 @@ To include a video in your template you will need to add the following line:
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

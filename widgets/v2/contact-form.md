@@ -9,30 +9,46 @@ versions:
   url: /widgets/v1/contact-form/
 ---
 
-# Contact Form
+# Contact form
 
 Add a contact form widget to your template.
 
-## Overview
-
 You can add a contact form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the BaseKit Editor.
 
+## Examples
+
 To include a contact form widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('contactform', 'thisuniquewidgetname', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+  {{widget('contactform', 'contact', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('contactform', 'contact', {
+    'text': 'Submit',
+    'formTitle': 'Contact Form',
+    'email': 'profile'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__ContactFormWidget" data-name="contactform" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__contact" data-name="contactform" class="widget  widget--template-widget">
   <div class="bk-contactform  contactform  widget__contactform">
     <form class="form  contactform__form">
       <fieldset class="fieldset  contactform__fieldset">
@@ -58,7 +74,7 @@ To include a contact form widget in your template you will need to add the follo
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

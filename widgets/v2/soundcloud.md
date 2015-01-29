@@ -11,28 +11,42 @@ versions:
 
 # SoundCloud
 
-Version: >= 7.32. Add a SoundCloud widget to your template.
-
-## Overview
+This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a SoundCloud widget to your template.
 
 You can add a SoundCloud widget to your template. The audio can be later customised within the BaseKit Editor.
 
+## Examples
+
 To include a SoundCloud widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('soundcloud', 'thisuniquewidgetname', {'iframeCode': '<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151493449&amp;auto_play=false"></iframe>'})|raw}}
+  {{widget('soundcloud', 'onpagemusic', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('soundcloud', 'onpagemusic', {
+    'iframeCode': '<iframe src="..."></iframe>'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__soundcloudWidget" data-name="soundcloud" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__onpagemusic" data-name="soundcloud" class="widget  widget--template-widget">
   <div class="bk-soundcloud  soundcloud  widget__soundcloud">
     <div class="embed-wrap  embed-wrap--audio  soundcloud__embed-wrap">
       <iframe width="100" height="200" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151493449&amp;auto_play=false"></iframe>
@@ -43,7 +57,7 @@ To include a SoundCloud widget in your template you will need to add the followi
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 

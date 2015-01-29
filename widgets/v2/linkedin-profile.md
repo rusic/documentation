@@ -13,26 +13,38 @@ versions:
 
 Add a LinkedIn personal profile widget to your template.
 
-## Overview
-
 You can add a LinkedIn personal profile widget to your template. This profile URL can be changed later in the BaseKit Editor.
 
+## Examples
+
 To include a LinkedIn profile widget in your template you will need to add the following line:
+
+## Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('linkedinprofile', 'thisuniquewidgetname', {'linkedin': 'http://www.linkedin.com/in/johndoe'})|raw}}
+  {{widget('linkedinprofile', 'profilecard', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+## Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('linkedinprofile', 'profilecard', {'linkedin': 'http://www.linkedin.com/in/johndoe'})|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__linkedinprofile-thisuniquewidgetname" class="widget  widget--template-widget" data-widget-type="linkedinprofile">
+<div id="page-zones__template-widgets__profilecard" class="widget  widget--template-widget" data-widget-type="linkedinprofile">
   <div class="bk-linkedinprofile  linkedinprofile  widget__linkedinprofile">
     <div class="embed-wrap  embed-wrap--linkedin  linkedinprofile__embed-wrap">
       ...
@@ -43,9 +55,8 @@ To include a LinkedIn profile widget in your template you will need to add the f
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 You can change the following options for the widget:
 
 * ```linkedin```: The LinkedIn profile public URL. For example: ```http://www.linkedin.com/in/johndoe```
-

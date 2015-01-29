@@ -9,26 +9,42 @@ versions:
   url: /widgets/v1/map/
 ---
 
-# Map
+# Map widget
 
 Add a map widget to your template.
 
-## Overview
-
 You can add a map widget to your template. The map address can be changed later with the BaseKit Editor.
 
+## Examples
+
 To include a map widget in your template you will need to add the following line:
+
+### Basic usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('map', 'thisuniquewidgetname', {'height': '150', 'zoom': '15', 'address': 'profile'})|raw}}
+  {{widget('map', 'googlemaps', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('map', 'googlemaps', {
+    'height': '150',
+    'zoom': '15',
+    'address': 'profile'
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
@@ -43,7 +59,8 @@ To include a map widget in your template you will need to add the following line
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
+
 You can change the following options for the widget:
 
 * ```height```: The height of the map in pixels. Possible values: from ```100``` to ```500```

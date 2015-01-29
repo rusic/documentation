@@ -9,11 +9,15 @@ versions:
   url: /widgets/v1/disqus-comments/
 ---
 
-# Disqus Comments
+# Disqus comments
 
-Version: >= 7.32. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/){:target="_blank"}
+This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/){:target="_blank"}
+
+## Examples
 
 This widget is managed by a third party. BaseKit wraps the Disqus comments widget, and enables you to add it to your website.
+
+### Example usage
 
 {% highlight django %}
 {% raw %}
@@ -23,12 +27,12 @@ This widget is managed by a third party. BaseKit wraps the Disqus comments widge
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__disqusWidget" data-name="disqus" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__pagecomments" data-name="disqus" class="widget  widget--template-widget">
   <div class="bk-disqus  disqus  widget__disqus">
     <div class="embed-wrap  embed-wrap  disqus__embed-wrap">
       <div id="disqus_thread"></div>
@@ -45,6 +49,6 @@ This widget is managed by a third party. BaseKit wraps the Disqus comments widge
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently, this widget does not have any options.
