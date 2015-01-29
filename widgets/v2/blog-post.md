@@ -9,11 +9,15 @@ versions:
   url: /widgets/v1/blog-post/
 ---
 
-# Blog Post
+# Blog post
 
-Version: >= 7.32. Add a blog post to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
 **IMPORTANT**: This widget will only work as expected in the ```blogpost.twig``` page type. Otherwise the engine will fallback to ```default.twig```.
+
+## Examples
+
+### Example usage
 
 {% highlight django %}
 {% raw %}
@@ -23,8 +27,8 @@ Version: >= 7.32. Add a blog post to the page.
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
@@ -84,6 +88,6 @@ Version: >= 7.32. Add a blog post to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.

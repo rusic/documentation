@@ -11,9 +11,13 @@ versions:
 
 # Blog search
 
-Version: >= 7.32. Add a blog search widget to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
 **IMPORTANT**: This widget will only work with the Blog plugin is enabled on the user's account. This search the blog posts associated to the users site.
+
+## Examples
+
+### Example usage
 
 {% highlight django %}
 {% raw %}
