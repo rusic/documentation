@@ -198,6 +198,9 @@ body {
 		h2 {
 			padding-bottom: 3%;
 		}
+		.search-label {
+			line-height: 38px;
+		}
 		.search-form .octicon {
 			top: 5px;
 			right: 6px;
@@ -393,7 +396,7 @@ fieldset {
 		position: absolute;
 		z-index: 0;
 		color: $light-text;
-		line-height: 38px;
+		line-height: 26px;
 	}
 	.search-input {
 		position: relative;
