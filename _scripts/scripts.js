@@ -55,9 +55,10 @@ if (typeof(element) != 'undefined' && element != null)
 		var link 	 = document.createElement(headlines[i].id ? 'a' : 'span');
 		link.textContent = headlines[i].textContent;
 
-		// Add href and value to link
+		// Add href and value plus data-scroll attribute to link
 		if (headlines[i].id) {
 			link.href = '#' + headlines[i].id;
+			link.setAttribute('data-scroll', true);
 		}
 
 		// Append link to list item
