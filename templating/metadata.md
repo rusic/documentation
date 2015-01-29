@@ -95,6 +95,8 @@ body {
 
 * ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the Editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the BaseKit Editor. The fonts are linked to certain tags in the Editor. For example, font-swatch1 is linked to the H1 tag in all BaseKit templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: ```font-swatch1``` does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use ```font-swatch1``` for H1 properties there will be a disconnect between the Editor and your design, we therefore suggest that you stick to BaseKit standards.
 
+  For a full list of available fonts within BaseKit please refer to [Font Stacks](/data/font-stacks/).
+
 {% highlight json %}
 
 {
@@ -205,56 +207,7 @@ h1 {
 
 {% endhighlight %}
 
-### Available Font Family Values
-
-These are font values that we currently support. You can use more but if you do, they will not match up to the BaseKit Editor. We recommend you stick to the list below:
-
-| Primary Font          | Font Stack                                                    | Font Stack Escaped (use this within JSON or Javascript)             | 
-|-----------------------|---------------------------------------------------------------|---------------------------------------------------------------------| 
-| Droid Sans            | "Droid Sans", Helvetica, Arial, sans-serif                    | \"Droid Sans\", Helvetica, Arial, sans-serif                        | 
-| Arvo                  | "Arvo", Georgia, serif                                        | \"Arvo\", Georgia, serif                                            | 
-| Corben                | "Corben", Georgia, serif                                      | \"Corben\", Georgia, serif                                          | 
-| Lobster               | "Lobster", Verdana, sans-serif                                | \"Lobster\", Verdana, sans-serif                                    | 
-| Droid Serif           | "Droid Serif", Georgia, serif                                 | \"Droid Serif\", Georgia, serif                                     | 
-| Raleway               | "Raleway", "Lucida Grande", Helvetica, sans-serif             | \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif               | 
-| Goudy Bookletter 1911 | "Goudy Bookletter 1911", "Times New Roman", Georgia, serif    | \"Goudy Bookletter 1911\", \"Times New Roman\", Georgia, serif      | 
-| Abril Fatface         | "Abril Fatface", "Palatino Linotype", serif                   | \"Abril Fatface\", \"Palatino Linotype\", serif                     | 
-| Yanone Kaffeesatz     | "Yanone Kaffeesatz", Georgia, serif                           | \"Yanone Kaffeesatz\", Georgia, serif                               | 
-| Hammersmith One       | "Hammersmith One", Tahoma, Verdana, sans-serif                | \"Hammersmith One\", Tahoma, Verdana, sans-serif                    | 
-| Lato                  | "Lato", Geneva, Tahoma, sans-serif                            | \"Lato\", Geneva, Tahoma, sans-serif                                | 
-| PT Sans Narrow        | "PT Sans Narrow", Arial, sans-serif                           | \"PT Sans Narrow\", Arial, sans-serif                               | 
-| Open Sans             | "Open Sans", Helvetica, Verdana, sans-serif                   | \"Open Sans\", Helvetica, Verdana, sans-serif                       | 
-| Open Sans Condensed   | "Open Sans Condensed", Arial, Helvetica, sans-serif           | \"Open Sans Condensed\", Arial, Helvetica, sans-serif               | 
-| Old Standard TT       | "Old Standard TT", "Book Antiqua", "Palatino Linotype", serif | \"Old Standard TT\", \"Book Antiqua\", \"Palatino Linotype\", serif | 
-| Merriweather          | "Merriweather", Georgia, serif                                | \"Merriweather\", Georgia, serif                                    | 
-| Montserrat            | "Montserrat", "Trebuchet MS", Helvetica, sans-serif           | \"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif             | 
-| Roboto                | "Roboto", Geneva, "Lucida Console", sans-serif                | \"Roboto\", Geneva, \"Lucida Console\", sans-serif                  | 
-| Titillium Web         | "Titillium Web", Geneva, Tahoma, sans-serif                   | \"Titillium Web\", Geneva, Tahoma, sans-serif                       | 
-| Karla                 | "Karla", Verdana, Geneva, sans-serif                          | \"Karla\", Verdana, Geneva, sans-serif                              | 
-| Oswald                | "Oswald", Arial, sans-serif                                   | \"Oswald\", Arial, sans-serif                                       | 
-| Glegoo                | "Glegoo", Monaco, "Lucida Console", monospace                 | \"Glegoo\", Monaco, \"Lucida Console\", monospace                   | 
-| Volkorn               | "Vollkorn", Georgia, serif                                    | \"Vollkorn\", Georgia, serif                                        | 
-| Courgette             | "Courgette", "Lucida Grande", sans-serif                      | \"Courgette\", \"Lucida Grande\", sans-serif                        | 
-| Abel                  | "Abel", "Lucida Console", monospace                           | \"Abel\", \"Lucida Console\", monospace                             | 
-| Sniglet               | "Sniglet", Geneva, Gadget, sans-serif                         | \"Sniglet\", Geneva, Gadget, sans-serif                             | 
-| Ubuntu                | "Ubuntu", Candara, Futura, sans-serif                         | \"Ubuntu\", Candara, Futura, sans-serif                             | 
-| PT Sans               | "PT Sans", Tahoma, Geneva, sans-serif                         | \"PT Sans\", Tahoma, Geneva, sans-serif                             | 
-| PT Serif              | "PT Serif", Georgia, serif                                    | \"PT Serif\", Georgia, serif                                        | 
-| PT Mono               | "PT Mono", "Courier New", Courier, monospace                  | \"PT Mono\", \"Courier New\", Courier, monospace                    | 
-| Times New Roman       | "Times New Roman", serif                                      | \"Times New Roman\", serif                                          | 
-| Tahoma                | "Tahoma", sans-serif                                          | \"Tahoma\", sans-serif                                              | 
-| Trebuchet             | "Trebuchet", Helvetica, sans-serif                            | \"Trebuchet\", Helvetica, sans-serif                                | 
-| Verdana               | "Verdana", sans-serif                                         | \"Verdana\", sans-serif                                             | 
-| Palatino              | "Palatino", serif                                             | \"Palatino\", serif                                                 | 
-| Impact                | "Impact", sans-serif                                          | \"Impact\", sans-serif                                              | 
-| Helvetica             | "Helvetica", Arial, sans-serif                                | \"Helvetica\", Arial, sans-serif                                    | 
-| Myriad Pro            | "Myriad Pro", Helvetica, sans-serif                           | \"Myriad Pro\", Helvetica, sans-serif                               | 
-| Georgia               | "Georgia", serif                                              | \"Georgia\", serif                                                  | 
-| Futura                | "Futura", Helvetica, sans-serif                               | \"Futura\", Helvetica, sans-serif                                   | 
-| Courier New           | "Courier New", monospace                                      | \"Courier New\", monospace                                          | 
-| Arial                 | "Arial", sans-serif                                           | \"Arial\", sans-serif                                               | 
-
-### The Advance metadata.json Example File
+### The Advanced metadata.json Example File
 
 {% highlight json %}
 

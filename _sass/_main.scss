@@ -173,6 +173,10 @@ body {
 		letter-spacing: -.2px;
 		width: 100%;
 	}
+	th, td {
+		border-right: 1px solid $light-border;
+		padding: 0 4px;
+	}
 
 	th {
 		background: darken($light-background, 8%);
@@ -217,7 +221,7 @@ body {
 		float: left;
 		position: relative;
 		padding: 30px 30px 60px;
-		min-height: 300px;
+		min-height: 260px;
 		border: 1px solid darken($light-background, 3%);
 		background: $light-background;
 		text-align: center;

@@ -58,6 +58,8 @@ navdocs:
     url: /data/profile/
   - title: Plugin
     url: /data/plugin/
+  - title: Font Stacks
+    url: /data/font-stacks/
 
 # WIDGETS
 - title: Widgets
