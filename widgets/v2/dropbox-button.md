@@ -9,26 +9,39 @@ versions:
   url: /widgets/v1/dropbox-button/
 ---
 
-# Dropbox Button
+# Dropbox button
 
-Add a Dropbox widget to your template.
+The Dropbox download button is a widget that allows the user to offer a file from their Dropbox account as a downloadable file. This can be dragged onto the page via the Editor and added into the template using the code documented below.
 
-## Overview
+## Examples
 
-You can add a Dropbox widget to your template that will allow you to add a link to a file on your dropbox account on your site.
+### Basic usage
 
 To include a Dropbox widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('dropbox', 'thisuniquewidgetname', {'align': 'left', 'showFileName': false})|raw}}
+  {{widget('dropbox', 'downloadbutton', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+### Example usage
 
-<h4>Result</h4>
+{% highlight django %}
+{% raw %}
+
+  {{widget('dropbox', 'downloadbutton', {
+    'align': 'left',
+    'showFileName': true
+  })|raw}}
+
+{% endraw %}
+{% endhighlight %}
+
+#### Resulting HTML:
+
 {% highlight html %}
 {% raw %}
 
@@ -42,14 +55,14 @@ To include a Dropbox widget in your template you will need to add the following 
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
-You can change the following options for the widget:
+You can change the following options for the dropbox button widget:
 
-* ```showFileName``` Show the file name. ```true``` or ```false``` (default)
+* ```showFileName```: Show the file name next to the download button Show the file name. ```true``` to show the file name, or ```false``` to hide it. It is hidden by default.
 
-* ```align```: The widget alignment. You can set it to:
+* ```align```: Sets the download button alignment using classes on the surround ```div``` element. The following options are available:
 
-  * widget-align-left
-  * widget-align-center
-  * widget-align-right
+  * ```widget-align-left```: To align the download button to the left.
+  * ```widget-align-center```: To align the download button to centre.
+  * ```widget-align-right```: To align the download button to the right.
