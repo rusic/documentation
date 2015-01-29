@@ -95,6 +95,8 @@ body {
 
 * ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the Editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the BaseKit Editor. The fonts are linked to certain tags in the Editor. For example, font-swatch1 is linked to the H1 tag in all BaseKit templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: ```font-swatch1``` does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use ```font-swatch1``` for H1 properties there will be a disconnect between the Editor and your design, we therefore suggest that you stick to BaseKit standards.
 
+  For a full list of available fonts within BaseKit please refer to [Font Stacks](/data/font-stacks/).
+
 {% highlight json %}
 
 {
@@ -189,8 +191,6 @@ body {
 }
 
 {% endhighlight %}
-
-We have a [full list of Google fonts that are available](/templating/font-stacks/) to use within templates.
 
 ### Referenced in LESS
 
