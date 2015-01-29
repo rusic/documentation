@@ -22,11 +22,11 @@ searchable: false
 
 <small>A small element</small>
 
-[A link](# "A link")
+[A link](#top)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <u>underline element</u> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco _italicised element_ laboris nisi ut aliquip ex ea commodo consequat.
 
-Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur <span>span element</span> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Duis aute irure dolor in [a link](#top) reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur <span>span element</span> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 *   An item
 *   An item

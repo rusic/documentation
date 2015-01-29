@@ -198,5 +198,5 @@ navdocs:
 
 navfooter:
 - title: Back to top
-  url:
+  url: '#top'
   icon: arrow-up

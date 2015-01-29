@@ -4,9 +4,9 @@ title: Ecommerce Product
 searchable: true
 versions:
 - version: Version 2.0
-  url: /widgets/v2/ecommerce-products/
+  url: /widgets/v2/ecommerce-product/
 - version: Version 1.0
-  url: /widgets/v1/ecommerce-products/
+  url: /widgets/v1/ecommerce-product/
 ---
 
 # Ecommerce product

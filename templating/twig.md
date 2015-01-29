@@ -103,7 +103,7 @@ This will pull common assets into the template feed from the BaseKit engine. In 
 {% endraw %}
 {% endhighlight %}
 
-You can find more information on the asset function in [this article](/templating/assets/#asset--image-functions/)
+You can find more information on the asset function in [this article](/templating/assets/#asset--image-functions)
 
 ### Background Rendering
 
