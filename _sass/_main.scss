@@ -72,11 +72,9 @@ body {
 			padding: 2px 4px;
 			background: darken($light-background, 3%);
 		}
-	}
-
-	// Targetted items when using anchor links
-	[id]:target {
-		background: $highlighted-text;
+		&:target {
+			background: $highlighted-text;
+		}
 	}
 
 	p {
