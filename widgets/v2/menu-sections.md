@@ -11,22 +11,24 @@ versions:
 
 # Menu Sections
 
-Version: >= 7.32. Add a menu sections navigation to the page.
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the menu plugin is activated on the user's account. This works in conjunction with the [menu](/widgets/v2/menu/) widget. This widget will show a list of menu section links. When this link is clicked it will navigate to the relevant sections in the menu.
 
-**IMPORTANT: This widget will only work as expected when the menu plugin is activated on the user's account.** This works in conjunction with the [menu](/widgets/v1/menu/) widget. This widget will show a list of menu section links. When this link is clicked it will navigate to the relevant sections in the menu.
+## Examples
+
+## Example usage
 
 {% highlight django %}
 {% raw %}
 
-  {{widget('menu', 'thisuniquewidgetname', {})|raw}}
+  {{widget('menusections', 'menusectionsnav', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
@@ -48,6 +50,6 @@ Version: >= 7.32. Add a menu sections navigation to the page.
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.

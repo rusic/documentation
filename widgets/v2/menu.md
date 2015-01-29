@@ -11,26 +11,27 @@ versions:
 
 # Menu
 
-Version: >= 7.32. Add a menu list to the page (i.e. restaurant menu).
+This widget is only compatible with BaseKit Editor **version 7.32 and above**.
 
-## Overview
+**IMPORTANT:** This widget will only work as expected when the menu plugin is activated on the user's account. This widget is used to display a list of items, dishes, services with a price as per a conventional restaurant menu.
 
-**IMPORTANT: This widget will only work as expected when the menu plugin is activated on the user's account.** This widget is used to display a list of items, dishes, services with a price as per a conventional restaurant menu.
+## Examples
 
+### Example usage
 {% highlight django %}
 {% raw %}
 
-  {{widget('menu', 'thisuniquewidgetname', {})|raw}}
+  {{widget('menu', 'menu', {})|raw}}
 
 {% endraw %}
 {% endhighlight %}
 
+#### Resulting HTML:
 
-<h4>Result</h4>
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__menuWidget" data-name="menu" class="widget  widget--zone-widget">
+<div id="page-zones__main-widgets__menu" data-name="menu" class="widget  widget--zone-widget">
   <div class="bk-menu  menu  widget__menu">
     <section class="menu-section  menu__menu-section" id="menu-section--373">
       <header class="section-header  menu__section-header">
@@ -175,6 +176,6 @@ Version: >= 7.32. Add a menu list to the page (i.e. restaurant menu).
 {% endraw %}
 {% endhighlight %}
 
-## Widget Options
+## Widget options
 
 Currently this widget does not have any options.
