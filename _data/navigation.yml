@@ -203,5 +203,5 @@ navdocs:
 
 navfooter:
 - title: Back to top
-  url: '#top'
+  url: '#top"  data-scroll="true'
   icon: arrow-up
