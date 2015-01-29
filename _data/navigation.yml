@@ -40,8 +40,6 @@ navdocs:
     url: /templating/page-types/
   - title: Metadata
     url: /templating/metadata/
-  - title: Font Stacks
-    url: /templating/font-stacks/
   - title: LESS
     url: /templating/less/
   - title: Quality
@@ -60,6 +58,8 @@ navdocs:
     url: /data/profile/
   - title: Plugin
     url: /data/plugin/
+  - title: Font Stacks
+    url: /data/font-stacks/
 
 # WIDGETS
 - title: Widgets
