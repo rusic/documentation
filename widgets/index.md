@@ -25,8 +25,9 @@ Using the above snippet you can define an area of space in which you would like 
 
 Below is a basic example of defining a Zone Area within a template file, for example ```default.twig```:
 
-{% highlight django %}
+{% highlight html %}
 {% raw %}
+
 <!doctype html>
 <html>
   <head>
@@ -48,6 +49,7 @@ Below is a basic example of defining a Zone Area within a template file, for exa
     
   </body>
 </html>
+
 {% endraw %}
 {% endhighlight %}
 
@@ -71,8 +73,9 @@ Note that the Twig code used to define a particular widget contains additional b
 
 Below is a basic example of defining a Template Widget within a template file, along with a default parameter:
 
-{% highlight django %}
+{% highlight html %}
 {% raw %}
+
 <!doctype html>
 <html>
   <head>
@@ -94,6 +97,7 @@ Below is a basic example of defining a Template Widget within a template file, a
     
   </body>
 </html>
+
 {% endraw %}
 {% endhighlight %}
 
