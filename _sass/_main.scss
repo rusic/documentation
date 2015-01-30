@@ -68,13 +68,11 @@ body {
 		margin-bottom: 0.3em;
 		position: relative;
 		clear: both;
-		&[id] {
-			padding: 2px 4px;
-			background: darken($light-background, 3%);
-		}
-		&:target {
-			background: $highlighted-text;
-		}
+	}
+
+	h3, legend {
+		font-weight: bold;
+		font-size: 16px;
 	}
 
 	p {
@@ -425,12 +423,6 @@ fieldset {
 	.nav-list--search-results[data-state=highlighted] {
 		background: $highlighted-text;
 	}
-
-// Headings
-h3, legend {
-	font-weight: bold;
-	font-size: 16px;
-}
 
 // Mobile
 @media (min-width: 320px) and (max-width: 767px) {
