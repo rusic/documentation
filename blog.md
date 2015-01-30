@@ -1,7 +1,7 @@
 ---
-layout: blog
-title: Blog
-permalink: /blog/
+layout: updates
+title: Updates
+permalink: /updates/
 ---
 
-# BaseKit Documentation Blog
+# Documentation updates

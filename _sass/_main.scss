@@ -235,13 +235,18 @@ body {
 		}
 	}
 
-// Blog
+// Updates
 .post-list {
 	list-style: none;
 	padding: 0;
 }
 	.post-item {
 		margin-top: 0;
+	}
+
+	.time {
+		font-style: italic;
+		color: darken($light-border, 20%);
 	}
 
 // Aside
