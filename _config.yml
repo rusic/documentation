@@ -13,6 +13,7 @@ twitter: BaseKitDevs
 
 # Jekyll options
 exclude:
+- CNAME
 - LICENSE
 - README.md
 - bower_components
