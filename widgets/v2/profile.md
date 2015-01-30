@@ -38,95 +38,104 @@ To include a profile widget in your template you will need to add the following 
 {% highlight html %}
 {% raw %}
 
+<!-- PROFILE COMPANY HEADLINE WIDGET -->
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
+  <div class="bk-profile  profile  widget__profile">
+    <div class="companyheadline  companyheadline--profile-widget">
+      <h2 class="headline  companyheadline__headline">Here is the website headline!</h2>
+    </div>
+  </div>
+</div>
+
 <!-- PROFILE COMPANY STRAPLINE WIDGET -->
 <div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="company-strapline company-strapline--profile-widget">
-      <h2 class="strapline  company-strapline__strapline">Here is the website strapline!</h2>
+    <div class="companystrapline companystrapline--profile-widget">
+      <h2 class="strapline  companystrapline__strapline">Here is the website strapline!</h2>
     </div>
   </div>
 </div>
 
 <!-- PROFILE COMPANY DESCRIPTION WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="company-description  company-description--profile-widget">
-      <h3 class="description  company-description__description">This is the company description</h3>
+    <div class="companydescription  companydescription--profile-widget">
+      <h3 class="description  companydescription__description">This is the company description</h3>
     </div>
   </div>
 </div>
 
 
-<!-- PROFILE COMPANY ADDRES WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<!-- PROFILE COMPANY ADDRESS WIDGET -->
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="vcard  company-address__vcard">
-      <address class="address  company-address__address">
-        <p class="address-line  address-line--one  company-address__address-line  fn  org">123 Example Street</p>
-        <p class="address-line  address-line--two  company-address__address-line">Test Plaza</p>
-        <p class="address-line  address-line--three  company-address__address-line">Block Number One</p>
-        <p class="address-line  address-line--code  company-address__address-line">BS1 2ND</p>
-        <p class="address-line  address-line--country  company-address__address-line">United Kingdom</p>
+    <div class="vcard  companyaddress__vcard">
+      <address class="address  companyaddress__address">
+        <p class="address-line  address-line--one  companyaddress__address-line  fn  org">123 Example Street</p>
+        <p class="address-line  address-line--two  companyaddress__address-line">Test Plaza</p>
+        <p class="address-line  address-line--three  companyaddress__address-line">Block Number One</p>
+        <p class="address-line  address-line--code  companyaddress__address-line">BS1 2ND</p>
+        <p class="address-line  address-line--country  companyaddress__address-line">United Kingdom</p>
       </address>
     </div>
   </div>
 </div>
 
 <!-- PROFILE EMAIL ADDRESS WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="email-address  email-address--profile-widget">
-      <a class="email  email-address__email" href="mailto:defaultemail@provider.com">defaultemail@provider.com</a>
+    <div class="emailaddress  emailaddress--profile-widget">
+      <a class="email  emailaddress__email" href="mailto:defaultemail@provider.com">defaultemail@provider.com</a>
     </div>
   </div>
 </div>
 
 <!-- PROFILE PHONE NUMBER WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="company-phone-number  company-phone-number--profile-widget">
-      <a class="phone-number-link  icon  icon--phone  company-phone-number__phone-number-link" href="tel:  ">
-      <span class="phone-number  company-phone-number__phone-number">020123456789</span>
+    <div class="companyphone  companyphone--profile-widget">
+      <a class="phone-number-link  icon  icon--phone  companyphone__phone-number-link" href="tel:  ">
+      <span class="phone-number  companyphone__phone-number">020123456789</span>
       </a>
     </div>
   </div>
 </div>
 
 <!-- PROFILE COMPANY ADDRESS WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="company-business  company-business--profile-widget">
-      <p class="business  company-business__business">Business Name</p>
+    <div class="companybusiness  companybusiness--profile-widget">
+      <p class="business  companybusiness__business">Business Name</p>
     </div>
   </div>
 </div>
 
 <!-- PROFILE COMPANY COPYRIGHT WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="company-copyright  company-copyright--profile-widget">
-      <p class="copyright  company-copyright__copyright">Copyright 2014. All Rights Reserved.</p>
+    <div class="companycopyright  companycopyright--profile-widget">
+      <p class="copyright  companycopyright__copyright">Copyright 2014. All Rights Reserved.</p>
     </div>
   </div>
 </div>
 
 <!-- PROFILE TWITTER FEED WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="twitter-feed  twitter-feed--profile  widget__twitter-feed js-twitter">
-      <div class="tweet-item  twitter-feed__tweet-item">
-        <div class="avatar  twitter-feed__avatar">
-          <a class="avatar-link  twitter-feed__avatar-link" href="https://twitter.com/basekit" target="_blank">
-            <img class="avatar-image  twitter-feed__avatar-image" alt="BaseKit.Com" title="BaseKit.Com" data-screename="basekit" src="http://placehold.it/98x98">
+    <div class="twitter  twitter--profile  widget__twitter js-twitter">
+      <div class="tweet-item  twitter__tweet-item">
+        <div class="avatar  twitter__avatar">
+          <a class="avatar-link  twitter__avatar-link" href="https://twitter.com/basekit" target="_blank">
+            <img class="avatar-image  twitter__avatar-image" alt="BaseKit.Com" title="BaseKit.Com" data-screename="basekit" src="http://placehold.it/98x98">
           </a>
         </div>
-        <div class="tweet-wrap  twitter-feed__tweet-wrap">
-          <a class="account-link  twitter-feed__account-link" href="https://twitter.com/basekit" target="_blank">
-            <span class="account-name  twitter-feed__account-name">BaseKit.Com</span>
+        <div class="tweet-wrap  twitter__tweet-wrap">
+          <a class="account-link  twitter__account-link" href="https://twitter.com/basekit" target="_blank">
+            <span class="account-name  twitter__account-name">BaseKit.Com</span>
           </a>
-          <p class="tweet-content  twitter-feed__tweet-content">How To Get Big-Brand Search Visibility</p>
-          <span class="tweet-metadata  twitter-feed__tweet-meta">
-            <time class="timestamp  twitter-feed__timestamp" datetime="2014-10-22T00:00:00+00:00">Thu Aug 01 11:30:49 +0000 2013</time> <span class="via  twitter-feed__via">via</span> <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+          <p class="tweet-content  twitter__tweet-content">How To Get Big-Brand Search Visibility</p>
+          <span class="tweet-metadata  twitter__tweet-meta">
+            <time class="timestamp  twitter__timestamp" datetime="2014-10-22T00:00:00+00:00">Thu Aug 01 11:30:49 +0000 2013</time> <span class="via  twitter__via">via</span> <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
           </span>
         </div>
       </div>
@@ -135,18 +144,18 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE SIGN UP FORM WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <form class="form  signup-form__form">
-      <fieldset class="fieldset  signup-form__fieldset">
-        <legend class="legend  signup-form__legend">Sign Up</legend>
-        <div class="form-body  signup-form__form-body">
-          <div class="form-group  signup-form__form-group">
-            <label class="label  signup-form__label  label--email" for="page-zones__main-widgets__profilearea">Your email</label>
-            <input class="input  signup-form__input  input--email js-email" id="page-zones__main-widgets__profilearea" name="page-zones__main-widgets__profilearea" placeholder="Type your email" type="email" />
+    <form class="form  signupform__form">
+      <fieldset class="fieldset  signupform__fieldset">
+        <legend class="legend  signupform__legend">Sign Up</legend>
+        <div class="form-body  signupform__form-body">
+          <div class="form-group  signupform__form-group">
+            <label class="label  signupform__label  label--email" for="page-zones__template-widgets__profilearea">Your email</label>
+            <input class="input  signupform__input  input--email js-email" id="page-zones__template-widgets__profilearea" name="page-zones__template-widgets__profilearea" placeholder="Type your email" type="email" />
           </div>
-          <div class="form-group  signup-form__form-group">
-            <input class="button  signup-form__input  button--submit" type="submit" value="Send" />
+          <div class="form-group  signupform__form-group">
+            <input class="button  signupform__input  button--submit" type="submit" value="Send" />
           </div>
         </div>
       </fieldset>
@@ -155,38 +164,38 @@ To include a profile widget in your template you will need to add the following 
 </div>
 
 <!-- PROFILE SOCIAL ICONS WIDGET -->
-<div id="page-zones__main-widgets__profilearea" data-name="profile" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__profilearea" data-name="profile" class="widget  widget--template-widget">
   <div class="bk-profile  profile  widget__profile">
-    <div class="social-icons  social-icons--profile  widget__social-icons">
-      <ul class="social-list  social-icons__social-list">
-        <li class="social-item  social-icons__social-item">
+    <div class="socialicons  socialicons--profile  widget__socialicons">
+      <ul class="social-list  socialicons__social-list">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--twitter  social-social-link" href="https://twitter.com/twitter.com" target="_blank">
-            <span class="social-name  social-icons__social-name">Twitter</span>
+            <span class="social-name  socialicons__social-name">Twitter</span>
           </a>
         </li>
-        <li class="social-item  social-icons__social-item">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--facebook  social-social-link" href="facebook.com" target="_blank">
-            <span class="social-name  social-icons__social-name">Facebook</span>
+            <span class="social-name  socialicons__social-name">Facebook</span>
           </a>
         </li>
-        <li class="social-item  social-icons__social-item">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--rss  social-social-link" href="rss.com" target="_blank">
-            <span class="social-name  social-icons__social-name">RSS</span>
+            <span class="social-name  socialicons__social-name">RSS</span>
           </a>
         </li>
-        <li class="social-item  social-icons__social-item">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--linkedin  social-social-link" href="linkedin.com" target="_blank">
-            <span class="social-name  social-icons__social-name">Linkedin</span>
+            <span class="social-name  socialicons__social-name">Linkedin</span>
           </a>
         </li>
-        <li class="social-item  social-icons__social-item">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--googleplus  social-social-link" href="googleplus.com" target="_blank">
-            <span class="social-name  social-icons__social-name">Google+</span>
+            <span class="social-name  socialicons__social-name">Google+</span>
           </a>
         </li>
-        <li class="social-item  social-icons__social-item">
+        <li class="social-item  socialicons__social-item">
           <a class="social-link  icon  icon--youtube  social-social-link" href="youtube.com" target="_blank">
-            <span class="social-name  social-icons__social-name">YouTube</span>
+            <span class="social-name  socialicons__social-name">YouTube</span>
           </a>
         </li>
       </ul>
@@ -227,6 +236,11 @@ Once you select the profile type, you need to specify options for the type:
   ```profileType```: ```strapline```
 
   * ```strapline```: The strap line to display. If set to ```profile```, it will use the profile data, or you can put custom strap line e.g. ```my strapline```
+
+* ### Headline type
+  ```profileType```: ```headline```
+
+  * ```headline```: The headline to display. If set to ```profile```, it will use the profile data, or you can put custom headline e.g. ```my headline```
 
 * ### Company Description type
   ```profileType```: ```companydescription```
