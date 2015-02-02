@@ -30,8 +30,6 @@ navdocs:
   subnav:
   - title: Twig
     url: /templating/twig/
-  - title: File Structure
-    url: /templating/file-structure/
   - title: Assets
     url: /templating/assets/
   - title: JavaScript
