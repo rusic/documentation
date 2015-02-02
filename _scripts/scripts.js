@@ -40,6 +40,7 @@ if (typeof(element) != 'undefined' && element != null)
 	// Create list
 	var contentsList = document.createElement('ol'); // List element (ol or ul)
 	contentsList.classList.add('nav-list'); // Class name for list
+	contentsList.setAttribute('data-gumshoe', true);
 
 	// Loop through items
 	for (var i = 0; i < headlines.length; i++) {
@@ -52,7 +53,7 @@ if (typeof(element) != 'undefined' && element != null)
 		contentsList.appendChild(contentsItem);
 
 		// Create link (if not span) to headline
-		var link 	 = document.createElement(headlines[i].id ? 'a' : 'span');
+		var link = document.createElement(headlines[i].id ? 'a' : 'span');
 		link.textContent = headlines[i].textContent;
 
 		// Add href and value plus data-scroll attribute to link
@@ -66,7 +67,9 @@ if (typeof(element) != 'undefined' && element != null)
 	}
 
 	// Append list to element on page
-	if (contents != null) contents.appendChild(contentsList);
+	if (contents != null) {
+		contents.appendChild(contentsList);
+	}
 
 // Position Sticky elements
 if(document.getElementById("sticky")){

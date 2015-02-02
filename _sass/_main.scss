@@ -342,7 +342,7 @@ a {
 	&:hover {
 		color: darken($dark-links, 10%);
 	}
-	&.current {
+	&.active {
 		color: darken($dark-links, 15%);
 		border-bottom: 1px solid darken($dark-links, 10%);
 	}

@@ -12,7 +12,7 @@
 
 			{% else %}
 
-				{% if item.icon != null %}<span class="octicon octicon-{{ item.icon }}"></span>{% endif %}<a href="{{ item.url }}" class="nav-subtitle{% if page.url == item.url %}  current{% endif %}">{{ item.title }}</a>
+				{% if item.icon != null %}<span class="octicon octicon-{{ item.icon }}"></span>{% endif %}<a href="{{ item.url }}" class="nav-subtitle{% if page.url == item.url %}  active{% endif %}">{{ item.title }}</a>
 
 			{% endif %}
 
@@ -30,7 +30,7 @@
 
 							{% else %}
 
-								{% if subitem.icon != null %}<span class="octicon octicon-{{ subitem.icon }}"></span>{% endif %}<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="current"{% endif %}>{{ subitem.title }}</a>
+								{% if subitem.icon != null %}<span class="octicon octicon-{{ subitem.icon }}"></span>{% endif %}<a href="{{ subitem.url }}" {% if page.url == subitem.url %}class="active"{% endif %}>{{ subitem.title }}</a>
 
 							{% endif %}
 
