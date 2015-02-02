@@ -13,7 +13,7 @@ Not only will page types use an alternative markup but when a page is created wi
 
 A user can select a page type at the point of page creation within the editor.
 
-![Add page lightbox](/assets/content/add-page.png)
+{% include imagecenter.html image="/assets/content/add-page.png" alt="Add page lightbox" %}
 
 ### Default Page Types
 
