@@ -8,6 +8,8 @@ layout: default
 
 		{% include search.html %}
 
+		{% include navtoggle.html %}
+
 	</aside>
 
 	<aside class="aside  aside--docs">
@@ -20,7 +22,9 @@ layout: default
 
 <div class="span-7">
 
-	<main class="main  main--content">
+	<main class="main  main--content" role="main">
+
+		{{ content }}
 
 		<ul class="post-list">
 
@@ -30,7 +34,7 @@ layout: default
 					<h2>
 						<a href="{{ post.url }}">{{ post.title }}</a>
 					</h2>
-					<time class="time">{{ post.date | date: "%A, %d %B %Y" }}</time>
+					<time class="time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%A, %d %B %Y" }}</time>
 				</li>
 
 			{% endfor %}
@@ -45,7 +49,7 @@ layout: default
 
 	<aside id="sticky" class="aside  aside--contents">
 
-		{% include navblogcategories.html %}
+		{% include navcategories.html %}
 
 	</aside>
 

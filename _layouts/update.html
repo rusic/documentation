@@ -8,6 +8,8 @@ layout: default
 
 		{% include search.html %}
 
+		{% include navtoggle.html %}
+
 	</aside>
 
 	<aside class="aside  aside--docs">
@@ -24,6 +26,8 @@ layout: default
 
 		{{ content }}
 
+		<time class="time" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y" }}</time>
+
 	</article>
 
 </div>
@@ -32,7 +36,7 @@ layout: default
 
 	<aside id="sticky" class="aside  aside--contents">
 
-		{% include navblogcategories.html %}
+		{% include navcategories.html %}
 
 	</aside>
 

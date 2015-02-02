@@ -1,9 +1,9 @@
 ---
 layout: doc
-title: Uploading
+title: Uploading a Template
 ---
 
-# Upload your template to the Editor
+# Upload a Template to The Editor
 
 When your developer account has been set up. You will be able to upload templates via the Template section within your account. This can be done by uploading a ZIP or using a GIT repository.
 
@@ -11,27 +11,27 @@ When your developer account has been set up. You will be able to upload template
 
 From within the Editor, press the ```Manage``` button.
 
-![Manage button](/assets/content/editor-manage.png)
+{% include imagecenter.html image="/assets/content/editor-manage.png" alt="Manage button" %}
 
 This will take you to the manage section picker. On this screen, click the ```Templates``` link to reveal the custom templates section.
 
-![Manage templates link](/assets/content/manage-templates-link.png)
+{% include imagecenter.html image="/assets/content/manage-templates-link.png" alt="Manage templates link" %}
 
 ## Upload your first template by ZIP file (from version 7.38)
 
 In the Custom Template section click the ```Upload ZIP``` button.
 
-![Upload ZIP button](/assets/content/add-templates-3a.png)
+{% include imagecenter.html image="/assets/content/add-templates-3a.png" alt="Upload ZIP button" %}
 
 You will be taken to the Zip upload panel. Select the Zip file from your local machine then press the ```Upload``` button.
 
-![Import template from ZIP](/assets/content/template-zip-upload.png)
+{% include imagecenter.html image="/assets/content/template-zip-upload.png" alt="Import template from ZIP" %}
 
 ## Upload your first template by Github (from version 7.32)
 
 In the Custom Template section click the ```Import from Github``` button.
 
-![Import from GitHub button](/assets/content/add-templates-3b.png)
+{% include imagecenter.html image="/assets/content/add-templates-3b.png" alt="Import from GitHub button" %}
 
 #### Enter your github.com URL
 
@@ -57,7 +57,7 @@ When you enter a correctly formatted location for the repository. Click the ```G
 
 You have the option to pull a version of the template you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
 
-![Select branch](/assets/content/add-templates-5.png)
+{% include imagecenter.html image="/assets/content/add-templates-5.png" alt="Select branch" %}
 
 This will start the process of pulling the template down into your account. This will take 10 - 30 seconds.
 
@@ -67,11 +67,11 @@ This will start the process of pulling the template down into your account. This
 
 Once the template has been pull from GitHub. Click the options on the template and select view. This will take you to preview your site with your new template.
 
-![Template options](/assets/content/add-templates-7.png)
+{% include imagecenter.html image="/assets/content/add-templates-7.png" alt="Template options" %}
 
 If you can happy with the template, click the ```Use template``` button. This will redirect you back to the editor with the template applied to your site.
 
-![Use template](/assets/content/add-templates-8.png)
+{% include imagecenter.html image="/assets/content/add-templates-8.png" alt="Use template" %}
 
 #### Update the template
 
@@ -79,7 +79,7 @@ If you make changes to your code, push them them to GitHub and make your way bac
 
 To re-pull code down from the template's git repository, click the template ```Options``` cog and press the ```Update``` button.
 
-![Template options](/assets/content/add-templates-7.png)
+{% include imagecenter.html image="/assets/content/add-templates-7.png" alt="Template options" %}
 
 You have the option to pull a version of the template you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
 

@@ -1,6 +1,7 @@
 ---
 layout: widget
 title: Disqus Comments
+searchable: false
 versions:
 - version: Version 2.0
   url: /widgets/v2/disqus-comments/

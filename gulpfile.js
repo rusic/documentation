@@ -23,7 +23,7 @@ var fontfilter 	= filter(['*.eot','*.svg','*.ttf','*.woff'])
 
 
 // CSS components task
-gulp.task('cssassets', function() {
+gulp.task('css', function() {
 
 	return gulp.src(mainfiles)
 
@@ -37,7 +37,7 @@ gulp.task('cssassets', function() {
 });
 
 // SASS components task
-gulp.task('sassassets', function() {
+gulp.task('sass', function() {
 
 	return gulp.src(mainfiles)
 
@@ -51,11 +51,11 @@ gulp.task('sassassets', function() {
 });
 
 	// Styles task
-	gulp.task('styleassets', ['cssassets', 'sassassets'])
+	gulp.task('styles', ['css', 'sass'])
 
 
 // JavaScript components task
-gulp.task('jsassets', function() {
+gulp.task('js', function() {
 
 	mainfiles.push('_scripts/*.js')
 
@@ -68,7 +68,7 @@ gulp.task('jsassets', function() {
 });
 
 // SVG icons task
-gulp.task('svgicons', function () {
+gulp.task('svg', function () {
 
 	return gulp.src('_icons/*.svg')
 
@@ -83,7 +83,7 @@ gulp.task('svgicons', function () {
 });
 
 // PNG icons task
-gulp.task('pngicons', function () {
+gulp.task('png', function () {
 
 	return gulp.src('_icons/*.svg')
 
@@ -104,8 +104,8 @@ gulp.task('fonticons', function() {
 });
 
 	// Icons task
-	gulp.task('icons', ['svgicons', 'pngicons','fonticons'])
+	gulp.task('icons', ['svg', 'png', 'fonticons'])
 
 
 // All assets task
-gulp.task('assets', ['styleassets', 'icons', 'jsassets'])
+gulp.task('default', ['styles', 'js', 'icons'])

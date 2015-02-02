@@ -1,0 +1,21 @@
+<div class="feature-card">
+
+	{% if include.link != null %}<a href="{{ include.link }}">{% endif %}
+
+		{% if include.icon != null %}<span class="octicon octicon-{{ include.icon }}"></span>{% endif %}
+
+	{% if include.link != null %}</a>{% endif %}
+
+	<h2>
+		{% if include.link != null %}<a href="{{ include.link }}">{% endif %}{{ include.title }}{% if include.link != null %}</a>{% endif %}
+	</h2>
+
+	<p>{{ include.content }}</p>
+
+	<div class="button-container">
+
+		{% if include.buttontext != null %}<a class="button" href="{{ include.link }}">{{ include.buttontext }}</a>{% endif %}
+
+	</div>
+
+</div>
