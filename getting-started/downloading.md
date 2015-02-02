@@ -22,7 +22,7 @@ A menu will appear on the right of the template panel. Click on the Download cur
 
 Once our zip file has downloaded feel free to have a little look at what's in there. Each file will of course be different for each template but you should have the following basics:
 
-* ```stylesheets.less```: this is where you'll add your styles using CSS or LESS for example
+* ```stylesheet.less```: this is where you'll add your styles using CSS or LESS for example
 
 * ```default.twig```: this is the default layout for all your pages. You can add more Twig files later
 
