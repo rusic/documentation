@@ -64,4 +64,6 @@ Click on the template you wish to code, and get building.
 
 ![TDK](/assets/content/getting-started/tdk.png)
 
-What’s next? Check out the documentation on [editing and uploading your theme](/getting-started/editing/).
+## What's next?
+
+Check out the documentation on [editing a template](/getting-started/editing/).
