@@ -11,9 +11,9 @@ versions:
 
 # Yelp Reviews
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a Yelp review widget to your template.
+This widget is only compatible with Editor **version 7.32 and above**. Add a Yelp review widget to your template.
 
-You can add a Yelp review widget to your template. The Yelp business ID can be changed later with the BaseKit Editor.
+You can add a Yelp review widget to your template. The Yelp business ID can be changed later with the Editor.
 
 ## Examples
 

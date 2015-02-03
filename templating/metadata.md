@@ -5,7 +5,7 @@ title: Metadata
 
 # Metadata
 
-All templates must contain a ```metadata.json``` file. This file provides key information about your template to the BaseKit environments on which it is installed.
+All templates must contain a ```metadata.json``` file. This file provides key information about your template to the Editor environments on which it is installed.
 
 ## Properties of Metadata.json
 
@@ -31,11 +31,11 @@ All templates must contain a ```metadata.json``` file. This file provides key in
 
 ## Advanced Metadata.json (Optional)
 
-Adding more information to your metadata file means that you can take advantage of BaseKit features such as colour swatch swapping and font swatch editing. Adding custom colours and fonts gives the user more control of the appearance of their site.
+Adding more information to your metadata file means that you can take advantage of Editor features such as colour swatch swapping and font swatch editing. Adding custom colours and fonts gives the user more control of the appearance of their site.
 
 * ```templateType``` (string): From Version >= 7.30. Template type of the template. Default is ```standard``` if not included. This will determine which type of template is for filtering in the template picker. Can either be ```standard```, ```blog```, ```ecommerce``` or ```menu```
 
-* ```images``` (array): From Version >= 7.32. If you want the images in your template to appear in the BaseKit Images sidebar, you can define them in metadata.json
+* ```images``` (array): From Version >= 7.32. If you want the images in your template to appear in the Images sidebar within the Editor, you can define them in metadata.json
 
 {% highlight json %}
 
@@ -93,9 +93,9 @@ body {
 
 {% endhighlight %}
 
-* ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the Editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the BaseKit Editor. The fonts are linked to certain tags in the Editor. For example, font-swatch1 is linked to the H1 tag in all BaseKit templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: ```font-swatch1``` does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use ```font-swatch1``` for H1 properties there will be a disconnect between the Editor and your design, we therefore suggest that you stick to BaseKit standards.
+* ```fontSwatch``` (multi level array): A font swatch is a collection of fonts and their respective values. We defined values for font swatches to link LESS styling to the Editor. There are currently 9 fonts defined in a swatch; font-swatch1 to font-swatch9. This matches up in the font settings panel in the Editor. The fonts are linked to certain tags in the Editor. For example, font-swatch1 is linked to the H1 tag in all templates. This is achieved through LESS, matching up swatch values to H1 properties. Note: ```font-swatch1``` does not explicitly have to be matched up to H1, it is designed this way through LESS declarations. If you do not use ```font-swatch1``` for H1 properties there will be a disconnect between the Editor and your design, we therefore suggest that you stick to our recommended standards.
 
-  For a full list of available fonts within BaseKit please refer to [Font Stacks](/data/font-stacks/).
+  For a full list of available fonts within the Editor please refer to [Font Stacks](/data/font-stacks/).
 
 {% highlight json %}
 

@@ -11,7 +11,7 @@ versions:
 
 # Blog search
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**.
+This widget is only compatible with Editor **version 7.32 and above**.
 
 **IMPORTANT**: This widget will only work with the Blog plugin is enabled on the user's account. This search the blog posts associated to the users site.
 

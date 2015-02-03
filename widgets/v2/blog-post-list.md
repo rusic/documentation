@@ -11,7 +11,7 @@ versions:
 
 # Blog post list
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**.
+This widget is only compatible with Editor **version 7.32 and above**.
 
 **This widget will only work if the blog plugin is activated on the user account.** This widget will only work as expected in the ```blogpost.twig``` [page type](/templating/page-types/). Otherwise the engine will fallback to ```default.twig```. This widget will add a list of widgets to the page. The widget will feed off [plugin data](/data/) to populate itself.
 

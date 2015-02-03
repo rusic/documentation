@@ -3,9 +3,9 @@ layout: doc
 title: Quality Checklist
 ---
 
-# BaseKit Template Quality Checklist
+# Template Quality Checklist
 
-**Quality of build** is of the utmost importance to BaseKit Template Designers. Building templates for BaseKit customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the template must work with its respective editor feature. Every point on this list must be checked before we release your template.
+**Quality of build** is of the utmost importance to Template Designers. Building templates for customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the template must work with its respective editor feature. Every point on this list must be checked before we release your template.
 
 ## Browsers/Responsive Testing
 
@@ -13,7 +13,7 @@ title: Quality Checklist
 * Test for different devices/browser sizes
 * Test image sizes and positioning
 * Test navigation
-* Test Print Preview within the BaseKit Editor
+* Test Print Preview within the Editor
 
 ## Optimisation
 

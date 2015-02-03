@@ -11,7 +11,7 @@ versions:
 
 # Ecommerce product
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**.
+This widget is only compatible with Editor **version 7.32 and above**.
 
 **IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account. It is best to place this ```ecomproduct.twig```, if you require it in a different layout. Otherwise the engine will fallback to ```default.twig```.
 

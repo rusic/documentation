@@ -9,7 +9,7 @@ versions:
 
 # Ecommerce basket summary
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**.
+This widget is only compatible with Editor **version 7.32 and above**.
 
 **IMPORTANT:** This widget will only work as expected when the ecommerce plugin is activated on the user's account.
 

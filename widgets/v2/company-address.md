@@ -13,7 +13,7 @@ versions:
 
 Add a company address widget to your template.
 
-You can add a company address widget to your template which contains the company address in the 'manage shared contact' section. The widget can be later customised within the BaseKit Editor.
+You can add a company address widget to your template which contains the company address in the 'manage shared contact' section. The widget can be later customised within the Editor.
 
 ## Examples
 

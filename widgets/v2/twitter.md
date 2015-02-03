@@ -13,7 +13,7 @@ versions:
 
 Add a twitter feed widget to your template.
 
-You can add a Twitter feed widget to your template. The feed source can be changed later within the BaseKit Editor. 
+You can add a Twitter feed widget to your template. The feed source can be changed later within the Editor. 
 
 ## Examples
 

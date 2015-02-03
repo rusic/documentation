@@ -21,9 +21,9 @@ Once you have made your code changes you might want to 'update' with the Templat
 
 {% include imagecenter.html image="/assets/content/getting-started/tdk-buttons.png" alt="TDK buttons" %}
 
-If you are happy with your changes you can then save the file to upload to BaseKit and back to the editor. Zip the file back up with your changes click on the 'Save as Zip' button. You will then need to find your zip file on your computer - This would normally be where your downloaded items end up. 
+If you are happy with your changes you can then save the file, convert the template into a zip file, and upload it back to the Editor. Zip the file back up with your changes click on the 'Save as Zip' button. You will then need to find your zip file on your computer - This would normally be where your downloaded items end up. 
 
-Open up the BaseKit Editor and click on the template panel on the left hand side.
+Open up the Editor and click on the template panel on the left hand side.
 
 {% include imagecenter.html image="/assets/content/getting-started/template-tab.png" alt="template tab" %}
 

@@ -8,7 +8,7 @@ title: Downloading a Template
 What you'll need to download a template:
 
 * A local web server application (for example [MAMP for Mac OS X or Windows](/getting-started/#a-local-web-server-application))
-* The BaseKit template Viewer [Link to part of my doc on the template viewer]
+* The Local template Viewer [Link to part of my doc on the template viewer]
 
 Read our [Getting Started](/getting-started/) document for more information.
 
@@ -30,7 +30,7 @@ Once our zip file has downloaded feel free to have a little look at what's in th
 
 {% include imagecenter.html image="/assets/content/getting-started/template-files.png" alt="template files" %}
 
-Now you will need the BaseKit Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
+Now you will need the Local Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
 
 See the example below using our [June](https://github.com/basekit-templates/june) template:
 

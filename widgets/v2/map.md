@@ -13,7 +13,7 @@ versions:
 
 Add a map widget to your template.
 
-You can add a map widget to your template. The map address can be changed later with the BaseKit Editor.
+You can add a map widget to your template. The map address can be changed later with the Editor.
 
 ## Examples
 

@@ -42,7 +42,7 @@ You can render these values from the profile data:
 {% endraw %}
 {% endhighlight %}
 
-* ```email``` (string): Email associated to the user's company profile. Important note: this is not the one associated to the BaseKit account
+* ```email``` (string): Email associated to the user's company profile. Important note: this is not the one associated to the user account
 
 {% highlight django %}
 {% raw %}
