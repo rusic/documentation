@@ -48,6 +48,8 @@ The preferences window will open with numerous tabs. Click on the Web Server or 
 
 {% include imagecenter.html image="/assets/content/getting-started/mamp-server-options.png" alt="server options" %}
 
+Click the grey folder icon next to "Document Root", and then select the ```public``` folder inside the TDK download. Click OK to confirm your changes.
+
 You should be taken back to the main menu in the MAMP window. Click **Start Servers**. Once loaded, the symbol will turn green:
 
 {% include imagecenter.html image="/assets/content/getting-started/mamp-servers.png" alt="start servers" %}
