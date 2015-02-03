@@ -11,11 +11,11 @@ versions:
 
 # Disqus comments
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/){:target="_blank"}
+This widget is only compatible with Editor **version 7.32 and above**. Add a Disqus widget to your website. Disqus usage documentation can be found here: [http://disqus.com/websites/](http://disqus.com/websites/){:target="_blank"}
 
 ## Examples
 
-This widget is managed by a third party. BaseKit wraps the Disqus comments widget, and enables you to add it to your website.
+This widget is managed by a third party. The Editor wraps the Disqus comments widget, and enables you to add it to your website.
 
 ### Example usage
 

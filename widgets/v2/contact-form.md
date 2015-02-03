@@ -13,7 +13,7 @@ versions:
 
 Add a contact form widget to your template.
 
-You can add a contact form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the BaseKit Editor.
+You can add a contact form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the Editor.
 
 ## Examples
 

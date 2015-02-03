@@ -13,7 +13,7 @@ versions:
 
 Add a profile widget to your template.
 
-You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor.
+You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the Editor.
 
 ## Examples
 

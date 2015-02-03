@@ -8,7 +8,7 @@ title: Downloading a Template
 What you'll need to download a template:
 
 * A local web server application (for example [MAMP for Mac OS X or Windows](/getting-started/#a-local-web-server-application))
-* The BaseKit template Viewer [Link to part of my doc on the template viewer]
+* The Local template Viewer [Link to part of my doc on the template viewer]
 
 Read our [Getting Started](/getting-started/) document for more information.
 
@@ -22,7 +22,7 @@ A menu will appear on the right of the template panel. Click on the Download cur
 
 Once our zip file has downloaded feel free to have a little look at what's in there. Each file will of course be different for each template but you should have the following basics:
 
-* ```stylesheets.less```: this is where you'll add your styles using CSS or LESS for example
+* ```stylesheet.less```: this is where you'll add your styles using CSS or LESS for example
 
 * ```default.twig```: this is the default layout for all your pages. You can add more Twig files later
 
@@ -30,7 +30,7 @@ Once our zip file has downloaded feel free to have a little look at what's in th
 
 {% include imagecenter.html image="/assets/content/getting-started/template-files.png" alt="template files" %}
 
-Now you will need the BaseKit Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
+Now you will need the Local Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
 
 See the example below using our [June](https://github.com/basekit-templates/june) template:
 
@@ -48,6 +48,8 @@ The preferences window will open with numerous tabs. Click on the Web Server or 
 
 {% include imagecenter.html image="/assets/content/getting-started/mamp-server-options.png" alt="server options" %}
 
+Click the grey folder icon next to "Document Root", and then select the ```public``` folder inside the TDK download. Click OK to confirm your changes.
+
 You should be taken back to the main menu in the MAMP window. Click **Start Servers**. Once loaded, the symbol will turn green:
 
 {% include imagecenter.html image="/assets/content/getting-started/mamp-servers.png" alt="start servers" %}
@@ -64,4 +66,6 @@ Click on the template you wish to code, and get building.
 
 ![TDK](/assets/content/getting-started/tdk.png)
 
-What’s next? Check out the documentation on [editing and uploading your theme](/getting-started/editing/).
+## What's next?
+
+Check out the documentation on [editing a template](/getting-started/editing/).

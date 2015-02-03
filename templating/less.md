@@ -10,12 +10,12 @@ title: LESS
 ## LESS Usage
 LESS runs on both **server-side** and **client-side**, and is used to combine values from the editor with a templates CSS style.
 
-BaseKit provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the Editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
+The Editor provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the Editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
 
-## Important Note: BaseKit Variable Dependencies
-The BaseKit variables defined below are used in conjunction with [advanced metadata](/templating/metadata/#advanced-metadatajson-optional). Adding advanced metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
+## Important Note: Editor Variable Dependencies
+The Editor variables defined below are used in conjunction with [advanced metadata](/templating/metadata/#advanced-metadatajson-optional). Adding advanced metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
 
-## BaseKit LESS Variables
+## LESS Variables
 Here is the list of variables you can use in the stylesheet.less to get values from the Editor:
 
 ### Colour Swatch Variables
@@ -50,7 +50,7 @@ It's common for a user to want to be able to change background properties of a s
 
 ### Font Swatch Variables
 
-Font swatches are extensive in the BaseKit template engine. A font swatch contains nine fonts, each with properties such as colour, size, line height, etc. Within the BaseKit Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
+Font swatches are extensive in the Editor template engine. A font swatch contains nine fonts, each with properties such as colour, size, line height, etc. Within the Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
 
 {% highlight css %}
 /* Font Swatch Variables related to the colour swatches within the editor */
@@ -143,9 +143,9 @@ Font swatches are extensive in the BaseKit template engine. A font swatch contai
 
 ### @Import for LESS
 
-BaseKit library supports ```@import``` functionality for less. This means you are able to split your styles into separate files and have the LESS compiler render the files in place. This means that you can avoid large stylesheets and organise code into smaller partials.
+The Editor library supports ```@import``` functionality for less. This means you are able to split your styles into separate files and have the LESS compiler render the files in place. This means that you can avoid large stylesheets and organise code into smaller partials.
 
-BaseKit supports server-side LESS rendering and well as client-side rendering. As server-side and client-side rendering engines reference files in different formats, we have to prepend the location on the front of the path so both technologies can locate the file accordingly.
+The Editor also supports server-side LESS rendering and well as client-side rendering. As server-side and client-side rendering engines reference files in different formats, we have to prepend the location on the front of the path so both technologies can locate the file accordingly.
 
 This means we need to inject a path pointing to the LESS file:
 
@@ -156,7 +156,7 @@ This means we need to inject a path pointing to the LESS file:
 
 #### templateCommon
 
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the BaseKit common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
+The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the TDK common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
 
 #### templateLocal
 

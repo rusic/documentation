@@ -50,7 +50,7 @@ You can render these values from the page data:
 {% endraw %}
 {% endhighlight %}
 
-* ```backgroundClass```: The background class is set via the editor when the user changes the background settings within the BaseKit Editor
+* ```backgroundClass```: The background class is set via the editor when the user changes the background settings within the Editor
 
 {% highlight html %}
 {% raw %}
@@ -60,7 +60,7 @@ You can render these values from the page data:
 {% endraw %}
 {% endhighlight %}
 
-* ```headscript```: Specifically for the markup that needs to live in the ```HEAD``` tag for this page only. This is the code entered by the user via the page settings to display for this page. This value is automatically included into the template by the BaseKit Editor and is added at the very bottom of the ```HEAD``` block statement
+* ```headscript```: Specifically for the markup that needs to live in the ```HEAD``` tag for this page only. This is the code entered by the user via the page settings to display for this page. This value is automatically included into the template by the Editor and is added at the very bottom of the ```HEAD``` block statement
 
 {% highlight django %}
 {% raw %}
@@ -70,7 +70,7 @@ You can render these values from the page data:
 {% endraw %}
 {% endhighlight %}
 
-* ```bodyscript```: Similar to the ```headscript``` but for the ```BODY``` tag. This value is automatically included into the template by the BaseKit Editor and is added at the very bottom of the document
+* ```bodyscript```: Similar to the ```headscript``` but for the ```BODY``` tag. This value is automatically included into the template by the Editor and is added at the very bottom of the document
 
 {% highlight django %}
 {% raw %}

@@ -13,7 +13,7 @@ versions:
 
 Add a YouTube video to your template.
 
-You can add YouTube videos to your template. The videos can be later customised within the BaseKit Editor. 
+You can add YouTube videos to your template. The videos can be later customised within the Editor. 
 
 ## Examples
 

@@ -1,5 +1,5 @@
 {
-  "name": "documentation.basekit.com",
+  "name": "docs.basekit.com",
   "version": "0.0.1",
   "description": "Official documentation for building websites on the BaseKit platform",
   "main": "index.html",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/basekit/documentation.basekit.com.git"
+    "url": "https://github.com/basekit/docs.basekit.com.git"
   },
   "author": "David Darnes <david.darnes@basekit.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basekit/documentation.basekit.com/issues"
+    "url": "https://github.com/basekit/docs.basekit.com/issues"
   },
-  "homepage": "http://documentation.basekit.com"
+  "homepage": "http://docs.basekit.com"
 }

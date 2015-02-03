@@ -5,7 +5,7 @@ title: Widgets
 
 # Widgets
 
-The majority of BaseKit's editing capabilities come from the ability to drag, drop and edit Widgets onto site pages. As a developer you will have access to two types of widgets when developing templates, [Zone Widgets](#zone-widgets) and [Template Widgets](#template-widgets).
+The majority of the Editor's editing capabilities come from the ability to drag, drop and edit Widgets onto site pages. As a developer you will have access to two types of widgets when developing templates, [Zone Widgets](#zone-widgets) and [Template Widgets](#template-widgets).
 
 ## Zone Widgets
 

@@ -7,7 +7,7 @@ title: Getting Started
 
 You'll need the following before you start working on a template:
 
-1. ## Access to BaseKit's Editor
+1. ## Access to the Editor
   * If you have come to us through the editor, you will already be signed up and logged in via your hosting/telecoms package. [Head straight to Step 2](#a-code-editor).
   * If you already have an account but are not logged in, do so now.
   * Don't have an account? Head to our [developer homepage](http://www.basekit.com/developers) to find a partner to sign up with.
@@ -42,10 +42,10 @@ You'll need the following before you start working on a template:
    * You can work on your site to your heart's content without worrying about having internet connection.
    * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
 
-4. ## Access to BaseKit's Theme Viewer
-   [Download our Template Development Kit](http://goo.gl/DqoGhX) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+4. ## Access to the Local Theme Viewer
+   [ Download the Theme Viewer](http://goo.gl/1ezSXO) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
 
-   {% include button.html link="http://goo.gl/DqoGhX" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
+   {% include button.html link="http://goo.gl/1ezSXO" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
 
    {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
 

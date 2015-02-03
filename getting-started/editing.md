@@ -3,7 +3,7 @@ layout: doc
 title: Editing a Template
 ---
 
-# Editing & Uploading a Template
+# Editing a Template
 
 This document will explain how to use our TDK and how to upload that final template. If you haven’t downloaded your template for editing yet please check out the [How to download a template](/getting-started/downloading/) documentation.
 
@@ -21,9 +21,9 @@ Once you have made your code changes you might want to 'update' with the Templat
 
 {% include imagecenter.html image="/assets/content/getting-started/tdk-buttons.png" alt="TDK buttons" %}
 
-If you are happy with your changes you can then save the file to upload to BaseKit and back to the editor. Zip the file back up with your changes click on the 'Save as Zip' button. You will then need to find your zip file on your computer - This would normally be where your downloaded items end up. 
+If you are happy with your changes you can then save the file, convert the template into a zip file, and upload it back to the Editor. Zip the file back up with your changes click on the 'Save as Zip' button. You will then need to find your zip file on your computer - This would normally be where your downloaded items end up. 
 
-Open up the BaseKit Editor and click on the template panel on the left hand side.
+Open up the Editor and click on the template panel on the left hand side.
 
 {% include imagecenter.html image="/assets/content/getting-started/template-tab.png" alt="template tab" %}
 
@@ -38,3 +38,7 @@ You’ll automatically be directed to a page where you will need to choose your 
 Once you have selected your file click on the **Upload** button.
 
 Your template and any changes made will have uploaded to the Editor for you to make further content changes if needed.
+
+## What's next?
+
+Check out the documentation on [uploading a template](/getting-started/uploading/).

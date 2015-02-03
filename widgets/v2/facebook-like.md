@@ -13,7 +13,7 @@ versions:
 
 Add a Facebook Like widget to your template.
 
-You can add a Facebook Like widget to your template. The widget can be later customised within the BaseKit Editor.
+You can add a Facebook Like widget to your template. The widget can be later customised within the Editor.
 
 ## Examples
 To include a Facebook Like widget in your template you will need to add the following line:

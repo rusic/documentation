@@ -13,7 +13,7 @@ versions:
 
 Add a LinkedIn personal profile widget to your template.
 
-You can add a LinkedIn personal profile widget to your template. This profile URL can be changed later in the BaseKit Editor.
+You can add a LinkedIn personal profile widget to your template. This profile URL can be changed later in the Editor.
 
 ## Examples
 

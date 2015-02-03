@@ -11,9 +11,9 @@ versions:
 
 # SoundCloud
 
-This widget is only compatible with BaseKit Editor **version 7.32 and above**. Add a SoundCloud widget to your template.
+This widget is only compatible with Editor **version 7.32 and above**. Add a SoundCloud widget to your template.
 
-You can add a SoundCloud widget to your template. The audio can be later customised within the BaseKit Editor.
+You can add a SoundCloud widget to your template. The audio can be later customised within the Editor.
 
 ## Examples
 

@@ -53,6 +53,6 @@ You can have a custom 404 design included in your template. Follow these steps:
 
 * Add ```404``` to the ```pageTypes``` array with in [metadata.json](/templating/metadata/)
 
-* Upload the template to BaseKit
+* Upload the template to the Editor
 
 * Create page within the editor called ```404```. Make sure you select the 404 Page Type
