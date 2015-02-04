@@ -12,6 +12,8 @@ What you'll need to download a template:
 
 Read our [Getting Started](/getting-started/) document for more information.
 
+### Downloading the zip file
+
 Once you've picked your chosen template you'll be wanting to get hold of the code. Click on the template panel on the left hand side of The Editor interface:
 
 {% include imagecenter.html image="/assets/content/getting-started/template-tab.png" alt="template tab" %}
@@ -29,6 +31,8 @@ Once our zip file has downloaded feel free to have a little look at what's in th
 * ```metadata.json```: this is where you will set all your [options for your template](/templating/metadata/)
 
 {% include imagecenter.html image="/assets/content/getting-started/template-files.png" alt="template files" %}
+
+### Setting up your local server  
 
 Now you will need the Local Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
 
@@ -57,6 +61,8 @@ You should be taken back to the main menu in the MAMP window. Click **Start Serv
 Once green, MAMP will automatically open up a web browser to give you information on your hostname and port number. Now search for **localhost** or **localhost:[insert port number here]** in your web browser.
 
 **Note:** You may have problems finding your localhost if your server isn’t green. 
+
+### Opening the local Theme Viewer
 
 Once you have found your localhost, a page similar to the one below will appear. (Again we have used theme [June](https://github.com/basekit-templates/june) as an example.)
 
