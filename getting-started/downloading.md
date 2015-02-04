@@ -12,7 +12,7 @@ What you'll need to download a template:
 
 Read our [Getting Started](/getting-started/) document for more information.
 
-## Download a template
+## Download the zip file
 
 Once you've picked your chosen template you'll be wanting to get hold of the code. Click on the template panel on the left hand side of The Editor interface:
 
