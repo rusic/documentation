@@ -156,7 +156,7 @@ This means we need to inject a path pointing to the LESS file:
 
 #### templateCommon
 
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the TDK common theme resources directory, where you can reference files such as ```basekit-bootstrap.less```.
+The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the Theme Viewer common theme resources directory, where you can reference files such as ```basekit-bootstrap.less```.
 
 #### templateLocal
 
