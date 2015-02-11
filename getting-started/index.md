@@ -28,7 +28,7 @@ You'll need the following before you start working on a theme:
    For more detailed information on code editors and help choosing which ones to use, check out this [rather brilliant article](http://blog.teamtreehouse.com/which-text-editor-should-i-use) from Treehouse.
 
 3. ## A local web server application
-   In order to run our local Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-the-local-theme-viewer). <br/> We recommend using:
+   In order to run our Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-the-theme-viewer). <br/> We recommend using:
    * [Mamp for Mac OS X](http://www.mamp.info/en/downloads/)
    * [Mamp for Windows](http://www.mamp.info/en/mamp_windows.html)
 
@@ -42,11 +42,11 @@ You'll need the following before you start working on a theme:
    * You can work on your site to your heart's content without worrying about having internet connection.
    * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
 
-4. ## Access to the Local Theme Viewer
+4. ## Access to the Theme Viewer
    [ Download the Theme Viewer](http://goo.gl/1ezSXO) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
 
    {% include button.html link="http://goo.gl/1ezSXO" text="Download Latest Stable Version" icon="cloud-download" %} (stable)
 
    {% include button.html link="http://goo.gl/TFEiBm" text="Bleeding Edge" icon="cloud-download" %} (development)
 
-   [Download Specific Version](https://github.com/basekit-templates/tdk/wiki)
+   [Download Specific Version](https://github.com/basekit/docs.basekit.com/wiki/BaseKit-Theme-Viewer)
