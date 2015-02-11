@@ -11,13 +11,13 @@ versions:
 
 # Map widget
 
-Add a map widget to your template.
+Add a map widget to your theme.
 
-You can add a map widget to your template. The map address can be changed later with the Editor.
+You can add a map widget to your theme. The map address can be changed later with the Editor.
 
 ## Examples
 
-To include a map widget in your template you will need to add the following line:
+To include a map widget in your theme you will need to add the following line:
 
 ### Basic usage
 

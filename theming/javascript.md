@@ -5,11 +5,11 @@ title: JavaScript
 
 # JavaScript
 
-Adding customisation to your template is easy. We give you all the tools you need to bake in custom functionality to your templates.
+Adding customisation to your theme is easy. We give you all the tools you need to bake in custom functionality to your themes.
 
 ## Adding Scripts
 
-Template Development Tools offers full control of all HTML, CSS and JavaScript on your website. Giving you the ability to customise your website any way you like. This makes it easy to add scripts / CSS / images in wherever you need. The example below adds a few custom scripts to show what is capable.
+Theme Development Tools offers full control of all HTML, CSS and JavaScript on your website. Giving you the ability to customise your website any way you like. This makes it easy to add scripts / CSS / images in wherever you need. The example below adds a few custom scripts to show what is capable.
 
 {% highlight html %}
 {% raw %}

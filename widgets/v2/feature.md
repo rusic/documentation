@@ -11,7 +11,7 @@ versions:
 
 # Feature
 
-The feature widget is template widget designed to a large image overlaid with a title, strapline and button. This is a common layout in web design and is normally presented at the top of a page. The widget has several options that can be set within the template, along with further options in the Editor.
+The feature widget is theme widget designed to a large image overlaid with a title, strapline and button. This is a common layout in web design and is normally presented at the top of a page. The widget has several options that can be set within the theme, along with further options in the Editor.
 
 ## Examples
 
@@ -53,7 +53,7 @@ By default the feature widget will only show the title and strapline, which will
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__feature-homepagefeature" class="widget  widget--template-widget" data-widget-type="feature">
+<div id="page-zones__template-widgets__homepagefeature" class="widget  widget--template-widget" data-widget-type="feature">
   <div class="bk-feature  feature  widget__feature">
     <div class="background-image  feature__background-image" style="background-image: url('.../images/feature-image.jpg'); background-position: center 50%">
       <div class="content-wrap  feature__content-wrap">
@@ -71,7 +71,7 @@ By default the feature widget will only show the title and strapline, which will
 
 ## Widget Options
 
-The options available to the feature widget when developing a template can be divided into three sections. These are as follows.
+The options available to the feature widget when developing a theme can be divided into three sections. These are as follows.
 
 ### Text options
 
@@ -81,7 +81,7 @@ The options available to the feature widget when developing a template can be di
 
 ### Image options
 
-* ```defaultBgImg```: The default image shown in the background of the feature widget. The image must be in the template, e.g. ```asset('images/feature-image.png')```
+* ```defaultBgImg```: The default image shown in the background of the feature widget. The image must be in the theme, e.g. ```asset('images/feature-image.png')```
 
 * ```positionTopPercentage```: The vertical position of the feature image stated in the previous option. Set using CSS  ```background-position``` as a percentage.
 

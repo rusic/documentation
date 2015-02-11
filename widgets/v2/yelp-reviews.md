@@ -11,13 +11,13 @@ versions:
 
 # Yelp Reviews
 
-This widget is only compatible with Editor **version 7.32 and above**. Add a Yelp review widget to your template.
+This widget is only compatible with Editor **version 7.32 and above**. Add a Yelp review widget to your theme.
 
-You can add a Yelp review widget to your template. The Yelp business ID can be changed later with the Editor.
+You can add a Yelp review widget to your theme. The Yelp business ID can be changed later with the Editor.
 
 ## Examples
 
-To include a Yelp widget in your template you will need to add the following line:
+To include a Yelp widget in your theme you will need to add the following line:
 
 ### Basic usage
 

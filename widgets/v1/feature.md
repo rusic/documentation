@@ -11,13 +11,13 @@ versions:
 
 # Feature
 
-Add a feature widget to your template.
+Add a feature widget to your theme.
 
 ## Overview
 
-You can add a feature widget to your template to showcase key content on your site. You can set the focal point of the background to ensure the part of the image is always visible on the site no matter what the resolution is. The widget can be later customised within the BaseKit Editor.
+You can add a feature widget to your theme to showcase key content on your site. You can set the focal point of the background to ensure the part of the image is always visible on the site no matter what the resolution is. The widget can be later customised within the BaseKit Editor.
 
-To include a feature widget in your template you will need to add the following line:
+To include a feature widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

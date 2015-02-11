@@ -15,7 +15,7 @@ The image widget is a simple method of adding an image to a page with optional t
 
 ## Examples
 
-By default, the image widget must have a ```src``` option that is an image from the template. All other options are not essential.
+By default, the image widget must have a ```src``` option that is an image from the theme. All other options are not essential.
 
 ### Basic usage
 {% highlight django %}
@@ -75,7 +75,7 @@ In this example the image widget is being used to place a logo into the header a
 
 The image widget has a range of options, both for the content restraints but also for user information:
 
-* ```src```: The path of the image, this is relative to the template. This means that you will need to include the image in your images or assets directory of your template.
+* ```src```: The path of the image, this is relative to the theme. This means that you will need to include the image in your images or assets directory of your theme.
 
 * ```title```: The title of the image, this will be applied to the ```title``` attribute of the ```img``` and the title shown in the caption details below the image.
 

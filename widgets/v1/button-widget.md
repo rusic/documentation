@@ -11,12 +11,12 @@ versions:
 
 # Button Widget
 
-Add a button to your template.
+Add a button to your theme.
 
 ## Overview
 
-You can add a button to your template. The button can be later customised within the BaseKit Editor. 
-To include a button in your template you will need to add the following line:
+You can add a button to your theme. The button can be later customised within the BaseKit Editor. 
+To include a button in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

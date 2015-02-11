@@ -11,13 +11,13 @@ versions:
 
 # Spacer
 
-Add a spacer widget to your template.
+Add a spacer widget to your theme.
 
 ## Overview
 
-You can add a spacer widget to your template. This widget can be used to insert a separation between widgets.
+You can add a spacer widget to your theme. This widget can be used to insert a separation between widgets.
 
-To include a spacer widget in your template you will need to add the following line:
+To include a spacer widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

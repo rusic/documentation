@@ -11,13 +11,13 @@ versions:
 
 # Dropbox button
 
-The Dropbox download button is a widget that allows the user to offer a file from their Dropbox account as a downloadable file. This can be dragged onto the page via the Editor and added into the template using the code documented below.
+The Dropbox download button is a widget that allows the user to offer a file from their Dropbox account as a downloadable file. This can be dragged onto the page via the Editor and added into the theme using the code documented below.
 
 ## Examples
 
 ### Basic usage
 
-To include a Dropbox widget in your template you will need to add the following line:
+To include a Dropbox widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
@@ -45,7 +45,7 @@ To include a Dropbox widget in your template you will need to add the following 
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__main-widgets__dropboxWidget" data-name="dropbox" class="widget  widget--zone-widget">
+<div id="page-zones__template-widgets__downloadbutton" data-name="dropbox" class="widget  widget--zone-widget">
   <div class="bk-dropbox  dropbox  widget__dropbox">
     <button class="button  icon  icon--dropbox  dropbox__button  js-link-btn" data-link="">Download</button>
     <span class="label  dropbox__label">test.file</span>

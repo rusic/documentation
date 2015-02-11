@@ -11,13 +11,13 @@ versions:
 
 # Map
 
-Add a map widget to your template.
+Add a map widget to your theme.
 
 ## Overview
 
-You can add a map widget to your template. The map address can be changed later with the BaseKit Editor.
+You can add a map widget to your theme. The map address can be changed later with the BaseKit Editor.
 
-To include a map widget in your template you will need to add the following line:
+To include a map widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
