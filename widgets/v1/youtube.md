@@ -11,13 +11,13 @@ versions:
 
 # YouTube
 
-Add a YouTube video to your template.
+Add a YouTube video to your theme.
 
 ## Overview
 
-You can add YouTube videos to your template. The videos can be later customised within the BaseKit Editor. 
+You can add YouTube videos to your theme. The videos can be later customised within the BaseKit Editor. 
 
-To include a video in your template you will need to add the following line:
+To include a video in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

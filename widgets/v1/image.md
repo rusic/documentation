@@ -11,13 +11,13 @@ versions:
 
 # Image
 
-Add an image widget to your template.
+Add an image widget to your theme.
 
 ## Overview
 
-You can add an image widget to your template. The widget can be later customised within the BaseKit Editor. 
+You can add an image widget to your theme. The widget can be later customised within the BaseKit Editor. 
 
-To include an image widget in your template you will need to add the following line:
+To include an image widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

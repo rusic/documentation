@@ -11,13 +11,13 @@ versions:
 
 # Sign Up Form
 
-Add a signup form widget to your template.
+Add a signup form widget to your theme.
 
-You can add a single line signup form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section, or customised email address by the editor user. The widget can be later customised within the Editor. 
+You can add a single line signup form widget to your theme to allow the visitor to send an email to the email address in the manage shared contact section, or customised email address by the editor user. The widget can be later customised within the Editor. 
 
 ## Examples
 
-To include a signup Form widget in your template you will need to add the following line:
+To include a signup Form widget in your theme you will need to add the following line:
 
 ### Basic usage
 

@@ -11,13 +11,13 @@ versions:
 
 # Social Icons
 
-Add a social icons widget to your template.
+Add a social icons widget to your theme.
 
 ## Overview
 
-You can add a social icons widget to your template. This widget will display icon links for the user's social media profile URLs.
+You can add a social icons widget to your theme. This widget will display icon links for the user's social media profile URLs.
 
-To include a social icons widget in your template you will need to add the following line:
+To include a social icons widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

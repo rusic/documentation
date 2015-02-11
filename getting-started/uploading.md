@@ -1,43 +1,43 @@
 ---
 layout: doc
-title: Uploading a Template
+title: Uploading a theme
 ---
 
-# Upload a Template to The Editor
+# Upload a theme to the Editor
 
-When your developer account has been set up. You will be able to upload templates via the Template section within your account. This can be done by uploading a ZIP or using a GIT repository.
+When your developer account has been set up. You will be able to upload themes via the Theme section within your account. This can be done by uploading a ZIP or using a GIT repository.
 
-## Getting to the custom templates section
+## Getting to the custom themes section
 
 From within the Editor, press the ```Manage``` button.
 
 {% include imagecenter.html image="/assets/content/editor-manage.png" alt="Manage button" %}
 
-This will take you to the manage section picker. On this screen, click the ```Templates``` link to reveal the custom templates section.
+This will take you to the manage section picker. On this screen, click the ```Themes``` link to reveal the custom themes section.
 
-{% include imagecenter.html image="/assets/content/manage-templates-link.png" alt="Manage templates link" %}
+{% include imagecenter.html image="/assets/content/manage-themes-link.png" alt="Manage themes link" %}
 
-## Upload your first template by ZIP file (from version 7.38)
+## Upload your first theme by ZIP file (from version 7.38)
 
-In the Custom Template section click the ```Upload ZIP``` button.
+In the Custom Theme section click the ```Upload ZIP``` button.
 
-{% include imagecenter.html image="/assets/content/add-templates-3a.png" alt="Upload ZIP button" %}
+{% include imagecenter.html image="/assets/content/add-themes-3a.png" alt="Upload ZIP button" %}
 
 You will be taken to the Zip upload panel. Select the Zip file from your local machine then press the ```Upload``` button.
 
-{% include imagecenter.html image="/assets/content/template-zip-upload.png" alt="Import template from ZIP" %}
+{% include imagecenter.html image="/assets/content/theme-zip-upload.png" alt="Import theme from ZIP" %}
 
-## Upload your first template by Github (from version 7.32)
+## Upload your first theme by Github (from version 7.32)
 
-In the Custom Template section click the ```Import from Github``` button.
+In the Custom Theme section click the ```Import from Github``` button.
 
-{% include imagecenter.html image="/assets/content/add-templates-3b.png" alt="Import from GitHub button" %}
+{% include imagecenter.html image="/assets/content/add-themes-3b.png" alt="Import from GitHub button" %}
 
 #### Enter your github.com URL
 
-Custom templates can be pulled in from GitHub. To do this, you’ll need a GitHub account. If you haven’t got one yet, it’s free so go [grab one now](http://github.com/signup).
+Custom themes can be pulled in from GitHub. To do this, you’ll need a GitHub account. If you haven’t got one yet, it’s free so go [grab one now](http://github.com/signup).
 
-![Import from GitHub](/assets/content/add-templates-4.png)
+![Import from GitHub](/assets/content/add-themes-4.png)
 
 The correct format for entry is: ```username/repositoryName```
 
@@ -51,42 +51,42 @@ basekit-templates/example
 
 If the repository is private, click the ```Private``` option checkbox.
 
-#### Pull the template into the Editor
+#### Pull the theme into the Editor
 
 When you enter a correctly formatted location for the repository. Click the ```Get branches``` button.
 
-You have the option to pull a version of the template you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
+You have the option to pull a version of the theme you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
 
-{% include imagecenter.html image="/assets/content/add-templates-5.png" alt="Select branch" %}
+{% include imagecenter.html image="/assets/content/add-themes-5.png" alt="Select branch" %}
 
-This will start the process of pulling the template down into your account. This will take 10 - 30 seconds.
+This will start the process of pulling the theme down into your account. This will take 10 - 30 seconds.
 
-![Processing template](/assets/content/add-templates-6.png)
+![Processing theme](/assets/content/add-themes-6.png)
 
-## Apply the template to the site
+## Apply the theme to the site
 
-Once the template has been pull from GitHub. Click the options on the template and select view. This will take you to preview your site with your new template.
+Once the theme has been pull from GitHub. Click the options on the theme and select view. This will take you to preview your site with your new theme.
 
-{% include imagecenter.html image="/assets/content/add-templates-7.png" alt="Template options" %}
+{% include imagecenter.html image="/assets/content/add-themes-7.png" alt="Theme options" %}
 
-If you can happy with the template, click the ```Use template``` button. This will redirect you back to the editor with the template applied to your site.
+If you can happy with the theme, click the ```Use theme``` button. This will redirect you back to the editor with the theme applied to your site.
 
-{% include imagecenter.html image="/assets/content/add-templates-8.png" alt="Use template" %}
+{% include imagecenter.html image="/assets/content/add-themes-8.png" alt="Use theme" %}
 
-#### Update the template
+#### Update the theme
 
-If you make changes to your code, push them them to GitHub and make your way back to the Template pick and click the ```Custom Templates``` button. To manage your custom templates, click the ```Manage custom templates``` button. Here you can add, delete and update your installed templates.
+If you make changes to your code, push them them to GitHub and make your way back to the Theme pick and click the ```Custom Themes``` button. To manage your custom themes, click the ```Manage custom themes``` button. Here you can add, delete and update your installed themes.
 
-To re-pull code down from the template's git repository, click the template ```Options``` cog and press the ```Update``` button.
+To re-pull code down from the theme's git repository, click the theme ```Options``` cog and press the ```Update``` button.
 
-{% include imagecenter.html image="/assets/content/add-templates-7.png" alt="Template options" %}
+{% include imagecenter.html image="/assets/content/add-themes-7.png" alt="Theme options" %}
 
-You have the option to pull a version of the template you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
+You have the option to pull a version of the theme you want; ```branches``` or ```tag```. When you select a branch, click the ```Add``` button.
 
-This will start the process of pulling the template down into your account. This will take 10 - 30 seconds.
+This will start the process of pulling the theme down into your account. This will take 10 - 30 seconds.
 
 ---
 
 #### Does pulling these changes affect my live site?
 
-It will update the template used in the editor but to see the changes live, you will need to publish your site again.
+It will update the theme used in the editor but to see the changes live, you will need to publish your site again.

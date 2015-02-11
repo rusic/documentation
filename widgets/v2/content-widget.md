@@ -15,7 +15,7 @@ The content widget is used to write blocks of formatted text using basic text ed
 
 ## Examples
 
-Adding a content widget to your template means the user can add text content to the area that you have defined.
+Adding a content widget to your theme means the user can add text content to the area that you have defined.
 
 ### Basic usage
 
@@ -57,7 +57,7 @@ The above example has an ID of ```sidebarcontent```, which will mean any content
 
 ## Widget options
 
-These are additional options that can be set by the template developer, however they can all be changed by the user. These will be the initial settings of the widget:
+These are additional options that can be set by the theme developer, however they can all be changed by the user. These will be the initial settings of the widget:
 
 * ```content```: The content on the widget
 

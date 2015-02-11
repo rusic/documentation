@@ -11,12 +11,12 @@ versions:
 
 # Facebook Like
 
-Add a Facebook Like widget to your template.
+Add a Facebook Like widget to your theme.
 
-You can add a Facebook Like widget to your template. The widget can be later customised within the Editor.
+You can add a Facebook Like widget to your theme. The widget can be later customised within the Editor.
 
 ## Examples
-To include a Facebook Like widget in your template you will need to add the following line:
+To include a Facebook Like widget in your theme you will need to add the following line:
 
 ## Basic usage
 {% highlight django %}

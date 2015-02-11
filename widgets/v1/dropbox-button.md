@@ -11,13 +11,13 @@ versions:
 
 # Dropbox Button
 
-Add a Dropbox widget to your template.
+Add a Dropbox widget to your theme.
 
 ## Overview
 
-You can add a Dropbox widget to your template that will allow you to add a link to a file on your dropbox account on your site.
+You can add a Dropbox widget to your theme that will allow you to add a link to a file on your dropbox account on your site.
 
-To include a Dropbox widget in your template you will need to add the following line:
+To include a Dropbox widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
