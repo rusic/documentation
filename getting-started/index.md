@@ -5,7 +5,7 @@ title: Getting Started
 
 # Getting Started
 
-You'll need the following before you start working on a template:
+You'll need the following before you start working on a theme:
 
 1. ## Access to the Editor
   * If you have come to us through the editor, you will already be signed up and logged in via your hosting/telecoms package. [Head straight to Step 2](#a-code-editor).
@@ -13,7 +13,7 @@ You'll need the following before you start working on a template:
   * Don't have an account? Head to our [developer homepage](http://www.basekit.com/developers) to find a partner to sign up with.
 
 2. ## A code editor 
-   In order to start developing a template, you'll need to download a code editor of your choice. <br/> We recommend using:
+   In order to start developing a theme, you'll need to download a code editor of your choice. <br/> We recommend using:
    * [Sublime Text 3](http://www.sublimetext.com/3), for Windows and Mac OS X
    * [Coda 2](http://panic.com/coda/) for Mac OS X
    * [Notepad++](http://notepad-plus-plus.org/) for Windows
@@ -28,7 +28,7 @@ You'll need the following before you start working on a template:
    For more detailed information on code editors and help choosing which ones to use, check out this [rather brilliant article](http://blog.teamtreehouse.com/which-text-editor-should-i-use) from Treehouse.
 
 3. ## A local web server application
-   In order to run our local Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-basekits-theme-viewer). <br/> We recommend using:
+   In order to run our local Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-the-local-theme-viewer). <br/> We recommend using:
    * [Mamp for Mac OS X](http://www.mamp.info/en/downloads/)
    * [Mamp for Windows](http://www.mamp.info/en/mamp_windows.html)
 

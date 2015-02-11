@@ -11,13 +11,13 @@ versions:
 
 # Company Address
 
-Add a company address widget to your template.
+Add a company address widget to your theme.
 
-You can add a company address widget to your template which contains the company address in the 'manage shared contact' section. The widget can be later customised within the Editor.
+You can add a company address widget to your theme which contains the company address in the 'manage shared contact' section. The widget can be later customised within the Editor.
 
 ## Examples
 
-To include a company address widget in your template you will need to add the following line:
+To include a company address widget in your theme you will need to add the following line:
 
 ## Basic usage
 

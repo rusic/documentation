@@ -11,13 +11,13 @@ versions:
 
 # LinkedIn Company Profile
 
-Add a Linkedin company profile widget to your template.
+Add a Linkedin company profile widget to your theme.
 
-You can add a LinkedIn company profile widget to your template. This profile URL can be changed later in the Editor.
+You can add a LinkedIn company profile widget to your theme. This profile URL can be changed later in the Editor.
 
 ## Examples
 
-To include a LinkedIn profile widget in your template you will need to add the following line:
+To include a LinkedIn profile widget in your theme you will need to add the following line:
 
 ### Basic usage
 

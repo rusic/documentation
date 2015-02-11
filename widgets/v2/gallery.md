@@ -11,7 +11,7 @@ versions:
 
 # Gallery widget
 
-The gallery widget allows the user to display a selection or group of images that have been uploaded to the Images section of the Editor. By default the gallery comes with no images, the user must select them when they select the widget. If you are using the image gallery as part of your template you can state the images that are shown.
+The gallery widget allows the user to display a selection or group of images that have been uploaded to the Images section of the Editor. By default the gallery comes with no images, the user must select them when they select the widget. If you are using the image gallery as part of your theme you can state the images that are shown.
 
 ## Basic usage
 
@@ -23,7 +23,7 @@ The gallery widget allows the user to display a selection or group of images tha
 {% endraw %}
 {% endhighlight %}
 
-The above example will display an area in the template where the user can select and then add images to, it will not show any images by default.
+The above example will display an area in the theme where the user can select and then add images to, it will not show any images by default.
 
 ## Example usage
 
@@ -60,7 +60,7 @@ The above example will display an area in the template where the user can select
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__gallery-imagegallery" data-name="gallery" class="widget  widget--template-widget bk-gallery  widget__gallery">
+<div id="page-zones__template-widgets__imagegallery" data-name="gallery" class="widget  widget--template-widget bk-gallery  widget__gallery">
   <div class="bk-gallery  gallery  widget__gallery">
     <ul class="gallery-list  gallery__gallery-list">
       <li class="gallery-item  gallery__gallery-item  square">
@@ -129,5 +129,5 @@ The following options are available for the gallery widget:
 {% endraw %}
 {% endhighlight %}
 
-To see the above example in context please refer to the [Example usage](#example-usage). The images will be shown as default in the template, but they won't be shown in the images panel of the Editor. If the user replaces the images they will no longer be accessible, you will need to state them in the metadata file in order for them to appear in the images panel. The ```url``` can be either an internal or external image path, all other image settings are optional.
+To see the above example in context please refer to the [Example usage](#example-usage). The images will be shown as default in the theme, but they won't be shown in the images panel of the Editor. If the user replaces the images they will no longer be accessible, you will need to state them in the metadata file in order for them to appear in the images panel. The ```url``` can be either an internal or external image path, all other image settings are optional.
 

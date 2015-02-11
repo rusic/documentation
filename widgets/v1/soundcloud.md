@@ -11,13 +11,13 @@ versions:
 
 # SoundCloud
 
-Version: >= 7.32. Add a SoundCloud widget to your template.
+Version: >= 7.32. Add a SoundCloud widget to your theme.
 
 ## Overview
 
-You can add a SoundCloud widget to your template. The audio can be later customised within the BaseKit Editor.
+You can add a SoundCloud widget to your theme. The audio can be later customised within the BaseKit Editor.
 
-To include a SoundCloud widget in your template you will need to add the following line:
+To include a SoundCloud widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

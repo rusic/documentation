@@ -11,13 +11,13 @@ versions:
 
 # Content Widget
 
-Add a content widget to your template.
+Add a content widget to your theme.
 
 ## Overview
 
-You can add a content widget to your template to display a paragraph text. The widget can be later customised within the BaseKit Editor. 
+You can add a content widget to your theme to display a paragraph text. The widget can be later customised within the BaseKit Editor. 
 
-To include a content widget in your template you will need to add the following line:
+To include a content widget in your theme you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

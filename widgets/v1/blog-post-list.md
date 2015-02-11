@@ -15,7 +15,7 @@ Version: >= 7.32. Add a blog post list to the page.
 
 ## Overview
 
-**This widget will only work if the blog plugin is activated on the user account.** This widget will only work as expected in the ```blogpost.twig``` [page type](/templating/page-types/). Otherwise the engine will fallback to ```default.twig```. This widget will add a list of widgets to the page. The widget will feed off [plugin data](/data/) to populate itself.
+**This widget will only work if the blog plugin is activated on the user account.** This widget will only work as expected in the ```blogpost.twig``` [page type](/theming/page-types/). Otherwise the engine will fallback to ```default.twig```. This widget will add a list of widgets to the page. The widget will feed off [plugin data](/data/) to populate itself.
 
 {% highlight django %}
 {% raw %}

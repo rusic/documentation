@@ -5,7 +5,7 @@ title: Assets
 
 # Assets
 
-The inclusion of assets into a template is much the same as including them into a normal site. There are certain file types that we accept within a git repository.
+The inclusion of assets into a theme is much the same as including them into a normal site. There are certain file types that we accept within a git repository.
 
 ## HTML File Types
 
@@ -68,7 +68,7 @@ stylesheet.less
 
 ## asset() & image() functions
 
-BaseKit templates can be deployed to multiple environments, so we refer to a file relatively in the template code. The BaseKit framework will convert these relative links into absolute urls at the point of display.
+BaseKit themes can be deployed to multiple environments, so we refer to a file relatively in the theme code. The BaseKit framework will convert these relative links into absolute urls at the point of display.
 
 For example, to reference logo.png in the images directory:
 

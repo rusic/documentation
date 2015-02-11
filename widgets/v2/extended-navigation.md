@@ -11,7 +11,7 @@ versions:
 
 # Extended navigation
 
-Like the logo widget, the extended navigation widget is a template widget and cannot be dragging in via the Editor. The only option available when developing a template is the alignment. All other options and setting related to the extended navigation widget is done in the Editor.
+Like the logo widget, the extended navigation widget is a theme widget and cannot be dragging in via the Editor. The only option available when developing a theme is the alignment. All other options and setting related to the extended navigation widget is done in the Editor.
 
 ## Basic usage
 
@@ -43,7 +43,7 @@ Setting the alignment of the navigation can be done so by setting the ```align``
 {% highlight html %}
 {% raw %}
 
-<div id="page-zones__template-widgets__extendednavigation-centernavigation" class="widget  widget--template-widget" data-widget-type="extendednavigation">
+<div id="page-zones__template-widgets__navigation" class="widget  widget--template-widget" data-widget-type="extendednavigation">
   <div class="bk-extendednavigation  extendednavigation  widget__extendednavigation  align-center">
     <button class="js-pull  navigation-toggle  icon  icon--bars  extendednavigation__navigation-toggle">Menu</button>
     <nav class="navigation-body  extendednavigation__navigation-body">
