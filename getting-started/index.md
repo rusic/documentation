@@ -43,9 +43,9 @@ You'll need the following before you start working on a theme:
    * It saves you time. Think of it like a live web server, only now you can work on your own machine without having to constantly upload and download files. A local server finds your content locally (from your hard drive) and therefore, instantly - requiring no waiting for uploading and downloading. 
 
 4. ## Access to the Theme Viewer
-   [ Download the Theme Viewer](http://goo.gl/m9CwB3) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
+   [ Download the Theme Viewer](http://goo.gl/rHqtR5) and unzip it. We recommend creating a new folder at the root of your machine, something like 'Sites' next to your Documents folder.
 
-   {% include button.html link="http://goo.gl/m9CwB3" text="Download Current Stable Version" icon="cloud-download" %} (stable)
+   {% include button.html link="http://goo.gl/rHqtR5" text="Download Current Stable Version" icon="cloud-download" %} (stable)
 
    {% include button.html link="http://goo.gl/TFEiBm" text="Latest / Bleeding Edge Version" icon="cloud-download" %} (development)
 
