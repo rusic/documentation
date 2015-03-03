@@ -156,15 +156,7 @@ This means we need to inject a path pointing to the LESS file:
 
 #### templateCommon
 
-<<<<<<< HEAD:templating/less.md
-<<<<<<< HEAD:theming/less.md
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the Theme Viewer common theme resources directory, where you can reference files such as ```basekit-bootstrap.less```.
-=======
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the TDK common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
->>>>>>> parent of 8d7f72c... Merge pull request #64 from basekit/template-to-theme:templating/less.md
-=======
-The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the TDK common theme resources directory, where you can reference files such as ```basekit-bootstrap.less```.
->>>>>>> parent of 914bdb5... Merge pull request #65 from basekit/tdk-to-theme-viewer:theming/less.md
+The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the Template Viewer common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
 
 #### templateLocal
 

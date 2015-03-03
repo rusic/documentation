@@ -28,7 +28,7 @@ You'll need the following before you start working on a template:
    For more detailed information on code editors and help choosing which ones to use, check out this [rather brilliant article](http://blog.teamtreehouse.com/which-text-editor-should-i-use) from Treehouse.
 
 3. ## A local web server application
-   In order to run our local Theme Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-the-local-theme-viewer). <br/> We recommend using:
+   In order to run our local Template Viewer you'll need to download a local web server application. Already have a stand-alone web server application installed? [Head to step 4](#access-to-the-local-template-viewer). <br/> We recommend using:
    * [Mamp for Mac OS X](http://www.mamp.info/en/downloads/)
    * [Mamp for Windows](http://www.mamp.info/en/mamp_windows.html)
 
