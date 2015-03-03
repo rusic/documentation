@@ -7,7 +7,7 @@ title: Editing a Template
 
 This document will explain how to use our TDK and how to upload that final template. If you haven’t downloaded your template for editing yet please check out the [How to download a template](/getting-started/downloading/) documentation.
 
-![Theme Viewer](/assets/content/getting-started/theme-viewer.png)
+![TDK](/assets/content/getting-started/tdk.png)
 
 Welcome to the Template Viewer/TDK where you can view your template on your local machine.
 
@@ -23,7 +23,7 @@ You will see your folder options - Feel free to rename these or take a look insi
 
 Once you have made your code changes you might want to 'update' with the Template Viewer to view those changes and make sure everything works. You can do this as you go along if preferred. You can do this by clicking the update button at the top right hand corner of the Template Viewer. This will then pull your masterpiece of code from your chosen code editor into the Template Viewer.
 
-{% include imagecenter.html image="/assets/content/getting-started/theme-viewer-buttons.png" alt="Theme Viewer buttons" %}
+{% include imagecenter.html image="/assets/content/getting-started/tdk-buttons.png" alt="TDK buttons" %}
 
 If you are happy with your changes you can then save the file, convert the template into a zip file, and upload it back to the Editor. Zip the file back up with your changes click on the 'Save as Zip' button. You will then need to find your zip file on your computer - This would normally be where your downloaded items end up. 
 

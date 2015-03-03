@@ -5,7 +5,7 @@ navmain:
 - title: GitHub
   url: http://github.com/basekit-templates
   icon: mark-github
-- title: Download Theme Viewer
+- title: Download TDK
   url: http://basekit-tdk.s3.amazonaws.com/tdk-7.51_2015-02-23_150451.zip
   class: button
   icon: cloud-download

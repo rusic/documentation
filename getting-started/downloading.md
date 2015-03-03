@@ -34,7 +34,7 @@ Once our zip file has downloaded feel free to have a little look at what's in th
 
 ## Using a local server
 
-Now you will need the Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
+Now you will need the Local Theme Viewer. You will now need to put the Theme zip file you downloaded into the Theme Viewer folder and then into the folder named 'templates'.
 
 See the example below using our [June](https://github.com/basekit-templates/june) template:
 
@@ -52,7 +52,7 @@ The preferences window will open with numerous tabs. Click on the Web Server or 
 
 {% include imagecenter.html image="/assets/content/getting-started/mamp-server-options.png" alt="server options" %}
 
-Click the grey folder icon next to "Document Root", and then select the ```public``` folder inside the Theme Viewer download. Click OK to confirm your changes.
+Click the grey folder icon next to "Document Root", and then select the ```public``` folder inside the TDK download. Click OK to confirm your changes.
 
 You should be taken back to the main menu in the MAMP window. Click **Start Servers**. Once loaded, the symbol will turn green:
 
@@ -70,7 +70,7 @@ Once you have found your localhost, a page similar to the one below will appear.
 
 Click on the template you wish to code, and get building.
 
-![Theme Viewer](/assets/content/getting-started/theme-viewer.png)
+![TDK](/assets/content/getting-started/tdk.png)
 
 ## What's next?
 
