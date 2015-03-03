@@ -60,7 +60,7 @@ You can render these values from the page data:
 {% endraw %}
 {% endhighlight %}
 
-* ```headscript```: Specifically for the markup that needs to live in the ```HEAD``` tag for this page only. This is the code entered by the user via the page settings to display for this page. This value is automatically included into the theme by the Editor and is added at the very bottom of the ```HEAD``` block statement
+* ```headscript```: Specifically for the markup that needs to live in the ```HEAD``` tag for this page only. This is the code entered by the user via the page settings to display for this page. This value is automatically included into the template by the Editor and is added at the very bottom of the ```HEAD``` block statement
 
 {% highlight django %}
 {% raw %}
@@ -70,7 +70,7 @@ You can render these values from the page data:
 {% endraw %}
 {% endhighlight %}
 
-* ```bodyscript```: Similar to the ```headscript``` but for the ```BODY``` tag. This value is automatically included into the theme by the Editor and is added at the very bottom of the document
+* ```bodyscript```: Similar to the ```headscript``` but for the ```BODY``` tag. This value is automatically included into the template by the Editor and is added at the very bottom of the document
 
 {% highlight django %}
 {% raw %}
@@ -82,4 +82,4 @@ You can render these values from the page data:
 
 ## Advanced Attributes
 
-* ```componentTree```: The component tree is a tree structure of all the widgets and their values within the page. It is broken into two sections; zone widgets (widgets that live in the zone and only exist in the context of the current page) and themes widgets (these live within the current layout and will be available for any page using it)
+* ```componentTree```: The component tree is a tree structure of all the widgets and their values within the page. It is broken into two sections; zone widgets (widgets that live in the zone and only exist in the context of the current page) and templates widgets (these live within the current layout and will be available for any page using it)

@@ -11,13 +11,13 @@ versions:
 
 # Profile
 
-Add a profile widget to your theme.
+Add a profile widget to your template.
 
 ## Overview
 
-You can add a profile widget to your theme. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor. 
+You can add a profile widget to your template. The profile widget contains 11 types, and can use data from the user profile or can be customised by the user. The widget can be later customised within the BaseKit Editor. 
 
-To include a profile widget in your theme you will need to add the following example lines:
+To include a profile widget in your template you will need to add the following example lines:
 
 {% highlight django %}
 {% raw %}

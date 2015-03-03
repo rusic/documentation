@@ -8,18 +8,18 @@ title: LESS
 [LESS](http://lesscss.org/) extends CSS with dynamic behaviour such as **mixins, operations, functions and variables**. As an extension to CSS, LESS is not only backwards compatible with CSS, but the extra features it adds use existing CSS syntax. What this means is that you can write leaner code very quickly.
 
 ## LESS Usage
-LESS runs on both **server-side** and **client-side**, and is used to combine values from the editor with a themes CSS style.
+LESS runs on both **server-side** and **client-side**, and is used to combine values from the editor with a templates CSS style.
 
 The Editor provides many LESS variables that a designer can use to build into their CSS. When a user changes values within the Editor, the LESS file is refreshed and new values are pushed into the site. We use the power of LESS variables to achieve this.
 
 ## Important Note: Editor Variable Dependencies
-The Editor variables defined below are used in conjunction with [advanced metadata](/theming/metadata/#advanced-metadatajson-optional). Adding advanced metadata will allow you to give your theme customisability, giving the user the ability to change colours and fonts via the Editor.
+The Editor variables defined below are used in conjunction with [advanced metadata](/templating/metadata/#advanced-metadatajson-optional). Adding advanced metadata will allow you to give your template customisability, giving the user the ability to change colours and fonts via the Editor.
 
 ## LESS Variables
 Here is the list of variables you can use in the stylesheet.less to get values from the Editor:
 
 ### Colour Swatch Variables
-A theme can be created around one or more colour swatches. There are 7 colour in a swatch. They can be added to a theme. They can be changed by the user with the editor. We use colour swatches to link up colour theming to the Editor.
+A template can be created around one or more colour swatches. There are 7 colour in a swatch. They can be added to a template. They can be changed by the user with the editor. We use colour swatches to link up colour theming to the Editor.
 
 {% highlight css %}
 /* Colour Swatch Variables related to the colour swatches within the editor */
@@ -50,7 +50,7 @@ It's common for a user to want to be able to change background properties of a s
 
 ### Font Swatch Variables
 
-Font swatches are extensive in the Editor theme engine. A font swatch contains nine fonts, each with properties such as colour, size, line height, etc. Within the Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
+Font swatches are extensive in the Editor template engine. A font swatch contains nine fonts, each with properties such as colour, size, line height, etc. Within the Editor, we match a swatch to specific tags. For example, font-swatch1 refers to the H1 tag within the editor. See below for details.
 
 {% highlight css %}
 /* Font Swatch Variables related to the colour swatches within the editor */
@@ -156,14 +156,18 @@ This means we need to inject a path pointing to the LESS file:
 
 #### templateCommon
 
+<<<<<<< HEAD:theming/less.md
 The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the Theme Viewer common theme resources directory, where you can reference files such as ```basekit-bootstrap.less```.
+=======
+The ```"@{templateCommon}"``` variable will be replaced with a path pointing to the TDK common template resources directory, where you can reference files such as ```basekit-bootstrap.less```.
+>>>>>>> parent of 8d7f72c... Merge pull request #64 from basekit/template-to-theme:templating/less.md
 
 #### templateLocal
 
-The ```"@{templateLocal}"``` variable will be replaced with a path pointing to your theme directory on an environment. For example you have files organised in this fashion with your theme:
+The ```"@{templateLocal}"``` variable will be replaced with a path pointing to your template directory on an environment. For example you have files organised in this fashion with your template:
 
 {% highlight text %}
-mytheme/
+mytemplate/
   - README.md
   - default.twig
   - example.jpg

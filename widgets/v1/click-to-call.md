@@ -11,13 +11,13 @@ versions:
 
 # Click To Call
 
-Add a click to call widget to your theme.
+Add a click to call widget to your template.
 
 
 ## Overview
-You can add a click to call widget to your theme to allow the visitor to click and call the number in the profile section or customised by the editor user. The widget can be later customised within the BaseKit Editor.
+You can add a click to call widget to your template to allow the visitor to click and call the number in the profile section or customised by the editor user. The widget can be later customised within the BaseKit Editor.
 
-To include a click to call widget in your theme you will need to add the following line:
+To include a click to call widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

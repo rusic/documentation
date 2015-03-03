@@ -17,31 +17,31 @@ navdocs:
   url: /getting-started/
   icon: milestone
   subnav:
-  - title: Downloading a Theme
+  - title: Downloading a Template
     url: /getting-started/downloading/
-  - title: Editing a Theme
+  - title: Editing a Template
     url: /getting-started/editing/
-  - title: Uploading a Theme
+  - title: Uploading a Template
     url: /getting-started/uploading/
 
-# THEMING
-- title: Theming
+# TEMPLATING
+- title: Templating
   icon: file-code
   subnav:
   - title: Twig
-    url: /theming/twig/
+    url: /templating/twig/
   - title: Assets
-    url: /theming/assets/
+    url: /templating/assets/
   - title: JavaScript
-    url: /theming/javascript/
+    url: /templating/javascript/
   - title: Page Types
-    url: /theming/page-types/
+    url: /templating/page-types/
   - title: Metadata
-    url: /theming/metadata/
+    url: /templating/metadata/
   - title: LESS
-    url: /theming/less/
+    url: /templating/less/
   - title: Quality
-    url: /theming/quality/
+    url: /templating/quality/
 
 # DATA
 - title: Data
@@ -81,8 +81,8 @@ navdocs:
   - title: Slideshow
     url: /widgets/v2/slideshow/
 
-  # THEME ELEMENTS
-  - title: Theme Elements
+  # TEMPLATE ELEMENTS
+  - title: Template Elements
     url:
   - title: Logo
     url: /widgets/v2/logo/
