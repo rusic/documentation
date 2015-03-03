@@ -11,13 +11,13 @@ versions:
 
 # Contact form
 
-Add a contact form widget to your theme.
+Add a contact form widget to your template.
 
-You can add a contact form widget to your theme to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the Editor.
+You can add a contact form widget to your template to allow the visitor to send an email to the email address in the manage shared contact section or customised email address by the Editor user. The widget can be later customised within the Editor.
 
 ## Examples
 
-To include a contact form widget in your theme you will need to add the following line:
+To include a contact form widget in your template you will need to add the following line:
 
 ### Basic usage
 

@@ -11,13 +11,13 @@ versions:
 
 # Line
 
-Add a line to your theme.
+Add a line to your template.
 
 ## Overview
 
-You can add a line widget to your theme. This adds a line separator.
+You can add a line widget to your template. This adds a line separator.
 
-To include a line in your theme you will need to add the following line:
+To include a line in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

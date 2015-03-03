@@ -11,13 +11,13 @@ versions:
 
 # Extended Navigation
 
-Add an extended navigation widget to your theme.
+Add an extended navigation widget to your template.
 
 ## Overview
 
-You can add an extended navigation widget to your theme. This will show a navigation menu that includes folders in the page.
+You can add an extended navigation widget to your template. This will show a navigation menu that includes folders in the page.
 
-To include an extended navigation widget in your theme you will need to add the following line:
+To include an extended navigation widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

@@ -9,13 +9,13 @@ versions:
 
 # Redirect to Desktop - (V6 + M Version only)
 
-Add a redirect to desktop widget to your theme.
+Add a redirect to desktop widget to your template.
 
 ## Overview
 
-You can add a redirect to desktop widget to your theme. This widget will allow access to go to the desktop from the mobile site.
+You can add a redirect to desktop widget to your template. This widget will allow access to go to the desktop from the mobile site.
 
-To include a redirect to desktop widget in your theme you will need to add the following line:
+To include a redirect to desktop widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
