@@ -1,9 +1,9 @@
 ---
 layout: doc
-title: Theming
+title: Templating
 searchable: false
 ---
 
-# Theming
+# Templating
 
 TBC

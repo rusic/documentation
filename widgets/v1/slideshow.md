@@ -11,13 +11,13 @@ versions:
 
 # Slideshow
 
-Add a slideshow widget to your theme.
+Add a slideshow widget to your template.
 
 ## Overview
 
-You can add a slideshow widget to your theme. This widget will display an image gallery slideshow.
+You can add a slideshow widget to your template. This widget will display an image gallery slideshow.
 
-To include a slideshow widget in your theme you will need to add the following line:
+To include a slideshow widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

@@ -11,13 +11,13 @@ versions:
 
 # Gallery
 
-Add a gallery widget to your theme.
+Add a gallery widget to your template.
 
 ## Overview
 
-You can add a gallery widget to your theme. It will use images in your album and can be later customised within the BaseKit Editor. 
+You can add a gallery widget to your template. It will use images in your album and can be later customised within the BaseKit Editor. 
 
-To include a gallery widget in your theme you will need to add the following line:
+To include a gallery widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}

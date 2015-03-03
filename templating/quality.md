@@ -1,13 +1,13 @@
 ---
 layout: doc
-title: Quality checklist
+title: Quality Checklist
 ---
 
-# Theme quality checklist
+# Template Quality Checklist
 
-**Quality of build** is of the utmost importance to theme designers. Building themes for customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the theme must work with its respective editor feature. Every point on this list must be checked before we release your theme.
+**Quality of build** is of the utmost importance to Template Designers. Building templates for customer consumption requires a level of quality that must be hit before we release them into the wild. Every feature in the template must work with its respective editor feature. Every point on this list must be checked before we release your template.
 
-## Browsers/responsive testing
+## Browsers/Responsive Testing
 
 * Test in all desktop browsers (Firefox, Chrome, IE, Safari)
 * Test for different devices/browser sizes
@@ -19,13 +19,13 @@ title: Quality checklist
 
 * File sizes (nothing more than 500KB)
 
-## Font swatches
+## Font Swatches
 
 * Check all type relevant styles are linked to the metadata.json file correctly
 * Check font family and stack
 * Check font colours are linked to the correct colour swatches
 
-## Colour swatches
+## Colour Swatches
 
 * All colours are linked to the metadata.json file correctly
 * At least two colour swatches, optimum of five
@@ -33,7 +33,7 @@ title: Quality checklist
 
 ## Typography
 
-* Style accordingly in your theme and then test in the editor
+* Style accordingly in your template and then test in the editor
   * Headings (h1 to h4 in particular)
   * a/anchor (hover & active optional)
   * Paragraph
@@ -44,11 +44,11 @@ title: Quality checklist
   * Blockquote
   * Code (pre)
 
-## Theme files & assets
+## Template Files & Assets
 
-* Create files but also test if the Editor is using the correct themes
-* Check graphics are linked in the theme correctly
-* Check if the thumbnail matches the theme and is linked correctly
+* Create files but also test if the Editor is using the correct templates
+* Check graphics are linked in the template correctly
+* Check if the thumbnail matches the template and is linked correctly
 * default.twig
 * home.twig (optional)
 * about.twig (optional)
@@ -60,14 +60,14 @@ title: Quality checklist
 * metadata.json
 * thumbnail.png
 
-## Content accommodation
+## Content Accommodation
 
 * Check if all images are editable
 * Check if all text is editable
 * Check that the logo area works with portrait and landscape graphics
 * Check that the design doesn't break when hiding a 'baked in' widget
 
-## Widget checklist
+## Widget Checklist
 
 * General form design
 * Sign Up Form design
