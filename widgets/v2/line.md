@@ -14,7 +14,7 @@ versions:
 The line widget is a horizontal rule that the user can drop in and edit to suit their site design or content. It can be used to divide blocks of content or sections of the site design.
 
 ## Examples
-Using a line widget in your theme means the user can control the line's thickness, length and spacing.
+Using a line widget in your template means the user can control the line's thickness, length and spacing.
 
 ### Basic usage
 {% highlight django %}
@@ -57,13 +57,13 @@ The above example has an ID of ```footerline```, which will mean any line widget
 
 ## Widget options
 
-These are additional options that can be set by the theme developer, however they can all be changed by the user. These will be the initial settings of the widget:
+These are additional options that can be set by the template developer, however they can all be changed by the user. These will be the initial settings of the widget:
 
-* ```thickness```: The thickness of the line. Can be any pixel value or ```inherit```, which will inherit the styles of the theme.
+* ```thickness```: The thickness of the line. Can be any pixel value or ```inherit```, which will inherit the styles of the template.
 
-* ```padding```: The padding around the line. Can be any pixel value or ```inherit```, which will inherit the styles of the theme.
+* ```padding```: The padding around the line. Can be any pixel value or ```inherit```, which will inherit the styles of the template.
 
-* ```length```: The line length in percentage. Can be any percentage value (1 to 100) or ```inherit```, which will inherit the styles of the theme.
+* ```length```: The line length in percentage. Can be any percentage value (1 to 100) or ```inherit```, which will inherit the styles of the template.
 
 * ```align```: The line alignment of the line, the default is centre. Possible values are:
 

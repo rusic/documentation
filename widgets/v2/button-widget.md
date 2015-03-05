@@ -11,7 +11,7 @@ versions:
 
 # Button Widget
 
-The button widget is capable of showing a simple button on a web page, this can be added within the Editor and by adding it into the theme.
+The button widget is capable of showing a simple button on a web page, this can be added within the Editor and by adding it into the template.
 
 ## Basic usage
 {% highlight django %}

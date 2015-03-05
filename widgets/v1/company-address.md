@@ -11,12 +11,12 @@ versions:
 
 # Company Address
 
-Add a company address widget to your theme.
+Add a company address widget to your template.
 
 ## Overview
-You can add a company address widget to your theme which contains the company address in the 'manage shared contact' section. The widget can be later customised within the BaseKit Editor.
+You can add a company address widget to your template which contains the company address in the 'manage shared contact' section. The widget can be later customised within the BaseKit Editor.
 
-To include a company address widget in your theme you will need to add the following line:
+To include a company address widget in your template you will need to add the following line:
 
 {% highlight django %}
 {% raw %}
