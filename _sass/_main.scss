@@ -29,7 +29,16 @@ body {
 	line-height: 24px;
 	background: $dark-background;
 	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
 }
+
+
+// Container
+.container {
+	padding: 0 2.5%;
+	max-width: 1600px;
+}
+
 
 // Header & footer
 .header--main,
@@ -38,9 +47,10 @@ body {
 }
 	// BK logo
 	.logo {
-		margin: 16px 10px 0;
+		margin-top: 16px;
 		display: inline-block;
 	}
+
 
 // Main
 .main--body {
@@ -203,12 +213,8 @@ body {
 		.search-label {
 			line-height: 38px;
 		}
-		.search-form .octicon {
-			top: 5px;
-			right: 6px;
-		}
 		.search-form {
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 34px;
 		}
 	}
@@ -235,6 +241,7 @@ body {
 		}
 	}
 
+
 // Updates
 .post-list {
 	list-style: none;
@@ -248,6 +255,7 @@ body {
 		font-style: italic;
 		color: darken($light-border, 20%);
 	}
+
 
 // Aside
 .aside {
@@ -284,7 +292,6 @@ body {
 	.nav--footer {
 		text-align: right;
 		color: $light-text;
-		margin: 0 10px;
 		a {
 			color: $light-links;
 			margin-left: 10px;
@@ -325,14 +332,12 @@ body {
 			}
 		}
 
+
 // Footer
 .footer--main {
 	clear: both;
 }
 
-.copyright {
-	margin: 0 10px;
-}
 
 // Links
 a {
@@ -366,6 +371,7 @@ a {
 		}
 	}
 
+
 // Icons
 svg {
 	width: 20px;
@@ -375,11 +381,12 @@ svg {
 	.search-form .octicon {
 		position: absolute;
 		z-index: 2;
-		right: 1px;
-		top: 4px;
+		right: .2em;
+		top: .25em;
 		cursor: pointer;
 		@include linearGradient(rgba($light-background, 0), $light-background);
 	}
+
 
 // Forms
 fieldset {
@@ -393,6 +400,7 @@ fieldset {
 		box-shadow: none;
 		border-radius: 0;
 		width: 100%;
+		padding: 0;
 	}
 	input:valid,
 	input:focus {
@@ -429,8 +437,9 @@ fieldset {
 		background: $highlighted-text;
 	}
 
-// Mobile
-@media (min-width: 320px) and (max-width: 767px) {
+
+// Mobile and Small Tablet
+@media (max-width: 767px) {
 
 	// Header & footer
 	.nav--main,
@@ -468,7 +477,7 @@ fieldset {
 	}
 
 	.row {
-		margin: 0 2.5%;
+		margin: 0;
 	}
 
 	.main--content {
@@ -514,3 +523,19 @@ fieldset {
 		text-align: right;
 	}
 }
+	// Mobile specific
+	@media only screen and (max-device-width: 768px) {
+
+		.search-form {
+			font-size: 16px;
+		}
+
+		.search-label {
+			line-height: 24px;
+		}
+
+		.header--feature .search-label {
+			line-height: 34px;
+		}
+
+	}
