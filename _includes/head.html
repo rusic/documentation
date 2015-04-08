@@ -1,6 +1,9 @@
 <head>
-	{% assign description = page.excerpt | strip_html | strip_newlines %}
-
+	{% if page.excerpt %}
+		{% assign description = page.excerpt %}
+	{% else %}
+		{% assign description = page.content | strip_html | replace:'\n',' ' | replace:'# ','' | truncatewords: 11 %}
+	{% endif %}
 	<!-- General meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +13,7 @@
 	<meta property="og:title" content="{{ page.title }}">
 	<meta name="twitter:title" content="{{ page.title }}">
 
-	{% if page.excerpt %}
+	{% if description %}
 		<!-- Description meta -->
 		<meta name="description" content="{{ description }}">
 		<meta property="og:description" content="{{ description }}">
