@@ -25,17 +25,18 @@
     "simple-jekyll-search": "~1.0.1",
     "octicons": "~2.1.2",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git",
-    "gumshoe": "https://github.com/cferdinandi/gumshoe.git"
+    "gumshoe": "https://github.com/cferdinandi/gumshoe.git",
+    "fastclick": "~1.0.6"
   },
   "overrides": {
     "pygments": {
       "main": "css/autumn.css"
     },
     "gumshoe": {
-	  "main": [
-		  "dist/js/classList.js",
-		  "dist/js/gumshoe.js"
-	  ]
+      "main": [
+        "dist/js/classList.js",
+        "dist/js/gumshoe.js"
+      ]
     }
   }
 }
