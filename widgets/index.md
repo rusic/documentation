@@ -17,7 +17,7 @@ If you wish to use Zone Widgets within your template you must define an area for
 
 {% highlight django %}
 {% raw %}
-{{zone('main')|raw}}
+{{zone()|raw}}
 {% endraw %}
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ Below is a basic example of defining a Zone Area within a template file, for exa
     </header>
     
     <main class="main">
-      {{zone('main')|raw}}
+      {{zone()|raw}}
     </main>
     
     <footer class="footer">

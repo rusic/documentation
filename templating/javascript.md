@@ -71,7 +71,7 @@ Template Development Tools offers full control of all HTML, CSS and JavaScript o
       </script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     </div>
 
-    {{zone('main')|raw}}
+    {{zone()|raw}}
 
     {% include basekit.bodyScript %}
   </body>
