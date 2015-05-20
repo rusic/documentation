@@ -6,7 +6,7 @@ navmain:
   url: http://github.com/basekit-templates
   icon: mark-github
 - title: Download TDK
-  url: http://basekit-tdk.s3.amazonaws.com/tdk-7.51_2015-02-23_150451.zip
+  url: http://basekit-tdk.s3.amazonaws.com/stable.zip
   class: button
   icon: cloud-download
 

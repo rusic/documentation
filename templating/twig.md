@@ -50,7 +50,7 @@ Stripped down to the basics, a Twig file should look like the following:
   </head>
   <body class="{{ page.backgroundClass }}">
   
-    {{zone('main')|raw}}
+    {{zone()|raw}}
   
     {% include basekit.bodyScript %}
   </body>
@@ -129,7 +129,7 @@ This is where a user can drag their content. Wherever you place this tag in your
 
 {% highlight django %}
 {% raw %}
-  {{zone('main')|raw}}
+  {{zone()|raw}}
 {% endraw %}
 {% endhighlight %}
 
