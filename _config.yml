@@ -1,15 +1,11 @@
 # Main configuration
-url: http://docs.basekit.com
-title: BaseKit Documentation
-description: Official documentation for building websites on the BaseKit platform
-repository: https://github.com/basekit/docs.basekit.com
+url: https://documentation.rusic.com
+title: Rusic Documentation
+description: Official documentation for Rusic
+repository: https://github.com/rusic/documentation
 
 # Site details
-facebook:
-  page: TeamBaseKit
-  website: docs.basekit.com
-
-twitter: BaseKitDevs
+twitter: rusichq
 
 # Jekyll options
 exclude:

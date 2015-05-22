@@ -1,11 +1,12 @@
 {
-  "name": "documentation.basekit.com",
+  "name": "documentation.rusic.com",
   "version": "0.0.1",
-  "homepage": "http://documentation.basekit.com",
+  "homepage": "https://documentation.rusic.com",
   "authors": [
-    "David Darnes <david.darnes@basekit.com>"
+    "David Darnes <david.darnes@basekit.com>",
+    "Benjamin Reid <ben@simpleweb.co.uk>"
   ],
-  "description": "Official documentation for building websites on the BaseKit platform",
+  "description": "Official documentation for Rusic",
   "main": "index.html",
   "license": "MIT",
   "private": true,

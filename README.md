@@ -1,7 +1,7 @@
-[BaseKit Documentation](http://docs.basekit.com)
+Rusic Documentation
 =========================
 
-Official documentation for building websites on the BaseKit platform
+Official documentation for Rusic
 
 Contents
 --------
@@ -20,8 +20,8 @@ Setup
 Running the site on your local machine:
 
 1. ```$ gem install github-pages``` - Install github pages ruby gem
-2. ```$ git clone git@github.com:basekit/docs.basekit.com.git``` - clone project
-3. ```$ cd docs.basekit.com``` - Switch to project directory
+2. ```$ git clone git@github.com:rusic/documentation.git``` - clone project
+3. ```$ cd documentation``` - Switch to project directory
 4. ```$ jekyll serve --watch``` - Serve site locally using Jekyll
 5. go to [```http://localhost:4000```](http://localhost:4000)
 
@@ -41,14 +41,14 @@ These are tasks that can be ran with gulp, all of which take the installed bower
 * ```$ gulp``` - Processes all assets for the project
 
   * ```$ gulp styles``` - Copies all style files into ```_sass``` directory
-  
+
     * ```$ gulp css``` - Converts CSS assets into SCSS and copies it into the ```_sass``` directory
     * ```$ gulp sass``` - Copies SCSS assets into the ```_sass``` directory
-  
+
   * ```$ gulp js``` - Copies and Minifies JavaScript into the ```js``` directory
-  
+
   * ```$ gulp icons``` - Prepares SVG and PNG icons
-  
+
     * ```$ gulp svg``` - Compiles SVG icons into single ```icons.svg``` file
     * ```$ gulp png``` - Creates PNG counterparts of each SVG icon and places them into the ```assets/icons``` directory
     * ```$ gulp fonticons``` - Copies icons fonts into ```fonts``` directory
@@ -70,13 +70,13 @@ The Documentation uses markdown to manage it's content. It also uses pygments fo
 ```
 
 ### Button
-```{% include button.html link="http://docs.basekit.com" text="This a button" %}```
+```{% include button.html link="https://documentation.rusic.com" text="This a button" %}```
 
 ### Centralised Text
 ```{% include aligncenter.html content="This text is centre aligned" %}```
 
 ### Centralised Button
-```{% include buttoncenter.html link="http://docs.basekit.com" text="This button is centre aligned" %}```
+```{% include buttoncenter.html link="https://documentation.rusic.com" text="This button is centre aligned" %}```
 
 License
 -------
