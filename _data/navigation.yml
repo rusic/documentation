@@ -1,3 +1,13 @@
+# navigation group example:
+# - title: Parent Title
+#   url: /path-to-folder/
+#   icon: icon
+#   subnav:
+#   - title: Sub Nav Item 1
+#     url: /path-to-folder/child/
+#   - title: Sub Nav Item 2
+#     url: /path-to-folder/child/
+
 navmain:
 - title: Knowledge Forum
   url: http://knowledge.basekit.com/
@@ -24,180 +34,100 @@ navdocs:
   - title: Uploading a Template
     url: /getting-started/uploading/
 
-# TEMPLATING
-- title: Templating
+- title: Spaces
   icon: file-code
   subnav:
-  - title: Twig
-    url: /templating/twig/
-  - title: Assets
-    url: /templating/assets/
-  - title: JavaScript
-    url: /templating/javascript/
-  - title: Page Types
-    url: /templating/page-types/
-  - title: Metadata
-    url: /templating/metadata/
-  - title: LESS
-    url: /templating/less/
-  - title: Quality
-    url: /templating/quality/
+  - title: Sandbox Mode
+    url: /spaces/sandbox-mode/
+  - title: Create a new space
+    url: /spaces/create-a-new-space/
+  - title: Guest Ideas
+    url: /spaces/guest-ideas/
 
-# DATA
-- title: Data
-  url: /data/
-  icon: file-text
+- title: Themes
+  icon: file-code
   subnav:
-  - title: Site
-    url: /data/site/
-  - title: Page
-    url: /data/page/
-  - title: Profile
-    url: /data/profile/
-  - title: Plugin
-    url: /data/plugin/
-  - title: Font Stacks
-    url: /data/font-stacks/
+  - title: Create a blank theme
+    url: /themes/create-a-blank-theme/
+  - title: Custom Themes
+    url: /themes/custom-themes/
+  - title: Where can I find my theme ID
+    url: /themes/where-can-i-find-my-theme-id/
 
-# WIDGETS
-- title: Widgets
-  url: /widgets/
-  icon: puzzle
+- title: Client Apps
+  icon: file-code
   subnav:
+  - title: Facebook
+    url: /client-apps/facebook/
+  - title: Compare Providers
+    url: /client-apps/compare-providers/
 
-  # CONTENT & IMAGES
-  - title: Content & Images
+- title: API
+  icon: file-code
+  subnav:
+  - title: Where can I find my API key
+    url: /api/where-can-i-find-my-api-key/
+  - title: Account
     url:
-  - title: Content Widget
-    url: /widgets/v2/content-widget/
-  - title: Line
-    url: /widgets/v2/line/
-  - title: Space
-    url: /widgets/v2/space/
-  - title: Gallery
-    url: /widgets/v2/gallery/
-  - title: Image
-    url: /widgets/v2/image/
-  - title: Slideshow
-    url: /widgets/v2/slideshow/
-
-  # TEMPLATE ELEMENTS
-  - title: Template Elements
+  - title: Show
+    url: /api/account/show/
+  - title: Buckets
     url:
+  - title: Index
+    url: /api/buckets/index/
+  - title: Show
+    url: /api/buckets/show/
+  - title: Participants
+    url:
+  - title: Create
+    url: /api/participants/create/
+  - title: Update
+    url: /api/participants/update/
+  - title: Update Should 200
+    url: /api/participants/update-should-200/
+  - title: Update Should 401
+    url: /api/participants/update-should-401/
+  - title: Search (token)
+    url: /api/participants/search-token/
+  - title: Search (uid)
+    url: /api/participants/search-uid/
+  - title: Ideas
+    url:
+  - title: Create
+    url: /api/ideas/create/
+  - title: Index
+    url: /api/ideas/index/
+  - title: Update
+    url: /api/ideas/update/
+  - title: Show
+    url: /api/ideas/show/
+  - title: Search
+    url: /api/ideas/search/
+  - title: Images
+    url:
+  - title: Create
+    url: /api/images/create/
+  - title: Show
+    url: /api/images/show/
+  - title: Create idea with image
+    url: /api/images/create-idea-with-image/
+  - title: Update idea with image
+    url: /api/images/update-idea-with-image/
+  - title: Likes
+    url:
+  - title: Create
+    url: /api/likes/create/
+  - title: Show
+    url: /api/likes/show/
+  - title: Destroy
+    url: /api/likes/destroy/
+- title: Branding
+  icon: file-code
+  subnav:
+  - title: Colors
+    url: /branding/colors/
   - title: Logo
-    url: /widgets/v2/logo/
-  - title: Extended Navigation
-    url: /widgets/v2/extended-navigation/
-  - title: Feature
-    url: /widgets/v2/feature/
-
-  # BUTTONS
-  - title: Buttons
-    url:
-  - title: Button Widget
-    url: /widgets/v2/button-widget/
-  - title: Tweet Button
-    url: /widgets/v2/tweet-button/
-  - title: Click To Call
-    url: /widgets/v2/click-to-call/
-  - title: Dropbox Button
-    url: /widgets/v2/dropbox-button/
-  - title: Facebook Like
-    url: /widgets/v2/facebook-like/
-  - title: Social Icons
-    url: /widgets/v2/social-icons/
-
-  # FORMS
-  - title: Forms
-    url:
-  - title: Signup Form
-    url: /widgets/v2/signup-form/
-  - title: Contact Form
-    url: /widgets/v2/contact-form/
-
-  # EMBEDS
-  - title: Embeds
-    url:
-  - title: Map
-    url: /widgets/v2/map/
-  - title: SoundCloud
-    url: /widgets/v2/soundcloud/
-  - title: YouTube
-    url: /widgets/v2/youtube/
-  - title: Disqus Comments
-    url: /widgets/v2/disqus-comments/
-  - title: LinkedIn Company Profile
-    url: /widgets/v2/linkedin-company-profile/
-  - title: LinkedIn Profile
-    url: /widgets/v2/linkedin-profile/
-
-  # PROFILE
-  - title: Profile
-    url:
-  - title: Profile
-    url: /widgets/v2/profile/
-  - title: Company Address
-    url: /widgets/v2/company-address/
-
-  # APIs
-  - title: APIs
-    url:
-  - title: Yelp Reviews
-    url: /widgets/v2/yelp-reviews/
-  - title: Twitter
-    url: /widgets/v2/twitter/
-
-# PLUGINS
-- title: Plugins
-  icon: package
-  subnav:
-
-  # MENU
-  - title: Menu
-    url:
-  - title: Menu Sections
-    url: /widgets/v2/menu-sections/
-  - title: Menu
-    url: /widgets/v2/menu/
-
-  # BLOG
-  - title: Blog
-    url:
-  - title: Blog Post List
-    url: /widgets/v2/blog-post-list/
-  - title: Blog Post
-    url: /widgets/v2/blog-post/
-  - title: Blog Search
-    url: /widgets/v2/blog-search/
-
-  # ECOMMERCE
-  - title: Ecommerce
-    url:
-  - title: Ecommerce Basket
-    url: /widgets/v2/ecommerce-basket/
-  - title: Ecommerce Basket Summary
-    url: /widgets/v2/ecommerce-basket-summary/
-  - title: Ecommerce Categories
-    url: /widgets/v2/ecommerce-categories/
-  - title: Ecommerce Featured
-    url: /widgets/v2/ecommerce-featured/
-  - title: Ecommerce Legal
-    url: /widgets/v2/ecommerce-legal/
-  - title: Ecommerce Product List
-    url: /widgets/v2/ecommerce-product-list/
-  - title: Ecommerce Product
-    url: /widgets/v2/ecommerce-product/
-
-# DEPRECATED
-- title: Deprecated
-  icon: trashcan
-  subnav:
-  - title: Redirect To Desktop
-    url: /widgets/v1/redirect-to-desktop/
-  - title: Ecommerce Checkout
-    url: /widgets/v1/ecommerce-checkout/
-  - title: Ecommerce Confirmation
-    url: /widgets/v1/ecommerce-confirmation/
+    url: /branding/logo/
 
 navfooter:
 - title: Back to top
