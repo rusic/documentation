@@ -19,13 +19,6 @@ navdocs:
 - title: Getting Started
   url: /getting-started/
   icon: milestone
-  subnav:
-  - title: Downloading a Template
-    url: /getting-started/downloading/
-  - title: Editing a Template
-    url: /getting-started/editing/
-  - title: Uploading a Template
-    url: /getting-started/uploading/
 
 - title: Spaces
   icon: file-code
