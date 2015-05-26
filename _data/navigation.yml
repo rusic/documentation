@@ -9,16 +9,9 @@
 #     url: /path-to-folder/child/
 
 navmain:
-- title: Knowledge Forum
-  url: http://knowledge.basekit.com/
-  icon: comment-discussion
 - title: GitHub
-  url: http://github.com/basekit-templates
+  url: https://github.com/rusic
   icon: mark-github
-- title: Download TDK
-  url: http://basekit-tdk.s3.amazonaws.com/tdk-stable.zip
-  class: button
-  icon: cloud-download
 
 navdocs:
 
