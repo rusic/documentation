@@ -25,6 +25,9 @@ navdocs:
 - title: Getting Started
   url: /getting-started/
   icon: milestone
+  subnav:
+  - title: Deploying your theme
+    url: /getting-started/deploying-your-theme/
 
 - title: Spaces
   icon: file-code
