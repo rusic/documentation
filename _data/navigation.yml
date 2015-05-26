@@ -46,6 +46,8 @@ navdocs:
     url: /themes/authentication/
   - title: Custom Fields
     url: /themes/custom-fields/
+  - title: Pagination
+    url: /themes/pagination/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
