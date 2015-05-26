@@ -42,6 +42,8 @@ navdocs:
 - title: Themes
   icon: file-code
   subnav:
+  - title: Authentication
+    url: /themes/authentication/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
