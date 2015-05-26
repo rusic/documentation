@@ -15,6 +15,12 @@ navmain:
 
 navdocs:
 
+- title: Rusic
+  icon: file-code
+  subnav:
+  - title: Changelog
+    url: /changelog/
+
 # GETTING STARTED
 - title: Getting Started
   url: /getting-started/
