@@ -47,6 +47,8 @@ navdocs:
     url: /themes/where-can-i-find-my-theme-id/
   - title: Object and variable reference
     url: /themes/object-and-variable-reference/
+  - title: File Structure
+    url: /themes/file-structure/
 
 - title: Client Apps
   icon: file-code
