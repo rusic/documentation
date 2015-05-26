@@ -39,6 +39,8 @@ navdocs:
     url: /themes/custom-themes/
   - title: Where can I find my theme ID
     url: /themes/where-can-i-find-my-theme-id/
+  - title: Object and variable reference
+    url: /themes/object-and-variable-reference/
 
 - title: Client Apps
   icon: file-code
