@@ -1,7 +1,7 @@
 {
-  "name": "docs.basekit.com",
+  "name": "documentation.rusic.com",
   "version": "0.0.1",
-  "description": "Official documentation for building websites on the BaseKit platform",
+  "description": "Official documentation for Rusic",
   "main": "index.html",
   "dependencies": {
     "bower": "^1.3.12",
@@ -23,12 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/basekit/docs.basekit.com.git"
+    "url": "https://github.com/rusic/documentation.git"
   },
-  "author": "David Darnes <david.darnes@basekit.com>",
+  "author": [
+    "David Darnes <david.darnes@basekit.com>",
+    "Benjamin Reid <ben@simpleweb.co.uk>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basekit/docs.basekit.com/issues"
+    "url": "https://github.com/rusic/documentation/issues"
   },
-  "homepage": "http://docs.basekit.com"
+  "homepage": "https://documentation.rusic.com"
 }
