@@ -44,6 +44,8 @@ navdocs:
   subnav:
   - title: Authentication
     url: /themes/authentication/
+  - title: Custom Fields
+    url: /themes/custom-fields/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
