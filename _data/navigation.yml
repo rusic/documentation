@@ -50,6 +50,8 @@ navdocs:
     url: /themes/pagination/
   - title: Adding likes functionality
     url: /themes/adding-likes-functionality/
+  - title: Searching
+    url: /themes/searching/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
