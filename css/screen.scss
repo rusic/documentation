@@ -45,15 +45,18 @@ body {
 
 
 // Header & footer
+.header--main {
+	padding: 5px 0;
+}
+
 .header--main,
 .footer--main {
 	color: $light-text;
 }
-	// BK logo
-	.logo {
-		margin-top: 16px;
-		display: inline-block;
-	}
+
+.logo {
+	vertical-align: bottom;
+}
 
 
 // Main
@@ -289,6 +292,10 @@ body {
 	.aside--versions,
 	.aside--search {
 		border-bottom-width: 1px;
+	}
+
+	.nav--main {
+		padding-top: 3px;
 	}
 
 	// Navigation

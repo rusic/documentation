@@ -1,8 +1,13 @@
 <head>
-	{% if page.excerpt %}
-		{% assign description = page.excerpt %}
+
+	{% if page.url == '/' %}
+		{% assign description = site.description %}
 	{% else %}
-		{% assign description = page.content | strip_html | replace:'\n',' ' | replace:'# ','' | truncatewords: 11 %}
+		{% if page.excerpt %}
+			{% assign description = page.excerpt %}
+		{% else %}
+			{% assign description = page.content | strip_html | replace:'\n',' ' | replace:'# ','' | truncatewords: 11 %}
+		{% endif %}
 	{% endif %}
 	<!-- General meta -->
 	<meta charset="utf-8">
@@ -13,11 +18,11 @@
 	<meta property="og:title" content="{{ page.title }}">
 	<meta name="twitter:title" content="{{ page.title }}">
 
-	{% if description %}
+	{% if site.description %}
 		<!-- Description meta -->
-		<meta name="description" content="{{ description }}">
-		<meta property="og:description" content="{{ description }}">
-		<meta name="twitter:description" content="{{ description }}">
+		<meta name="description" content="{{ site.description }}">
+		<meta property="og:description" content="{{ site.description }}">
+		<meta name="twitter:description" content="{{ site.description }}">
 	{% endif %}
 
 	<!-- Author meta -->
@@ -29,7 +34,7 @@
 	<meta name="twitter:domain" content="{{ site.url }}">
 	<meta name="robots" content="index, follow">
 
-	{% if page.url == "/index.html" %}
+	{% if page.url == '/' %}
 		<!-- URL meta -->
 		<meta property="og:url" content="{{ site.url }}">
 		<meta name="twitter:url" content="{{ site.url }}">
@@ -42,7 +47,6 @@
 
 		<!-- Article meta -->
 		<meta property="og:type" content="article">
-		<meta property="article:author" content="https://www.facebook.com/{{ site.facebook.page }}" />
 		<meta name="twitter:creator" content="@{{ site.twitter }}">
 	{% endif %}
 
