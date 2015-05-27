@@ -48,6 +48,8 @@ navdocs:
     url: /themes/custom-fields/
   - title: Pagination
     url: /themes/pagination/
+  - title: Adding likes functionality
+    url: /themes/adding-likes-functionality/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
