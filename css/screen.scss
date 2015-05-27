@@ -9,6 +9,9 @@ searchable: false
 @import "sprockets-octicons";
 @import "mixins";
 
+// objects
+@import "objects/caption";
+
 
 // Colour Variables
 $dark-background: #222;

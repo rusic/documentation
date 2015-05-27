@@ -15,10 +15,19 @@ navmain:
 
 navdocs:
 
+- title: Rusic
+  icon: file-code
+  subnav:
+  - title: Changelog
+    url: /changelog/
+
 # GETTING STARTED
 - title: Getting Started
   url: /getting-started/
   icon: milestone
+  subnav:
+  - title: Deploying your theme
+    url: /getting-started/deploying-your-theme/
 
 - title: Spaces
   icon: file-code
@@ -33,6 +42,16 @@ navdocs:
 - title: Themes
   icon: file-code
   subnav:
+  - title: Authentication
+    url: /themes/authentication/
+  - title: Custom Fields
+    url: /themes/custom-fields/
+  - title: Pagination
+    url: /themes/pagination/
+  - title: Adding likes functionality
+    url: /themes/adding-likes-functionality/
+  - title: Searching
+    url: /themes/searching/
   - title: Create a blank theme
     url: /themes/create-a-blank-theme/
   - title: Custom Themes
@@ -41,6 +60,8 @@ navdocs:
     url: /themes/where-can-i-find-my-theme-id/
   - title: Object and variable reference
     url: /themes/object-and-variable-reference/
+  - title: File Structure
+    url: /themes/file-structure/
 
 - title: Client Apps
   icon: file-code
