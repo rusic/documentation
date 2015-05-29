@@ -13,11 +13,14 @@ searchable: false
 @import "mixins";
 
 // objects
+@import "objects/buttons";
 @import "objects/caption";
 @import "objects/code";
 @import "objects/typography";
-@import "objects/viewport";
 @import "objects/forms";
+@import "objects/search";
+@import "objects/tables";
+@import "objects/viewport";
 
 // Body
 body {
@@ -39,10 +42,14 @@ body {
 // Header & footer
 .header {
 	background: desaturate(darken($stone, 5%), 10%);
+	color: $white;
+	h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
 }
 
 .header--main {
-	padding: 5px 0;
+	padding: $spacing-half $spacing;
 }
 
 .header--main,
@@ -65,28 +72,6 @@ body {
 		display: flex;
 	}
 }
-	
-
-	// Tables
-	table {
-		font-size: 10.5px;
-		text-align: left;
-		letter-spacing: -.2px;
-		width: 100%;
-	}
-	th, td {
-		border-right: 1px solid $light-border;
-		padding: 0 4px;
-	}
-
-	th {
-		background: darken($light-background, 8%);
-	}
-	td, th {
-		border: 1px solid darken($light-background, 8%);
-		padding: 1px 3px;
-	}
-
 
 // Feature
 .main--feature {
@@ -209,11 +194,6 @@ body {
 				vertical-align: middle;
 			}
 		}
-
-		// Navigation items
-		.nav-list {
-			margin: 0;
-		}
 		.nav-subtitle {
 			font-weight: bold;
 		}
@@ -229,34 +209,18 @@ body {
 			}
 		}
 
+.nav-item > a {
+	padding: 7px 0;
+	&:hover {
+		font-weight: bold;
+	}
+}
+
 
 // Footer
 .footer--main {
 	clear: both;
 }
-
-
-// Links
-
-	// Buttons
-	.button,
-	button {
-		background: $dark-links;
-		border: none;
-		padding: 7px 11px 7px;
-		border-radius: 3px;
-		color: $light-links;
-		outline: none;
-		&:hover {
-			color: $light-links;
-			background: darken($dark-links, 10%);
-		}
-		&:active {
-			color: $light-links;
-			background: darken($dark-links, 15%);
-		}
-	}
-
 
 // Icons
 svg {

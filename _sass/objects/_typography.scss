@@ -22,7 +22,9 @@ h1 {
   color: $black;
   margin-top: 0;
   padding-bottom: $spacing;
-  border-bottom: 1px solid $light-border;
+  .main--content & {
+    border-bottom: 1px solid $light-border;
+  }
 }
 
 p {
@@ -58,6 +60,7 @@ ul, ol {
 
 ul {
   list-style: square;
+  line-height: 2.4em;
   ul {
     list-style: disc;
     ul {
