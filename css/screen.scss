@@ -2,6 +2,9 @@
 searchable: false
 ---
 
+@import "core/language_colors";
+@import "core/variables";
+
 // Bower imports
 @import "normalize";
 @import "grid";
@@ -11,30 +14,16 @@ searchable: false
 
 // objects
 @import "objects/caption";
-
-
-// Colour Variables
-$dark-background: #222;
-$dark-text: #555;
-$dark-links: #4183c4;
-
-$light-background: #fff;
-$light-links: #fff;
-$light-text: #aaa;
-$light-border: #f1f1f1;
-$highlighted-text: #fff9da;
-
-$json-colour: #F9E6D2;
-$less-colour: #CAD5E8;
-$html-colour: #FFD080;
-$twig-colour: #DFEA95;
+@import "objects/code";
+@import "objects/typography";
+@import "objects/viewport";
+@import "objects/forms";
 
 // Body
 body {
 	color: $dark-text;
 	font-size: 14px;
 	line-height: 24px;
-	background: $dark-background;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
@@ -48,6 +37,10 @@ body {
 
 
 // Header & footer
+.header {
+	background: desaturate(darken($stone, 5%), 10%);
+}
+
 .header--main {
 	padding: 5px 0;
 }
@@ -72,117 +65,7 @@ body {
 		display: flex;
 	}
 }
-	// In-page content
-	.main--content {
-		padding: 15px 0 20px;
-		h1 {
-			margin-top: 0;
-		}
-		p {
-			margin-top: 0.3em;
-		}
-	}
-
-	// Type
-	h2, h3, h4, h5, h6 {
-		margin-bottom: 0.3em;
-		position: relative;
-		clear: both;
-	}
-
-	h3, legend {
-		font-weight: bold;
-		font-size: 16px;
-	}
-
-	p {
-		line-height: 26px;
-	}
-
-	hr {
-		clear: both;
-	}
-
-	ul, ol {
-		padding-left: 18px;
-	}
-
-	ul {
-		list-style: square;
-		ul {
-			list-style: disc;
-			ul {
-				list-style: circle;
-			}
-		}
-	}
-
-	// Pygments
-	.highlight {
-		position: relative;
-		background: darken($light-background, 3%);
-		padding: 20px 15px 1px;
-	}
-	code[data-lang]:before {
-		content: attr(data-lang);
-		text-transform: uppercase;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		padding: 0 5px;
-		background: darken($light-background, 8%);;
-	}
-	code[data-lang=json]:before {
-		background: $json-colour;
-	}
-	code[data-lang=html]:before {
-		background: $html-colour;
-	}
-	code[data-lang=django]:before {
-		content: "twig";
-		background: $twig-colour;
-	}
-	code[data-lang=sass]:before,
-	code[data-lang=css]:before {
-		content: "less";
-		background: $less-colour;
-	}
-
-	// Inline code
-	code {
-		background: darken($light-background, 3%);
-		padding: 3px 7px;
-	}
-	pre code {
-		padding: 0;
-	}
-
-	// Text alignment
-	.text-align--center {
-		text-align: center;
-	}
-	.text-align--right {
-		text-align: right;
-	}
-
-	// Images
-	.main--content img {
-		border: 1px solid $light-border;
-	}
-	.image--center {
-		text-align: center;
-		background: lighten($light-border, 10%);
-		line-height: 0;
-		padding: 10px;
-	}
-
-	// Keylines
-	hr {
-		height: 1px;
-		background: $light-border;
-		border: none;
-	}
+	
 
 	// Tables
 	table {
@@ -354,18 +237,7 @@ body {
 
 
 // Links
-a {
-	color: $dark-links;
-	text-decoration: none;
-	padding-bottom: 1px;
-	&:hover {
-		color: darken($dark-links, 10%);
-	}
-	&.active {
-		color: darken($dark-links, 15%);
-		border-bottom: 1px solid darken($dark-links, 10%);
-	}
-}
+
 	// Buttons
 	.button,
 	button {
@@ -402,54 +274,6 @@ svg {
 	}
 
 
-// Forms
-fieldset {
-	border: none;
-	padding: 0;
-	margin: 0;
-}
-	// Search Form
-	input[type=text] {
-		border: none;
-		box-shadow: none;
-		border-radius: 0;
-		width: 100%;
-		padding: 0;
-	}
-	input:valid,
-	input:focus {
-		outline: none;
-		background: $light-background;
-	}
-	.search-label {
-		position: absolute;
-		z-index: 0;
-		color: $light-text;
-		line-height: 26px;
-	}
-	.search-input {
-		position: relative;
-		z-index: 1;
-		background: none;
-	}
-	.search-field,
-	.nav-list--search-results {
-		padding: 0 5px;
-	}
-	.search-form {
-		width: 100%;
-		border: 1px solid darken($light-border, 20%);
-		background: $light-background;
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-	}
-	.nav-list--search-results {
-		transition: .2s;
-	}
-	.nav-list--search-results[data-state=highlighted] {
-		background: $highlighted-text;
-	}
 
 
 // Mobile and Small Tablet
@@ -553,3 +377,13 @@ fieldset {
 		}
 
 	}
+
+.main--content img {
+  border: 1px solid $light-border;
+}
+.image--center {
+  text-align: center;
+  background: lighten($light-border, 10%);
+  line-height: 0;
+  padding: 10px;
+}
