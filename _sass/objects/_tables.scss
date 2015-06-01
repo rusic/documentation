@@ -1,0 +1,22 @@
+table {
+  text-align: left;
+  letter-spacing: -.2px;
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+}
+
+th, td {
+  border-right: 1px solid $light-border;
+  padding: $spacing-half $spacing;
+}
+
+th {
+  background: darken($light-background, 8%);
+}
+
+td, th {
+  border: 1px solid darken($light-background, 8%);
+}
