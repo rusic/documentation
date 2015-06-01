@@ -1,5 +1,6 @@
 // Create gulp variables
 var gulp		= require('gulp');
+var watch		= require('gulp-watch');
 var bower		= require('main-bower-files');
 var rename		= require('gulp-rename');
 var filter		= require('gulp-filter');
@@ -106,6 +107,10 @@ gulp.task('fonticons', function() {
 	// Icons task
 	gulp.task('icons', ['svg', 'png', 'fonticons'])
 
+gulp.task("watch", function(){
+  gulp.watch(["_scripts/*.js", mainfiles], ["js"]);
+});
 
 // All assets task
 gulp.task('default', ['styles', 'js', 'icons'])
+

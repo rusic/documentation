@@ -1,0 +1,93 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.octicon {
+  margin-right: $spacing-half;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+  padding-bottom: 1px;
+  font-weight: bold;
+
+  &:hover {
+    color: saturate(lighten($purple, 20%), 100%);
+  }
+}
+
+
+h1 {
+  color: $black;
+  margin-top: 0;
+  padding-bottom: $spacing;
+  .main--content & {
+    border-bottom: 1px solid $light-border;
+  }
+}
+
+p {
+  margin-top: 0.3em;
+}
+
+h2, h3, h4, h5, h6 {
+  color: lighten($black, 7%);
+  margin: 1em 0;
+  position: relative;
+  clear: both;
+}
+
+h3, legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+p {
+  line-height: 26px;
+}
+
+hr {
+  clear: both;
+  height: 1px;
+  background: $light-border;
+  border: none;
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+ul {
+  list-style: square;
+  line-height: 2.4em;
+  ul {
+    list-style: disc;
+    ul {
+      list-style: circle;
+    }
+  }
+}
+
+.nav-list {
+  a { font-weight: normal; }
+}
+
+blockquote {
+  border-radius: $global-radius;
+  border-left: 4px solid $stone;
+  padding: $spacing-half $spacing;
+  margin: $spacing;
+  background: $gray-lighter;
+  > p { margin: 0; }
+}
+
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-align--right {
+  text-align: right;
+}
+

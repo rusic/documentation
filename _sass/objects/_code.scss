@@ -1,0 +1,83 @@
+code {
+  // Using RGBA here so that it always darkens regardless of
+  // the color that the object is contained in. 
+  background: rgba($black, 0.02);
+  padding: 3px 7px;
+  border-radius: $global-radius;
+  color: rgba($black, 0.7);
+  border: 1px solid rgba($black, 0.04);
+  margin: 0 2px;
+
+  pre & {
+    display: block;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: $spacing-half;
+    color: $black;
+  }
+}
+
+pre {
+  margin: 0;
+  border-radius: $global-radius;
+  overflow: hidden;
+}
+
+.highlight {
+  position: relative;
+  background: darken($light-background, 3%);
+}
+
+code[data-lang]:before {
+  position: relative;
+  content: attr(data-lang);
+  text-transform: uppercase;
+  display: block;
+  padding: 0 8px;
+  background: $black;
+  top: -$spacing-half;
+  margin-left: -$spacing-half;
+  margin-right: -$spacing-half;
+  margin-bottom: -5px;
+  color: $white;
+  text-shadow: 0 0 3px rgba(#000, 0.4);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+code[data-lang=json]:before {
+  background: $color-json;
+}
+
+code[data-lang=bash]:before {
+  background: $color-shell;
+}
+
+code[data-lang=liquid]:before {
+  background: $color-liquid;
+}
+
+code[data-lang=yaml]:before {
+  background: $color-yaml;
+}
+
+code[data-lang=html]:before {
+  background: $color-html;
+}
+
+code[data-lang=ruby]:before {
+  background: $color-ruby;
+}
+
+code[data-lang=sass]:before {
+  background: $color-scss;
+}
+
+code[data-lang=css]:before {
+  background: $color-css;
+}
+
+code[data-lang=javascript]:before {
+  background: $color-javascript;
+}

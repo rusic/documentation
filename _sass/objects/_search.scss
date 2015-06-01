@@ -1,0 +1,9 @@
+.nav-list--search-results {
+  background-color: rgba(#000, 0.5);
+  border-radius: 0 0 $global-radius $global-radius;
+  margin: 0 $spacing-half;
+  padding: 0 20px;
+  list-style-position: inside;
+  box-shadow: 0 0 5px rgba(#000, 0.5);
+  transition: 50ms height ease-in-out
+}

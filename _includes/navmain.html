@@ -1,4 +1,4 @@
-<nav class="nav  nav--main">
+<nav class="nav nav--main">
 	{% for item in site.data.navigation.navmain %}
 		<a {% if item.class != null %}class="{{ item.class }}"{% endif %} href="{{ item.url }}">{{ item.title }} {% if item.icon != null %}<span class="octicon octicon-{{ item.icon }}"></span>{% endif %}</a>
 	{% endfor %}
