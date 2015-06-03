@@ -11,11 +11,9 @@
 	</h2>
 
 	<p>{{ include.content }}</p>
-
-	<div class="button-container">
-
-		{% if include.buttontext != null %}<a class="button" href="{{ include.link }}">{{ include.buttontext }}</a>{% endif %}
-
-	</div>
+  
+  <div class="feature-card__footer">
+    {% if include.buttontext != null %}<a class="button" href="{{ include.link }}">{{ include.buttontext }}</a>{% endif %}
+  </div>
 
 </div>

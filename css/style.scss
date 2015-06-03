@@ -25,16 +25,8 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-
-// Container
-.container {
-	padding: 0 2.5%;
-	max-width: 1600px;
-}
-
-
-// Header & footer
-.header, .footer {
+// Header
+.header {
 	background: desaturate(darken($stone, 5%), 10%);
 	color: $white;
 	h1, h2, h3, h4, h5, h6 {
@@ -46,8 +38,7 @@ body {
 	padding: $spacing-half $spacing;
 }
 
-.header--main,
-.footer--main {
+.header--main {
 	color: $light-text;
 }
 
@@ -62,9 +53,6 @@ body {
 	float: left;
 	width: 100%;
 	padding-bottom: 20px;
-	.row {
-		display: flex;
-	}
 }
 
 // Feature
@@ -93,24 +81,23 @@ body {
 
 	// Feature cards
 	.feature-card {
-		width: 50%;
-		float: left;
-		position: relative;
-		padding: 30px 30px 60px;
-		min-height: 260px;
-		border: 1px solid darken($light-background, 3%);
+    position: relative;
+		padding: 30px;
+		min-height: 270px;
+    margin-bottom: 30px;
+		border: 1px solid $gray-light;
 		background: $light-background;
 		text-align: center;
-		.button-container {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			min-height: 60px;
-		}
+    border-radius: $global-radius;
 		.octicon {
 			font-size: 44px;
 		}
+
+    &__footer {
+      position: absolute;
+      bottom: 0; right: 0; left: 0;
+      padding-bottom: 30px;
+    }
 	}
 
 
@@ -164,8 +151,7 @@ body {
 	}
 
 	// Navigation
-	.nav--main,
-	.nav--footer {
+	.nav--main {
 		text-align: right;
 		color: $light-text;
 		a {
@@ -210,12 +196,6 @@ body {
 	}
 }
 
-
-// Footer
-.footer--main {
-	clear: both;
-}
-
 // Icons
 svg {
 	width: 20px;
@@ -237,11 +217,9 @@ svg {
 // Mobile and Small Tablet
 @media (max-width: 767px) {
 
-	// Header & footer
+	// Header
 	.nav--main,
-	.nav--footer,
-	.logo,
-	.copyright {
+	.logo {
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -265,15 +243,6 @@ svg {
 
 	.search-form {
 		display: inline-block;
-	}
-
-	// Main content
-	.main--body .row {
-		display: inherit;
-	}
-
-	.row {
-		margin: 0;
 	}
 
 	.main--content {
@@ -312,11 +281,6 @@ svg {
 
 	.aside--docs {
 		padding: 0;
-	}
-
-	// Footer
-	.nav--footer {
-		text-align: right;
 	}
 }
 	// Mobile specific
