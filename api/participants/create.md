@@ -5,7 +5,7 @@ title: Participants/Create
 
 # Participants/Create
 
-<api-explorer resource="http://api.rusic.dev/participants" method="POST">
+<api-explorer resource="http://api.rusic.com/participants" method="POST">
   <api-header name="Accept" required="true" value="application/vnd.rusic.v1+json" editable-key="false" editable-value="false"></api-header>
   <api-header name="X-API-Key" required="true" value="abc123" editable-key="false"></api-header>
   <api-part name="participant[provider]" required="true" default="" value="saml"></api-part>
