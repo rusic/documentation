@@ -86,3 +86,7 @@ code[data-lang=css]:before {
 code[data-lang=javascript]:before {
   background: $color-javascript;
 }
+
+.hljs {
+  padding: 12.5px;
+}
