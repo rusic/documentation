@@ -1,0 +1,63 @@
+<div class="api-explorer">
+  <h3><code><span class="highlight">{{method}}</span> {{ resource }}</code></h3>
+  <h4><code>{{ compiledResource() }}</code></h4>
+  
+  <div class="api-explorer__actions">
+    <label class="api-explorer__action  button--secondary" ng-click="editable = !editable">
+      <span class="octicon octicon--checkbox octicon-check" ng-show="editable"></span>
+      <span class="octicon octicon--checkbox octicon-x" ng-show="!editable"></span>
+      Edit Mode
+    </label>
+    <label class="api-explorer__action" ng-click="performRequest()" ng-disabled="loading">
+      <span class="octicon octicon-zap"></span>
+      <span ng-show="!loading">Send Request</span>
+      <span ng-show="loading">Loading</span>
+    </label>
+  </div>
+  
+  <div class="row row--fluid">
+    <div class="columns small-12 large-6">
+      
+      <div ng-repeat="(key, store) in stores">
+        <h3>{{ store.title }}</h3>
+        
+        <table ng-if="store.data.length > 0">
+          <thead>
+            <th>Key</th>
+            <th>Value</th>
+          </thead>
+          <tr ng-repeat="datum in store.data">
+            <td>
+              <span ng-if=datum.showCheckBox>
+                <input type="checkbox" ng-model="datum.enabled">
+              </span>
+              <span class="octicon octicon--checkbox octicon-lock" ng-hide="datum.editableKey"></span>
+              <input type="text" ng-model="datum.name" ng-show="editable && datum.editableKey">
+              <code ng-hide="editable && datum.editableKey">{{ datum.name }}</code>
+              <span class="required" ng-show="datum.required">REQUIRED</span>
+            </td>
+            <td>
+              <span class="octicon octicon--checkbox octicon-lock" ng-hide="datum.editableValue"></span>
+              <input type="text" ng-model="datum.value" ng-show="editable && datum.editableValue">
+              <code ng-hide="editable && datum.editableValue">{{ datum.value }}</code>
+            </td>
+          </tr>
+        </table>
+        <p ng-if="store.data.length == 0">This endpoint does not support any {{key}}</p>
+      </div>
+
+    </div>
+  
+    <div class="columns small-12 large-6">
+      <h3><pre>STATUS: {{ status() }}</pre></h3>
+      
+      <div class="highlight"><!--
+        --><pre ng-hide="response"><code>No response body</code></pre><!--
+        --><pre ng-show="response.status == 0"><code>An error has occurred, see console for more details.</code></pre><!--
+        --><div hljs source="toPrettyJSON(response.responseText, 2)" ng-if="response"></div><!--
+      --></div>
+    </div>
+  </div>
+  
+  <div ng-transclude ng-hide="true"></div>
+</div>

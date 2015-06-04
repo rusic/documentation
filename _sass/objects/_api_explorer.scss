@@ -1,0 +1,56 @@
+.api-explorer {
+  position: relative;
+
+  td {
+    position: relative;
+    padding: 5px;
+    padding-left: 20px;
+
+    .octicon-lock {
+      position: absolute;
+      font-size: 14px;
+      top: 50%;
+      left: 6px;
+      margin-top: -7px;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      margin: 4px 2px 0 5px;
+      top: 1px;
+      transform: scale(1);
+    }
+  }
+
+  input[type=text], input[type=search] {
+    padding: 5px;
+  }
+  
+}
+
+.api-explorer__actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.api-explorer__action {
+  @extend .button;
+
+  
+  .octicon--checkbox {
+    border: 1px solid mix($purple, $white);
+    border-radius: 2px;
+    width: 18px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  &.button--secondary {
+    .octicon--checkbox {
+      border: 1px solid mix($gray, $white, 80%);
+    }
+  }
+}

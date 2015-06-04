@@ -91,3 +91,12 @@ blockquote {
   text-align: right;
 }
 
+.required {
+  color: $red;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+.highlight {
+  color: $purple;
+}

@@ -29,7 +29,12 @@ pre {
   background: darken($light-background, 3%);
 }
 
-code[data-lang]:before {
+code.json:before {
+  background: $color-json !important;
+  content: "JSON" !important;
+}
+
+code[data-lang]:before, code.hljs:before {
   position: relative;
   content: attr(data-lang);
   text-transform: uppercase;
@@ -80,4 +85,8 @@ code[data-lang=css]:before {
 
 code[data-lang=javascript]:before {
   background: $color-javascript;
+}
+
+.hljs {
+  padding: 12.5px;
 }

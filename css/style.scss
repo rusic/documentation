@@ -5,8 +5,10 @@ searchable: false
 @import "core/language_colors";
 @import "core/variables";
 @import "core/mixins";
+@import "core/extend";
 @import "core/core";
 
+@import "objects/api_explorer";
 @import "objects/buttons";
 @import "objects/caption";
 @import "objects/code";
