@@ -2,8 +2,12 @@ input[type=text], input[type=search] {
   border-radius: $global-radius;
   width: 100%;
   padding: $spacing-half;
-  border: none;
   color: $black;
+  border: 1px solid $gray;
+}
+
+.search-input {
+  border: none;
 }
 
 

@@ -1,7 +1,8 @@
 table {
-  text-align: left;
-  letter-spacing: -.2px;
   width: 100%;
+  border-radius: $global-radius;
+  text-align: left;
+  margin-bottom: $spacing;
 }
 
 thead {
@@ -13,10 +14,11 @@ th, td {
   padding: $spacing-half $spacing;
 }
 
-th {
+thead {
   background: darken($light-background, 8%);
 }
 
 td, th {
+  vertical-align: top;
   border: 1px solid darken($light-background, 8%);
 }
