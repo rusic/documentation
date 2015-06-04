@@ -13,7 +13,7 @@ angular.module("app")
       method: "@"
     }
     controller: ["$scope", "$parse", "$compile", ($scope, $parse, $compile) ->
-      $scope.editable = true unless $scope.editable?
+      $scope.editable = false unless $scope.editable?
       $scope.loading = false
       
       $scope.stores = {
