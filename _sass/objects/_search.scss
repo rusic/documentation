@@ -5,5 +5,12 @@
   padding: 0 20px;
   list-style-position: inside;
   box-shadow: 0 0 5px rgba(#000, 0.5);
-  transition: 50ms height ease-in-out
+  transition: 50ms height ease-in-out;
+  color: $white;
+  a {
+    color: $white;
+    &:hover {
+      font-weight: bold;
+    }
+  }
 }

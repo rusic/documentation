@@ -1,12 +1,26 @@
 .button, button {
+  @extend .stopselect;
+  display: inline-block;
   background: $purple;
   border: none;
   padding: 7px 11px 7px;
-  border-radius: 3px;
+  border-radius: $global-radius;
   color: $light-links;
   outline: none;
+  cursor: pointer;
   &:hover, &:active {
     color: $white;
     background: lighten($purple, 10%);
+  }
+  
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &--secondary {
+    background: $gray-dark;
+    &:hover, &:active {
+      background: $gray-darker;
+    }
   }
 }
