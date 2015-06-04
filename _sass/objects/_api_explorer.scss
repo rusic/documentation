@@ -2,7 +2,18 @@
   position: relative;
 
   td {
+    position: relative;
     padding: 5px;
+    padding-left: 20px;
+
+    .octicon-lock {
+      position: absolute;
+      font-size: 14px;
+      top: 50%;
+      left: 6px;
+      margin-top: -7px;
+    }
+
     input[type=checkbox] {
       position: relative;
       width: 15px;
