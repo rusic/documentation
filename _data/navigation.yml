@@ -62,6 +62,8 @@ navdocs:
     url: /themes/object-and-variable-reference/
   - title: File Structure
     url: /themes/file-structure/
+  - title: Pages
+    url: /themes/pages/
 
 - title: Client Apps
   icon: file-code
