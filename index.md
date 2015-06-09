@@ -15,7 +15,7 @@ title: Home
     {% include featurecard.html title="Object and variable reference" link="/themes/object-and-variable-reference/" icon="file-text" content="A quick reference to all of the objects and varibles that are available to liquid templates." buttontext="Learn more about site data" %}
   </div>
   <div class="columns small-12 medium-6">
-    {% include featurecard.html title="API" link="/api/where-can-i-find-my-api-key/" icon="puzzle" content="API documentation, code examples and interactive API explorer." buttontext="Lean more about the API" %}
+    {% include featurecard.html title="API" link="/api/" icon="puzzle" content="API documentation, code examples and interactive API explorer." buttontext="Lean more about the API" %}
   </div>
 </div>
 
