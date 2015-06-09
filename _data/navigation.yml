@@ -75,7 +75,7 @@ navdocs:
   icon: file-code
   subnav:
   - title: Where can I find my API key
-    url: /api/where-can-i-find-my-api-key/
+    url: /api/
   - title: Account
     url:
   - title: Show
