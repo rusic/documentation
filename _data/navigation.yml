@@ -96,10 +96,6 @@ navdocs:
     url: /api/participants/create/
   - title: Update
     url: /api/participants/update/
-  - title: Update Should 200
-    url: /api/participants/update-should-200/
-  - title: Update Should 401
-    url: /api/participants/update-should-401/
   - title: Search (token)
     url: /api/participants/search-token/
   - title: Search (uid)
