@@ -2,4 +2,4 @@
 searchable: false
 ---
 
-angular.module "app", ["hljs"]
+angular.module "app", ["hljs", "LocalForageModule"]

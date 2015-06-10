@@ -18,7 +18,7 @@
   <div class="row row--fluid">
     <div class="columns small-12 large-6">
       
-      <div ng-repeat="(key, store) in stores">
+      <div ng-repeat="(key, store) in stores" class="hard--left theme-{{key}}">
         <h3>{{ store.title }}</h3>
         
         <table ng-if="store.data.length > 0">
@@ -28,7 +28,7 @@
           </thead>
           <tr ng-repeat="datum in store.data">
             <td>
-              <span ng-if=datum.showCheckBox>
+              <span ng-if="datum.showCheckBox && store.allowCheckBox">
                 <input type="checkbox" ng-model="datum.enabled">
               </span>
               <span class="octicon octicon--checkbox octicon-lock" ng-hide="datum.editableKey"></span>
@@ -38,12 +38,16 @@
             </td>
             <td>
               <span class="octicon octicon--checkbox octicon-lock" ng-hide="datum.editableValue"></span>
-              <input type="text" ng-model="datum.value" ng-show="editable && datum.editableValue">
+              <input type="text" ng-model="datum.value" ng-show="editable && datum.editableValue" local-forage="{key: store.title+'/'+datum.name, scopeKey: 'datum.value'}">
               <code ng-hide="editable && datum.editableValue">{{ datum.value }}</code>
+              <small class="form-reset"><a ng-click="datum.reset()" ng-show="editable && datum.editableValue && datum.showReset()">reset</a></small>
             </td>
           </tr>
         </table>
-        <p ng-if="store.data.length == 0">This endpoint does not support any {{key}}</p>
+        <p ng-if="store.data.length == 0">This endpoint does not have any {{key}}</p>
+        <a href="#" class="button" ng-if="store.allowNewRows" ng-click="addRow(store)">
+          + Add {{ store.singular }}
+        </a>
       </div>
 
     </div>

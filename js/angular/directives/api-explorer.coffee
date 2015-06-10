@@ -13,15 +13,53 @@ angular.module("app")
       method: "@"
     }
     controller: ["$scope", "$parse", "$compile", ($scope, $parse, $compile) ->
-      $scope.editable = false unless $scope.editable?
+      $scope.editable = true unless $scope.editable?
       $scope.loading = false
       
       $scope.stores = {
-        resources: { title: "Resources", data: [] }
-        parameters: { title: "Parameters", data: [] }
-        parts: { title: "Body", data: [] }
-        headers: { title: "Headers", data: [] }
+        resources: {
+          title: "Resources"
+          singular: "resource"
+          data: []
+          allowNewRows: false
+          allowCheckBox: false
+        }
+        parameters: { 
+          title: "Parameters"
+          singular: "parameter"
+          data: []
+          allowNewRows: true
+          allowCheckBox: true
+        }
+        parts: { 
+          title: "Body"
+          singular: "body item"
+          data: []
+          allowNewRows: true
+          allowCheckBox: false
+        }
+        headers: { 
+          title: "Headers"
+          singular: "header"
+          data: []
+          allowNewRows: true
+          allowCheckBox: false
+        }
       }
+
+      $scope.addRow = (store) ->
+        row = {}
+        row.showCheckBox = true
+        row.value = ""
+        row.originalValue = ""
+        row.showCheckBox = true if row.enabled?
+        row.required = false
+        row.enabled = true
+        row.editableKey = true
+        row.editableValue = true
+        row.reset = -> row.value = row.originalValue
+        row.showReset = -> row.value != row.originalValue
+        store.data.push row
       
       $scope.status = ->
         return "Loading" if $scope.loading
@@ -30,8 +68,9 @@ angular.module("app")
 
       $scope.appendParameters = (url, data) ->
         ret = []
-        for d of data
-          ret.push encodeURIComponent(d) + '=' + encodeURIComponent(data[d])
+        for datum of data
+          unless datum == "undefined"
+            ret.push encodeURIComponent(datum) + '=' + encodeURIComponent(data[datum])
         parameters = ret.join('&')
         if parameters == ""
           return url
@@ -49,7 +88,11 @@ angular.module("app")
         for parameter in $scope.stores.parameters.data
           parameters[parameter.name] = parameter.value if parameter.enabled
         
-        str = _.template(str)(resources)
+        try
+          str = _.template(str)(resources)
+        catch e
+          console.log e
+        
         return $scope.appendParameters(str, parameters)
       
       _lastGoodResult = ""
@@ -58,6 +101,7 @@ angular.module("app")
           obj = $parse(objStr)({})
         catch e
           return _lastGoodResult
+
         result = JSON.stringify(obj, null, Number(tabWidth))
         _lastGoodResult = result
         result

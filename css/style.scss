@@ -18,6 +18,42 @@ searchable: false
 @import "objects/tables";
 @import "objects/viewport";
 
+.hard--left {
+  border-left: 3px solid $gray-light;
+  margin-bottom: $spacing;
+  padding-left: $spacing-half;
+}
+
+.theme {
+  &-headers {
+    h2, h3, h4 { color: $red; }
+    .button { background: $red; }
+    border-left-color: $red;
+    thead { background: $red; color: $white; }
+  }
+
+  &-parameters {
+    h2, h3, h4 { color: $green; }
+    .button { background: $green; }
+    border-left-color: $green;
+    thead { background: $green; color: $white; }
+  }
+
+  &-parts {
+    h2, h3, h4 { color: $orange; }
+    .button { background: $orange; }
+    border-left-color: $orange;
+    thead { background: $orange; color: $white; }
+  }
+
+  &-resources {
+    h2, h3, h4 { color: $blue; }
+    .button { background: $blue; }
+    border-left-color: $blue;
+    thead { background: $blue; color: $white; }
+  }
+}
+
 // Body
 body {
 	color: $dark-text;

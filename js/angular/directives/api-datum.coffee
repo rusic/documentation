@@ -23,29 +23,20 @@ datumProvider = (type) ->
       $scope.showCheckBox = false
       $scope.datumType = type
       $scope.value = $scope.value || $scope.default
+      $scope.originalValue = $scope.value
       $scope.showCheckBox = true if $scope.enabled?
 
       $scope.required = false unless $scope.required?
       $scope.enabled = true unless $scope.enabled?
       $scope.editableKey = true unless $scope.editableKey?
       $scope.editableValue = true unless $scope.editableValue?
+
+      $scope.reset = ->
+        $scope.value = $scope.originalValue
+
+      $scope.showReset = ->
+        $scope.value != $scope.originalValue
       
-      console.log $scope.name
-      console.log $scope.editableKey
-      console.log typeof($scope.editableKey)
-      console.log $scope.name
-      console.log $scope.editableValue
-      console.log typeof($scope.editableValue)
-
-      # $scope.keyIsEditable = ->
-      #   return $scope.editableKey if $scope.editableKey?
-      #   true
-
-      # $scope.valueIsEditable = ->
-      #   return $scope.editableValue if $scope.editableValue?
-      #   true
-
-      # $scope.enabled = true
       $scope.object = ->
         object = {}
         object[$scope.name] = $scope.value
