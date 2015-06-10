@@ -16,7 +16,7 @@ navmain:
 navdocs:
 
 - title: Rusic
-  icon: file-code
+  icon: info
   subnav:
   - title: Changelog
     url: /changelog/
@@ -30,7 +30,7 @@ navdocs:
     url: /getting-started/deploying-your-theme/
 
 - title: Spaces
-  icon: file-code
+  icon: versions
   subnav:
   - title: Sandbox Mode
     url: /spaces/sandbox-mode/
@@ -66,7 +66,7 @@ navdocs:
     url: /themes/pages/
 
 - title: Client Apps
-  icon: file-code
+  icon: puzzle
   subnav:
   - title: Facebook
     url: /client-apps/facebook/
@@ -74,7 +74,7 @@ navdocs:
     url: /client-apps/compare-providers/
 
 - title: API
-  icon: file-code
+  icon: radio-tower
   subnav:
   - title: Overview
     url: /api/
@@ -130,8 +130,9 @@ navdocs:
     url: /api/likes/show/
   - title: Destroy
     url: /api/likes/destroy/
+
 - title: Branding
-  icon: file-code
+  icon: paintcan
   subnav:
   - title: Colors
     url: /branding/colors/
