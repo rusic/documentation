@@ -347,3 +347,15 @@ svg {
   line-height: 0;
   padding: 10px;
 }
+
+.transparency {
+  overflow: hidden;
+  background: url(/assets/backgrounds/transparency.png);
+}
+
+.transparency--shadow {
+  img {
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.15));
+    -webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,0.15));
+  }
+}
