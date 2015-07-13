@@ -92,6 +92,8 @@ navdocs:
     url: /api/buckets/show/
   - title: Participants
     url:
+  - title: Index
+    url: /api/participants/index/
   - title: Create
     url: /api/participants/create/
   - title: Update
@@ -100,6 +102,8 @@ navdocs:
     url: /api/participants/search-token/
   - title: Search (uid)
     url: /api/participants/search-uid/
+  - title: Search
+    url: /api/participants/search/
   - title: Ideas
     url:
   - title: Create
