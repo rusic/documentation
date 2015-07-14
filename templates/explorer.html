@@ -38,7 +38,7 @@
             </td>
             <td>
               <span class="octicon octicon--checkbox octicon-lock" ng-hide="datum.editableValue"></span>
-              <input type="text" ng-model="datum.value" ng-show="editable && datum.editableValue" local-forage="{key: store.title+'/'+datum.name, scopeKey: 'datum.value'}">
+              <input type="text" ng-model="datum.value" ng-show="editable && datum.editableValue" local-forage="{key: store.title+'/'+datum.name, scopeKey: 'datum.value', defaultValue: datum.value}">
               <code ng-hide="editable && datum.editableValue">{{ datum.value }}</code>
               <small class="form-reset"><a ng-click="datum.reset()" ng-show="editable && datum.editableValue && datum.showReset()">reset</a></small>
             </td>
