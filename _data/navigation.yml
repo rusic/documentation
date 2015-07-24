@@ -28,6 +28,8 @@ navdocs:
   subnav:
   - title: Deploying your theme
     url: /getting-started/deploying-your-theme/
+  - title: Terminology
+    url: /getting-started/terminology/
 
 - title: Spaces
   icon: versions
