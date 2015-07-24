@@ -7,7 +7,7 @@ title: Custom Fields
 
 Consider a standard new entry form, like so
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 <form action="{{rusic.permalink}}/ideas" method="post">
   <p>
@@ -42,7 +42,7 @@ You can easily add any number of arbitrary named custom fields. For example, thi
 
 Once the entry is saved you can access all custom fields through the `idea.custom` liquid method, like so:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 {{idea.custom.email_address}}
 {% endraw %}

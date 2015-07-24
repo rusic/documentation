@@ -48,7 +48,7 @@ You are logged in, <a href="/auth/signout">sign out</a>.
 
 To see if a user if logged in, inspect the presence of a `current_user` object:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 {% if current_user %}
   Hey, {{current_user.nickname}}!
@@ -57,4 +57,3 @@ To see if a user if logged in, inspect the presence of a `current_user` object:
 {% endif %}
 {% endraw %}
 {% endhighlight %}
-

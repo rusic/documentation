@@ -11,7 +11,7 @@ This is only currently supported in the following themes -
 
 * Competition Theme
 
-Theme developers can implement this by following the following code into the new entry form -
+Theme developers can implement this by copying the following code into the new entry form -
 
 {% highlight html %}
 {% raw %}

@@ -7,7 +7,7 @@ title: Getting Started
 
 Before you get started you'll need to [sign in](http://rusic.com/signin) to your Rusic account or [create an account](http://rusic.com/signup) if you don't have an one yet.
 
-> If you know your way around HTML & CSS, you may want to skip to the section for [creating a custom theme](#custom-theme).
+> If you know your way around HTML & CSS, you may want to skip to the section for [creating a custom theme](#creating-a-space-with-a-custom-theme).
 
 ## Creating your first `Space`
 
@@ -93,4 +93,3 @@ If you are using Sass and CoffeeScript you'll always want to run the provided `g
 ```
 gulp
 ```
-

@@ -5,7 +5,7 @@ title: File Structure
 
 # File Structure
 
-This is what a typical theme's file structure will look like, below we'll go into further detail about what does what.
+This is what a typical themes' file structure will look like, below we'll go into further detail about what does what.
 
 {% highlight bash %}
 {% raw %}
@@ -37,7 +37,7 @@ Is where you'll want to keep all your images, CSS and Javascript. Typically, you
 
 `layouts/subdomain.html`
 
-This is your main template file, it will be where your header and footer will go. All your other Liquid files will be rendered between your header and footer using the `{{ content_for_layout }}` Liquid helper. It's a good place to start when building out your theme.
+This is your main template file, it will be where your header and footer will go. All your other Liquid files will be rendered between your header and footer using the `content_for_layout` Liquid helper. It's a good place to start when building out your theme.
 
 `ideas/*.html.liquid`
 
