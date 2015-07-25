@@ -33,7 +33,7 @@ Themes consists of [Liquid](https://github.com/Shopify/liquid), CSS and JavaScri
 
 > Anything you can do in Liquid you can do within the Rusic Liquid templates.
 
-The thing that makes a Rusic `Theme` is the Liquid data that your are able to play with, like the current user that is logged in or the dynamic name of your `Space`. [Find out all the available Liquid attributes]().
+The thing that makes a Rusic `Theme` is the Liquid data that your are able to play with, like the current user that is logged in or the dynamic name of your `Space`. [Find out all the available Liquid attributes](). Also have a look at our [Object and variable reference](/themes/object-and-variable-reference) documentation to see a list of objects and variable data you can access within your Rusic theme.
 
 All your Liquid, image, CSS and JavaScript files are hosted on Rusic and pushed a CDN automatically every time you deploy. So you work on your theme locally, and when you're ready to deploy you push it to Rusic and like magic, everything *just works*. Now to setup your local environment.
 
