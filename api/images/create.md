@@ -5,4 +5,4 @@ title: Images/Create
 
 # Images/Create
 
-> Coming soon
+> Sorry: The API explorer doesn't currently have file upload support.
