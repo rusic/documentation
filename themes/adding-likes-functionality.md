@@ -121,7 +121,7 @@ JSON definition:
 {% endraw %}
 {% endhighlight %}
 
-Use an AJAX `delete` to remove the like:
+Use an AJAX `DELETE` to remove the like:
 
 {% highlight javascript %}
 {% raw %}
@@ -130,7 +130,7 @@ Use an AJAX `delete` to remove the like:
     var ideaId = $(this).data("idea-id");
     $.ajax({
       url: $(this).attr("href"),
-      type: "delete",
+      type: "DELETE",
       dataType: "json",
       success: function(data){
         $("[data-like-count="+ideaId+"]").text(data.likes_count);
