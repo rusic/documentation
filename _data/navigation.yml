@@ -79,7 +79,9 @@ navdocs:
   - title: Overview
     url: /api/
   - title: Where can I find my API key
-    url: /api/
+    url: /api/where-can-i-find-my-api-key
+  - title: About the participant token
+    url: /api/about-the-participant-token
   - title: Account
     url:
   - title: Show
