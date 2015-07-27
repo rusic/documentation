@@ -61,16 +61,21 @@ The new `Theme` will now appear in your list of `Themes`, you're nearly ready to
 
 Back on your machine, open your CLI of choice and head to your preferred directory that you keep your sites in and create a new directory named after your theme (I'll stick with `demo-theme` for this).
 
-```
+{% highlight bash %}
+{% raw %}
 cd ~/Sites
 mkdir demo-theme
-```
+{% endraw %}
+{% endhighlight %}
+
 Enter the directory you just created an run the `yo` generator. This will take you through the setup process and ask you various questions about how'd you like your `Theme` setup including your `Theme`'s ID on Rusic and your API key.
 
-```
+{% highlight bash %}
+{% raw %}
 cd demo-theme
 yo rusic-theme
-```
+{% endraw %}
+{% endhighlight %}
 
 After `yo` has finished up your next step will be to deploy your theme and start development on it.
 
@@ -78,18 +83,24 @@ After `yo` has finished up your next step will be to deploy your theme and start
 
 To deploy your theme simply run the following command. This will send all your files up to Rusic's servers and your `Space` will be ready to view.
 
-```
+{% highlight bash %}
+{% raw %}
 rusic deploy production
-```
+{% endraw %}
+{% endhighlight %}
 
 To being developing your `Theme` you'll need to tell `rusic` to watch your theme and sync any changes you do locally with Rusic. You can do this with thw following command.
 
-```
+{% highlight bash %}
+{% raw %}
 rusic deploy production --watch
-```
+{% endraw %}
+{% endhighlight %}
 
 If you are using Sass and CoffeeScript you'll always want to run the provided `gulp` tasks. You can check the Gulpfile for all the available tasks but the default taks should get your assets compiling for you.
 
-```
+{% highlight bash %}
+{% raw %}
 gulp
-```
+{% endraw %}
+{% endhighlight %}
