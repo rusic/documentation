@@ -28,4 +28,4 @@ All theme templates in Rusic are written with liquid, take a look at our [theme 
 get up and running with a working example.
 
 Rusic extends liquid by providing aditional filters and providing the templates with contextual varibles such as `space` and `idea`. You
-can read more about these in the [Rusic object and variable referance](/themes/object-and-variable-reference/).
+can read more about these in the [Rusic object and variable reference](/themes/object-and-variable-reference/).
