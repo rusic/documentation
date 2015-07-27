@@ -5,7 +5,7 @@ title: Searching
 
 # Searching
 
-Entries can be searching by creating a simple HTML form and a liquid template to display the results.
+Entries can be searched by creating a simple HTML form and a liquid template to display the results.
 
 ## Search form
 

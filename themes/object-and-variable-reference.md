@@ -75,7 +75,7 @@ Usage example
 
 `idea.title` - the idea's title
 
-`idea.content` - the main content of the idea, could be [markdown](/theming/ideas/835#markdown) formatted
+`idea.content` - the main content of the idea
 
 `idea.images` - a list of [Image](#image) objects for this idea
 

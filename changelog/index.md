@@ -5,7 +5,7 @@ title: Changelog
 
 # Changelog
 
-### 1.6.0 - 10/02/14
+### 1.6.0 - 10/02/15
 - Added [guest idea](http://rusic.readme.io/v1/docs/guest-ideas) support
 - Removed all plans, lifted account restrictions
 - Deprecated API v0

@@ -24,78 +24,55 @@ http://you.rusic.com/example-space/ideas/123/likes
 
 For each idea, we've provided an easy way of generating this:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
-{{idea.like_link}}
+{{ idea.like_link }}
 {% endraw %}
 {% endhighlight %}
 
 Example in Liquid HTML:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
-<a href="{{idea.like_link}}">Like!</a>
+<a href="{{idea.like_link}}" class="js-like-idea">Like!</a>
 {% endraw %}
 {% endhighlight %}
 
-This will not yet work because we need to make a POST, not GET request. To make this into a POST request, add `data-method` HTML5 attribute to the link, as follows:
+This will not yet work because we need to attach a 'data-idea-id' attribute to the link to identify the ideas' ID, as follows:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
-<a href="{{idea.like_link}}" data-method="post">Like!</a>
+<a href="{{ idea.like_link }}" class="js-like-idea" data-idea-id="{{ idea.id }}">Like!</a>
 {% endraw %}
 {% endhighlight %}
 
-NB. This relies on you including our recommended `{{content_for_header}}` Liquid tag in the `<head>` of your document.
 
-Alternatively you could use a standard HTML `<form>` tag like this:
+## Handling the AJAX request
 
-{% highlight html %}
-{% raw %}
-<form action="{{idea.like_link}}" method="post">
-  <input type="submit" value="Like!" />
-</form>
-{% endraw %}
-{% endhighlight %}
-
-## AJAX like links
-
-NB. The methods in this section rely on you including our recommended `{{content_for_header}}` Liquid tag in the `<head>` of your document.
-
-If you'd rather use AJAX to create "Likes" inline, all you need to do is add a `data-remote` HTML5 attribute to your current link or form tag, eg:
-
-{% highlight html %}
-{% raw %}
-<a class="like-link" href="{{idea.like_link}}" data-method="post" data-remote="true">Like!</a>
-{% endraw %}
-{% endhighlight %}
-
-Or for a form:
-
-{% highlight html %}
-{% raw %}
-<form class="like-link" action="{{idea.like_link}}" method="post" data-remote="true">
-{% endraw %}
-{% endhighlight %}
-
-In order to handle the AJAX response you'll need to bind to the `ajax:complete` callback on the element. In jQuery this would look like:
+In Ajax, the request is sent to the url of the clicked like link, `idea.like_link`. On success, it returns data and updates the html with the data-like-count attribute that contains the ideaId of the idea that was liked. In Javascript, this would look like this:
 
 {% highlight javascript %}
 {% raw %}
-$('.like-link').bind('ajax:complete', function(event, data, success, xhr) {
-  var isValid = data.valid;
-
-  if(isValid) {
-    $('#likes-count').html(data.likes_count + " likes");
-    $('#notice').html(data.message).show();
-  } else {
-    $('#error').html(data.message).show();
-  }
-
-  return false;
+$( document ).ready(function() {
+  $(".js-like-idea").on("click", function(event){
+    event.preventDefault();
+    var ideaId = $(this).data("idea-id");
+    $.ajax({
+      url: $(this).attr("href"),
+      type: "POST",
+      dataType: "json",
+      success: function(data){
+        $("[data-like-count="+ideaId+"]").text(data.likes_count);
+      },
+      error: function(){
+        alert("Something went wrong!");
+      }
+    });
+  });
 });
 {% endraw %}
 {% endhighlight %}
+
 
 As you can see, the AJAX response returns a data JSON object. For a successful "Like" this looks like:
 
@@ -131,72 +108,37 @@ JSON definition:
 - `valid` - boolean false
 - `message` - string, defined under the "Copy & text" section in the admin
 
-### AJAX response handling without data-remote
-
-You can send and handle the AJAX likes using just jQuery (or another JS library).
-
-Given the following like link:
-
-{% highlight html %}
-{% raw %}
-<a class="like-link" href="{{idea.like_link}}">Like!</a>
-{% endraw %}
-{% endhighlight %}
-
-Use an AJAX `post` to send the like:
-
-{% highlight javascript %}
-{% raw %}
-var $link = $('.like-link'),
-    url = $link.attr('href');
-
-$link.post(url, {}, function(data, status, xhr) {
-  var isValid = data.valid;
-
-  if(isValid) {
-    $('#likes-count').html(data.likes_count + " likes");
-    $('#notice').html(data.message).show();
-  } else {
-    $('#error').html(data.message).show();
-  }
-}, 'json');
-{% endraw %}
-{% endhighlight %}
 
 ### Removing likes
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 {% if idea.liked? %}
-  <a class="unlike-link" href="{{idea.like_link}}">Unlike!</a>
+  <a href="{{ idea.like_link }}" class="js-like-idea" data-idea-id="{{ idea.id }}">Like!</a>
 {% else %}
-  <a class="like-link" href="{{idea.like_link}}">Like!</a>
-{% end %}
+  <a href="{{ idea.like_link }}" class="js-unlike-idea" data-idea-id="{{ idea.id }}">Unlike!</a>
+{% endif %}
 {% endraw %}
 {% endhighlight %}
 
-Use an AJAX `delete` to remove the like:
+Use an AJAX `DELETE` to remove the like:
 
 {% highlight javascript %}
 {% raw %}
-$('.unlike-link').on('click', function(e) {
-  e.preventDefault();
-
-  var $link = $(e.target),
-      url = $link.attr('href');
-
-  $.ajax({
-    url: url,
-    type: 'delete',
-    dataType: 'json',
-    success: function(data, status, xhr) {
-      $('#likes-count').html(data.likes_count + " likes");
-      $('#notice').html(data.message).show();
-    },
-    error: function(xhr, status, err) {
-      console.log('error:', xhr, status, err);
-    }
+  (".js-unlike-idea").on("click", function(event){
+    event.preventDefault();
+    var ideaId = $(this).data("idea-id");
+    $.ajax({
+      url: $(this).attr("href"),
+      type: "DELETE",
+      dataType: "json",
+      success: function(data){
+        $("[data-like-count="+ideaId+"]").text(data.likes_count);
+      },
+      error: function(xhr, status, err) {
+        alert("Something went wrong!");
+      }
+    });
   });
-});
 {% endraw %}
 {% endhighlight %}
