@@ -44,6 +44,8 @@ navdocs:
 - title: Themes
   icon: file-code
   subnav:
+  - title: Liquid
+    url: /themes/liquid
   - title: Authentication
     url: /themes/authentication/
   - title: Custom Fields
