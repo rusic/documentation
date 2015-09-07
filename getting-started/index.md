@@ -11,7 +11,7 @@ Before you get started you'll need to [sign in](http://rusic.com/signin) to your
 
 ## Creating your first `Space`
 
-After logging in you'll be greeted to your `Spaces`, though since your new here you'll need to create one first. To do so, click the **[+ New Space](http://rusic.com/spaces/new)** button.
+After logging in you'll be greeted to your `Spaces`, though since you're new here you'll need to create one first. To do so, click the **[+ New Space](http://rusic.com/spaces/new)** button.
 
 > You can think of a `Space` like a website. Once it's created, you'll be able to visit it at `username.rusic.com`. **Pro tip: You can create multiple spaces within your account and even use your own domain names!**
 
