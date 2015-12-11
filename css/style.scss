@@ -348,6 +348,10 @@ svg {
   padding: 10px;
 }
 
+.image--small {
+	max-width: 450px;
+}
+
 .transparency {
   overflow: hidden;
   background: url(/assets/backgrounds/transparency.png);
