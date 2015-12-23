@@ -74,6 +74,8 @@ navdocs:
   subnav:
   - title: Facebook
     url: /client-apps/facebook/
+  - title: Google
+    url: /client-apps/google/
   - title: SAML
     url: /client-apps/saml/
   - title: Compare Providers
